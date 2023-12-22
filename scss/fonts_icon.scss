@@ -1,0 +1,102 @@
+$icomoon-font-family: "BeautySystemaIcons" !default;
+$icomoon-font-path: "fonts/BeautySystemaIcons-v1.0" !default;
+
+$icon-Home-Page: "\e904";
+$icon-user_icon: "\e900";
+$icon-favorite_icon: "\e901";
+$icon-search_icon: "\e902";
+$icon-shopping_cart_icon: "\e903";
+$icon-search: "\e986";
+
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?cisosp');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?cisosp#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?cisosp') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?cisosp') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?cisosp##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-app_menu_discount::before {
+  content: "\e907";
+}
+.icon-app_menu_gifts::before {
+  content: "\e908";
+}
+.icon-app_menu_brands::before {
+  content: "\e909";
+}
+.icon-app_menu_makeup::before {
+  content: "\e90a";
+}
+.icon-app_menu_kids::before {
+  content: "\e90b";
+}
+.icon-app_menu_body::before {
+  content: "\e90c";
+}
+.icon-app_menu_hair::before {
+  content: "\e90d";
+}
+.icon-app_menu_face::before {
+  content: "\e90e";
+}
+.icon-app_menu_new::before {
+  content: "\e90f";
+}
+.icon-catalog_icon::before {
+  content: "\e906";
+}
+.icon-right-arrow::before {
+  content: "\e905";
+}
+.icon-Home-Page {
+  &:before {
+    content: $icon-Home-Page; 
+  }
+}
+.icon-user_icon {
+  &:before {
+    content: $icon-user_icon; 
+  }
+}
+.icon-favorite_icon {
+  &:before {
+    content: $icon-favorite_icon; 
+  }
+}
+.icon-search_icon {
+  &:before {
+    content: $icon-search_icon; 
+  }
+}
+.icon-shopping_cart_icon {
+  &:before {
+    content: $icon-shopping_cart_icon; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}

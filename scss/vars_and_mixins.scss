@@ -1,0 +1,28 @@
+
+
+@mixin flex($justify, $align, $direction) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+@mixin font($font-family, $size, $line-height, $color) {
+	font-size: $size;
+	font-family: $font-family;
+	line-height: $line-height;
+	color: $color;
+}
+
+@mixin background-img() {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@mixin position-center() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

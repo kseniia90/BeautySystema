@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/owlcarousel/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Beauty Systema</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container container">
+                <div class="header__main">
+                    <div class="header__main-left">
+                        <ul class="header__main__list">
+                            <li class="header__main__list__item">
+                                <a href="#"><span class="icon-user_icon"></span></a>
+                            </li>
+                            <li class="header__main__list__item">
+                                <a href="#">
+                                    <span class="icon-favorite_icon"></span>
+                                    <div class="header__counter favorite__counter">
+                                        <span class="header__counter__value favorite__counter__value">3</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__main__logo">
+                        <a class="header__main-logo" href="index.html"><img src="./img/logo.png" alt="logo" width="291"
+                                height="70"></a>
+                    </div>
+                    <div class="header__main-right">
+                        <ul class="header__main__list">
+                            <li class="header__main__list__item search_icon">
+                                <a href="#">
+                                    <span class="icon-search_icon"></span>
+                                </a>
+                            </li>
+                            <li class="header__main__list__item">
+                                <a href="#">
+                                    <span class="icon-shopping_cart_icon"></span>
+                                    <div class="header__counter shopping_cart__counter">
+                                        <span class="header__counter__value shopping_cart__counter__value">2</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="header__main__list__item burger-menu">
+                                <div class="burger-menu-btn">
+                                    <div class="burger-menu__icon">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="#" class="header__main-form search-form">
+                    <input class="header__main-input" type="text" placeholder="Пошук..." />
+                    <button class="header__main-search"><span class="icon-search_icon"></span></button>
+                    <div class="search-results">
+                        <div class="search-result-item"><a href="#"></a>
+                        </div>
+                    </div>
+                </form>
+                <nav class="header__nav">
+                    <ul class="header__nav__list">
+                        <li class="header__nav-link">
+                            <a href="#">Новинки</a>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Догляд за шкірою обличчя</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/sublist_img.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Догляд за волоссям</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/categories_carousel_img2.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Догляд за тілом</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/sublist_img.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Догляд для дітей</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/sublist_img.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Макіяж</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/sublist_img.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Бренди</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/sublist_img.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a class="dropdown-link hover-dropdown" href="#">
+                                <span>Подарунки</span>
+                                <img src="./img/arrow_down.svg" alt="" class="arrow_down">
+                            </a>
+                            <div class="header__submenu__list">
+                                <ul>
+                                    <li><a href="#"><span>Усі засоби</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Догляд за обличчям</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Область навколо очей</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Шия та декольте</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Брови та вії</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Губи</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>SPF та автозасмага</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                    <li><a href="#"><span>Спеціальний догляд</span><img src="./img/arrow_down.svg" alt="" class="submenu__arrow"></a></li>
+                                </ul>
+                                <img src="./img/sublist_img.png" alt="img">
+                            </div>
+                        </li>
+                        <li class="header__nav-link">
+                            <a href="#">
+                                <span>Знижки</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-social">
+                        <a href="#"><img src="./img/Instagram_icon.svg" alt=""></span></a>
+                        <a href="#"><img src="./img/Phone_icon.svg" alt=""></span></a>
+                        <a href="#"><img src="./img/Letter_icon.svg" alt=""></span></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="slider-banner margin-bottom container1600">
+                <div class="banner-carousel owl-carousel owl-theme">
+                    <a href="#" class="item">
+                        <img class="banner__img" src="./img/banner_1.png" alt="beauty-img">
+                        <img class="banner__img mobile-only" src="./img/banner_1_mobile.png" alt="beauty-img">
+                    </a>
+                    <a href="" class="item">
+                        <img class="banner__img" src="./img/banner_1.png" alt="beauty-img">
+                        <img class="banner__img mobile-only" src="./img/banner_1_mobile.png" alt="beauty-img">
+                    </a>
+                </div>
+            </div>
+            <div class="block block_categories margin-bottom container1600">
+                <h2 class="title container"><a href="categoris.html">Категорії</a></h2>
+                <div class="slider-categories">
+                    <div class="categories-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img1.png" alt="img">
+                                <p>Обличчя</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img2.png" alt="img">
+                                <p>Волосся</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img3.png" alt="img">
+                                <p>Тіло</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img4.png" alt="img">
+                                <p>Макіяж</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img5.png" alt="img">
+                                <p>Ротова порожнина</p>
+                            </a>
+                        </div> 
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img1.png" alt="img">
+                                <p>Обличчя</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img2.png" alt="img">
+                                <p>Волосся</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img3.png" alt="img">
+                                <p>Тіло</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img4.png" alt="img">
+                                <p>Макіяж</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="./img/categories_carousel_img5.png" alt="img">
+                                <p>Ротова порожнина</p>
+                            </a>
+                        </div>                                
+                    </div>
+                </div>
+            </div> 
+            <div class="block block_popular margin-bottom container1600">
+                <h2 class="title container">Популярні засоби</h2>
+                <div class="slider-popular">
+                    <div class="popular-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_1.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Гелі</p>
+                                        <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr light-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴999,00</p>
+                                        <p>₴938,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>   
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_2.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Пінки, гелі для очищення</p>
+                                        <a href="#" class="product__card__info__name">Очищуючий гель для проблемної шкіри Acnemy ZITCLEAN</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴829,00</p>
+                                        <p>₴756,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_3.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Набори</p>
+                                        <a href="#" class="product__card__info__name">Набір проти акне Acnemy ZITMINIS</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴1929,00</p>
+                                        <p>₴1814,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_4.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Гелі</p>
+                                        <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴1929,00</p>
+                                        <p>₴1814,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_5.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Гелі</p>
+                                        <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴1929,00</p>
+                                        <p>₴1814,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+            </div> 
+            <div class="block block_new margin-bottom container1600">
+                <div class="block_new__title container">
+                    <h2 class="title">Новинки</h2>
+                    <a class="custom-button" href="#">
+                        <span>Всі засоби категорії</span>
+                        <div class="custom-button__arrow">
+                            <img src="./img/button_ellipse.svg" alt="img" width="58" height="58">
+                        </div>
+                    </a>
+                </div>
+                <div class="slider-new">
+                    <div class="new-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_1.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Гелі</p>
+                                        <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr light-star"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴999,00</p>
+                                        <p>₴938,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_2.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Пінки, гелі для очищення</p>
+                                        <a href="#" class="product__card__info__name">Очищуючий гель для проблемної шкіри Acnemy ZITCLEAN</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴829,00</p>
+                                        <p>₴756,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_3.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Набори</p>
+                                        <a href="#" class="product__card__info__name">Набір проти акне Acnemy ZITMINIS</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴1929,00</p>
+                                        <p>₴1814,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_4.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Гелі</p>
+                                        <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴1929,00</p>
+                                        <p>₴1814,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <div class="product__card">
+                                <a class="product__card__img" href="#">
+                                    <img src="./img/popular_5.png" alt="img">
+                                    <p class="product__card__lable">Розпродаж</p>
+                                    <span class="icon-favorite_icon"></span>
+                                </a>
+                                <div class="product__card__info">
+                                    <div class="product__card__info__content">
+                                        <p class="product__card__info__description">Гелі</p>
+                                        <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</a>
+                                        <div class="product__card__info__reviews">
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                            <div class="product__card__info__reviews-satr"></div>
+                                        </div>
+                                        <ul class="product__card__info__variants">
+                                            <li class="product__card__info__variants-option active"><a href="#">5мл</a></li>
+                                            <li class="product__card__info__variants-option"><a href="#">30мл</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__card__info__price">
+                                        <p class="old-price">₴1929,00</p>
+                                        <p>₴1814,00</p>
+                                    </div>
+                                    <div class="product__card__info__buy-button">
+                                        <span>Додати до кошика</span>
+                                        <span class="icon-right-arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>
+                </div>
+            </div> 
+            <div class="block margin-bottom container">
+                <h2 class="title">Переваги Beauty Systema</h2>
+                <div class="advantages__block">
+                    <div class="advantages__block__item">
+                        <img src="./img/advantages_1.svg" alt="img">
+                        <h3 class="subtitle">Cистема догляду</h3>
+                        <p>Ми - за ефективний та мінімалістичний догляд. Ми маємо власну бьюті систему, яка дає результат на вашій
+                            шкірі
+                            обличчя, тіла та волоссі. Роками ми виключали те, що неважливо в користь важливого. Саме такі засоби
+                            увішли в
+                            наш асортимент.</p>
+                    </div>
+                    <div class="advantages__block__item">
+                        <img src="./img/advantages_2.svg" alt="img">
+                        <h3 class="subtitle">Варіативність</h3>
+                        <p>Асортимент BEAUTY SYSTEMA враховує можливості різних людей. У нас ви можете зібрати догляд як з
+                            бюджетних, так і
+                            з професійних брендів.</p>
+                    </div>
+                    <div class="advantages__block__item">
+                        <img src="./img/advantages_3.svg" alt="img">
+                        <h3 class="subtitle">Найкраще з усього світу</h3>
+                        <p>У BEAUTY SYSTEMA представлені бренди з Південної Кореї, США, Канади, Сінгапуру, Австралії,
+                            Великобританії,
+                            Угорщини,Бразилії, Іспаніі та інших краін.</p>
+                    </div>
+                    <div class="advantages__block__item">
+                        <img src="./img/advantages_4.svg" alt="img">
+                        <h3 class="subtitle">Тільки оригінал</h3>
+                        <p>BEAUTY SYSTEMA співпрацює з офіційними представниками брендів і гарантує оригінальність продукції</p>
+                    </div>
+                    <div class="advantages__block__item">
+                        <img src="./img/advantages_5.svg" alt="img">
+                        <h3 class="subtitle">Безкоштовна доставка</h3>
+                        <p>від 4000 грн на замовлення одним чеком при повній попередній сплаті.</p>
+                    </div>
+                    <div class="advantages__block__item">
+                        <img src="./img/advantages_6.svg" alt="img">
+                        <h3 class="subtitle">Система лояльності</h3>
+                        <p>Накопичуйте власну знижку до -7%! Більше в розділі «Накопичувальна знижка»</p>
+                    </div>
+                </div>
+                <div class="slider-advantages">
+                    <div class="advantages-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="advantages__block__item">
+                                <img src="./img/advantages_1.svg" alt="img">
+                                <h3 class="subtitle">Cистема догляду</h3>
+                                <p>Ми - за ефективний та мінімалістичний догляд. Ми маємо власну бьюті систему, яка дає результат на вашій
+                                    шкірі
+                                    обличчя, тіла та волоссі. Роками ми виключали те, що неважливо в користь важливого. Саме такі засоби
+                                    увішли в
+                                    наш асортимент.</p>
+                            </div>
+                        </div>  
+                        <div class="item">
+                            <div class="advantages__block__item">
+                                <img src="./img/advantages_2.svg" alt="img">
+                                <h3 class="subtitle">Варіативність</h3>
+                                <p>Асортимент BEAUTY SYSTEMA враховує можливості різних людей. У нас ви можете зібрати догляд як з
+                                    бюджетних, так і
+                                    з професійних брендів.</p>
+                            </div>
+                        </div>    
+                        <div class="item">
+                            <div class="advantages__block__item">
+                                <img src="./img/advantages_3.svg" alt="img">
+                                <h3 class="subtitle">Найкраще з усього світу</h3>
+                                <p>У BEAUTY SYSTEMA представлені бренди з Південної Кореї, США, Канади, Сінгапуру, Австралії,
+                                    Великобританії,
+                                    Угорщини,Бразилії, Іспаніі та інших краін.</p>
+                            </div>
+                        </div>  
+                        <div class="item">
+                            <div class="advantages__block__item">
+                                <img src="./img/advantages_4.svg" alt="img">
+                                <h3 class="subtitle">Тільки оригінал</h3>
+                                <p>BEAUTY SYSTEMA співпрацює з офіційними представниками брендів і гарантує оригінальність продукції</p>
+                            </div>
+                        </div>  
+                        <div class="item">
+                            <div class="advantages__block__item">
+                                <img src="./img/advantages_5.svg" alt="img">
+                                <h3 class="subtitle">Безкоштовна доставка</h3>
+                                <p>від 4000 грн на замовлення одним чеком при повній попередній сплаті.</p>
+                            </div>
+                        </div>  
+                        <div class="item">
+                            <div class="advantages__block__item">
+                                <img src="./img/advantages_6.svg" alt="img">
+                                <h3 class="subtitle">Система лояльності</h3>
+                                <p>Накопичуйте власну знижку до -7%! Більше в розділі «Накопичувальна знижка»</p>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="block margin-bottom container">
+                <h2 class="title">Слідкуйте за нами в Instagram</h2>
+                <div class="slider-insta">
+                    <div class="insta-carousel owl-carousel owl-theme">
+                        <div class="item">
+                           <a href="#"><img src="./img/insta_1.png" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="./img/insta_2.png" alt=""></a>
+                         </div>
+                         <div class="item">
+                            <a href="#"><img src="./img/insta_3.png" alt=""></a>
+                         </div>
+                         <div class="item">
+                            <a href="#"><img src="./img/insta_4.png" alt=""></a>
+                         </div>
+                    </div>
+                </div>
+                <a class="custom-button" href="#">
+                    <span>Підписатись</span>
+                    <div class="custom-button__arrow">
+                        <img src="./img/button_ellipse.svg" alt="img" width="58" height="58">
+                    </div>
+                </a>
+            </div>
+            <div class="block description-block margin-bottom container">
+                <div class="description-block__content">
+                    <img class="description-block__content-img" src="./img/description_1.png" alt="img">
+                    <h2 class="title">Оригінальна косметика від Beauty Systema</h2>
+                    <p>Оригінальна косметика зібрана в інтернет-магазині Beauty Systema. Ви можете не сумніватися яка продукція, адже на
+                        сайті продаються товари від провідних брендів, які відомі у всьому світі.</p>
+                    <p class="description-content hide_on_mobile">Каталог Beauty Systema має великий асортимент засобів, які піклуються про волосся, шкіру обличчя та тіла.
+                        Покупцям пропонуються такі бренди: Allies of skin, Lador, Laneige, BeauuGreen, LAGOM, Benton, Bioré, Manyo
+                        Factory, Masil, Blithe, Medi peel, Botanity, Bueno, Missha, Neogen, Cos De Baha, Petitfee, Cosrx, Purito,
+                        CUSKIN, Dear Klairs, PSA, Pyunkang Yul, Daeng Gi Meo Ri, Dikson, Dr.Althea, Real Barrier, Dr.Ceuracle,
+                        Rejudicare, Dr.Jart+, Secret Key, Enough, Esthetic House, So natural, Etude House, Some By Mi, Heimish, Tiam,
+                        Timeless, Huxley, Too cool for school, I’m from, Trimay, Iliyoon, Innisfree, Instytutum, Isehan, IUNIK, Janeke,
+                        JayJun, V.SUN, Jenny House, Q&A, JMsolution, Tangle Teezer, JsDerma, Invisibobble.</p>
+                    <p class="description-content hideContent">Каталог Beauty Systema має великий асортимент засобів, які піклуються про волосся, шкіру обличчя та тіла.
+                        Покупцям пропонуються такі бренди: Allies of skin, Lador, Laneige, BeauuGreen, LAGOM, Benton, Bioré, Manyo
+                        Factory, Masil, Blithe, Medi peel, Botanity, Bueno, Missha, Neogen, Cos De Baha, Petitfee, Cosrx, Purito,
+                        CUSKIN, Dear Klairs, PSA, Pyunkang Yul, Daeng Gi Meo Ri, Dikson, Dr.Althea, Real Barrier, Dr.Ceuracle,
+                        Rejudicare, Dr.Jart+, Secret Key, Enough, Esthetic House, So natural, Etude House, Some By Mi, Heimish, Tiam,
+                        Timeless, Huxley, Too cool for school, I’m from, Trimay, Iliyoon, Innisfree, Instytutum, Isehan, IUNIK, Janeke,
+                        JayJun, V.SUN, Jenny House, Q&A, JMsolution, Tangle Teezer, JsDerma, Invisibobble.</p>
+                    <a class="custom-button show-more" href="#">
+                        <span>Читати далі</span>
+                        <div class="custom-button__arrow">
+                            <img src="./img/button_ellipse.svg" alt="img" width="58" height="58">
+                        </div>
+                    </a>
+                    <img class="description-block__content-img mobile" src="./img/description_1_mob.png" alt="img">
+                </div>
+            </div>
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer-main container">
+                <div class="footer-main__side left">
+                    <a class="footer-logo" href="index.html">
+                        <img src="./img/logo_footer.png" alt="logo" width="302" height="37">
+                    </a>
+                    <div class="footer-download-app__block">
+                        <h3>Завантажити зручний додаток</h3>
+                        <div class="footer-download-app">
+                            <a href="#">
+                                <img src="./img/footer_down-app_1.png" alt="" width="146" height="47">
+                            </a>
+                            <a href="#">
+                                <img src="./img/footer_down-app_2.png" alt="" width="146" height="47">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-main__side center">
+                    <div class="accordion">
+                        <div class="accordion__item">
+                            <div class="accordion__title">
+                                <span class="accordion__title-text">Клієнтам</span>
+                                <div class="accordion__arrow accordion__rotate"><img src="./img/arrow_down.svg" alt="" class="accordion__arrow-item"></div>
+                            </div>
+                            <div class="accordion__content">
+                               <ul>
+                                <li><a href="#">Доставка і оплата</a></li>
+                                <li><a href="#">Контакти</a></li>
+                                <li><a href="#">Накопичувальні знижки</a></li>
+                                <li><a href="#">Відгуки</a></li>
+                                <li><a href="#">Договір публічної оферти</a></li>
+                                <li><a href="#">Про нас</a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title">
+                                <span class="accordion__title-text">Каталог</span>
+                                <div class="accordion__arrow"><img src="./img/arrow_down.svg" alt="" class="accordion__arrow-item"></div>
+                            </div>
+                            <div class="accordion__content">
+                               <ul>
+                                <li><a href="#"></a></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__title">
+                                <span class="accordion__title-text">Мій акаунт</span>
+                                <div class="accordion__arrow"><img src="./img/arrow_down.svg" alt="" class="accordion__arrow-item"></div>
+                            </div>
+                            <div class="accordion__content">
+                               <ul>
+                                <li><a href="#"></a></li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-download-app__block mobile">
+                    <h3>Завантажити зручний додаток</h3>
+                    <div class="footer-download-app">
+                        <a href="#">
+                            <img src="./img/footer_down-app_1.png" alt="" width="146" height="47">
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer_down-app_2.png" alt="" width="146" height="47">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-main__side right">
+                    <img src="./img/footer_right_1.png" alt="logo" width="170" height="80">
+                    <div class="footer-social">
+                        <a href="#"><img src="./img/Instagram_icon.svg" alt=""></span></a>
+                        <a href="#"><img src="./img/Phone_icon.svg" alt=""></span></a>
+                        <a href="#"><img src="./img/Letter_icon.svg" alt=""></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line">
+                <div class="footer-line-container container">
+                    <span>© 2023 Всі права захищені</span>
+                    <span>Beauty systema</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
