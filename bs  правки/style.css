@@ -2011,9 +2011,11 @@ ol.breadcrumb li .icon-Home-Page {
 .categories__content__left .wc-block-active-filters, .categories__content__left .wp-block-woocommerce-attribute-filter {
   margin-bottom: 10px;
 }
-.categories__content__left .wc-block-components-price-slider__range-input:focus,
-.categories__content__left .wc-block-components-price-slider__range-input:hover {
-  filter: none !important;
+.categories__content__left .wc-block-components-price-slider__range-input::-webkit-slider-thumb:hover {
+  background: #FFF !important;
+}
+.categories__content__left .wc-block-components-price-slider__range-input:focus::-webkit-slider-thumb {
+  background: #FFF !important;
 }
 .categories__content__left .wc-block-components-price-slider__range-input.wc-block-components-price-slider__range-input--min::-webkit-slider-thumb {
   background-position-x: left;
@@ -2174,6 +2176,7 @@ ol.breadcrumb li .icon-Home-Page {
   flex-direction: row;
   font-size: 17px;
   gap: 10px;
+  cursor: pointer;
   display: none;
 }
 .categories__content__right .page_navigation .page_navigation__more .icon-right-arrow {
@@ -2333,12 +2336,26 @@ ol.breadcrumb li .icon-Home-Page {
   margin-top: 15px;
 }
 .product-page__content__right .product__card__info__variants {
+  display: flex;
   justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
   gap: 15px;
   margin: 20px 0;
+  border-radius: 0px;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  padding: 0;
 }
 .product-page__content__right .product__card__info__variants .product__card__info__variants-option {
+  border-radius: 5px;
+  border: 1px solid rgba(64, 110, 117, 0.4);
   transition: all 0.3s ease;
+}
+.product-page__content__right .product__card__info__variants .product__card__info__variants-option.active {
+  color: white;
+  background-color: #4B6D74;
 }
 .product-page__content__right .product__card__info__variants .product__card__info__variants-option a {
   display: block;
@@ -2588,6 +2605,9 @@ ol.breadcrumb li .icon-Home-Page {
   padding: 10px;
   border: none;
   border-bottom: 1px solid rgba(33, 50, 53, 0.2);
+}
+.product-page__content .reviews .add-review textarea {
+  resize: none;
 }
 .product-page__content .reviews .add-review .add-review__row {
   display: flex;

@@ -1535,6 +1535,7 @@ ol.breadcrumb li {
                     @include flex(center, center, row);
                     font-size: 17px;
                     gap: 10px;
+                    cursor: pointer;
                     display: none;
                     .icon-right-arrow {
                         transform: rotate(90deg);
@@ -1673,11 +1674,22 @@ ol.breadcrumb li {
                 margin-top: 15px;
             }
             .product__card__info__variants {
-                justify-content: flex-start;
+                @include flex(flex-start, center, row); 
                 gap: 15px;
                 margin: 20px 0;
+                border-radius: 0px;
+                border: none;
+                color: inherit;
+                background-color: inherit;
+                padding: 0;
                 .product__card__info__variants-option {
+                    border-radius: 5px;
+                    border: 1px solid rgba(64, 110, 117, 0.4);
                     transition: all 0.3s ease;
+                    &.active {
+                        color: white;
+                        background-color: #4B6D74;
+                    }
                     a {
                         display: block;
                         padding: 8px 15px;
@@ -1894,6 +1906,9 @@ ol.breadcrumb li {
                     padding: 10px;
                     border: none;
                     border-bottom: 1px solid rgba(33, 50, 53, 0.20);
+                }
+                textarea {
+                    resize: none;
                 }
                 // .add-review__file {
                 //     input {
