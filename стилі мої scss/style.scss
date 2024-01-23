@@ -436,8 +436,11 @@ ol.breadcrumb li {
         display: none; 
         z-index: 10;
         font-size: 13px;
-        ul {
+        >ul {
             flex: 1 0 55%;
+            >li:first-child {
+                font-weight: 700;
+            }
         }
         li {
             width: 100%;
@@ -446,9 +449,6 @@ ol.breadcrumb li {
             &:not(:last-child) {
                margin-bottom: 7px;
             }
-            &:first-child {
-                font-weight: 700;
-            }
             a {
                 display: flex !important;
                 justify-content: space-between;
@@ -456,6 +456,9 @@ ol.breadcrumb li {
                 gap: 10px;
                 .submenu__arrow {
                     transform: rotate(-90deg);
+                }
+                .submenu__arrow {
+                    display: none;
                 }
             }
             @media (min-width: 769px) {
@@ -478,6 +481,17 @@ ol.breadcrumb li {
             right: 0;
             transform: translate(0,0);
             padding: 0 0 10px 0;
+        }
+    }
+    .header__second-submenu__list {
+        display: none;
+        &.open {
+            color: $gray;
+        }
+    }
+    .has-submenu {
+        .submenu__arrow {
+            display: inline-block;
         }
     }
 }

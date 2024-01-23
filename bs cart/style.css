@@ -360,11 +360,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
   }
   
   .icon-app_menu_discount::before {
@@ -614,13 +609,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	align-items: center;
 	flex-direction: row;
   }
-  .breadcrumb::-webkit-scrollbar {
-	height: 4px;
-  }
-  .breadcrumb::-webkit-scrollbar-thumb {
-	background: #C8C8C8;
-	border-radius: 4px;
-  }
   @media (max-width: 992px) {
 	.breadcrumb {
 	  margin-bottom: 10px;
@@ -629,12 +617,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   
   ol.breadcrumb li {
 	list-style-type: none;
-    display: flex;
-    font-size: 13px;
-    opacity: 0.2;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+	display: inline;
+	font-size: 13px;
+	opacity: 0.2;
+	white-space: nowrap;
   }
   ol.breadcrumb li.active {
 	opacity: 1;
@@ -1033,10 +1019,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	display: none;
 	z-index: 700;
 	font-size: 13px;
-  }
-  .header__nav-link:last-child .header__submenu__list {
-	right: 0;
-	transform: translate(0%, 0%);
   }
   .header__submenu__list > ul {
 	flex: 1 0 55%;
@@ -2555,79 +2537,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	flex-direction: row;
 	gap: 10px;
   }
-
   .product-page__content__buttons-block  {
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr;
-	gap: 10px;
-  }
-  .block_instock, .block_outstock {
-	display: none;
-  }
-  .block_instock.active_stock {
-	display: grid;
-	gap: 10px;
-  }
-  .block_instock.active_stock {
 	grid-template-columns: 1fr 1fr;
+	gap: 10px;
   }
   @media (max-width: 1150px) {
-	 .block_instock.active_stock {
+	.product-page__content__buttons-block {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
   }
   @media (max-width: 900px) {
-	 .block_instock.active_stock {
+	.product-page__content__buttons-block {
 		grid-template-columns: 1fr;
 	}
   }
-  .block_outstock.active_stock {
-	display: block;
-  }
-  .block_outstock.active_stock .product__card__info__button {
-	width: calc(50% - 5px);
-	margin-bottom: 10px;
-  }
-  @media (max-width: 768px) {
-	.block_outstock.active_stock .product__card__info__button {
-		width: 100%;
-	  }
- }
-
-  .product-page__content__price-block .form_alert_stock {
-	align-self: start;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 10px;
-  }
-  .product-page__content__price-block .form_alert_stock input {
-	box-shadow: none;
-    padding: 15px 25px;
-	margin: 0;
-	outline: none;
-    border-radius: 10px;
-  }
-  .product-page__content__price-block .form_alert_stock input::placeholder {
-	opacity: 0.4;
-	color: #213235;
-  }
-
-  .product-page__content__price-block .form_alert_stock #alert_email {
-	border: solid 1px #D8E2E7;
-    background-color: #FFFFFF;
-    color: #0E252C;
-  }
-  .product-page__content__price-block .form_alert_stock .submit_alert_stock {
-	cursor: pointer;
-    border: 1px solid #4B6D74;
-	background-color: #4B6D74;
-    color: white;
-    font-weight: 500;
-  }
-  
-  
 
   .product-page__content__tab {
 	margin-top: 20px;
@@ -3291,16 +3216,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	height: 30px;
 }
 
-.shopping-cart__col  .shopping_cart__counter input::-webkit-outer-spin-button,
-.shopping-cart__col  .shopping_cart__counter input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0; 
-}
-
-.shopping-cart__col  .shopping_cart__counter input[type=number] {
-    -moz-appearance:textfield; 
-}
-
 .shopping-cart__col  .shopping_cart__counter .minus,
  .shopping-cart__col  .shopping_cart__counter .plus {
 	display: flex;
@@ -3372,9 +3287,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .shopping-cart-empty svg path {
 	fill: #4B6D74;
 }
-.btn-remove {
-	cursor: pointer;
-}
 
 @media (max-width: 768px) {
 	.product__card__info__button {
@@ -3419,7 +3331,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
 
   }
-
   .footer {
 	flex: 0 0 auto;
   }
@@ -3703,36 +3614,3 @@ button.cr-review-form-submit {
 textarea.cr-review-form-comment-txt {
     resize: none;
 }
-
-.yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon {
-    margin-right: 0px;
-}
-
-.wc-block-components-checkbox.wc-block-checkout__use-address-for-billing {
-    display: none;
-}
-.page_content_text {
-	max-width: 1200px;
-	width: 100%;
-	margin: 40px auto;
-	padding: 0 15px;
-	text-align: justify;
-	text-indent: 1.5em;	
-}
-.page_content_text p {
-	margin-bottom: 1em;
-}
-.page_content_text ul, .page_content_text ol {
-	margin: 10px 0px 10px 10px;
-	list-style: inherit;
-	padding-left: 10px;
-	text-indent: 0em;	
-}
-.page_content_text h1 {
-	margin: 20px 0;
-}
-@media (max-width: 768px) {
-	.page_content_text {
-		margin: 20px auto;
-	}
-  }

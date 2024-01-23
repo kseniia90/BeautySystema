@@ -1,7 +1,0 @@
-Зміни html:
-
-1. Сторінка Новинок: на сторінці новинок блоку.categories__content додати клас .noveltys  <div class="categories__content noveltys">;
-2. Пагінація: блоку пагінації .page_navigation додати клас .pagination   <div class="page_navigation pagination">;
-3. Немає в наявності: блоку .product__card__img додавати клас .out-of-stock;
-4. Корзинa: додати клас .container;
-

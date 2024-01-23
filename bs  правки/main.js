@@ -80,6 +80,8 @@ document.querySelectorAll(".header__nav-link > a").forEach(function(dropDown) {
       
       function dropdownHover(e) {
         if (e.type == "mouseover") {
+          // Close the opend dropdown
+          console.log("kk");
           closeDropdown();
         } 
       }
@@ -239,6 +241,11 @@ $(function () {
     autoWidth: true,
     items:4,
   });
+
+  $(".show-more").on("click", function(e) {
+    e.preventDefault();
+    $(".description-content").toggleClass("showContent");
+  });
   // END
 
   //BEGIN footer accordion
@@ -313,30 +320,6 @@ $(function () {
 
 	});
   //END
-
-  // shopping cart counter on click
-
-  $(document).ready(function () {
-    $(".minus").click(function () {
-      var $input = $(this).parent().find("input");
-      var count = parseInt($input.val()) - 1;
-      count = count < 1 ? 1 : count;
-      $input.val(count);
-      $input.change();
-      return false;
-    });
-    $(".plus").click(function () {
-      var $input = $(this).parent().find("input");
-      $input.val(parseInt($input.val()) + 1);
-      $input.change();
-      return false;
-    });
-
-    // show all products on mobile
-    $(".products-show-more").on("click", function () {
-      $(".products__result__item").toggleClass("showContent");
-  });
-  });
 
 });
 

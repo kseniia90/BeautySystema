@@ -86,4 +86,8 @@
 
 .icon-search:before {
   content: "\e986";
+}
+
+.icon-chat_icon:before {
+  content: "\e910";
 }/*# sourceMappingURL=fonts_icon.css.map */
