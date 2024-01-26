@@ -1497,6 +1497,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	height: 370px;
 	border-bottom: 1px solid rgba(33, 50, 53, 0.2);
 	padding: 25px;
+	box-sizing: border-box;
   }
   @media (max-width: 768px) {
 	.product__card__img {
@@ -2324,6 +2325,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	gap: 10px;
 	cursor: pointer;
 	display: none;
+	white-space: nowrap;
   }
   .categories__content__right .page_navigation .page_navigation__more .icon-right-arrow {
 	transform: rotate(90deg);
@@ -2366,7 +2368,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .categories__content.noveltys .categories__content__left, .categories__content.noveltys .categories-sorting, .categories__content.noveltys .page_navigation.pagination {
 	display: none;
   }
-  .categories__content.noveltys .page_navigation__more {
+  .categories__content.noveltys .page_navigation__more,
+  .categories__content.search-results-page .page_navigation__more {
 	display: flex;
   }
   
@@ -3212,6 +3215,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	padding-top: 20px;
 	padding-bottom: 60px;
 }
+
+.search-results-page__title {
+	font-size: 25px;
+}
+
+@media (max-width: 768px) {
+	.search-results-page__title {
+	  font-size: 22px;
+	}
+  }
 /* .shopping-cart-products::-webkit-scrollbar {
 	width: 8px;
   } */
@@ -3711,26 +3724,56 @@ textarea.cr-review-form-comment-txt {
 .wc-block-components-checkbox.wc-block-checkout__use-address-for-billing {
     display: none;
 }
+
 .page_content_text {
 	max-width: 1200px;
 	width: 100%;
 	margin: 40px auto;
 	padding: 0 15px;
 	text-align: justify;
-	text-indent: 1.5em;	
 }
-.page_content_text p {
-	margin-bottom: 1em;
-}
+
 .page_content_text ul, .page_content_text ol {
-	margin: 10px 0px 10px 10px;
+	margin: 10px 0px 10px 15px;
 	list-style: inherit;
-	padding-left: 10px;
+	padding-left: 15px;
 	text-indent: 0em;	
 }
+
 .page_content_text h1 {
-	margin: 20px 0;
+	font-size: 60px;
+	font-weight: normal;
+	line-height: normal;
+	text-align: left;
+	margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+	.page_content_text h1 {
+	  font-size: 30px;
+	  margin-bottom: 20px;
+	}
+  }
+  
+.page_content_text h3 {
+	margin-bottom: 10px;
+	line-height: normal;
+	text-align: left;
+}
+
+.page_content_text p {
+	margin-bottom: 0.5em;
+}
+
+.page_content_text a {
+	color: #4B6D74;
+	transition: all 0.2s ease;
+}
+
+.page_content_text a:hover {
+	color:#668b90;
+}
+
 @media (max-width: 768px) {
 	.page_content_text {
 		margin: 20px auto;
