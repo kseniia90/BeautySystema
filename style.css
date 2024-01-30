@@ -1657,6 +1657,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	fill: #4B6D74;
 	transition: all 0.3s ease;
   }
+
   .product__card__info__button:hover, .product__card__info__buy-button:hover {
 	color: white;
 	background-color: #4B6D74;
@@ -1664,6 +1665,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .product__card__info__button:hover svg, .product__card__info__buy-button:hover svg {
 	fill: white;
   }
+  .product-page__content .product__card__info__buy-button .icon-right-arrow,
+	.product-page__content .product__card__info__button .icon-arrow-pointer-solid {
+		width: 25px;
+	}
   @media (max-width: 768px) {
 	.product__card__info__button, .product__card__info__buy-button {
 	  padding: 10px;
@@ -1674,6 +1679,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  color: white;
 	  background-color: #4B6D74;
 	}
+	.product__card__info__button svg, .product__card__info__buy-button svg {
+		fill: white;
+	  }
   }
   
   .slider-popular, .slider-new {
@@ -2491,17 +2499,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin-top: 15px;
   }
   .product-page__content__right .product__card__info__variants {
-	display: flex;
+	/* display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: row;
-	gap: 15px;
+	gap: 15px; */
 	margin: 20px 0;
-	border-radius: 0px;
-	border: none;
+	/* border-radius: 0px; */
+	/* border: none;
 	color: inherit;
 	background-color: inherit;
-	padding: 0;
+	padding: 0; */
   }
   .product-page__content__right .product__card__info__variants .product__card__info__variants-option {
 	border-radius: 5px;
@@ -2526,7 +2534,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	}
   }
   @media (max-width: 768px) {
-	.product-page__content .product__card__info__button, .product-page__content .product__card__info__buy-button {
+	.product-page__content .product__card__info__button,
+	 .product-page__content .product__card__info__buy-button {
 	  padding: 15px 25px;
 	  gap: 10px;
 	  border-radius: 10px;
@@ -3392,7 +3401,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @media (max-width: 768px) {
 	.product__card__info__button {
 		width: auto;
-		font-size: 10px !important;
+		font-size: 10px;
 	}
 	.shopping-cart__title {
 		display: flex;
