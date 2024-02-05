@@ -443,6 +443,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	content: "\e911";
   }
 
+  .icon-contacts_tg:before {
+	content: "\e912";
+  }
+  .icon-contacts_phone:before {
+	content: "\e913";
+  }
+  .icon-contacts_letter:before {
+	content: "\e914";
+  }
+  .icon-contacts_insta:before {
+	content: "\e915";
+  }
+  .icon-contacts_fb:before {
+	content: "\e916";
+  }
+
   body.lock {
 	overflow: hidden;
   }
@@ -1973,7 +1989,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	margin-top: 20px;
   }
   
-  .categories {
+  .categories,
+  .contacts {
 	margin: 0 auto 100px;
 	display: flex;
 	justify-content: flex-start;
@@ -1981,7 +1998,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	flex-direction: column;
   }
   @media (max-width: 768px) {
-	.categories {
+	.categories,
+	.contacts {
 	  margin: 0 auto 70px;
 	}
   }
@@ -3439,6 +3457,184 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	.shopping-cart-empty svg  {
 		height: 100px;
 	}
+
+  }
+
+  .contacts__content {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	gap: 30px;
+	width: 100%;
+  }
+  @media (max-width: 992px) {
+	.contacts__content {
+	  gap: 10px;
+	}
+  }
+  @media (max-width: 768px) {
+	.contacts__content {
+	  flex-direction: column;
+	  align-items: stretch;
+	}
+  }
+  
+  .contacts__content__left {
+	flex: 0 0 40.17094%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	flex-direction: column;
+	padding: 10px 20px;
+  }
+
+  .contacts__content__right {
+	flex: 1 0 auto;
+	padding-top: 18px;
+  }
+
+  .contacts__list {
+	font-size: 16px;
+	padding: 15px 0;
+	width: 100%;
+  }
+
+  .contacts__list:not(:last-child) {
+	border-bottom: 1px solid #4B6D7433;
+  }
+
+  .contacts__list.main {
+	color: #4B6D74;
+	font-size: 20px;
+	font-weight: 500;
+	padding-top: 0;
+  }
+
+  .contacts__list__title {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 29px;
+	text-align: left;
+	margin-bottom: 15px;
+  }
+
+  .contacts__list ul {
+	list-style: none;
+	width: 100%;
+  }
+
+  .contacts__list ul li:not(:last-child) {
+	margin-bottom: 10px;
+  }
+
+  .contacts__list ul li a {
+	display: grid;
+	grid-template-columns: 24px 1fr;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+	transition: all 0.2s ease;
+  }
+
+  .contacts__list .contacts-icon {
+	font-size: 24px;
+	color: #4B6D74;
+	transition: all 0.2s ease;
+  }
+
+  .contacts__list a svg rect {
+	stroke:#4B6D74;
+  }
+
+  .contacts__list a svg path {
+	fill:#4B6D74;
+  }
+
+  @media (min-width: 769px) {
+	.contacts__list ul li a:hover {
+		color: #668b90;
+	}
+
+	.contacts__list ul li a:hover .contacts-icon {
+		color: #668b90;
+	  }
+	.contacts__list ul li a:hover svg rect {
+		stroke:#668b90;
+	}
+
+	.contacts__list a:hover svg path {
+		fill:#668b90;
+	  }
+
+  }
+
+  .contacts__content .contacts__form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+  }
+
+  .contacts__content .contacts__form input {
+	height: 45px;
+  }
+
+  .contacts__content .contacts__form input,
+  .contacts__content .contacts__form textarea {
+	width: 100%;
+	border: 1px solid #4B6D7433;
+	border-radius: 5px;
+	padding: 20px;
+	outline: none;
+  }
+
+  .contacts__content .contacts__form textarea {
+	height: 100%;
+	min-height: 118px;
+	resize: none;
+  }
+  .contacts__form__input-block {
+	flex: 0 0 auto;
+  }
+
+  .contacts__form__input-block.message {
+	flex: 1 0 auto;
+  }
+
+  .contacts__form__input-block {
+	position: relative;
+  }
+
+  .contacts__form__lable {
+	position: absolute;
+    top: -12px;
+    z-index: 1;
+    left: 10px;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 23px;
+    height: 23px;
+  }
+
+ .contacts__form__btn {
+	color: white;
+	background-color: #4B6D74;
+	font-weight: 500;
+	font-size: 17px;
+ }
+
+ @media (max-width: 768px) {
+	.contacts__content__left {
+	  min-width: auto;
+	  width: 100%;
+	  padding: 0;
+	}
+
+	.contacts__list.main {
+		font-size: 18px;
+	} 
 
   }
 
