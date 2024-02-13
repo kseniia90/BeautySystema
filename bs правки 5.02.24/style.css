@@ -665,14 +665,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	  font-size: 12px;
 	}
   }
-
-  ol.breadcrumb li:last-child {
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
   
   .breadcrumb-item + .breadcrumb-item::before {
 	display: inline-block;
