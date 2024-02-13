@@ -1050,7 +1050,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	top: 46px;
 	right: 50%;
 	transform: translate(50%, 0%);
-	width: 360px;
+	/* width: 360px; */
 	background: white;
 	border-radius: 0px 0px 15px 15px;
 	padding: 20px;
@@ -1071,7 +1071,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .header__submenu__list li {
 	width: 100%;
 	transition: all 0.3s ease;
-	white-space: normal;
+	/* white-space: normal; */
+	white-space: nowrap;
   }
   .header__submenu__list li:not(:last-child) {
 	margin-bottom: 7px;
@@ -1110,9 +1111,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .header .header__second-submenu__list {
 	display: none;
   }
+
   .header .header__second-submenu__list.open {
 	color: #213235;
+	padding-left: 15px;
   }
+
+  .header__second-submenu__list li:not(:last-child) {
+	margin-bottom: 3px;
+  }
+
+
   .header .has-submenu .submenu__arrow {
 	display: inline-block;
   }
@@ -2724,6 +2733,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   .product-page__content .subtitle16 {
 	margin: 15px 0;
   }
+
+  .product-page__content .description h1,
+  .product-page__content .description h2 {
+	margin: 15px 0;
+  }
+
+  .product-page__content .description p {
+	margin: 10px 0;
+  }
+
   .product-page__content .description ul li {
 	position: relative;
 	padding-left: 20px;
