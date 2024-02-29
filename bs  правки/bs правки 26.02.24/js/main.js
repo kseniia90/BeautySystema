@@ -146,12 +146,11 @@ $(function () {
     $(e.target).find(".owl-item:not(.active)").addClass("opacity");
   }
 
-  //sliders new & popular & user  preference
-  $(".new-carousel, .popular-carousel, .preference-carousel").owlCarousel({
+  //sliders new & popular
+  $(".new-carousel, .popular-carousel").owlCarousel({
     dots: true,
     nav: true,
-    loop: false,
-    mouseDrag:false,
+    loop: true,
     onInitialized: function (e) {
       setTimeout(fadeSlides, 100, e);
     },
@@ -181,6 +180,44 @@ $(function () {
         center: false,
         autoWidth: false,
         margin: 30,
+      },
+    },
+  });
+
+  // user  preference  caorusel
+  $(".preference-carousel").owlCarousel({
+    dots: true,
+    nav: true,
+    loop: true,
+    onInitialized: function (e) {
+      setTimeout(fadeSlides, 100, e);
+    },
+    onTranslated: fadeSlides,
+    onResized: fadeSlides,
+    onRefresh: fadeSlides,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+        autoWidth: true,
+        margin: 15,
+      },
+      360: {
+        items: 2,
+        center: false,
+        autoWidth: false,
+        margin: 15,
+      },
+      500: {
+        center: false,
+        autoWidth: true,
+        margin: 20,
+      },
+      1200: {
+        items: 5,
+        center: false,
+        autoWidth: false,
+        margin: 22,
       },
     },
   });
@@ -295,27 +332,27 @@ $(function () {
 
   // shopping cart counter on click
 
-  // $(document).ready(function () {
-  //   $(".minus").click(function () {
-  //     var $input = $(this).parent().find("input");
-  //     var count = parseInt($input.val()) - 1;
-  //     count = count < 1 ? 1 : count;
-  //     $input.val(count);
-  //     $input.change();
-  //     return false;
-  //   });
-  //   $(".plus").click(function () {
-  //     var $input = $(this).parent().find("input");
-  //     $input.val(parseInt($input.val()) + 1);
-  //     $input.change();
-  //     return false;
-  //   });
+  $(document).ready(function () {
+    $(".minus").click(function () {
+      var $input = $(this).parent().find("input");
+      var count = parseInt($input.val()) - 1;
+      count = count < 1 ? 1 : count;
+      $input.val(count);
+      $input.change();
+      return false;
+    });
+    $(".plus").click(function () {
+      var $input = $(this).parent().find("input");
+      $input.val(parseInt($input.val()) + 1);
+      $input.change();
+      return false;
+    });
 
-  //   // show all products on mobile
-  //   $(".products-show-more").on("click", function () {
-  //     $(".products__result__item").toggleClass("showContent");
-  //   });
-  // });
+    // show all products on mobile
+    $(".products-show-more").on("click", function () {
+      $(".products__result__item").toggleClass("showContent");
+    });
+  });
 });
 
 // filter check square
@@ -506,20 +543,21 @@ if (document.querySelector(".order_form_popup") !== null) {
     });
 }
 
-// forget-password popup 
+// authorization popup 
 
 if (document.querySelector(".authorization-popup") !== null) {
-  document.querySelectorAll(".forget-password-btn").forEach(function (button) {
+  document.querySelectorAll(".icon-user_icon").forEach(function (button) {
     button.addEventListener("click", function (e) {
       e.preventDefault();
-      document.querySelector(".sign-in__content").classList.add("hide");
-      document.querySelector(".remind-password__content").classList.add("active");
+      document.body.style.overflow = "hidden";
+      document.querySelector(".authorization-popup").classList.add("active");
     });
   });
- 
+  document
+    .querySelector(".authorization-popup-content")
+    .addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
 }
-
-
-
 
 
