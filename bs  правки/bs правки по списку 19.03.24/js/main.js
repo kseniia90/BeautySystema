@@ -70,7 +70,8 @@ function dropDownFunc(dropDown) {
       }
     }
     // close the dropdown on mouse out from the dropdown list
-    document.querySelectorAll(".header__submenu__list")
+    document
+      .querySelectorAll(".header__submenu__list")
       .forEach(function (dropDownList) {
         // close the dropdown after user leave the list
         dropDownList.onmouseleave = closeDropdown;

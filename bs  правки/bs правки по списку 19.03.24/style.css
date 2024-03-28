@@ -460,47 +460,47 @@ ul {
   	color: #4b6d74;
 }
 
-.icon-favorite_icon::before {
+.icon-favorite_icon:before {
 	content: "\e901";
 }
 
-.icon-search_icon::before {
+.icon-search_icon:before {
 	content: "\e902";
 }
 
-.icon-shopping_cart_icon::before {
+.icon-shopping_cart_icon:before {
 	content: "\e903";
 }
 
-.icon-search::before {
+.icon-search:before {
 	content: "\e986";
 }
 
-.icon-chat_icon::before {
+.icon-chat_icon:before {
 	content: "\e910";
 }
 
-.icon-arrow-pointer-solid::before {
+.icon-arrow-pointer-solid:before {
 	content: "\e911";
 }
 
-.icon-contacts_tg::before {
+.icon-contacts_tg:before {
 	content: "\e912";
 }
 
-.icon-contacts_phone::before {
+.icon-contacts_phone:before {
 	content: "\e913";
 }
 
-.icon-contacts_letter::before {
+.icon-contacts_letter:before {
 	content: "\e914";
 }
 
-.icon-contacts_insta::before {
+.icon-contacts_insta:before {
 	content: "\e915";
 }
 
-.icon-contacts_fb::before {
+.icon-contacts_fb:before {
 	content: "\e916";
 }
 
@@ -2026,7 +2026,7 @@ ol.breadcrumb li:last-child {
 .product__card .icon-favorite_icon::before {
 	padding-top: 2px;
 	padding-left: 2px;
-	font-size: 20px;
+	display: none;
 }
 
 @media (min-width: 769px) {
@@ -2077,7 +2077,7 @@ ol.breadcrumb li:last-child {
 	}
 }
 
-.product__card__img.out-of-stock img {
+.product__card__img.out-of-stock {
 	/* Safari 6.0 - 9.0 */
 	filter: grayscale(100%);
 }
@@ -3964,12 +3964,11 @@ ol.breadcrumb li:last-child {
 	border-radius: 50%;
 	font-size: 28px;
 	transition: all 0.3s ease;
-	cursor: pointer;
 }
 
 .product-page__content__img .icon-favorite_icon::before {
 	padding-top: 4px;
-	margin-right: -2px;
+	display: none;
 }
 
 @media (min-width: 769px) {
@@ -6010,7 +6009,7 @@ table.woocommerce-table--order-details tbody tr:first-of-type td {
 
 
 .woocommerce-customer-details address {
-	border: none !important;
+	border: none;
 }
 
 
@@ -6024,7 +6023,7 @@ table.woocommerce-orders-table.woocommerce-MyAccount-orders td {
     min-height: 26px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
 	table.woocommerce-orders-table.woocommerce-MyAccount-orders tr td {
 		border: none;
 	}
