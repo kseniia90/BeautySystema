@@ -2183,7 +2183,6 @@ ol.breadcrumb li:last-child {
 	outline: none;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	text-align: center;
 	width: 100%;
 }
 
@@ -2574,7 +2573,6 @@ ol.breadcrumb li:last-child {
 
 .review-carousel .item {
 	max-width: 370px;
-	min-width: 369px;
 	height: 100%;
 }
 
@@ -2582,7 +2580,6 @@ ol.breadcrumb li:last-child {
 
 	.review-carousel .item {
 		max-width: 320px;
-		min-width: 319px;
 	}
 }
 
@@ -2660,11 +2657,6 @@ ol.breadcrumb li:last-child {
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 600;
-	display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 
