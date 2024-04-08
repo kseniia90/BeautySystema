@@ -79,7 +79,7 @@ function dropDownFunc(dropDown) {
       listItem.onmouseleave = function() {
         dropdownCloseTimeout = setTimeout(function() {
           closeDropdown();
-        }, 300);
+        }, 200);
       }
     });
     document
@@ -335,29 +335,6 @@ $(function () {
   });
   //END
 
-  // shopping cart counter on click
-
-  // $(document).ready(function () {
-  //   $(".minus").click(function () {
-  //     var $input = $(this).parent().find("input");
-  //     var count = parseInt($input.val()) - 1;
-  //     count = count < 1 ? 1 : count;
-  //     $input.val(count);
-  //     $input.change();
-  //     return false;
-  //   });
-  //   $(".plus").click(function () {
-  //     var $input = $(this).parent().find("input");
-  //     $input.val(parseInt($input.val()) + 1);
-  //     $input.change();
-  //     return false;
-  //   });
-
-  //   // show all products on mobile
-  //   $(".products-show-more").on("click", function () {
-  //     $(".products__result__item").toggleClass("showContent");
-  //   });
-  // });
 });
 
 // filter check square
@@ -627,6 +604,49 @@ $('.page_content_text-hide-text').showMore({
 });
 
 //show more-less end
+
+// mini-cart dropDown
+
+let dropdownMiniCartTimeout;
+
+document.querySelector('.header__main__list__item-cart').addEventListener("mouseover", function () {
+  if (window.innerWidth > 900) {
+    this.classList.add("dropdown-open");
+    this.querySelector(".mini-cart-body").classList.add("dropdown-active");
+    clearTimeout(dropdownMiniCartTimeout);
+  }
+});
+
+document.querySelector('.header__main__list__item-cart').addEventListener("mouseout", function () {
+  if (window.innerWidth > 900) {
+    dropdownMiniCartTimeout = setTimeout(function () {
+      closeDropdownMiniCart();
+    }, 400);
+  }
+});
+
+document.querySelector('.mini-cart-dropdown-link').addEventListener("click", function () {
+  if (window.innerWidth <= 900) {
+    document.querySelector('.header__main__list__item-cart').classList.toggle("dropdown-open");
+    document.querySelector('.mini-cart-body').classList.toggle("dropdown-active");
+  }
+});
+
+window.onclick = function(e) {
+  if (window.innerWidth <= 900) {
+    if (!e.target.closest('.mini-cart-body') && !e.target.closest('.mini-cart-dropdown-link')) {
+      closeDropdownMiniCart();
+    }
+  }
+}
+
+function closeDropdownMiniCart() {
+  document.querySelector('.header__main__list__item-cart').classList.remove("dropdown-open");
+  document.querySelector('.mini-cart-body').classList.remove("dropdown-active");
+  clearTimeout(dropdownMiniCartTimeout);
+}
+
+
 
 
 
