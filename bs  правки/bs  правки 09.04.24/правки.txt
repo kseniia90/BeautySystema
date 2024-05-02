@@ -1,0 +1,42 @@
+1. Вибір Яни: нижче тонким шрифтом додати текст:
+
+    <div class="block_new__title container">
+        <h2 class="title">Вибір Яни</h2>
+        <p>Особистий догляд фаундерки Beauty Systema</p> 
+    </div>
+
+2. В футері телефон змінити на телеграм. 
+    <a  target="_blank" href="https://t.me/beauty_systema">
+        <span class="icon-contacts_tg"></span>
+    </a>
+
+
+3. На головній сторінці в каруселі відгуків замінити структуру блоку review__title:
+
+    <div class="review__title">
+        <div class="review_stars">
+            <div class="review_star"></div>
+            <div class="review_star"></div>
+            <div class="review_star"></div>
+            <div class="review_star"></div>
+            <div class="review_star"></div>
+        </div>
+        <div class="review__row">
+            <p class="review_user_name">Viktoriia</p>
+            <span class="review_time">16.05.2023</span>
+        </div>
+    </div>
+
+4. wish List : коли додаєш позиції, зробити щоб він ставав червоним:
+    4.1 <a> додати клас .favorite і в <a> помістити <span class="icon-favorite_label"></span>
+    4.2 якщо товар додається в обране -  тегу a.favorite додавати клас .has-items
+    Приклад:
+    <a href="https://www.dev.beauty-systema.com/wishlist/" class="favorite has-items">
+        <span class="icon-favorite_icon"></span>
+        <span class="icon-favorite_label"></span>
+        <div class="header__counter favorite__counter">
+            <span class="header__counter__value favorite__counter__value">3</span>
+        </div>
+    </a>
+
+    

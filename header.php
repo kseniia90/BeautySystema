@@ -42,19 +42,29 @@ require_once('module/top_menu.php');
                         ?>
                     </li>
                     <li class="header__main__list__item">
-                        <a href="<?php the_field('page_favorit', 'setting_site')?>">
+                        <a href="<?php the_field('page_favorit', 'setting_site')?>" class="favorite <?php echo(get_wishlist_item_count() ? "has-items" : "")?>>
                             <span class="icon-favorite_icon"></span>
+                            <span class="icon-favorite_label"></span>
                             <div class="header__counter favorite__counter">
-                                <span class="header__counter__value favorite__counter__value"><?php echo(YITH_WCWL()->count_products())?></span>
+                                <span class="header__counter__value favorite__counter__value"><?php echo(get_wishlist_item_count())?></span>
                             </div>
                         </a>
+
+                        <a href="https://www.dev.beauty-systema.com/wishlist/" class="favorite has-items">
+                            <span class="icon-favorite_icon"></span>
+                            <span class="icon-favorite_label"></span>
+                            <div class="header__counter favorite__counter">
+                                <span class="header__counter__value favorite__counter__value">3</span>
+                            </div>
+                        </a>
+
                     </li>
                 </ul>
             </div>
             <div class="consultation-tg-link">
                 <a target="_blank" href="https://t.me/<?php the_field('chat_btn_link_accaunt','setting_site')?>">
                     <span class="icon-contacts_tg" style="font-size: 18px;"></span>
-                    <span><?php _e('Консультація телеграм', 'beautysystema')?></span>
+                    <span><?php _e('Консультація подружок Beauty systema', 'beautysystema')?></span>
                 </a>
             </div>
             <div class="header__main__logo">
@@ -66,12 +76,20 @@ require_once('module/top_menu.php');
                 </nav>
                 <ul class="header__main__list">
                     <li class="header__main__list__item hide-on-mobile">
-                        <a href="<?php the_field('page_favorit', 'setting_site')?>">
+                        <a href="<?php the_field('page_favorit', 'setting_site')?>" class="favorite <?php echo(get_wishlist_item_count() ? "has-items" : "")?>">
                             <span class="icon-favorite_icon"></span>
+                            <span class="icon-favorite_label"></span>
                             <div class="header__counter favorite__counter">
-                                <span class="header__counter__value favorite__counter__value"><?php echo(YITH_WCWL()->count_products())?></span>
+                                <span class="header__counter__value favorite__counter__value"><?php echo(get_wishlist_item_count())?></span>
                             </div>
                         </a>
+                        <!-- <a href="https://www.dev.beauty-systema.com/wishlist/" class="favorite has-items">
+                            <span class="icon-favorite_icon"></span>
+                            <span class="icon-favorite_label"></span>
+                            <div class="header__counter favorite__counter">
+                                <span class="header__counter__value favorite__counter__value">3</span>
+                            </div>
+                        </a> -->
                     </li>
                     <li class="header__main__list__item hide-on-mobile">
                         <?php
@@ -86,8 +104,8 @@ require_once('module/top_menu.php');
 							}
                         ?>
                     </li>
-                    <li class="header__main__list__item">
-                        <a href="<?php the_field('page_cart', 'setting_site')?>">
+                    <li class="header__main__list__item header__main__list__item-cart">
+                        <a href="<?php the_field('page_cart', 'setting_site')?>" class="mini-cart-dropdown-link">
                             <span class="icon-shopping_cart_icon"></span>
                             <div class="header__counter shopping_cart__counter">
                                 <span class="header__counter__value shopping_cart__counter__value">
@@ -98,6 +116,38 @@ require_once('module/top_menu.php');
                                 </span>
                             </div>
                         </a>
+                         <div class="mini-cart-body"> <!--empty -->
+                            <ul class="mini-cart-list">
+                                <li class="mini-cart-list__item">
+                                    <a href="#" class="mini-cart-list__item-product">
+                                        <img width="70" height="70" src="./img/popular_2.png" class="product-image" alt="">
+                                        <span>Очищуючий гель для проблемної шкіри Acnemy ZITCLEAN</span>
+                                    </a>
+                                    <div class="mini-cart-list__item-product__total">
+                                        <span class="mini-cart-list__item-product-quantity">1</span><span>×</span>
+                                        <span class="mini-cart-list__item-product-amount">756.00</span><span>₴</span>
+                                    </div>
+                                    <a href="#"class="mini-cart-list__item-product__remove">
+                                        <span class="icon-Close"></span>
+                                    </a>
+                                </li>                                
+                            </ul>
+                            <p class="mini-cart__total">
+                                <strong>Разом:</strong> 
+                                <span class="mini-cart__total-amount">1,064&nbsp;</span><span>₴</span>
+                            </p>
+                            <div class="mini-cart__buttons">
+                                <a href="#" class="mini-cart__button">
+                                    <span>Переглянути кошик</span>
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                                <a href="#" class="mini-cart__button">
+                                    <span>Оформлення замовлення</span>
+                                    <span class="icon-right-arrow"></span>
+                                </a>
+                            </div>
+                            <!-- <p class="mini-cart__empty-message">Немає товарів у кошику</p> -->
+                        </div>
                     </li>
                     <li class="header__main__list__item burger-menu">
                         <div class="burger-menu-btn">
