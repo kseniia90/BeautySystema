@@ -611,25 +611,49 @@ $('.page_content_text-hide-text').showMore({
 
 //show more-less end
 
-// mini-cart start
+// mini-cart dropDown
 
-if (document.querySelector(".mini-cart-popup") !== null) {
-   
-  document.querySelector('.mini-cart-dropdown-link').addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".mini-cart-popup").classList.add("active");
-    document.body.classList.add("lock");
-  });
+if (document.querySelector(".header__main__list__item-cart") !== null) {
+  let dropdownMiniCartTimeout;
 
-  document.querySelector('.mini-cart-popup__close').addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".mini-cart-popup").classList.remove("active");
-    document.body.classList.remove("lock");
+  document.querySelector('.header__main__list__item-cart').addEventListener("mouseover", function () {
+    if (window.innerWidth > 900) {
+      this.classList.add("dropdown-open");
+      this.querySelector(".mini-cart-body").classList.add("dropdown-active");
+      clearTimeout(dropdownMiniCartTimeout);
+    }
   });
   
+  document.querySelector('.header__main__list__item-cart').addEventListener("mouseout", function () {
+    if (window.innerWidth > 900) {
+      dropdownMiniCartTimeout = setTimeout(function () {
+        closeDropdownMiniCart();
+      }, 400);
+    }
+  });
+  
+  document.querySelector('.mini-cart-dropdown-link').addEventListener("click", function (e) {
+    if (window.innerWidth <= 900) {
+      e.preventDefault();
+      document.querySelector('.header__main__list__item-cart').classList.toggle("dropdown-open");
+      document.querySelector('.mini-cart-body').classList.toggle("dropdown-active");
+    }
+  });
+  
+  window.onclick = function(e) {
+    if (window.innerWidth <= 900) {
+      if (!e.target.closest('.mini-cart-body') && !e.target.closest('.mini-cart-dropdown-link')) {
+        closeDropdownMiniCart();
+      }
+    }
+  }
+  
+  function closeDropdownMiniCart() {
+    document.querySelector('.header__main__list__item-cart').classList.remove("dropdown-open");
+    document.querySelector('.mini-cart-body').classList.remove("dropdown-active");
+    clearTimeout(dropdownMiniCartTimeout);
+  }
 };
-
-// mini-cart end
 
 if (document.querySelector(".back_pg-btn") !== null) {
   document.querySelector('.back_pg-btn').addEventListener("click", function (e) {
