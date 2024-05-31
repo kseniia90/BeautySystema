@@ -616,6 +616,63 @@ function openOption2(evt, optionName) {
 
 //tab 2 on product page end
 
+new Carousel(
+  document.getElementById("productCarousel"),
+  {
+    transition: 'slide',
+    preload: 3, 
+    Dots: false,
+    Thumbs: {
+      type: 'classic',
+      Carousel: {
+        dragFree: false,
+        slidesPerPage: 'auto',
+        Navigation: true,
+        axis: 'x',
+      },
+    },
+  },
+  { Thumbs }
+);
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  compact: false,
+  idle: false,
+  dragToClose: false,
+  contentClick: () =>
+    window.matchMedia('(max-width: 578px), (max-height: 578px)').matches
+      ? 'toggleMax'
+      : 'toggleCover',
+
+  animated: false,
+  showClass: false,
+  hideClass: false,
+
+  Hash: false,
+  Thumbs: false,
+
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: ['close'],
+    },
+  },
+
+  Carousel: {
+    transition: 'fadeFast',
+    preload: 3,
+  },
+
+  Images: {
+    zoom: false,
+    Panzoom: {
+      panMode: 'mousemove',
+      mouseMoveFactor: 1.1,
+    },
+  },
+});
+
 // order_form popup open/close on click
 
 if (document.querySelector(".order_form_popup") !== null) {
