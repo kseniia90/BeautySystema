@@ -172,7 +172,7 @@ require_once('module/top_menu.php');
 						</div>
 					</div>
 					<div class="search-results__button">
-						<a href="#" id="go_to_search" style="display: none;" class="product__card__info__button"><?php _e('Перейти до пошуку', 'beautysystema')?></ы>
+						<a href="#" id="go_to_search" style="display: none;" class="product__card__info__button"><?php _e('Перейти до пошуку', 'beautysystema')?></a>
 					</div>
 				</div>
 			</form>

@@ -1,0 +1,14 @@
+1. mobile menu:
+   1.1  блок .header__nav обгорнути в блок .header__nav-container
+   1.2  в блок .header__nav додати блок юheader__nav__title
+
+
+2. mini cart:
+
+   2.1   блок .shopping-cart__title винести в блок .shopping-cart
+   2.2   замінити ссилку <а class="product__card__info__button btn-continue"> на:
+         <p class="product__card__info__button btn-continue">
+            <span class="icon-right-arrow"></span>
+            <span>Перейти до магазину</span>
+         </p>
+   2.3   додати блок .mini-cart__slider

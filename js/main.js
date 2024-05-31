@@ -1,19 +1,20 @@
 "use strict";
 
 // show menu, dont scroll body while menu is open, close the menu if click happen outside menu
-const menuIcon = document.querySelector(".menu__icon");
-const menuButton = document.querySelector(".catalog-btn");
+// not used?
+// const menuIcon = document.querySelector(".menu__icon");
+// const menuButton = document.querySelector(".catalog-btn");
 
 // Burger-menu: show menu, dont scroll body while menu is open, close the menu if click outside menu
 const burgerMenuIcon = document.querySelector(".burger-menu__icon");
-const burgerMenuBody = document.querySelector(".header__nav");
+const burgerMenuBody = document.querySelector(".header__nav-container");
 
 document.addEventListener("click", function (event) {
   if (event.target.closest(".burger-menu-btn")) {
     document.body.classList.toggle("lock");
     burgerMenuBody.classList.toggle("_active");
     burgerMenuIcon.classList.toggle("_active");
-    document.querySelector(".header__search-block").classList.toggle("hide");
+    // document.querySelector(".header__search-block").classList.toggle("hide");
   }
 });
 
@@ -107,7 +108,9 @@ function dropDownFunc(dropDown) {
 
           // add the open and active class(Opening the DropDown)
           this.parentElement.classList.add("dropdown-open");
-          this.querySelector(".arrow_down").classList.add("rotate");
+          if (!!this.querySelector(".arrow_down")) {
+            this.querySelector(".arrow_down").classList.add("rotate");
+          }
           if (!!this.nextElementSibling) {
             this.nextElementSibling.classList.add("dropdown-active");
           }
@@ -133,10 +136,40 @@ document.querySelectorAll(".header__nav-link > a").forEach(function (dropDown) {
 
 // Listen to the doc click
 window.addEventListener("click", function (e) {
-  // Close the menu if click happen outside menu
-  if (!e.target.closest(".header__nav__list")) {
-    // Close the opend dropdown
-    closeDropdown();
+  if (window.innerWidth > 900) {
+    // Close the menu if click happen outside menu
+    if (!e.target.closest(".header__nav__list")) {
+        // Close the opend dropdown
+        closeDropdown();
+    }
+  } else {
+    // close burger menu
+    if (!e.target.closest(".header__nav-container") && !e.target.classList.contains("burger-menu__icon")) {
+      document.body.classList.remove("lock");
+      burgerMenuBody.classList.remove("_active");
+      burgerMenuIcon.classList.remove("_active");
+
+      this.setTimeout(function() {
+        $(".header__second-submenu__list.open").removeClass("open");
+        $(".header__nav-link.dropdown-open .dropdown-active").removeClass("dropdown-active");
+        $(".header__nav-link.dropdown-open .arrow_down").removeClass("arrow_down");
+        $(".header__nav-link.dropdown-open").removeClass("dropdown-open");
+      }, 400);
+    }
+
+    if (e.target.closest(".header__nav__back")) {
+      if ($(".header__second-submenu__list.open").length) {
+        $(".header__second-submenu__list.open").removeClass("open");
+      } else if ($(".header__nav-link.dropdown-open").length) {
+        $(".header__nav-link.dropdown-open .dropdown-active").removeClass("dropdown-active");
+        $(".header__nav-link.dropdown-open .arrow_down").removeClass("arrow_down");
+        $(".header__nav-link.dropdown-open").removeClass("dropdown-open");
+      } else {
+        document.body.classList.remove("lock");
+        burgerMenuBody.classList.remove("_active");
+        burgerMenuIcon.classList.remove("_active");
+      }
+    }
   }
 });
 
@@ -161,16 +194,23 @@ function closeDropdown() {
 $(".has-submenu > a").click(function (e) {
   e.preventDefault();
   if (!$(this).siblings(".header__second-submenu__list").hasClass("open")) {
-    $(".header__second-submenu__list").removeClass("open").slideUp();
+    $(".header__second-submenu__list").removeClass("open");
+    if (window.innerWidth > 900) {
+      $(".header__second-submenu__list").slideUp();
+    }
     $(this)
       .siblings(".header__second-submenu__list")
-      .addClass("open")
-      .slideDown();
+      .addClass("open");
+    if (window.innerWidth > 900) {
+      $(this).siblings(".header__second-submenu__list").slideDown();
+    }
   } else {
     $(this)
       .siblings(".header__second-submenu__list")
-      .removeClass("open")
-      .slideUp();
+      .removeClass("open");
+    if (window.innerWidth > 900) {
+      $(this).siblings(".header__second-submenu__list").slideUp();
+    }
   }
 });
 
@@ -267,6 +307,57 @@ $(function () {
       },
     },
   });
+
+  //mini-cart popular 
+  // $(".mini-cart-carousel").owlCarousel({
+  //   loop: true,
+  //   mouseDrag:false,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //       center: true,
+  //     },
+  //     340: {
+  //       dots: true,
+  //       nav: false,
+  //       autoWidth: true,
+  //       margin: 10,
+  //     },
+  //     767: {
+  //       dots: false,
+  //       items: 4,
+  //       nav: true,
+  //       autoWidth: false,
+  //       margin: 15,
+  //     },
+  //   },
+  // });
+
+  // about us caorusel
+  $(".about-us-carousel").owlCarousel({
+    dots: true,
+    nav: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+        autoWidth: false,
+      },
+      500: {
+        center: false,
+        autoWidth: true,
+        margin: 10,
+      },
+      1200: {
+        items: 3,
+        center: false,
+        autoWidth: false,
+        margin: 30,
+      },
+    },
+  });
+
   // END
 
   //BEGIN footer accordion
@@ -501,6 +592,30 @@ function openOption(evt, optionName) {
 
 // tab on product-page END
 
+
+//tab 2 on product page start
+
+function openOption2(evt, optionName) {
+
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(optionName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+}
+
+//tab 2 on product page end
+
 // order_form popup open/close on click
 
 if (document.querySelector(".order_form_popup") !== null) {
@@ -557,7 +672,7 @@ $.fn.showMore = function (options) {
       var currentid = '';
       var element = $(this);
       var auto = parseInt(element.innerHeight())/2;
-      var fullheight = element.innerHeight();
+      var fullheight = element.innerHeight() + 40;
       var maxWidth = element.css('width');
       var settings = $.extend({
           minheight: auto,
@@ -584,6 +699,7 @@ $.fn.showMore = function (options) {
                           element.css('height', settings.minheight).css('max-height', '').animate({height:fullheight}, settings.animationspeed, function () { showMoreButton.html(settings.buttontxtless); });
                       } else {
                           element.animate({height:settings.minheight}, settings.animationspeed, function () { showMoreButton.html(settings.buttontxtmore); element.css('max-height', settings.minheight); });
+                          console.log("scsdv");
                       }
                   },
                   html: settings.buttontxtmore
@@ -603,11 +719,21 @@ $.fn.showMore = function (options) {
   
 };
 
-$('.page_content_text-hide-text').showMore({
-  minheight: 205,
-  buttontxtmore: "Читати повністю",
-  buttontxtless: "Приховати",
+$( document ).ready(function() {
+  $('.page_content_text-hide-text').showMore({
+    minheight: 205,
+    buttontxtmore: "Читати повністю",
+    buttontxtless: "Приховати",
+  });
+  
+  $('.description-hide-text').showMore({
+    minheight: 160,
+    buttontxtmore: "Читати повністю",
+    buttontxtless: "Приховати",
+  });
 });
+
+
 
 //show more-less end
 
@@ -618,15 +744,35 @@ if (document.querySelector(".mini-cart-popup") !== null) {
   document.querySelector('.mini-cart-dropdown-link').addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".mini-cart-popup").classList.add("active");
-    document.body.classList.add("lock");
+    document.body.classList.add("_lock");
   });
 
-  document.querySelector('.mini-cart-popup__close').addEventListener("click", function (e) {
+  window.addEventListener("click", function (e) {
+    if(e.target.closest('.mini-cart-popup__close') || e.target.closest('.mini-cart-popup .btn-continue')) {
+      e.preventDefault();
+      document.querySelector(".mini-cart-popup").classList.remove("active");
+      document.body.classList.remove("_lock");
+    }
+
+    if (document.querySelector(".mini-cart-popup.active") && !e.target.closest('.mini-cart-popup-content') && !e.target.closest('.mini-cart-dropdown-link')) {
+      document.querySelector(".mini-cart-popup").classList.remove("active");
+      document.body.classList.remove("_lock");
+    }
+  }); 
+
+  document.querySelector('.add-coupon').addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(".mini-cart-popup").classList.remove("active");
-    document.body.classList.remove("lock");
+    document.querySelector(".coupon-add-form").classList.add("active");
+    document.querySelector(".add-coupon").classList.add("hide");
   });
-  
+
+  document.querySelector('.coupon-remove').addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".coupon-add-form").classList.remove("active");
+    document.querySelector(".add-coupon").classList.remove("hide");
+  });
+
+
 };
 
 // mini-cart end
