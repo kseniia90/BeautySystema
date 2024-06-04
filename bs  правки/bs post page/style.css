@@ -746,7 +746,7 @@ h3 {
 
 .breadcrumb {
 	margin-top: 40px;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	overflow-x: auto;
 	padding-bottom: 5px;
 	display: flex;
@@ -4299,8 +4299,7 @@ ol.breadcrumb li:last-child {
 	top: 15px;
 }
 
-.product-page__content__carousel .icon-favorite_icon,
-.product-page__content__img .icon-favorite_icon {
+.product-page__content__carousel .icon-favorite_icon {
 	position: absolute;
 	right: 15px;
 	top: 15px;
@@ -4318,24 +4317,21 @@ ol.breadcrumb li:last-child {
 	cursor: pointer;
 }
 
-.product-page__content__carousel .icon-favorite_icon::before,
-.product-page__content__img .icon-favorite_icon::before {
+.product-page__content__carousel .icon-favorite_icon::before {
 	padding-top: 4px;
 	margin-right: -2px;
 }
 
 @media (min-width: 769px) {
 
-	.product-page__content__carousel .icon-favorite_icon:hover,
-	.product-page__content__img .icon-favorite_icon:hover {
+	.product-page__content__carousel .icon-favorite_icon:hover {
 		color: white;
 		background-color: #4B6D74;
 	}
 	
 }
 
-.product-page__content__carousel .icon-favorite_icon.active,
-.product-page__content__img .icon-favorite_icon.active{
+.product-page__content__carousel .icon-favorite_icon.active {
 	color: white;
 	background-color: #4B6D74;
 }
@@ -8273,10 +8269,6 @@ button.openSocial-sft:after{
 	}
 }
 
-.useful-info .title {
-	font-size: 31px;
-}
-
 .useful-info__content {
 	display: flex;
 	justify-content: stretch;
@@ -8298,7 +8290,6 @@ button.openSocial-sft:after{
 
 .useful-info__card {
 	max-width: 370px;
-	min-width: 369px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -8323,7 +8314,6 @@ button.openSocial-sft:after{
 }
 
 .useful-info__card-content {
-	width: 100%;
 	flex: 1 0 auto;
 	padding: 15px 10px 20px;
 	font-size: 14px;
@@ -8416,7 +8406,6 @@ button.openSocial-sft:after{
 /* Корисна інфорамація end*/
 
 /* Wayforpay start*/
-
 
 .wayforpay__content {
 	margin-top: 30px;
@@ -8589,10 +8578,6 @@ button.openSocial-sft:after{
 	border-radius: 20px;
 }
 
-.post-page__content.page_content_text img {
-	width: 100%;
-}
-
 
 @media (max-width: 768px) {
 	.post-page-top {
@@ -8609,46 +8594,4 @@ button.openSocial-sft:after{
 		border-radius: 10px;
 	}
 }
-
-.wayforpay,
-.about-us,
-.post-page {
-	margin-top: 40px;
-}
-
-.posts-block .useful-info__card {
-	gap: 10px;
-}
-
-.posts-block .useful-info__card img {
-	width: 150px !important;
-	height: 150px;
-}
-
-.posts-block .useful-info__card-content {
-	padding: 0;
-	height: 100%;
-	padding-right: 10px;
-}
-
-.posts-block .useful-info__card-content-top {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 10px;
-}
-
-.posts-block .useful-info__card-content-top .post-data {
-	align-self: end;
-}
-
-.posts-block .useful-info__descr {
-	display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 /* Post page end*/

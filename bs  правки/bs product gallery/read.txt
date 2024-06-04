@@ -1,0 +1,349 @@
+1. На головній: <a href="" class="title">Вибір Яни</a> 
+
+2.MINA CART:
+    2.1 додати блок .shopping-cart__table__coupon
+    2.2 додати блок .min-order
+
+<div class="shopping-cart-products">
+    <div class="shopping-cart__body">
+        <div class="shopping-cart__table">
+            <div class="shopping-cart__table__head">  Без змін </div>
+            <div class="shopping-cart__table__body">  Без змін </div>
+
+            <div class="shopping-cart__table__coupon">
+                <div class="shopping-cart__table__row">
+                    <div class="shopping-cart__col shopping-cart__img"></div>
+                    <div class="shopping-cart__col shopping-cart__name">
+                        <p class="add-coupon">Є купон зі знижкою? </p>
+                        <div class="coupon-add-form">
+                            <form action="#">
+                                <div class="coupon-add-intut-block" >
+                                    <input type="text" placeholder="код купона..." />
+                                    <div class="coupon-remove"><span class="icon-Close"></span></div>
+                                </div>
+                                <button class="coupon-add-form-btn"><span class="icon-right-arrow"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="shopping-cart__col shopping-cart__price"></div>
+                    <div class="shopping-cart__col shopping-cart__quantity"></div>
+                    <div id="total_cart" class="shopping-cart__col shopping-cart__total"></div>
+                    <div class="shopping-cart__col shopping-cart__delete"></div>
+                </div>
+            </div>
+
+            <div class="shopping-cart__table__footer"> Без змін </div>
+
+        </div>
+    </div>
+
+    <p class="min-order">*Мінімальне замовлення: <span>XXXX</span>&nbsp; ₴</p>
+
+    <div class="shopping-cart__checkout">  Без змін </div>
+</div>
+
+3. Cторінка продукту 
+   3.1 таб Склад:
+    <div id="composition" class="tabcontent composition">
+        <p>.. Без змін .</p>
+        <p class="notification">* - може містити сліди кажанів, горіхів, метеликів</p>
+    </div>
+
+    3.2 Fancybox:
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    3.3 Додати блоки:
+        3.3.1 блок .product-page__content__carousel, в ньому:
+                    старі блок .product__card__lables-block і .icon-favorite_icon (лейби і сердечко)
+                    новий блок  .f-carousel (карусель галереї фото товару)
+        
+        3.3.2 блок .product-page__content__tab tab2 desktop 
+
+        3.3.3 блок  .product-page__content__tab tab2 tablet container
+
+        3.3.4 блок  .product-page__accordion tab2-mobile container
+
+        <div class="product-page__content container">
+            <div class="product-page__content__left ">
+                
+                <div class="product-page__content__carousel">
+                    <div class="product__card__lables-block">
+                        <div class="product__card__lable sale">Розпродаж</div>
+                        <div class="product__card__lable new">
+                            <span class="icon-new_label icon"></span>
+                            <span>Новинка</span>
+                        </div>
+                        <div class="product__card__lable popular">
+                            <span class="icon-popular_label icon"></span>
+                            <span>Популярний засіб</span>
+                        </div>
+                        <div class="product__card__lable favorite">
+                            <span class="icon-favorite_label icon"></span>
+                            <span>Вибір Яни</span>
+                        </div>
+                        <div class="product__card__lable waiting">
+                            <span class="icon-waiting_label icon"></span>
+                            <span>Очікуємо</span>
+                        </div>
+                        <div class="product__card__lable discount">
+                            <span class="icon-discount_label icon"></span>
+                            <span>Акція</span>
+                        </div>
+                    </div>
+                    <span class="icon-favorite_icon active"></span>
+
+                    <div id="productCarousel" class="f-carousel">
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="./img/l3h5l49r8wxp.jpg.webp"
+                        data-fancybox="gallery"
+                        data-src="./img/l3h5l49r8wxp.jpg.webp"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="./img/l3h5l49r8wxp.jpg.webp"
+                        />
+                        </div>
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="https://fancyapps.com/img/dress_1_s.jpg"
+                        data-fancybox="gallery"
+                        data-src="https://fancyapps.com/img/dress_1_b.jpg"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="https://fancyapps.com/img/dress_1_m.jpg"
+                        />
+                        </div>
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="https://fancyapps.com/img/dress_2_s.jpg"
+                        data-fancybox="gallery"
+                        data-src="https://fancyapps.com/img/dress_2_b.jpg"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="https://fancyapps.com/img/dress_2_m.jpg"
+                        />
+                        </div>
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="https://fancyapps.com/img/dress_3_s.jpg"
+                        data-fancybox="gallery"
+                        data-src="https://fancyapps.com/img/dress_3_b.jpg"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="https://fancyapps.com/img/dress_3_m.jpg"
+                        />
+                        </div>
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="https://fancyapps.com/img/dress_4_s.jpg"
+                        data-fancybox="gallery"
+                        data-src="https://fancyapps.com/img/dress_4_b.jpg"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="https://fancyapps.com/img/dress_4_m.jpg"
+                        />
+                        </div>
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="https://fancyapps.com/img/dress_5_s.jpg"
+                        data-fancybox="gallery"
+                        data-src="https://fancyapps.com/img/dress_5_b.jpg"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="https://fancyapps.com/img/dress_5_m.jpg"
+                        />
+                        </div>
+                        <div
+                        class="f-carousel__slide"
+                        data-thumb-src="https://fancyapps.com/img/dress_6_s.jpg"
+                        data-fancybox="gallery"
+                        data-src="https://fancyapps.com/img/dress_6_b.jpg"
+                        >
+                        <img
+                            alt=""
+                            data-lazy-src="https://fancyapps.com/img/dress_6_m.jpg"
+                        />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-page__content__tab tab2 desktop">
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks2 active" id="defaultOpen" onclick="openOption2(event, 'delivery')">Доставка</button>
+                        <button class="tablinks2" onclick="openOption2(event, 'payment')">Оплата</button>
+                        <button class="tablinks2" onclick="openOption2(event, 'certificates')">Сертифікати</button>
+                    </div>
+                
+                    <!-- Tab content -->
+                    <div id="delivery" class="tabcontent2 delivery" style="display: block;">
+                        <p>
+                            Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                            вами
+                            електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                            можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                            «Нової
+                            пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                            рахунок!*
+                        </p>
+                        <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                            замовленні товару зі знижкою або купона на знижку!</p>
+                    </div>
+                
+                    <div id="payment" class="tabcontent2">
+                        <p>
+                            Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                            вами
+                            
+                        </p>
+                        <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                            замовленні товару зі знижкою або купона на знижку!</p>
+                    </div>
+                
+                    <div id="certificates" class="tabcontent2 reviews">
+                        <p>
+                            Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                            вами
+                            електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                            можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                            «Нової
+                            електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                            можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                            «Нової
+                            пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                            рахунок!*
+                        </p>
+                        <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                            замовленні товару зі знижкою або купона на знижку!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-page__content__right"> Без змін </div>
+        </div>
+        <div class="product-page__content__tab tab2 tablet container">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks2 active" id="defaultOpen" onclick="openOption2(event, 'delivery')">Доставка</button>
+                <button class="tablinks2" onclick="openOption2(event, 'payment')">Оплата</button>
+                <button class="tablinks2" onclick="openOption2(event, 'certificates')">Сертифікати</button>
+            </div>
+        
+            <!-- Tab content -->
+            <div id="delivery" class="tabcontent2 delivery" style="display: block;">
+                <p>
+                    Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                    вами
+                    електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                    можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                    «Нової
+                    пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                    рахунок!*
+                </p>
+                <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                    замовленні товару зі знижкою або купона на знижку!</p>
+            </div>
+        
+            <div id="payment" class="tabcontent2">
+                <p>
+                    Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                    вами
+                    
+                </p>
+                <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                    замовленні товару зі знижкою або купона на знижку!</p>
+            </div>
+        
+            <div id="certificates" class="tabcontent2 reviews">
+                <p>
+                    Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                    вами
+                    електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                    можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                    «Нової
+                    електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                    можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                    «Нової
+                    пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                    рахунок!*
+                </p>
+                <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                    замовленні товару зі знижкою або купона на знижку!</p>
+            </div>
+        </div>
+        <div class="product-page__accordion tab2-mobile container">
+            <div class="accordion__item">
+                <div class="accordion__title">
+                    <span class="accordion__title-text">Доставка</span>
+                    <div class="accordion__arrow"></div>
+                </div>
+                <div class="accordion__content">
+                    <p>
+                        Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                        вами
+                        електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                        можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                        «Нової
+                        пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                        рахунок!*
+                    </p>
+                    <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                        замовленні товару зі знижкою або купона на знижку!</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">
+                    <span class="accordion__title-text">Оплата</span>
+                    <div class="accordion__arrow"></div>
+                </div>
+                <div class="accordion__content">
+                    <p>
+                        Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                        вами
+                        електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                        можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                        «Нової
+                        пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                        рахунок!*
+                    </p>
+                    <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                        замовленні товару зі знижкою або купона на знижку!</p>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__title">
+                    <span class="accordion__title-text">Сертифікати</span>
+                    <div class="accordion__arrow"></div>
+                </div>
+                <div class="accordion__content">
+                    <p>
+                        Ми довіряємо доставку нашої продукції тільки компанії «Нова пошта». Ми надішлемо номер декларації на зазначену
+                        вами
+                        електронну адресу в день відправки. З актуальним переліком міст, вартістю послуг і термінами доставки ви завжди
+                        можете ознайомитися на сайті компанії: www.novaposhta.ua. Вартість пересилки сплачує отримувач за тарифами
+                        «Нової
+                        пошти» від 30 грн. При замовленні від 4000 грн і 100% передоплати ми раді будемо доставити посилку за свій
+                        рахунок!*
+                    </p>
+                    <p class="notification">* Зверніть увагу, дана акція не дійсна при використанні накопичувальної знижки, наявності у
+                        замовленні товару зі знижкою або купона на знижку!</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
