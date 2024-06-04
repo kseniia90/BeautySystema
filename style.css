@@ -4340,6 +4340,29 @@ ol.breadcrumb li:last-child {
 	background-color: #4B6D74;
 }
 
+/* revove after add gallery start*/
+
+.product-page__content__img {
+    border-radius: 10px;
+    box-shadow: 3px 5px 16px 0px rgba(0, 0, 0, 0.07);
+    position: relative;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.product-page__content__img img {
+	border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 410px;
+}
+
+/* revove after add gallery end*/
+
 .product-page__content__title {
 	color: #4B6D74;
 	font-size: 18px;
