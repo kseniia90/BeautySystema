@@ -1320,7 +1320,8 @@ ol.breadcrumb li:last-child {
 		width: calc(100% - 55px);
 	}
 
-	.header__nav__title h2 {
+	.header__nav__title h2,
+	.header__nav__title span {
 		flex: 1 0 auto;
 		text-align: center;
 		font-size: 20px;
@@ -3241,6 +3242,7 @@ ol.breadcrumb li:last-child {
 	margin: 0;
 	padding: 0;
 	overflow: auto;
+	display: none;
 }
 
 .authorization-popup:before {
@@ -3259,6 +3261,7 @@ ol.breadcrumb li:last-child {
 }
 
 .authorization-popup.active {
+	display: block;
 	opacity: 1;
 	pointer-events: auto;
 	overflow-y: auto;
@@ -3618,6 +3621,11 @@ ol.breadcrumb li:last-child {
 }
 
 @media (max-width: 768px) {
+
+	.categories-title .title {
+		margin-bottom: 40px;
+	}
+
 	.categories-filter__title {
 		font-size: 12px;
 		display: flex;

@@ -713,6 +713,7 @@ if (document.querySelector(".authorization-popup .auth-link") !== null) {
   document.querySelector('.authorization-popup .auth-link').addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".authorization-popup").classList.remove("active");
+    document.body.style.overflow = "visible";
   });
 };
 
