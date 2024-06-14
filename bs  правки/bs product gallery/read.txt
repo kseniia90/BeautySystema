@@ -1,4 +1,4 @@
-1. На головній: <a href="" class="title">Вибір Яни</a> 
+
 
 2.MINA CART:
     2.1 додати блок .shopping-cart__table__coupon

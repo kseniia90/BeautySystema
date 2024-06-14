@@ -271,7 +271,7 @@ $(function () {
   // slider insta
   $(".insta-carousel").owlCarousel({
     dots: false,
-    nav: false,
+    nav: true,
     loop: true,
     autoWidth: true,
     items: 4,
@@ -301,6 +301,43 @@ $(function () {
       },
       1200: {
         items: 3,
+        center: false,
+        autoWidth: false,
+        margin: 30,
+      },
+    },
+  });
+
+  $(".viewed-product-carousel").owlCarousel({
+    dots: true,
+    nav: true,
+    loop: false,
+    mouseDrag:false,
+    onInitialized: function (e) {
+      setTimeout(fadeSlides, 100, e);
+    },
+    onTranslated: fadeSlides,
+    onResized: fadeSlides,
+    onRefresh: fadeSlides,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+        autoWidth: true,
+      },
+      360: {
+        items: 2,
+        center: false,
+        autoWidth: false,
+        margin: 10,
+      },
+      500: {
+        center: false,
+        autoWidth: true,
+        margin: 20,
+      },
+      1200: {
+        items: 4,
         center: false,
         autoWidth: false,
         margin: 30,
@@ -440,149 +477,144 @@ elProperties.forEach((item) => {
 
 // price range slider START
 
-if (!!document.querySelector(".range_container")) {
-  function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
-    const [from, to] = getParsed(fromInput, toInput);
-    fillSlider(fromInput, toInput, "#C6C6C6", "#4B6D74", controlSlider);
-    if (from > to) {
-      fromSlider.value = to;
-      fromInput.value = to;
-    } else {
-      fromSlider.value = from;
-    }
-  }
+// if (!!document.querySelector(".range_container")) {
+//   function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+//     const [from, to] = getParsed(fromInput, toInput);
+//     fillSlider(fromInput, toInput, "#C6C6C6", "#4B6D74", controlSlider);
+//     if (from > to) {
+//       fromSlider.value = to;
+//       fromInput.value = to;
+//     } else {
+//       fromSlider.value = from;
+//     }
+//   }
 
-  function controlToInput(toSlider, fromInput, toInput, controlSlider) {
-    const [from, to] = getParsed(fromInput, toInput);
-    fillSlider(fromInput, toInput, "#C6C6C6", "#4B6D74", controlSlider);
-    setToggleAccessible(toInput);
-    if (from <= to) {
-      toSlider.value = to;
-      toInput.value = to;
-    } else {
-      toInput.value = from;
-    }
-  }
+//   function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+//     const [from, to] = getParsed(fromInput, toInput);
+//     fillSlider(fromInput, toInput, "#C6C6C6", "#4B6D74", controlSlider);
+//     setToggleAccessible(toInput);
+//     if (from <= to) {
+//       toSlider.value = to;
+//       toInput.value = to;
+//     } else {
+//       toInput.value = from;
+//     }
+//   }
 
-  function controlFromSlider(fromSlider, toSlider, fromInput) {
-    const [from, to] = getParsed(fromSlider, toSlider);
-    fillSlider(fromSlider, toSlider, "#C6C6C6", "#4B6D74", toSlider);
-    if (from > to) {
-      fromSlider.value = to;
-      fromInput.value = to;
-    } else {
-      fromInput.value = from;
-    }
-  }
+//   function controlFromSlider(fromSlider, toSlider, fromInput) {
+//     const [from, to] = getParsed(fromSlider, toSlider);
+//     fillSlider(fromSlider, toSlider, "#C6C6C6", "#4B6D74", toSlider);
+//     if (from > to) {
+//       fromSlider.value = to;
+//       fromInput.value = to;
+//     } else {
+//       fromInput.value = from;
+//     }
+//   }
 
-  function controlToSlider(fromSlider, toSlider, toInput) {
-    const [from, to] = getParsed(fromSlider, toSlider);
-    fillSlider(fromSlider, toSlider, "#C6C6C6", "#4B6D74", toSlider);
-    setToggleAccessible(toSlider);
-    if (from <= to) {
-      toSlider.value = to;
-      toInput.value = to;
-    } else {
-      toInput.value = from;
-      toSlider.value = from;
-    }
-  }
+//   function controlToSlider(fromSlider, toSlider, toInput) {
+//     const [from, to] = getParsed(fromSlider, toSlider);
+//     fillSlider(fromSlider, toSlider, "#C6C6C6", "#4B6D74", toSlider);
+//     setToggleAccessible(toSlider);
+//     if (from <= to) {
+//       toSlider.value = to;
+//       toInput.value = to;
+//     } else {
+//       toInput.value = from;
+//       toSlider.value = from;
+//     }
+//   }
 
-  function getParsed(currentFrom, currentTo) {
-    const from = parseInt(currentFrom.value, 10);
-    const to = parseInt(currentTo.value, 10);
-    return [from, to];
-  }
+//   function getParsed(currentFrom, currentTo) {
+//     const from = parseInt(currentFrom.value, 10);
+//     const to = parseInt(currentTo.value, 10);
+//     return [from, to];
+//   }
 
-  function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
-    const rangeDistance = to.max - to.min;
-    const fromPosition = from.value - to.min;
-    const toPosition = to.value - to.min;
-    controlSlider.style.background = `linear-gradient(
-      to right,
-      ${sliderColor} 0%,
-      ${sliderColor} ${(fromPosition / rangeDistance) * 100}%,
-      ${rangeColor} ${(fromPosition / rangeDistance) * 100}%,
-      ${rangeColor} ${(toPosition / rangeDistance) * 100}%, 
-      ${sliderColor} ${(toPosition / rangeDistance) * 100}%, 
-      ${sliderColor} 100%)`;
-  }
+//   function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+//     const rangeDistance = to.max - to.min;
+//     const fromPosition = from.value - to.min;
+//     const toPosition = to.value - to.min;
+//     controlSlider.style.background = `linear-gradient(
+//       to right,
+//       ${sliderColor} 0%,
+//       ${sliderColor} ${(fromPosition / rangeDistance) * 100}%,
+//       ${rangeColor} ${(fromPosition / rangeDistance) * 100}%,
+//       ${rangeColor} ${(toPosition / rangeDistance) * 100}%, 
+//       ${sliderColor} ${(toPosition / rangeDistance) * 100}%, 
+//       ${sliderColor} 100%)`;
+//   }
 
-  function setToggleAccessible(currentTarget) {
-    const toSlider = document.querySelector("#toSlider");
-    if (Number(currentTarget.value) <= 0) {
-      toSlider.style.zIndex = 2;
-    } else {
-      toSlider.style.zIndex = 0;
-    }
-  }
+//   function setToggleAccessible(currentTarget) {
+//     const toSlider = document.querySelector("#toSlider");
+//     if (Number(currentTarget.value) <= 0) {
+//       toSlider.style.zIndex = 2;
+//     } else {
+//       toSlider.style.zIndex = 0;
+//     }
+//   }
 
-  const fromSlider = document.querySelector("#fromSlider");
-  const toSlider = document.querySelector("#toSlider");
-  const fromInput = document.querySelector("#fromInput");
-  const toInput = document.querySelector("#toInput");
-  fillSlider(fromSlider, toSlider, "#C6C6C6", "#4B6D74", toSlider);
-  setToggleAccessible(toSlider);
+//   const fromSlider = document.querySelector("#fromSlider");
+//   const toSlider = document.querySelector("#toSlider");
+//   const fromInput = document.querySelector("#fromInput");
+//   const toInput = document.querySelector("#toInput");
+//   fillSlider(fromSlider, toSlider, "#C6C6C6", "#4B6D74", toSlider);
+//   setToggleAccessible(toSlider);
 
-  fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
-  toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
-  fromInput.oninput = () =>
-    controlFromInput(fromSlider, fromInput, toInput, toSlider);
-  toInput.oninput = () =>
-    controlToInput(toSlider, fromInput, toInput, toSlider);
+//   fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+//   toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+//   fromInput.oninput = () =>
+//     controlFromInput(fromSlider, fromInput, toInput, toSlider);
+//   toInput.oninput = () =>
+//     controlToInput(toSlider, fromInput, toInput, toSlider);
 
-  // value of start filter price
-  const rangeStart = document.getElementById("fromSlider"),
-    rangeStartV = document.getElementById("fromInput"),
-    setStartValue = () => {
-      const newValue = Number(
-          ((rangeStart.value - rangeStart.min) * 100) /
-            (rangeStart.max - rangeStart.min)
-        ),
-        newPosition = 10 - newValue * 0.2;
-      rangeStartV.innerHTML = `<span>₴${rangeStart.value}</span>`;
-      rangeStartV.style.left = `calc(${newValue}% - (5px))`;
-    };
-  document.addEventListener("DOMContentLoaded", setStartValue);
-  rangeStart.addEventListener("input", setStartValue);
+//   const rangeStart = document.getElementById("fromSlider"),
+//     rangeStartV = document.getElementById("fromInput"),
+//     setStartValue = () => {
+//       const newValue = Number(
+//           ((rangeStart.value - rangeStart.min) * 100) /
+//             (rangeStart.max - rangeStart.min)
+//         ),
+//         newPosition = 10 - newValue * 0.2;
+//       rangeStartV.innerHTML = `<span>₴${rangeStart.value}</span>`;
+//       rangeStartV.style.left = `calc(${newValue}% - (5px))`;
+//     };
+//   document.addEventListener("DOMContentLoaded", setStartValue);
+//   rangeStart.addEventListener("input", setStartValue);
 
-  // value of start filter price
-  const rangeEnd = document.getElementById("toSlider"),
-    rangeEndV = document.getElementById("toInput"),
-    setEndValue = () => {
-      const newValue = Number(
-          ((rangeEnd.value - rangeEnd.min) * 100) /
-            (rangeEnd.max - rangeEnd.min)
-        ),
-        newPosition = 10 - newValue * 0.2;
-      rangeEndV.innerHTML = `<span>₴${rangeEnd.value}</span>`;
-      rangeEndV.style.left = `calc(${newValue}% - (10px))`;
-    };
-  document.addEventListener("DOMContentLoaded", setEndValue);
-  rangeEnd.addEventListener("input", setEndValue);
-}
+//   const rangeEnd = document.getElementById("toSlider"),
+//     rangeEndV = document.getElementById("toInput"),
+//     setEndValue = () => {
+//       const newValue = Number(
+//           ((rangeEnd.value - rangeEnd.min) * 100) /
+//             (rangeEnd.max - rangeEnd.min)
+//         ),
+//         newPosition = 10 - newValue * 0.2;
+//       rangeEndV.innerHTML = `<span>₴${rangeEnd.value}</span>`;
+//       rangeEndV.style.left = `calc(${newValue}% - (10px))`;
+//     };
+//   document.addEventListener("DOMContentLoaded", setEndValue);
+//   rangeEnd.addEventListener("input", setEndValue);
+// }
 
 // price range slider END
 
 // tab on product-page START
 
 function openOption(evt, optionName) {
-  // Declare all variables
+
   var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(optionName).style.display = "block";
   evt.currentTarget.className += " active";
 
@@ -616,62 +648,64 @@ function openOption2(evt, optionName) {
 
 //tab 2 on product page end
 
-new Carousel(
-  document.getElementById("productCarousel"),
-  {
-    transition: 'slide',
-    preload: 3, 
-    Dots: false,
-    Thumbs: {
-      type: 'classic',
-      Carousel: {
-        dragFree: false,
-        slidesPerPage: 'auto',
-        Navigation: true,
-        axis: 'x',
+if (document.querySelector(".single-product") !== null) {
+  new Carousel(
+    document.getElementById("productCarousel"),
+    {
+      transition: 'slide',
+      preload: 3, 
+      Dots: false,
+      Thumbs: {
+        type: 'classic',
+        Carousel: {
+          dragFree: false,
+          slidesPerPage: 'auto',
+          Navigation: true,
+          axis: 'x',
+        },
       },
     },
-  },
-  { Thumbs }
-);
-
-Fancybox.bind('[data-fancybox="gallery"]', {
-  compact: false,
-  idle: false,
-  dragToClose: false,
-  contentClick: () =>
-    window.matchMedia('(max-width: 578px), (max-height: 578px)').matches
-      ? 'toggleMax'
-      : 'toggleCover',
-
-  animated: false,
-  showClass: false,
-  hideClass: false,
-
-  Hash: false,
-  Thumbs: false,
-
-  Toolbar: {
-    display: {
-      left: [],
-      middle: [],
-      right: ['close'],
+    { Thumbs }
+  );
+  
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    compact: false,
+    idle: false,
+    dragToClose: false,
+    contentClick: () =>
+      window.matchMedia('(max-width: 578px), (max-height: 578px)').matches
+        ? 'toggleMax'
+        : 'toggleCover',
+  
+    animated: false,
+    showClass: false,
+    hideClass: false,
+  
+    Hash: false,
+    Thumbs: false,
+  
+    Toolbar: {
+      display: {
+        left: [],
+        middle: [],
+        right: ['close'],
+      },
     },
-  },
-
-  Carousel: {
-    transition: 'fadeFast',
-    preload: 3,
-  },
-
-  Images: {
-    zoom: false,
-    Panzoom: {
-      panMode: 'mousemove',
-      mouseMoveFactor: 1.1,
+  
+    Carousel: {
+      transition: 'fadeFast',
+      preload: 3,
     },
-  },
-});
+  
+    Images: {
+      zoom: false,
+      Panzoom: {
+        panMode: 'mousemove',
+        mouseMoveFactor: 1.1,
+      },
+    },
+  });
+}
 
 // order_form popup open/close on click
 
@@ -791,8 +825,6 @@ $( document ).ready(function() {
   });
 });
 
-
-
 //show more-less end
 
 // mini-cart start
@@ -818,19 +850,19 @@ if (document.querySelector(".mini-cart-popup") !== null) {
     }
   }); 
 
-  document.querySelector('.add-coupon').addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".coupon-add-form").classList.add("active");
-    document.querySelector(".add-coupon").classList.add("hide");
-  });
-
-  document.querySelector('.coupon-remove').addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".coupon-add-form").classList.remove("active");
-    document.querySelector(".add-coupon").classList.remove("hide");
-  });
-
-
+  if (document.querySelector(".add-coupon") !== null) {
+    document.querySelector('.add-coupon').addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(".coupon-add-form").classList.add("active");
+      document.querySelector(".add-coupon").classList.add("hide");
+    });
+  
+    document.querySelector('.coupon-remove').addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(".coupon-add-form").classList.remove("active");
+      document.querySelector(".add-coupon").classList.remove("hide");
+    });
+  }
 };
 
 // mini-cart end

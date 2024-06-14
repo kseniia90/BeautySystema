@@ -713,6 +713,7 @@ if (document.querySelector(".authorization-popup .auth-link") !== null) {
   document.querySelector('.authorization-popup .auth-link').addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".authorization-popup").classList.remove("active");
+    document.body.style.overflow = "visible";
   });
 };
 
@@ -817,19 +818,19 @@ if (document.querySelector(".mini-cart-popup") !== null) {
     }
   }); 
 
-  document.querySelector('.add-coupon').addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".coupon-add-form").classList.add("active");
-    document.querySelector(".add-coupon").classList.add("hide");
-  });
-
-  document.querySelector('.coupon-remove').addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".coupon-add-form").classList.remove("active");
-    document.querySelector(".add-coupon").classList.remove("hide");
-  });
-
-
+  if (document.querySelector(".add-coupon") !== null) {
+    document.querySelector('.add-coupon').addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(".coupon-add-form").classList.add("active");
+      document.querySelector(".add-coupon").classList.add("hide");
+    });
+  
+    document.querySelector('.coupon-remove').addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(".coupon-add-form").classList.remove("active");
+      document.querySelector(".add-coupon").classList.remove("hide");
+    });
+  }
 };
 
 // mini-cart end
