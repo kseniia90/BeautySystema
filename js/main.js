@@ -796,13 +796,9 @@ $.fn.showMore = function (options) {
                   },
                   html: settings.buttontxtmore
               });
-
               element.after(showMoreButton);
-
-          }
-          
+          } 
           currentelem++;
-          
       }
       
   });
@@ -811,7 +807,7 @@ $.fn.showMore = function (options) {
   
 };
 
-$( document ).ready(function() {
+$(document).ready(function() {
   $('.page_content_text-hide-text').showMore({
     minheight: 205,
     buttontxtmore: "Читати повністю",

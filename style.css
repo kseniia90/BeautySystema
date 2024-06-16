@@ -6394,7 +6394,7 @@ textarea.cr-review-form-comment-txt {
 }
 
 .description-hide-text::after {
-	height: 35px;
+	height: 15px;
 }
 
 @media (min-width: 769px) {
@@ -6402,7 +6402,6 @@ textarea.cr-review-form-comment-txt {
 	.page_content_text a:hover {
 		color: #668b90;
 	}
-	
 }
 
 @media (max-width: 768px) {
