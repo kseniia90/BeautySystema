@@ -277,6 +277,30 @@ $(function () {
     items: 4,
   });
 
+  $(".posts-slider .insta-carousel").owlCarousel({
+    dots: false,
+    nav: false,
+    loop: false,
+    autoWidth: true,
+    margin: 30,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+        autoWidth: true,
+      },
+      800: {
+        center: false,
+        autoWidth: true,
+      },
+      1200: {
+        items: 3,
+        center: false,
+        autoWidth: false,
+      },
+    },
+  });
+
    // review caorusel
    $(".review-carousel").owlCarousel({
     dots: true,

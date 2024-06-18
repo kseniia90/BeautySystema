@@ -4054,7 +4054,8 @@ ol.breadcrumb li:last-child {
 	gap: 20px;
 }
 
-.categories__content__right .page_navigation .page_navigation__more {
+.categories__content__right .page_navigation .page_navigation__more,
+.post-page .page_navigation__more {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4153,7 +4154,8 @@ ol.breadcrumb li:last-child {
 }
 
 .categories__content.noveltys .page_navigation__more,
-.categories__content.search-results-page .page_navigation__more {
+.categories__content.search-results-page .page_navigation__more,
+.post-page .page_navigation__more {
 	display: flex;
 }
 
@@ -8640,14 +8642,16 @@ button.openSocial-sft:after{
 
 .post-page-top {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 10px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 30px;
 }
 
 .post-page .page_content_text {
 	padding: 0;
 	max-width: 100%;
+	margin-top: 20px;
 }
 
 .post-page-top-categoris {
@@ -8663,11 +8667,35 @@ button.openSocial-sft:after{
 	line-height: 17.07px;
 }
 
-.post-page-top-data {
+.post-page-top-info {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.post-page-top-view {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.post-page-top-view svg {
+	display: inline-block;
+	margin-bottom: -5px;
+}
+
+.view-count {
+	margin-left: 5px;
+}
+
+.post-page-top-data,
+.post-page-top-view span:first-of-type {
 	color: rgba(33, 50, 53, 0.5);
 }
 
-.post-page-top-data span {
+.post-page-top-data span,
+.post-page-top-view {
 	color: rgba(33, 50, 53, 1);
 }
 
@@ -8691,6 +8719,38 @@ button.openSocial-sft:after{
 	width: 100%;
 }
 
+.share-block {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.share-block-row {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.share-block svg {
+	width: 30px;
+}
+.share-block svg path {
+	fill: #4B6D74;
+	transition: all .2s ease;
+}
+
+.share-block a:hover svg path {
+	fill: #668b90;
+}
+
+.posts-slider .slider-insta .item {
+	width: 370px;
+}
+
+.posts-slider .slider-insta .item a {
+	display: flex;
+}
 
 @media (max-width: 768px) {
 	.post-page-top {
@@ -8705,6 +8765,19 @@ button.openSocial-sft:after{
 	}
 	.post-page-img img {
 		border-radius: 10px;
+	}
+
+	.post-page-top-info {
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+
+	.posts-slider .slider-insta .item {
+		width: auto;
+	}
+
+	.posts-slider .slider-insta .useful-info__card {
+		min-width: auto;
 	}
 }
 
