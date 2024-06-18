@@ -4430,6 +4430,7 @@ ol.breadcrumb li:last-child {
 .product-page__content__right .product__card__info__name {
 	font-size: 24px;
 	user-select: text;
+	display: block;
 }
 
 @media (max-width: 768px) {
