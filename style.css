@@ -3062,12 +3062,14 @@ ol.breadcrumb li:last-child {
 	margin-bottom: 30px;
 }
 
-.slider-insta .insta-carousel {
+.slider-insta .insta-carousel,
+.posts-carousel {
 	margin: 0px auto;
 	height: 100%;
 }
 
-.slider-insta .insta-carousel .owl-stage {
+.slider-insta .insta-carousel .owl-stage,
+.posts-carousel .owl-stage {
 	display: flex;
 	justify-content: stretch;
 	align-items: stretch;
@@ -8744,11 +8746,12 @@ button.openSocial-sft:after{
 	fill: #668b90;
 }
 
-.posts-slider .slider-insta .item {
+.posts-slider .posts-carousel .item {
 	width: 370px;
+	margin-right: 20px;
 }
 
-.posts-slider .slider-insta .item a {
+.posts-slider .posts-carousel .item a {
 	display: flex;
 }
 
@@ -8774,10 +8777,11 @@ button.openSocial-sft:after{
 
 	.posts-slider .slider-insta .item {
 		width: auto;
+		margin-right: 10px;
 	}
 
 	.posts-slider .slider-insta .useful-info__card {
-		min-width: auto;
+		min-width: 330px;
 	}
 }
 
