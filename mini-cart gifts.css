@@ -22,11 +22,48 @@
     min-width: 1px;
 }
 
-
 .mini-cart-gift .owl-stage-outer {
     margin: -15px -10px ;
     padding: 15px 10px;
 }
+
+
+.mini-cart-gift .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    z-index: 2;
+    width: calc(100% + 80px);
+}
+
+.mini-cart-gift .owl-nav .owl-prev span {
+    display: inline-block;
+    background: url(./img/prev_arrow.svg) center no-repeat, #4B6D74;
+    background-size: 70%;
+    cursor: pointer;
+    border: none;
+    width: 35px;
+    height: 35px;
+    color: transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease;    
+}
+
+.mini-cart-gift .owl-next span {
+    display: inline-block;
+    background: url(./img/next_arrow.svg) center no-repeat, #4B6D74;
+    background-size: 70%;
+    cursor: pointer;
+    border: none;
+    width: 35px;
+    height: 35px;
+    color: transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+
 
 .gift_slider .owl-carousel .item {
     height: auto !important;
