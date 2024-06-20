@@ -38,29 +38,29 @@
 }
 
 .mini-cart-gift .owl-nav .owl-prev span {
-    display: inline-block;
-    background: url(./img/prev_arrow.svg) center no-repeat, #4B6D74;
-    background-size: 70%;
-    cursor: pointer;
-    border: none;
-    width: 35px;
-    height: 35px;
-    color: transparent;
-    border-radius: 50%;
-    transition: all 0.3s ease;    
+    display: inline-block !important;
+    background: url(./img/prev_arrow.svg) center no-repeat, #4B6D74 !important;
+    background-size: 70% !important;
+    cursor: pointer !important;
+    border: none !important;
+    width: 35px !important;
+    height: 35px !important;
+    color: transparent !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;    
 }
 
 .mini-cart-gift .owl-next span {
-    display: inline-block;
-    background: url(./img/next_arrow.svg) center no-repeat, #4B6D74;
-    background-size: 70%;
-    cursor: pointer;
-    border: none;
-    width: 35px;
-    height: 35px;
-    color: transparent;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+    display: inline-block !important;
+    background: url(./img/next_arrow.svg) center no-repeat, #4B6D74 !important;
+    background-size: 70% !important;
+    cursor: pointer !important;
+    border: none !important;
+    width: 35px !important;
+    height: 35px !important;
+    color: transparent !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
 }
 
 

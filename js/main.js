@@ -278,8 +278,8 @@ $(function () {
   });
 // slider posts
   $(".posts-carousel").owlCarousel({
-    dots: false,
-    nav: false,
+    dots: true,
+    nav: true,
     loop: false,
     autoWidth: true,
     responsive: {
