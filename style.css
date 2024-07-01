@@ -5284,9 +5284,17 @@ ol.breadcrumb li:last-child {
 	padding: 5px;
 }
 
+.order_form_popup-header >p {
+	margin: 20px 0;
+}
+
 @media (max-width: 768px) {
 	.order_form_popup-header .close_popup {
 		right: 0px;
+	}
+
+	.order_form_popup-header >p {
+		margin: 15px 0;
 	}
 }
 
@@ -8719,6 +8727,14 @@ button.openSocial-sft:after{
 
 .post-page__content.page_content_text img {
 	width: 100%;
+}
+
+.post-page  .product__card__info__buy-button {
+	color: #4B6D74 !important;
+}
+
+.post-page  .product__card__info__buy-button:hover {
+	color: white !important;
 }
 
 .share-block {
