@@ -8727,7 +8727,10 @@ button.openSocial-sft:after{
 }
 
 .post-page__content.page_content_text img {
-	width: 100%;
+	/* width: 100%; */
+	float: left;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
 }
 
 .post-page  .product__card__info__buy-button {
