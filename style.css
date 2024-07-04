@@ -8882,20 +8882,14 @@ button.openSocial-sft:after{
 
 .loyalty-hw-list {
 	counter-reset: li;
-	padding-left: 110px;
 	overflow: hidden;
 }
 
 .loyalty-hw-list>li {
-	/* position: relative;
-	z-index: 5; */
 	counter-increment: li;
 	list-style: none;
-	border-bottom: 1px solid #21323533;
-	/* padding: 20px 0; */
-	/* display: flex;
-	align-items: center;
-	gap: 20px; */
+	padding-left: 110px;
+	overflow: hidden;
 }
 
 .loyalty-hw-item {
@@ -8905,6 +8899,7 @@ button.openSocial-sft:after{
 	align-items: center;
 	gap: 20px;
 	padding: 20px 0;
+	border-bottom: 1px solid #21323533;
 }
 
 .loyalty-hw-item::before,
@@ -8923,7 +8918,7 @@ button.openSocial-sft:after{
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	background: #4B6D741A;
+	background: #EDF0F1;
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 29.08px;
@@ -8943,48 +8938,13 @@ button.openSocial-sft:after{
 	z-index: -1;
 }
 
-/* .loyalty-hw-list>li::before,
-.loyalty-hw-list>li::after {
-	position: absolute;
-	display: flex;
-} */
 
-/* .loyalty-hw-list>li::before {
-	content: counter(li);
-	left: -87px;
-	top: 50%;
-    transform: translateY(-50%);
-	height: 64px; 
-	width: 64px;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	background: #4B6D741A;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 29.08px;
-	letter-spacing: 0.025em;
-	text-align: center;
-	color: #4B6D74;
-	z-index: 2;
-}
-
-.loyalty-hw-list>li::after {
-	content: "";
-	left: -55px;
-	top: 50%;
-    transform: translateY(-50%);
-	height: 100%;
-	border-left: 2px solid #4B6D741A;
-	z-index: -1;
-} */
-
-.loyalty-hw-list>li:first-child:after {
+.loyalty-hw-list>li:first-child .loyalty-hw-item:after {
 	top: 100%;
 	height:  calc(100% - 64px);
 }
 
-.loyalty-hw-list>li:last-child:after {
+.loyalty-hw-list>li:last-child .loyalty-hw-item:after {
 	top: 0%;
 	height:  calc(100% - 64px);
 }
@@ -8995,7 +8955,32 @@ button.openSocial-sft:after{
 	max-width: 43.050193%; /* 446/1036 */
 	font-size: 30px;
 	line-height: 36.57px;
+}
 
+.loyalty-wyg {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.loyalty-wyg-item {
+	width: 100%;
+	max-width: 370px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	letter-spacing: 0.025em;
+}
+
+.loyalty-wyg-row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 30.48px;
 }
 
 /* Loyalty end */
