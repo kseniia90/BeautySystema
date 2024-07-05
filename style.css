@@ -8609,7 +8609,8 @@ button.openSocial-sft:after{
 	margin-right: 30px;
 }
 
-.about-us-carousel .owl-stage-outer {
+.about-us-carousel .owl-stage-outer,
+.loyalty-carousel .owl-stage-outer {
     overflow: hidden !important;
 	padding: 20px 20px;
     margin: 0 -20px;
@@ -8641,7 +8642,8 @@ button.openSocial-sft:after{
 
 
 @media (max-width: 768px) {
-	.about-us-carousel .owl-stage-outer {
+	.about-us-carousel .owl-stage-outer,
+	.loyalty-carousel .owl-stage-outer {
 		padding: 0;
 		margin: 0;
 	}
@@ -8964,6 +8966,10 @@ button.openSocial-sft:after{
 	flex-wrap: wrap;
 }
 
+.loyalty-wyg.mobile {
+	display: none;
+}
+
 .loyalty-wyg-item {
 	width: 100%;
 	max-width: 370px;
@@ -8982,5 +8988,299 @@ button.openSocial-sft:after{
 	font-weight: 500;
 	line-height: 30.48px;
 }
+
+.loyalty-progress-bar .range-item {
+	position: relative;
+}
+
+.loyalty-progress-bar .range-item .range-input {
+	margin-top: 6px;
+	position: relative;
+	display: flex;
+}
+
+.loyalty-progress-bar .range-item .range-input input {
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.loyalty-progress-bar .range-item ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item:not(:first-child) {
+	border-left: 1px solid #4B6D74;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item:not(:last-child) {
+	padding: 35px 40px 0px 11px;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item:last-child {
+	padding: 35px 0 0px 11px;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item {
+	font-size: 12px;
+	line-height: 17.45px;
+	letter-spacing: 0.025em;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item p:first-of-type {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 26.17px;
+	color: #4B6D74;
+}
+
+.loyalty-progress-bar .range-item .range-line {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 20px;
+	width: 100%;
+	background: url(./img/progress-bar-bg.svg)  #EDF0F1;;
+	z-index: 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.loyalty-progress-bar .form-range {
+	width: 100%;
+	height: 20px;
+	padding: 0;
+	background-color: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.loyalty-progress-bar .range-item .range-input .range-line .active-line {
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #4B6D74;
+	transition: all 0.1s ease;
+}
+
+.loyalty-progress-bar input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 24px;
+	width: 24px;
+	box-shadow: none;
+	z-index: 11;
+}
+
+.loyalty__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px 22px;
+	border-radius: 9px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20.36px;
+	letter-spacing: 0.025em;
+	text-align: center;
+	box-shadow: 3px 5px 16px 0px #00000012;
+	min-width: 270px;
+}
+
+.loyalty-silver {
+	background: linear-gradient(319.96deg, rgba(168, 168, 166, 0.6) 15.87%, rgba(105, 105, 105, 0.6) 48.67%, rgba(249, 248, 246, 0.6) 64.17%, rgba(212, 212, 212, 0.6) 75.79%, rgba(127, 127, 127, 0.6) 88.5%);
+}
+
+.loyalty-bronze {
+	background: linear-gradient(141.14deg, rgba(182, 148, 126, 0.7) 14.91%, rgba(143, 105, 89, 0.7) 30.59%, rgba(248, 218, 200, 0.7) 52.15%, rgba(172, 131, 110, 0.7) 67.44%, rgba(182, 148, 126, 0.7) 79.98%, rgba(248, 220, 203, 0.7) 93.31%);
+}
+
+.loyalty-gold {
+	background: linear-gradient(135.34deg, rgba(140, 66, 29, 0.7) 15.43%, rgba(251, 230, 123, 0.7) 38.47%, rgba(252, 251, 231, 0.7) 53.36%, rgba(247, 209, 78, 0.7) 69.97%, rgba(212, 160, 65, 0.7) 86.26%);
+}
+
+.loyalty-platinum {
+	background: linear-gradient(137.95deg, rgba(122, 150, 172, 0.7) 2.28%, rgba(234, 239, 243, 0.7) 19.8%, rgba(194, 212, 225, 0.7) 32.94%, rgba(255, 255, 255, 0.7) 50.16%, rgba(212, 222, 229, 0.7) 62.15%, rgba(171, 189, 200, 0.7) 78.69%, rgba(188, 202, 215, 0.7) 95.24%);
+}
+
+.loyalty__card strong {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 29.08px;
+}
+
+.loyalty__card p {
+	width: 100%;
+}
+
+.loyalty__card-name {
+	margin-bottom: 20px;
+}
+
+.loyalty__card-order-sum {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #2132351A;
+}
+
+.loyalty__card-cashback {
+	margin-bottom: 10px;
+}
+
+.loyalty__card-order,
+.loyalty__card-cashback {
+	margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+	
+	.loyalty-hw {
+		margin-top: 20px;
+		padding: 15px;
+	}
+	
+	.loyalty-hw-list>li {
+		padding-left: 80px;
+	}
+
+	.loyalty-hw-item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5px;
+		padding: 20px 0;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 17.15px;
+	}
+	
+	.loyalty-hw-item::before {
+		content: counter(li);
+		left: -68px;
+		height: 55px;
+		width: 55px;
+	}
+
+	.loyalty-hw-item::after {
+		left: -41px;
+	}
+	
+	.loyalty-hw-list>li:first-child .loyalty-hw-item:after {
+		height:  calc(100% - 55px);
+	}
+	
+	.loyalty-hw-list>li:last-child .loyalty-hw-item:after {
+		height:  calc(100% - 55px);
+	}
+
+	.loyalty-hw-list>li p:first-of-type {
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 21.94px;
+	}
+
+	.loyalty-wyg-item {
+		max-width: 340px;
+	}
+
+
+
+	
+	.loyalty-progress-bar .range-item {
+		display: flex;
+		border: 1px solid red;
+		min-height: 270px;
+	}
+	
+	.loyalty-progress-bar .range-item ul {
+		height: 100%;
+		flex-direction: column;
+		border: 1px solid blue;
+	}
+	
+	.loyalty-progress-bar .range-item ul .list-inline-item:not(:first-child) {
+		border-left: none;
+	}
+	
+	.loyalty-progress-bar .range-item ul .list-inline-item:not(:last-child) {
+		padding: 0 0 20px 18px;
+	
+	}
+	
+	.loyalty-progress-bar .range-item ul .list-inline-item:last-child {
+		padding: 0 0 20px 18px;
+	}
+	
+	.loyalty-progress-bar .range-item ul .list-inline-item {
+		padding: 0 0 20px 18px;
+	}
+	
+	.loyalty-progress-bar .range-item .range-line {
+		position: absolute;
+		top: 0%;
+		transform: translateY(0%);
+		height: 28px;
+		width: 100%;
+		transform: rotate(90deg);
+	}
+	
+	.loyalty-progress-bar .form-range {
+		width: 100%;
+		height: 28px;
+		transform: rotate(90deg);
+	}
+
+}
+
+@media (max-width: 768px) {
+	.loyalty-row {
+		flex-direction: column;
+	}
+
+	.loyalty .title {
+		margin-bottom: 15px;
+	}
+	
+	.loyalty-column.column2 {
+		max-width: 100%; 
+		align-items: center;
+	}
+	
+	.loyalty-column.column2 img {
+		width: auto;
+		max-width: 100%;
+	}
+
+	.loyalty-wyg.desktop {
+		display: none;
+	}
+	
+	.loyalty-wyg.mobile {
+		display: block;
+	}
+	
+	.loyalty-wyg-item {
+		width: 100%;
+		max-width: none;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		letter-spacing: 0.025em;
+	}
+
+	.loyalty-wyg-row img {
+		max-width: 52px;
+	}
+
+	.loyalty .loyalty-carousel {
+		padding-top: 20px;
+	}
+}
+
 
 /* Loyalty end */
