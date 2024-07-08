@@ -19,7 +19,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <!-- <header class="header">
             <div class="header-container container">
                 <div class="header__main">
                     <div class="header__main-left">
@@ -221,7 +221,6 @@
                             <div class="header__nav__back">
                                 <span class="icon-arrow_down"></span>
                             </div>
-                            <!-- <h2>Beauty Systema</h2> -->
                             <span>Beauty Systema</span>
                         </div>
                         <ul class="header__nav__list">
@@ -409,7 +408,7 @@
                     </nav>
                 </div>
             </div>
-        </header>
+        </header> -->
         <main class="main">
             <div class="container account-container">
                 <div class="account-sidebar">
@@ -492,64 +491,176 @@
                     </div>
                     <div data-id="#orders" class="account-section">
                         <div class="orders-content">
-                            <div class="orders__table">
-                                <div class="orders__table__head">
-                                    <div class="orders__table__row table__head">
-                                        <div class="orders__col orders__img"></div>
-                                        <div class="orders__col orders__name">Товар</div>
-                                        <div class="orders__col orders__price">Ціна</div>
-                                        <div class="orders__col orders__quantity">Кількість</div>
-                                        <div class="orders__col orders__total">Всього</div>
-                                        <div class="orders__col orders__delete"></div>
+                            <div class="order-info">
+                                <div class="order__table">
+                                    <div class="order__table__head">
+                                        <div class="order__table__row table__head">
+                                            <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
+                                            <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
+                                            <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
+                                            <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="orders__table__body">
-                            
-                                    <div class="orders__table__row">
-                                        <div class="orders__col orders__img">
-                                            <div class="product-image">
-                                                <img src="./img/popular_5.png"
-                                                    alt="Аргановий шампунь для відновлення пошкодженого та волосся Dikson Argabeta Vegan Repair Shampoo - 250 мл"
-                                                    loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="orders__col orders__name">            
-                                            <a
-                                                href="https://www.beauty-systema.com/shop/dikson-argabeta-vegan-repair-shampoo/?attribute_pa_vol=250ml">Аргановий
-                                                шампунь для відновлення пошкодженого та волосся Dikson Argabeta Vegan
-                                                Repair Shampoo - 250 мл</a>
-                                        </div>
-                                        <div class="orders__col orders__price">
-                                            <span class="price">340₴</span>
-                                        </div>
-                                        <div class="orders__col orders__quantity">
-                                            <div class="shopping_cart__counter">
-                                                <span class="minus_q">-</span>
-                                                <input type="number" disabled="" name="product_quantity" value="6"
-                                                    min="1" max="6" inputmode="numeric"
-                                                    style="-moz-appearance: textfield; -webkit-inner-spin-button: initial;">
-                                                <span class="plus_q">+</span>
-                                            </div>
-                                        </div>
-                                        <div class="orders__col orders__total">
-                                            <span class="total-price">2040₴</span>
-                                        </div>
-                                        <div class="orders__col orders__delete">
-                                            <span class="btn-remove cart_item">×</span>
+                                    <div class="order__table__body">
+                                        <div class="order__table__row">
+                                            <div class="order__col order__number"><span>#69808</span></div>
+                                            <div class="order__col order__name"><span>01.03.2024</span></div>
+                                            <div class="order__col order__price">₴<span>2752,00</span></div>
+                                            <div class="order__col order__quantity"><span class="status-inprocessing">В обробці</span></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="orders__table__footer">
-                                    <div class="orders__table__row">
-                                        <div class="orders__col orders__img"></div>
-                                        <div class="orders__col orders__name"></div>
-                                        <div class="orders__col orders__price"></div>
-                                        <div class="orders__col orders__quantity"></div>
-                                        <div id="total_cart" class="orders__col orders__total"><span
-                                                class="woocommerce-Price-amount amount"><bdi>3,400&nbsp;<span
-                                                        class="woocommerce-Price-currencySymbol">₴</span></bdi></span>
+                                <div class="order-composition">
+                                    <div class="order__accordion">
+                                        <div class="accordion__item">
+                                            <div class="accordion__title accordion-active">
+                                                <span class="accordion__title-text">Склад замовлення</span>
+                                                <div class="accordion__arrow active"><span class="icon-arrow_down"></span></div>
+                                            </div>
+                                            <div class="accordion__content" style= "display:block">
+                                               <div class="order__list">
+                                                    <div class="order__item">
+                                                        <div class="order__item-col order__item-img">
+                                                            <img src="img/popular_5.png" alt="" width="70" height="70">
+                                                        </div>
+                                                        <div class="order__item-content">
+                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                            <div class="order__item-col order__item-quantity">x1</div>
+                                                            <div class="order__item-col order__item-price">₴938,00</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <div class="order__item-col order__item-img">
+                                                            <img src="img/popular_1.png" alt="" width="70" height="70">
+                                                        </div>
+                                                        <div class="order__item-content">
+                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                            <div class="order__item-col order__item-quantity">x1</div>
+                                                            <div class="order__item-col order__item-price">₴938,00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__repeat-btn">
+                                                    <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="orders__col orders__delete"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-info">
+                                <div class="order__table">
+                                    <div class="order__table__head">
+                                        <div class="order__table__row table__head">
+                                            <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
+                                            <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
+                                            <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
+                                            <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="order__table__body">
+                                        <div class="order__table__row">
+                                            <div class="order__col order__number"><span>#69808</span></div>
+                                            <div class="order__col order__name"><span>01.03.2024</span></div>
+                                            <div class="order__col order__price">₴<span>2752,00</span></div>
+                                            <div class="order__col order__quantity"><span class="status-delivered">Доставлений</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-composition">
+                                    <div class="order__accordion">
+                                        <div class="accordion__item">
+                                            <div class="accordion__title">
+                                                <span class="accordion__title-text">Склад замовлення</span>
+                                                <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
+                                            </div>
+                                            <div class="accordion__content">
+                                               <div class="order__list">
+                                                    <div class="order__item">
+                                                        <div class="order__item-col order__item-img">
+                                                            <img src="img/popular_5.png" alt="" width="70" height="70">
+                                                        </div>
+                                                        <div class="order__item-content">
+                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                            <div class="order__item-col order__item-quantity">x1</div>
+                                                            <div class="order__item-col order__item-price">₴938,00</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <div class="order__item-col order__item-img">
+                                                            <img src="img/popular_1.png" alt="" width="70" height="70">
+                                                        </div>
+                                                        <div class="order__item-content">
+                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                            <div class="order__item-col order__item-quantity">x1</div>
+                                                            <div class="order__item-col order__item-price">₴938,00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__repeat-btn">
+                                                    <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-info">
+                                <div class="order__table">
+                                    <div class="order__table__head">
+                                        <div class="order__table__row table__head">
+                                            <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
+                                            <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
+                                            <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
+                                            <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div class="order__table__body">
+                                        <div class="order__table__row">
+                                            <div class="order__col order__number"><span>#69808</span></div>
+                                            <div class="order__col order__name"><span>01.03.2024</span></div>
+                                            <div class="order__col order__price">₴<span>2752,00</span></div>
+                                            <div class="order__col order__quantity"><span class="status-delivered">Доставлений</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-composition">
+                                    <div class="order__accordion">
+                                        <div class="accordion__item">
+                                            <div class="accordion__title">
+                                                <span class="accordion__title-text">Склад замовлення</span>
+                                                <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
+                                            </div>
+                                            <div class="accordion__content">
+                                               <div class="order__list">
+                                                    <div class="order__item">
+                                                        <div class="order__item-col order__item-img">
+                                                            <img src="img/popular_5.png" alt="" width="70" height="70">
+                                                        </div>
+                                                        <div class="order__item-content">
+                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                            <div class="order__item-col order__item-quantity">x1</div>
+                                                            <div class="order__item-col order__item-price">₴938,00</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <div class="order__item-col order__item-img">
+                                                            <img src="img/popular_1.png" alt="" width="70" height="70">
+                                                        </div>
+                                                        <div class="order__item-content">
+                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                            <div class="order__item-col order__item-quantity">x1</div>
+                                                            <div class="order__item-col order__item-price">₴938,00</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order__repeat-btn">
+                                                    <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -625,7 +736,7 @@
                                 <p>Ваш код:</p>
                                 <p class="code">380960988447</p>
                             </div>
-                            <a class="product__card__info__button copy-code" href="#">Cкопіювати код</a>
+                            <a class="product__card__info__button copy-code" href="#"><span>Cкопіювати код</span><span class="icon-Documents"></span></a>
                           </div>
                       </div>
                     </div>

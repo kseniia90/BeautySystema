@@ -492,7 +492,7 @@ $(function () {
   });
   //END
 
-  //BEGIN filters accordion
+  //BEGIN product-page accordion
 
   $(".product-page__accordion .accordion__title").on("click", function (e) {
     e.preventDefault();
@@ -509,6 +509,24 @@ $(function () {
     $this.parent().toggleClass("border");
     $this.next().slideToggle();
     $(".accordion__arrow", this).toggleClass("minus");
+  });
+  //END
+
+  //BEGIN order accordion
+
+  $(".order__accordion .accordion__title").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+
+    if (!$this.hasClass("accordion-active")) {
+      $(".accordion__content").slideUp(400);
+      $(".accordion__title").removeClass("accordion-active");
+      $(".accordion__arrow").removeClass("active");
+    }
+
+    $this.toggleClass("accordion-active");
+    $this.next().slideToggle();
+    $(".accordion__arrow", this).toggleClass("active");
   });
   //END
 
