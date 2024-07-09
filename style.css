@@ -9845,10 +9845,6 @@ button.openSocial-sft:after{
 	display: grid;
 	grid-template-columns: 30% 20% 20% 30%;
 }
-/* 
-.order__table__body .order__table__row:not(:last-child) {
-	border-bottom: 1px solid rgba(33, 50, 53, 0.1);
-} */
 
 .order__table__row.table__head {
 	color: #668b90 !important;
@@ -9880,13 +9876,6 @@ button.openSocial-sft:after{
 	color: #989898;
 }
 
-@media (max-width: 768px) {
-	.order__table__body .order__table__row {
-		display: flex;
-		flex-direction: column;
-		padding-bottom: 20px;
-	}
-}
 
 .order__accordion {
 	display: flex;
@@ -10010,11 +9999,63 @@ button.openSocial-sft:after{
 	display: none;
 }
 
+@media (max-width: 992px) {
 
+	.order__table {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+	}
+	
+	.order__table__row {
+		grid-template-columns: 1fr;
+	}
+	
+	.order__table__row.table__head {
+		color: #668b90 !important;
+		border-bottom: 1px solid rgba(33, 50, 53, 0.1);
+	}
+	
+	.order__col {
+		padding: 8px 0;
+		align-self: flex-start;
+	}
 
+	.order__table__body .order__col {
+		text-align: end;
+	}
 
-
-
-
+	.order-info:not(:first-child) .order__table__head{
+		display: block;
+	}
+	
+	.order__item {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.order__item-content {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		column-gap: 30px;
+	}
+	
+	.order__item-title {
+		max-width: none;
+	}
+	
+	.order__item-quantity {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	.order__repeat-btn {
+		text-align: center;
+	}
+	
+	.order__repeat-btn .product__card__info__button {
+		display: flex;
+	}
+}
 
 /*Account end*/
