@@ -2946,6 +2946,69 @@ ol.breadcrumb li:last-child {
 	box-shadow: 5px 6px 19px 0px #AAC0C3;
 }
 
+.questions__block.collapsed .questions__block__item:not(.open) p {
+	display: none;
+}
+
+.questions__block.collapsed .questions__block__item {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+/* .questions__block.collapsed .questions__block__item h3 {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	cursor: pointer;
+} */
+
+/* .questions__block.collapsed .questions__block__item h3::after {
+	content: '+';
+	margin-left: auto;
+}
+
+.questions__block.collapsed .questions__block__item.open h3::after {
+	content: '-';
+} */
+
+.faq-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+	cursor: pointer;
+}
+
+.faq-title-icon {
+	flex: 1 0 auto;
+	max-width: 20px !important;
+	width: 20px !important;
+	height: 20px !important;
+	position: relative;
+}
+
+.faq-title-icon::after {
+	content: "+";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px !important;
+	height: 20px !important;
+	font-size: 20px;
+	line-height: 20;
+	border-radius: 50%;
+	border: 1px solid #4B6D74;
+    position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.faq-title-icon.minus::after {
+	content: "-";
+}
+
 @media (max-width: 768px) {
 	
 	.questions__block__item {
@@ -8995,6 +9058,10 @@ button.openSocial-sft:after{
 	height:  calc(100% - 64px);
 }
 
+.loyalty-hw-list>li:last-child .loyalty-hw-item {
+	border-bottom: none;
+}
+
 .loyalty-hw-list>li p:first-of-type {
 	flex: 1 0 auto;
 	width: 100%;
@@ -9031,6 +9098,10 @@ button.openSocial-sft:after{
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 30.48px;
+}
+
+.loyalty-progress-bar {
+	padding-top: 25px;
 }
 
 .loyalty-progress-bar .range-item {
@@ -9071,6 +9142,13 @@ button.openSocial-sft:after{
 	font-size: 12px;
 	line-height: 17.45px;
 	letter-spacing: 0.025em;
+	position: relative;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item .icon {
+	position: absolute;
+	left: -12px;
+	top: -47px;
 }
 
 .loyalty-progress-bar .range-item ul .list-inline-item p:first-of-type {
@@ -9078,6 +9156,7 @@ button.openSocial-sft:after{
 	font-weight: 600;
 	line-height: 26.17px;
 	color: #4B6D74;
+	margin-bottom: 5px;
 }
 
 .loyalty-progress-bar .range-item .range-line {
@@ -9205,6 +9284,7 @@ button.openSocial-sft:after{
 
 .loyalty-banner-1 .footer-banner__content {
 	grid-template-columns: 5fr 1fr;
+	gap: 15px;
 }
 
 .loyalty-banner-1 .footer-banner__content h2 {
@@ -9232,7 +9312,7 @@ button.openSocial-sft:after{
 .loyalty-banner-1 .footer-banner__right  img {
 	position: absolute;
 	bottom: 0;
-	right: -140px;
+	right: -180px;
 	max-width: 476px;
 }
 
@@ -9315,6 +9395,10 @@ button.openSocial-sft:after{
 		padding: 0 0 20px 18px;
 	}
 
+	.loyalty-progress-bar .range-item ul .list-inline-item .icon {
+		display: none;
+	}
+
 	.loyalty-progress-bar .range-item .range-input {
 		width: 25px;
 		position: relative;
@@ -9342,6 +9426,23 @@ button.openSocial-sft:after{
 	.loyalty-progress-bar .range-item .range-input .range-line .active-line {
 		height: var(--range-size);
 		width: 100%;
+	}
+
+	.loyalty-banner-1 .footer-banner__content {
+		grid-template-columns: 1fr;
+		gap: 15px;
+	}
+
+	.loyalty-banner-1 .footer-banner__left p {
+		padding-right: 70px;
+	}
+
+	.loyalty-banner-1 .footer-banner__right  img {
+		position: absolute;
+		bottom: 0;
+		right: -60px;
+		max-width: 175px;
+		height: auto;
 	}
 
 }
@@ -9394,6 +9495,36 @@ button.openSocial-sft:after{
 		flex-direction: column;
 		justify-content: flex-start;
 		gap: 10px;
+	}
+
+	.loyalty-banner-1 .footer-banner__content h2 {
+		font-size: 25px;
+		line-height: 30.48px;
+	}
+	
+	.loyalty-banner-1 .product__card__info__button {
+		display: inline-flex;
+		width: auto;
+		margin-top: 20px;
+		padding: 13px 23px;
+	}
+	
+	.loyalty-banner-1 .footer-banner__left {
+		padding: 56px 0;
+	}
+
+	@media (max-width: 992px) {
+		.loyalty-banner-1 .footer-banner__left p {
+			padding-right: 0;
+		}
+	}
+	
+	.loyalty-banner-1 .footer-banner__right {
+		width: 100%;
+	}
+
+	.loyalty-banner-1 .footer-banner__right img {
+		bottom: -55px;
 	}
 }
 
