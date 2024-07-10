@@ -1114,18 +1114,6 @@ ol.breadcrumb li:last-child {
 	}
 }
 
-.header__main__logo.cashback-count {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-family: Montserrat;
-	font-size: 9px;
-	font-weight: 600;
-	line-height: 13.09px;
-	letter-spacing: 0.025em;
-	text-align: center;
-
-}
 
 .header__main-form .icon-search_icon {
 	color: #4B6D74;
@@ -1247,6 +1235,18 @@ ol.breadcrumb li:last-child {
 	}	
 	.back_top-btn .icon-arrow_down::before {
 		font-size: 12px;
+	}
+
+	.header__main__logo.cashback-count {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: Montserrat;
+		font-size: 9px;
+		font-weight: 600;
+		line-height: 13.09px;
+		letter-spacing: 0.025em;
+		text-align: center;
 	}
 }
 
