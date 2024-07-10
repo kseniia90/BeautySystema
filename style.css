@@ -8166,6 +8166,108 @@ ul.woocommerce-error {
     }
 }
 
+.minicart-progress-bar {
+	display: flex;
+	gap: 7px;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.minicart-progress-bar .gift-icon {
+	width: 75px;
+	text-align: center;
+}
+
+.minicart-progress-bar .range-item {
+	position: relative;
+	flex-grow: 1;
+}
+
+.minicart-progress-bar .range-item ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item:not(:first-child) {
+	border-left: 1px solid #4B6D74;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item:first-child {
+	min-width: 60px;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item {
+	padding: 0 4px;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item:last-child {
+	padding-right: 0;
+	flex-grow: 0;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item {
+	position: relative;
+	flex-grow: 1;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: -1px;
+	height: 20px;
+	bottom: -20px;
+	z-index: 1;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item.active::before {
+	background-color: #4B6D74;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item:first-child::before {
+	border-radius: 3px 0 0 3px;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item:last-child::before {
+	right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.minicart-progress-bar .range-item ul .list-inline-item p {
+	color: #4B6D74;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20.36px;
+	letter-spacing: 0.025em;
+	margin-bottom: 0;
+}
+
+.minicart-progress-bar .range-item .range-line {
+	height: 20px;
+	width: 100%;
+	background-image: repeating-linear-gradient(135deg, rgba(75, 109, 116, 0.2) 0, rgba(75, 109, 116, 0.2) 1px, transparent 0, transparent 50%);
+	background-size: 12px 12px;
+	background-color: #fff;
+	position: relative;
+	z-index: 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+@media (max-width: 992px) {
+	.minicart-progress-bar .range-item ul .list-inline-item p {
+		display: none;
+	}
+
+	.minicart-progress-bar .range-item ul .list-inline-item:last-child {
+		flex-grow: 1;
+	}
+}
+
 /*mini-cart end*/
 
 /*for googlespeed show slider content before loaded js START*/
