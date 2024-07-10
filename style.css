@@ -9089,17 +9089,6 @@ button.openSocial-sft:after{
 	position: relative;
 }
 
-.loyalty-progress-bar .range-item .range-input {
-	position: relative;
-	display: flex;
-}
-
-.loyalty-progress-bar .range-item .range-input input {
-	position: relative;
-	z-index: 2;
-	cursor: pointer;
-}
-
 .loyalty-progress-bar .range-item ul {
 	width: 100%;
 	display: flex;
@@ -9111,7 +9100,7 @@ button.openSocial-sft:after{
 	border-left: 1px solid #4B6D74;
 }
 
-.loyalty-progress-bar .range-item ul .list-inline-item:not(:last-child) {
+.loyalty-progress-bar .range-item ul .list-inline-item {
 	padding: 35px 40px 0px 11px;
 }
 
@@ -9124,6 +9113,30 @@ button.openSocial-sft:after{
 	line-height: 17.45px;
 	letter-spacing: 0.025em;
 	position: relative;
+	flex-grow: 1;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: -1px;
+	height: 20px;
+	top: -20px;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item.active::before {
+	background-color: #4B6D74;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item:first-child::before {
+	border-radius: 3px 0 0 3px;
+}
+
+.loyalty-progress-bar .range-item ul .list-inline-item:last-child::before {
+	right: 0;
+	border-radius: 0 3px 3px 0;
 }
 
 .loyalty-progress-bar .range-item ul .list-inline-item .icon {
@@ -9141,43 +9154,15 @@ button.openSocial-sft:after{
 }
 
 .loyalty-progress-bar .range-item .range-line {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 	height: 20px;
 	width: 100%;
-	background: url(./img/progress-bar-bg.svg)  #EDF0F1;;
+	background-image: repeating-linear-gradient(135deg, rgba(75, 109, 116, 0.2) 0, rgba(75, 109, 116, 0.2) 1px, transparent 0, transparent 50%);
+	background-size: 12px 12px;
+	background-color: #edf0f1;
+	position: relative;
 	z-index: 0;
 	border-radius: 3px;
 	overflow: hidden;
-}
-
-.loyalty-progress-bar .form-range {
-	width: 100%;
-	height: 20px;
-	padding: 0;
-	background-color: transparent;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-.loyalty-progress-bar .range-item .range-input .range-line .active-line {
-	position: absolute;
-	left: 0;
-	width: var(--range-size);
-	height: 100%;
-	background-color: #4B6D74;
-	transition: all 0.1s ease;
-}
-
-.loyalty-progress-bar input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	height: 24px;
-	width: 24px;
-	box-shadow: none;
-	z-index: 11;
 }
 
 .loyalty__card {
@@ -9297,6 +9282,56 @@ button.openSocial-sft:after{
 	max-width: 476px;
 }
 
+.fixed-progress-bar {
+	position: fixed;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	padding: 9px 0;
+	background-color: #fff;
+	border-top: 1px solid #4B6D744D;
+	box-shadow: 5px 4px 18px 0px #0000000D;
+}
+
+.fixed-progress-bar-content {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	white-space: nowrap;
+}
+
+.fixed-progress-bar .row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.fixed-progress-bar .row-top {
+	display: grid;
+	grid-template-columns: auto 3fr auto;
+}
+
+.fixed-progress-bar .range-line {
+	width: 100%;
+	height: 3px;
+	background: #EFEFEF;
+	position: relative;
+}
+
+.range-line-active {
+	width: 30%;
+	height: 100%;
+	background: #4B6D74;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fixed-progress-bar .row-bottom {
+	gap: 5px;
+}
+
 
 @media (max-width: 992px) {
 	
@@ -9357,58 +9392,42 @@ button.openSocial-sft:after{
 	.loyalty-progress-bar .range-item ul {
 		height: 100%;
 		flex-direction: column;
-	}
-	
-	.loyalty-progress-bar .range-item ul .list-inline-item:not(:first-child) {
-		border-left: none;
-	}
-	
-	.loyalty-progress-bar .range-item ul .list-inline-item:not(:last-child) {
-		padding: 0 0 20px 18px;
-	
-	}
-	
-	.loyalty-progress-bar .range-item ul .list-inline-item:last-child {
-		padding: 0 0 20px 18px;
+		margin-left: 25px;
 	}
 	
 	.loyalty-progress-bar .range-item ul .list-inline-item {
+		border-left: none !important;
 		padding: 0 0 20px 18px;
+	
 	}
 
 	.loyalty-progress-bar .range-item ul .list-inline-item .icon {
 		display: none;
 	}
 
-	.loyalty-progress-bar .range-item .range-input {
+	.loyalty-progress-bar .range-item .range-line {
 		width: 25px;
-		position: relative;
-	}
-
-	.loyalty-progress-bar .range-item .range-input input {
-		width: 100%;
 		height: 100%;
 		position: absolute;
-		top: 0;
 		left: 0;
-		writing-mode: vertical-lr;
-		direction:ltr;
+	}
+
+	.loyalty-progress-bar .range-item ul .list-inline-item:first-child::before {
+		border-radius: 3px 3px 0 0;
+	}
+
+	.loyalty-progress-bar .range-item ul .list-inline-item:last-child::before {
+		border-radius: 0 0 3px 3px;
+	}
+
+	.loyalty-progress-bar .range-item ul .list-inline-item::before {
+		width: 25px;
+		height: auto;
+		top: 0;
+		left: -25px;
+		bottom: -1px;
 	}
 	
-	.loyalty-progress-bar .range-item .range-line {
-		position: absolute;
-		top: 0%;
-		left: 0;
-		transform: translateY(0%);
-		width: 100%;
-		height: 100%;
-	}
-
-	.loyalty-progress-bar .range-item .range-input .range-line .active-line {
-		height: var(--range-size);
-		width: 100%;
-	}
-
 	.loyalty-banner-1 .footer-banner__content {
 		grid-template-columns: 1fr;
 		gap: 15px;

@@ -839,23 +839,6 @@ function OpenSocial() {
   }
 };
 
- // Range Input
- function SliderFun(ele) {
-  for (let i = 0; i < ele.length; i++) {
-    const element = ele[i];
-
-    const values = element.value;
-    const dataValue = element.getAttribute("max");
-    const fullValue = Math.round((values * 100) / dataValue);
-    element.nextSibling.parentNode.querySelector(".active-line").style.setProperty("--range-size", fullValue + "%");
-  }
-}
-SliderFun($(".range-input input"));
-
-$(".range-input input").on("input", function () {
-  SliderFun($(this));
-});
-
 /*Account tab start*/
 
 $(function() {
