@@ -73,6 +73,10 @@
                             </ul>
                         </nav>
                         <ul class="header__main__list">
+                            <li class="header__main__list__item  header__main__cashback hide-on-mobile">
+                                <img src="img/logo_icon.png" alt="" width="34" height="34">
+                                <span>1300</span>
+                            </li>
                             <li class="header__main__list__item hide-on-mobile">
                                 <a href="#" class="favorite has-items">
                                    <span class="icon-favorite_icon"></span>
@@ -2672,9 +2676,26 @@
                                     <h2 class="title">Ваша корзина</h2>
                                     <div class="mini-cart-popup__close">
                                         <span class="mini-cart__close-icon">×</span>
-                                        <span class="mini-cart__back-icon icon-arrow_down"></span>
+                                        <!-- <span class="mini-cart__back-icon icon-arrow_down"></span> -->
                                     </div>
                                 </div>
+                                <a href="https://www.beauty-systema.com" class="auth-link">
+                                    <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 5H1M1 5L7.06897 9.5M1 5L7.06897 0.5" stroke="#4B6D74"></path>
+                                    </svg>
+                                    <span>Продовжити покупки</span>
+                                </a>
+                                <div class="gift-info">
+                                    <div class="gift-info-item">
+                                        <div class="gift-info-img">
+                                            <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.283041 0.5C0.126803 0.5 0 0.622182 0 0.772727C0 0.923273 0.126803 1.04545 0.283041 1.04545H15.8105C16.1224 1.04545 16.3766 1.29036 16.3766 1.59091V16.3182H10.687C10.5485 15.3943 9.7317 14.6818 8.73448 14.6818C7.73725 14.6818 6.92041 15.3943 6.78194 16.3182H3.98359C3.63828 16.3182 3.35669 16.0469 3.35669 15.7141V5.68182C3.35669 5.53127 3.22989 5.40909 3.07365 5.40909C2.91741 5.40909 2.79061 5.53127 2.79061 5.68182V15.7141C2.79061 16.348 3.3258 16.8636 3.98359 16.8636H6.78194C6.92041 17.7876 7.73725 18.5 8.73448 18.5C9.7317 18.5 10.5485 17.7876 10.687 16.8636H19.2358C19.3742 17.7876 20.1911 18.5 21.1883 18.5C22.1855 18.5 23.0024 17.7876 23.1408 16.8636H24.828C25.4745 16.8636 26 16.3573 26 15.7344V10.5909L24.3946 5.13743C24.2514 4.65525 23.7877 4.31818 23.2669 4.31818H16.9427V1.59091C16.9427 0.989273 16.4349 0.5 15.8105 0.5H0.283041ZM1.94149 2.13636C1.78525 2.13636 1.65845 2.25855 1.65845 2.40909C1.65845 2.55964 1.78525 2.68182 1.94149 2.68182H5.33798C5.49422 2.68182 5.62102 2.55964 5.62102 2.40909C5.62102 2.25855 5.49422 2.13636 5.33798 2.13636H1.94149ZM1.3754 3.77273C1.21917 3.77273 1.09236 3.89491 1.09236 4.04545C1.09236 4.196 1.21917 4.31818 1.3754 4.31818H3.63973C3.79597 4.31818 3.92278 4.196 3.92278 4.04545C3.92278 3.89491 3.79597 3.77273 3.63973 3.77273H1.3754ZM16.9427 4.86364H23.2669C23.5363 4.86364 23.7754 5.03782 23.8495 5.28764L25.4339 10.6293V15.7344C25.4339 16.0567 25.1626 16.3182 24.828 16.3182H23.1408C23.0024 15.3943 22.1855 14.6818 21.1883 14.6818C20.1911 14.6818 19.3742 15.3943 19.2358 16.3182H16.9427V4.86364ZM8.73448 15.2273C9.51624 15.2273 10.1497 15.8376 10.1497 16.5909C10.1497 17.3442 9.51624 17.9545 8.73448 17.9545C7.95272 17.9545 7.31927 17.3442 7.31927 16.5909C7.31927 15.8376 7.95272 15.2273 8.73448 15.2273ZM21.1883 15.2273C21.9701 15.2273 22.6035 15.8376 22.6035 16.5909C22.6035 17.3442 21.9701 17.9545 21.1883 17.9545C20.4065 17.9545 19.7731 17.3442 19.7731 16.5909C19.7731 15.8376 20.4065 15.2273 21.1883 15.2273Z" fill="#4B6D74"/>
+                                            </svg>
+                                                
+                                        </div>
+                                        <p>Доставка замовлення за наш рахунок</p>
+                                    </div>
+                                </div> 
                                 <div class="shopping-cart-products">
                                     <div class="shopping-cart__body">
                                         <div class="shopping-cart__table">
@@ -2758,125 +2779,95 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="shopping-cart__table__coupon">
-                                                <div class="shopping-cart__table__row">
-                                                    <div class="shopping-cart__col shopping-cart__img"></div>
-                                                    <div class="shopping-cart__col shopping-cart__name">
-                                                        <p class="add-coupon">Є купон зі знижкою? </p>
-                                                        <div class="coupon-add-form">
-                                                            <form action="#">
-                                                                <div class="coupon-add-intut-block" >
-                                                                    <input type="text" placeholder="код купона..." />
-                                                                    <div class="coupon-remove"><span class="icon-Close"></span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mini-cart__slider gift_slider" >
+                                        <h2 class="title">Вибери свій подарунок до замовлення</h2>
+                                        <div class="mini-cart-gift owl-carousel owl-theme owl-loaded">
+                                            <div class="owl-stage-outer">
+                                                <div class="owl-stage">
+                                                    <div class="owl-item">
+                                                        <div class="item">
+                                                            <div class="product__card product_element" data-idproduct="104501">
+                                                                <a class=" product__card__img"
+                                                                href="https://www.dev.beauty-systema.com/shop/krem-dlya-shkiry-navkolo-ochej-z-kolagenom-blivu-collagen-bouncing-firming-eye-cream-30-ml/">
+                                                                <img src="https://www.dev.beauty-systema.com/wp-content/uploads/2024/05/230419_blivu_0263-1.webp"
+                                                                    alt="Крем для шкіри навколо очей з колагеном BLIV:U Collagen Bouncing Firming Eye Cream 30 ml"
+                                                                    title="Крем для шкіри навколо очей з колагеном BLIV:U Collagen Bouncing Firming Eye Cream 30 ml">
+                                                                </a>
+                                                                <div class="product__card__info">
+                                                                    <div class="product__card__info__content">
+                                                                        <a href="https://www.dev.beauty-systema.com/shop/krem-dlya-shkiry-navkolo-ochej-z-kolagenom-blivu-collagen-bouncing-firming-eye-cream-30-ml/"
+                                                                            class="product__card__info__name">Крем для шкіри навколо очей з колагеном BLIV:U
+                                                                            Collagen Bouncing Firming Eye Cream 30 ml</a>
+                                                                    </div>
+                                                                    <div class="gift_price">
+                                                                        <span class="old-price">₴999,00</span>
+                                                                        <span>₴1,00</span>
+                                                                    </div>
+
+                                                                    <div class="gift_buy">
+                                                                        <span>Обрати подарунок</span>
+                                                                        <span class="icon-right-arrow"></span>
+                                                                    </div>
                                                                 </div>
-                                                                <button class="coupon-add-form-btn"><span class="icon-right-arrow"></span></button>
-                                                            </form>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="shopping-cart__col shopping-cart__price"></div>
-                                                    <div class="shopping-cart__col shopping-cart__quantity">
-                                                        <span class="text_discount_mini_cart" style="">Знижка:</span>
-                                                    </div>
-                                                    <div id="total_cart" class="shopping-cart__col shopping-cart__total">
-                                                        <div class="discount_mini_cart">-7%</div>
-                                                    </div>
-                                                    <div class="shopping-cart__col shopping-cart__delete"></div>
+                                                                                                    
+                                                    
                                                 </div>
                                             </div>
-                                            <div class="shopping-cart__table__footer">
-                                                <div class="shopping-cart__table__row">
-                                                    <div class="shopping-cart__col shopping-cart__img"></div>
-                                                    <div class="shopping-cart__col shopping-cart__name"></div>
-                                                    <div class="shopping-cart__col shopping-cart__price"></div>
-                                                    <div class="shopping-cart__col shopping-cart__quantity"></div>
-                                                    <div id="total_cart" class="shopping-cart__col shopping-cart__total"><span
-                                                            class="woocommerce-Price-amount amount"><bdi>3,400&nbsp;<span
-                                                                    class="woocommerce-Price-currencySymbol">₴</span></bdi></span>
-                                                    </div>
-                                                    <div class="shopping-cart__col shopping-cart__delete"></div>
-                                                </div>
-                                            </div>
+                                            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><span
+                                                        aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                                                    class="owl-next disabled"><span aria-label="Next">›</span></button></div>
+                                            <div class="owl-dots disabled"></div>
                                         </div>
                                     </div>
+
                                     <div class="minicart-progress-bar">
-                                        <div class="gift-icon">   
-                                            <img src="img/cart-gift-1.svg" width="49" height="53" alt="img gift"/>
-                                            <!-- <img src="img/cart-gift-2.svg" width="63" height="44" alt="img gift"/> -->
-                                            <!-- <img src="img/cart-gift-3.svg" width="75" height="75" alt="img gift"/> -->
-                                            <!-- <img src="img/cart-gift-4.svg" width="75" height="75" alt="img gift"/> -->
-                                            <!-- <img src="img/cart-gift-5.svg" width="47" height="53" alt="img gift"/> -->
-                                            <!-- <img src="img/cart-gift-6.svg" width="25" height="50" alt="img gift"/>                                          -->
-                                        </div>
-                                        <div class="range-item">
-                                            <p class="gift-label">Безкоштовна доставка</p>
-                                            <ul class="list-inline list-unstyled">
-                                              <li class="list-inline-item active"></li>
-                                              <li class="list-inline-item active">
-                                                <p>₴600+</p>
-                                              </li>
-                                              <li class="list-inline-item">
-                                                <p>₴1000+</p>
-                                              </li>
-                                              <li class="list-inline-item">
-                                                <p>₴1500+</p>
-                                              </li>
-                                              <li class="list-inline-item">
-                                                <p>₴3000+</p>
-                                              </li>
-                                              <li class="list-inline-item">
-                                                <p>₴6000+</p>
-                                              </li>
-                                              <li class="list-inline-item">
-                                                <p>₴10 000+</p>
-                                              </li>
-                                            </ul>
-                                            <div class="range-line"></div>
+                                        <div class="minicart-progress-bar-content">
+                                            <div class="row row-bottom">
+                                                <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M17.8501 4.2998C15.8147 4.2998 14.2801 5.779 14.2801 7.7398C14.2801 8.79395 14.7332 9.69906 15.4597 10.3198H9.66006C8.5017 10.3198 7.56006 11.2847 7.56006 12.4698V16.7698C7.56006 17.8079 8.28225 18.6765 9.24006 18.8761V30.5298C9.24006 32.6635 10.936 34.3998 13.0201 34.3998H28.9801C31.0641 34.3998 32.7601 32.6635 32.7601 30.5298V18.8761C33.7179 18.6765 34.4401 17.8079 34.4401 16.7698V12.4698C34.4401 11.2847 33.4984 10.3198 32.3401 10.3198H26.5404C27.2669 9.69906 27.7201 8.79395 27.7201 7.7398C27.7201 5.779 26.1854 4.2998 24.1501 4.2998C22.7775 4.2998 21.5973 5.11289 21.0001 6.29023C20.4028 5.11289 19.2226 4.2998 17.8501 4.2998ZM17.8501 5.1598C19.3553 5.1598 20.5801 6.43086 20.5801 7.99176V10.3198H17.8501C16.2683 10.3198 15.1201 9.23448 15.1201 7.7398C15.1201 6.24512 16.2683 5.1598 17.8501 5.1598ZM24.1501 5.1598C25.7318 5.1598 26.8801 6.24512 26.8801 7.7398C26.8801 9.23448 25.7318 10.3198 24.1501 10.3198H21.4201V7.99176C21.4201 6.43086 22.6448 5.1598 24.1501 5.1598ZM9.66006 11.1798H20.5801V18.0598H9.66006C8.96538 18.0598 8.40006 17.481 8.40006 16.7698V12.4698C8.40006 11.7586 8.96538 11.1798 9.66006 11.1798ZM21.4201 11.1798H32.3401C33.0347 11.1798 33.6001 11.7586 33.6001 12.4698V16.7698C33.6001 17.481 33.0347 18.0598 32.3401 18.0598H21.4201V11.1798ZM10.0801 18.9198H20.5801V33.5398H13.0201C11.3989 33.5398 10.0801 32.1896 10.0801 30.5298V18.9198ZM21.4201 18.9198H31.9201V30.5298C31.9201 32.1896 30.6013 33.5398 28.9801 33.5398H21.4201V18.9198Z" fill="#4B6D74"/>
+                                                </svg>  
+                                                <span>До наступного твого подарунку залишилось ₴1425,00</span>
+                                            </div>
+                                            <div class="row row-top">
+                                                <span>₴1814,00</span>
+                                                <div class="range-line">
+                                                    <div class="range-line-active"></div>
+                                                </div>
+                                                <span>₴3000,00</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p class="min-order">*Мінімальне замовлення: <span>XXXX</span>&nbsp; ₴</p>
-                                    <div class="gift-info">
-                                        <div class="gift-info-item">
-                                            <div class="gift-info-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30">
-                                                    <path
-                                                        d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z" />
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <b>Від 600 грн:</b>
-                                                <p>безкоштовна доставка.</p>
-                                            </div>
+
+                                    <div class="mini-cart__foot">
+                                        <div class="mini-cart__foot-row">
+                                            <p>Всього:</p>
+                                            <p>₴1750,00</p>
                                         </div>
-                                        <div class="gift-info-item">
-                                            <div class="gift-info-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30">
-                                                    <path
-                                                        d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z" />
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <b>Від 1000 грн:</b>
-                                                <p>два пробніки</p>
-                                            </div>
+                                        <div class="mini-cart__foot-row">
+                                            <p>Заощаджено:</p>
+                                            <p class="discount">₴175,00</p>
                                         </div>
-                                        <div class="gift-info-item">
-                                            <div class="gift-info-img">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="30">
-                                                    <path
-                                                        d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z" />
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <b>Від 1500 грн:</b>
-                                                <p>+ планер схеми догляду на дзеркало</p>
-                                            </div>
+                                        <div class="mini-cart__foot-row">
+                                            <p>До сплати:</p>
+                                            <p class="total-price">₴1575,00</p>
                                         </div>
-                                    </div>                            
-                                    <div class="shopping-cart__checkout">
-                                        <p class="product__card__info__button btn-continue">
-                                            <span class="icon-right-arrow"></span>
-                                            <span>Перейти до магазину</span>
-                                        </p>
+                                    </div>
+
+                                    <div class="mini-cart__row-end">
+                                        <p class="mini-cart__str"><a href=""><b>Увійдіть</b></a> до особистого кабінету для списання б’ютиків</p>
+                                    </div>   
+                                    
+                                    <div class="mini-cart__row-end">
+                                        <p class="mini-cart__str"><span style="text-decoration: underline;"><b>+279</b></span> б’ютиків до наступних покупок</p>
+                                    </div>  
+                                                               
+                                    <div class="mini-cart__row-end">
                                         <a href="https://www.beauty-systema.com/checkout-3/"
                                             class="product__card__info__button btn-checkout">
                                             <span>Оформити замовлення</span>
@@ -2921,147 +2912,7 @@
                                     </p>
                                 </div> -->
                             </div>
-                            <div class="mini-cart__slider gift_slider" style="">
-                                <h2 class="title">Обери свої подарунки</h2>
-                                <div class="mini-cart-gift owl-carousel owl-theme owl-loaded">
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 363px;">
-                                            <div class="owl-item" style="width: 166.25px; margin-right: 15px;">
-                                                <div class="item">
-                                                    <div class="product__card product_element" data-idproduct="104501" "="">
-                                                                                    <a class=" product__card__img"
-                                                        href="https://www.dev.beauty-systema.com/shop/krem-dlya-shkiry-navkolo-ochej-z-kolagenom-blivu-collagen-bouncing-firming-eye-cream-30-ml/">
-                                                        <img src="https://www.dev.beauty-systema.com/wp-content/uploads/2024/05/230419_blivu_0263-1.webp"
-                                                            alt="Крем для шкіри навколо очей з колагеном BLIV:U Collagen Bouncing Firming Eye Cream 30 ml"
-                                                            title="Крем для шкіри навколо очей з колагеном BLIV:U Collagen Bouncing Firming Eye Cream 30 ml">
-                                                        </a>
-                                                        <div class="product__card__info">
-                                                            <div class="product__card__info__content">
-                                                                <a href="https://www.dev.beauty-systema.com/shop/krem-dlya-shkiry-navkolo-ochej-z-kolagenom-blivu-collagen-bouncing-firming-eye-cream-30-ml/"
-                                                                    class="product__card__info__name">Крем для шкіри навколо очей з колагеном BLIV:U
-                                                                    Collagen Bouncing Firming Eye Cream 30 ml</a>
-                                                            </div>
-                                                            <div class="gift_buy">
-                                                                <span>Додати до кошика</span>
-                                                                <span class="icon-right-arrow"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="owl-item" style="width: 166.25px; margin-right: 15px;">
-                                                <div class="item">
-                                                    <div class="product__card product_element" data-idproduct="105053" "="">
-                                                                                    <a class=" product__card__img"
-                                                        href="https://www.dev.beauty-systema.com/shop/vitaminizovana-oliya-dlya-dushu-q-a-vitamin-a-c-e-cleansing-shower-oil-250ml/">
-                                                        <img src="https://www.dev.beauty-systema.com/wp-content/uploads/2024/05/vytamynyzyrovannoe-maslo-dlia-dusha-qa-vitamin-a.c.e-cleansing-shower-oil-250ml-38521687232051.webp"
-                                                            alt="Вітамінізована олія для душу Q+A Vitamin A.C.E Cleansing Shower Oil, 250мл"
-                                                            title="Вітамінізована олія для душу Q+A Vitamin A.C.E Cleansing Shower Oil, 250мл">
-                                                        </a>
-                                                        <div class="product__card__info">
-                                                            <div class="product__card__info__content">
-                                                                <a href="https://www.dev.beauty-systema.com/shop/vitaminizovana-oliya-dlya-dushu-q-a-vitamin-a-c-e-cleansing-shower-oil-250ml/"
-                                                                    class="product__card__info__name">Вітамінізована олія для душу Q+A Vitamin A.C.E
-                                                                    Cleansing Shower Oil, 250мл</a>
-                                                            </div>
-                                                            <div class="gift_buy">
-                                                                <span>Додати до кошика</span>
-                                                                <span class="icon-right-arrow"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="owl-item" style="width: 166.25px; margin-right: 15px;">
-                                                <div class="item">
-                                                    <div class="product__card product_element" data-idproduct="104501" "="">
-                                                                                    <a class=" product__card__img"
-                                                        href="https://www.dev.beauty-systema.com/shop/krem-dlya-shkiry-navkolo-ochej-z-kolagenom-blivu-collagen-bouncing-firming-eye-cream-30-ml/">
-                                                        <img src="https://www.dev.beauty-systema.com/wp-content/uploads/2024/05/230419_blivu_0263-1.webp"
-                                                            alt="Крем для шкіри навколо очей з колагеном BLIV:U Collagen Bouncing Firming Eye Cream 30 ml"
-                                                            title="Крем для шкіри навколо очей з колагеном BLIV:U Collagen Bouncing Firming Eye Cream 30 ml">
-                                                        </a>
-                                                        <div class="product__card__info">
-                                                            <div class="product__card__info__content">
-                                                                <a href="https://www.dev.beauty-systema.com/shop/krem-dlya-shkiry-navkolo-ochej-z-kolagenom-blivu-collagen-bouncing-firming-eye-cream-30-ml/"
-                                                                    class="product__card__info__name">Крем для шкіри навколо очей з колагеном BLIV:U
-                                                                    Collagen Bouncing Firming Eye Cream 30 ml</a>
-                                                            </div>
-                                                            <div class="gift_buy">
-                                                                <span>Додати до кошика</span>
-                                                                <span class="icon-right-arrow"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="owl-item" style="width: 166.25px; margin-right: 15px;">
-                                                <div class="item">
-                                                    <div class="product__card product_element" data-idproduct="105053" "="">
-                                                                                    <a class=" product__card__img"
-                                                        href="https://www.dev.beauty-systema.com/shop/vitaminizovana-oliya-dlya-dushu-q-a-vitamin-a-c-e-cleansing-shower-oil-250ml/">
-                                                        <img src="https://www.dev.beauty-systema.com/wp-content/uploads/2024/05/vytamynyzyrovannoe-maslo-dlia-dusha-qa-vitamin-a.c.e-cleansing-shower-oil-250ml-38521687232051.webp"
-                                                            alt="Вітамінізована олія для душу Q+A Vitamin A.C.E Cleansing Shower Oil, 250мл"
-                                                            title="Вітамінізована олія для душу Q+A Vitamin A.C.E Cleansing Shower Oil, 250мл">
-                                                        </a>
-                                                        <div class="product__card__info">
-                                                            <div class="product__card__info__content">
-                                                                <a href="https://www.dev.beauty-systema.com/shop/vitaminizovana-oliya-dlya-dushu-q-a-vitamin-a-c-e-cleansing-shower-oil-250ml/"
-                                                                    class="product__card__info__name">Вітамінізована олія для душу Q+A Vitamin A.C.E
-                                                                    Cleansing Shower Oil, 250мл</a>
-                                                            </div>
-                                                            <div class="gift_buy">
-                                                                <span>Додати до кошика</span>
-                                                                <span class="icon-right-arrow"></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                         
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev disabled"><span
-                                                aria-label="Previous">‹</span></button><button type="button" role="presentation"
-                                            class="owl-next disabled"><span aria-label="Next">›</span></button></div>
-                                    <div class="owl-dots disabled"></div>
-                                </div>
-                                </div>
-                            <div class="mini-cart__slider">
-                                <h2 class="title">Популярні товари</h2>
-                                <div class="mini-cart-carousel owl-carousel owl-theme">
-                                    <div class="item">
-                                        <div class="product__card">
-                                            <a class="product__card__img" href="product_page.html">
-                                                <img src="./img/popular_1.png" alt="img">
-                                                <div class="product__card__lables-block">
-                                                    <div class="product__card__lable popular">
-                                                        <span class="icon-popular_label icon"></span>
-                                                        <span>Популярний засіб</span>
-                                                    </div>
-                                                </div>
-                                                <span class="icon-favorite_icon"></span>
-                                            </a>
-                                            <div class="product__card__info">
-                                                <div class="product__card__info__content">
-                                                    <a href="#" class="product__card__info__name">Очищаючий засіб для миття тіла
-                                                        Acnemy ZITBODY, 200 мл</a>
-                                                </div>
-                                                <div class="product__card__info__price">
-                                                    <p class="old-price">₴999,00</p>
-                                                    <p>₴938,00</p>
-                                                </div>
-                                                <div class="product__card__info__buy-button">
-                                                    <span>Додати до кошика</span>
-                                                    <span class="icon-right-arrow"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>                            
+                            
                         </div>
                     </div>
             
@@ -3094,17 +2945,13 @@
                         <span>₴3000,00</span>
                     </div>
                     <div class="row row-bottom">
-                        <svg width="18" height="26" viewBox="0 0 47 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19.7684 30.0578C19.5724 30.2132 19.4343 30.434 19.3775 30.6827C19.1509 31.6192 19.2805 32.6228 19.8693 33.3116C20.3757 33.9042 21.1051 34.1361 21.8657 34.2016C21.9814 34.243 22.1031 34.2635 22.2256 34.2623H22.2277H24.7723C24.8934 34.263 25.0136 34.2425 25.1281 34.2016C25.8913 34.1371 26.6229 33.9058 27.1307 33.3116C27.7195 32.6228 27.8504 31.621 27.6246 30.6849C27.5558 30.3994 27.3802 30.154 27.1365 30.0025M23.5 1C12.9213 1 6.96191 8.36924 6.96191 8.36924C6.82909 8.53484 6.74571 8.73685 6.72192 8.95064C6.69814 9.16444 6.735 9.38077 6.82799 9.57327L8.02916 12.0636L5.8005 11.4854C5.56992 11.426 5.32679 11.4476 5.10936 11.5467C4.89192 11.6459 4.7125 11.8171 4.59933 12.0333L4.59724 12.0355C4.58939 12.0497 4.57948 12.0686 4.56585 12.0939C4.53737 12.1468 4.49726 12.2229 4.44657 12.3213C4.34519 12.5181 4.20181 12.8028 4.03223 13.168C3.69306 13.8985 3.2459 14.9498 2.79757 16.2495C1.90092 18.8491 1 22.4495 1 26.5011C1 34.6042 4.61398 40.997 4.61398 40.997C4.73084 41.2047 4.90974 41.3675 5.12374 41.4608C5.33773 41.5541 5.57524 41.573 5.8005 41.5146L8.03125 40.9364L6.82799 43.4267C6.73455 43.6195 6.69746 43.8362 6.72125 44.0505C6.74503 44.2647 6.82867 44.4671 6.96191 44.6329C6.96191 44.6329 12.9213 52 23.5 52C34.0787 52 40.0381 44.6329 40.0381 44.6329C40.1713 44.4671 40.255 44.2647 40.2788 44.0505C40.3025 43.8362 40.2654 43.6195 40.172 43.4267L38.9687 40.9364L41.1995 41.5146C41.4248 41.573 41.6623 41.5541 41.8763 41.4608C42.0903 41.3675 42.2692 41.2047 42.386 40.997C42.386 40.997 46 34.6042 46 26.5011C46 18.398 42.386 12.0051 42.386 12.0051C42.2692 11.7975 42.0903 11.6347 41.8763 11.5414C41.6623 11.448 41.4248 11.4291 41.1995 11.4876L38.9687 12.0658L40.172 9.57543C40.2471 9.42163 40.2865 9.25184 40.2871 9.07953C40.2871 9.07953 40.0275 8.35654 40.013 8.33892C39.9984 8.32131 39.9777 8.29725 39.9523 8.26746C39.9015 8.20788 39.8292 8.12473 39.7347 8.02059C39.5455 7.81233 39.2681 7.52206 38.906 7.17604C38.1817 6.484 37.1164 5.56887 35.7189 4.65539C32.9239 2.82842 28.7893 1 23.5 1ZM16 19.8486C14.404 19.8486 13.1139 20.2298 12.1705 20.9162C11.2271 21.6026 10.6429 22.642 10.6429 23.7292C10.6429 24.8164 11.2271 25.8558 12.1705 26.5422C13.1139 27.2286 14.404 27.6098 16 27.6098C17.596 27.6098 18.8861 27.2286 19.8295 26.5422C20.7729 25.8558 21.3571 24.8164 21.3571 23.7292C21.3571 22.642 20.7729 21.6026 19.8295 20.9162C18.8861 20.2298 17.596 19.8486 16 19.8486ZM31 19.8486C29.404 19.8486 28.1139 20.2298 27.1705 20.9162C26.2271 21.6026 25.6429 22.642 25.6429 23.7292C25.6429 24.8164 26.2271 25.8558 27.1705 26.5422C28.1139 27.2286 29.404 27.6098 31 27.6098C32.596 27.6098 33.8861 27.2286 34.8295 26.5422C35.7729 25.8558 36.3571 24.8164 36.3571 23.7292C36.3571 22.642 35.7729 21.6026 34.8295 20.9162C33.8861 20.2298 32.596 19.8486 31 19.8486ZM23.5 36.4798C22.1962 36.4798 20.7827 36.6941 19.5951 37.1034C19.0014 37.3081 18.4631 37.5542 17.9985 37.9198C17.5339 38.2855 17.0714 38.8662 17.0714 39.6393C17.0714 40.4123 17.5026 40.9753 17.9503 41.3717C18.3981 41.7681 18.9335 42.0634 19.5282 42.3158C20.7176 42.8206 22.1477 43.1322 23.5 43.1322C24.8523 43.1322 26.2824 42.8206 27.4718 42.3158C28.0665 42.0634 28.6019 41.7681 29.0497 41.3717C29.4974 40.9753 29.9286 40.4123 29.9286 39.6393C29.9286 38.8662 29.4661 38.2855 29.0015 37.9198C28.5369 37.5542 27.9986 37.3081 27.4049 37.1034C26.2173 36.6941 24.8038 36.4798 23.5 36.4798Z"
-                                stroke="#4B6D74" />
-                        </svg>
+                        <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.7504 3.6001C11.2966 3.6001 10.2004 4.6665 10.2004 6.0801C10.2004 6.84007 10.5241 7.49258 11.043 7.9401H6.90039C6.07299 7.9401 5.40039 8.63574 5.40039 9.4901V12.5901C5.40039 13.3385 5.91624 13.9647 6.60039 14.1086V22.5101C6.60039 24.0483 7.81179 25.3001 9.30039 25.3001H20.7004C22.189 25.3001 23.4004 24.0483 23.4004 22.5101V14.1086C24.0845 13.9647 24.6004 13.3385 24.6004 12.5901V9.4901C24.6004 8.63574 23.9278 7.9401 23.1004 7.9401H18.9578C19.4767 7.49258 19.8004 6.84007 19.8004 6.0801C19.8004 4.6665 18.7042 3.6001 17.2504 3.6001C16.27 3.6001 15.427 4.18628 15.0004 5.03506C14.5738 4.18628 13.7308 3.6001 12.7504 3.6001ZM12.7504 4.2201C13.8256 4.2201 14.7004 5.13644 14.7004 6.26174V7.9401H12.7504C11.6206 7.9401 10.8004 7.15766 10.8004 6.0801C10.8004 5.00254 11.6206 4.2201 12.7504 4.2201ZM17.2504 4.2201C18.3802 4.2201 19.2004 5.00254 19.2004 6.0801C19.2004 7.15766 18.3802 7.9401 17.2504 7.9401H15.3004V6.26174C15.3004 5.13644 16.1752 4.2201 17.2504 4.2201ZM6.90039 8.5601H14.7004V13.5201H6.90039C6.40419 13.5201 6.00039 13.1028 6.00039 12.5901V9.4901C6.00039 8.97736 6.40419 8.5601 6.90039 8.5601ZM15.3004 8.5601H23.1004C23.5966 8.5601 24.0004 8.97736 24.0004 9.4901V12.5901C24.0004 13.1028 23.5966 13.5201 23.1004 13.5201H15.3004V8.5601ZM7.20039 14.1401H14.7004V24.6801H9.30039C8.14239 24.6801 7.20039 23.7067 7.20039 22.5101V14.1401ZM15.3004 14.1401H22.8004V22.5101C22.8004 23.7067 21.8584 24.6801 20.7004 24.6801H15.3004V14.1401Z" fill="#4B6D74"/>
+                        </svg>  
                         <span>Додайте ще на ₴1186,00 для подарунку</span>
                     </div>
                 </div>
             </div>
-
-            
         </main>
         <footer class="footer">
             <div class="footer-main container">

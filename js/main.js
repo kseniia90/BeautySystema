@@ -708,6 +708,14 @@ if (document.querySelector(".authorization-popup .auth-link") !== null) {
   });
 };
 
+if (document.querySelector(".mini-cart-popup .auth-link") !== null) {
+  document.querySelector('.mini-cart-popup .auth-link').addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".mini-cart-popup").classList.remove("active");
+    document.body.style.overflow = "visible";
+  });
+};
+
 //show more-less start
 
 $.fn.showMore = function (options) {

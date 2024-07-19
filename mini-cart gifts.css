@@ -103,7 +103,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     padding: 10px 10px 15px;
     text-align: center;
 }
@@ -119,18 +119,36 @@
 }
 
 .gift_slider .product_element .product__card__info__name {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 120%;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14.54px;
     letter-spacing: 0.45px;
-    height: 55px;
-    align-self: start;
-    text-align: start;
+    height: 45px;
+    min-height: 45px;
+    text-align: center;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.gift_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23.26px;
+    text-align: center;
+}
+
+.gift_price .old-price {
+    font-size: 10px;
+    line-height: 14.54px;
+    text-decoration: line-through;
 }
 
 .gift_buy {
@@ -158,7 +176,7 @@
     justify-content: flex-start;
     align-items: stretch;
     gap: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .gift-info-item {
@@ -166,17 +184,47 @@
     justify-content: flex-start;
     align-items: center;
     gap: 14px;
-    padding: 13px 10px;
-    border-radius: 13px;
+    padding: 10px;
+    border-radius: 5px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24.96px;
-    text-align: left;
-    color: #333333;
-    box-shadow: 5px 6px 19px 0px #AAC0C3;
+    color: #4B6D74;
+    border: 1px solid #4B6D74
+}
+
+.gift-info-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gift-info svg path {
     fill: #4B6D74;
+}
+
+@media (max-width: 768px) {
+
+    .mini-cart__slider.gift_slider {
+        margin: 15px 0;
+    }
+
+    .gift-info {
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(33, 50, 53, 0.1);
+    }
+
+    .gift_slider .title {
+        font-size: 14px;
+        line-height: 21.94px;
+        color: #213235;
+        margin-bottom: 10px;
+    }
+
+    .gift-info-item {
+        padding: 5px;
+        font-size: 14px;
+        line-height: 20.36px;
+    }
 }
 
