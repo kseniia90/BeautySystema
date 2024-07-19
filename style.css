@@ -10902,22 +10902,60 @@ button.openSocial-sft:after{
         line-height: 23.26px;
     }
 
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .woocommerce-shipping-totals.shipping td:last-child,
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .cart-discount span {
-    font-size: 14px;
-    line-height: 20.36px;
-}
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody tr td {
+        border: none;
+    }
 
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback,
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .coupon-add,
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback th,
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback td,
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .coupon-add th,
-    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .coupon-add td {
-        width: calc(100vw - 30px);
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody tr:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody .product-thumbnail {
+        min-width: 74px;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody .product-name,
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody .product-quantity,
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody .product-total {
+        display: inline-block;
+        border: none;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody .product-quantity,
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tbody .product-total {
+        min-width: 50px;
+        text-align: left;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot {
         display: flex;
         flex-direction: column;
-        white-space: nowrap;
+        gap: 5px;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr.spend-cashback,
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr.coupon-add {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr.spend-cashback td,
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr.coupon-add td {
+        width: 100%;
+        text-align: left;
+    }
+
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .woocommerce-shipping-totals.shipping td:last-child,
+    .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .cart-discount span {
+        font-size: 14px;
+        line-height: 20.36px;
     }
 
     .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback span {
@@ -10934,11 +10972,10 @@ button.openSocial-sft:after{
         font-size: 18px;
         line-height: 26.17px;
     }
+
+    .col-2 .button.alt {
+        width: 100%;
+    }
     
 }
-
-
-
-
-
 /*Checkout right column END*/
