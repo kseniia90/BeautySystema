@@ -8122,6 +8122,10 @@ ul.woocommerce-error {
 		border-bottom: 1px solid rgba(33, 50, 53, 0.1);
 	}
 
+	.mini-cart-popup .shopping-cart__table__row:first-child {
+		border-top: 1px solid rgba(33, 50, 53, 0.1);
+	}
+
 	.mini-cart-popup .product-image img {
 		width: 70px;
 		height: 70px;
