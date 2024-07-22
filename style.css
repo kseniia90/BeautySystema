@@ -10868,6 +10868,17 @@ button.openSocial-sft:after{
     vertical-align: baseline;
 }
 
+.woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback-block td {
+	text-align: left !important;
+}
+
+.woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback-block span {
+	display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.15px;
+}
+
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback span {
     display: inline-block;
     font-size: 12px;
@@ -10959,6 +10970,10 @@ button.openSocial-sft:after{
         gap: 0;
     }
 
+	.woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .spend-cashback-block {
+		display: table;
+	}
+
     .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr.spend-cashback td,
     .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot tr.coupon-add td {
         width: 100%;
@@ -10994,4 +11009,16 @@ button.openSocial-sft:after{
 .woocommerce-form-coupon-toggle, .showcoupon {
     display: none;
 }
+
+.coupon-title {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+}
+
+.coupon-title .icon-Close {
+	line-height: inherit;
+	cursor: pointer;
+}
+
 /*Checkout right column END*/
