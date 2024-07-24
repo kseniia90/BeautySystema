@@ -6036,14 +6036,6 @@ ol.breadcrumb li:last-child {
 	transition: all 0.2s ease;
 }
 
-.contacts__list a svg rect {
-	stroke: #4B6D74;
-}
-
-.contacts__list a svg path {
-	fill: #4B6D74;
-}
-
 @media (min-width: 769px) {
 	.contacts__list ul li a:hover {
 		color: #668b90;
@@ -8007,7 +7999,7 @@ ul.woocommerce-error {
 .mini-cart__foot .discount {
 	font-size: 16px;
 	line-height: 23.26px;
-	text-decoration: line-through;
+	/* text-decoration: line-through; */
 }
 
 .mini-cart__foot .total-price {
@@ -10791,16 +10783,26 @@ button.openSocial-sft:after{
     padding-top: 10px;
 }
 
-#order_review_heading svg {
-    cursor: pointer;
-}
-
-#order_review_heading svg rect{
+.order-edit svg rect {
     fill: #4B6D74;
     transition: all .2s ease;
 }
 
-#order_review_heading svg:hover rect{
+.order-edit {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #4B6D74;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.order-edit:hover {
+    color: #668b90;
+}
+
+.order-edit:hover svg rect{
     fill: #668b90;
 }
 
@@ -10903,9 +10905,9 @@ button.openSocial-sft:after{
     text-align: end;
 }
 
-.woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .cart-discount span {
+/* .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .cart-discount span {
     text-decoration: line-through;
-}
+} */
 
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .woocommerce-shipping-totals.shipping td:last-child,
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tfoot .cart-discount span {
