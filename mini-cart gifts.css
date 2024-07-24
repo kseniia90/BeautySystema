@@ -64,7 +64,6 @@
 }
 
 
-
 .gift_slider .owl-carousel .item {
     height: auto !important;
     box-shadow: 5px 4px 18px 0 #0000000d;
@@ -177,6 +176,10 @@
     align-items: stretch;
     gap: 14px;
     margin-bottom: 10px;
+}
+
+.gift-info-lim {
+    color: #4B6D74;
 }
 
 .gift-info-item {
