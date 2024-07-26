@@ -1088,7 +1088,12 @@ ol.breadcrumb li:last-child {
 	display: flex;
 }
 
-
+.nb_new_menu:after {
+    content: "NEW";
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
 
 .header__search-block {
 	width: 100%;
@@ -11327,6 +11332,5 @@ span.mini_cart_notification {
         line-height: 20.36px;
     }
 }
-
 
 /* Mini-cart gifts end*/
