@@ -1088,11 +1088,18 @@ ol.breadcrumb li:last-child {
 	display: flex;
 }
 
+.nb_new_menu {
+    position: relative;
+}
+
 .nb_new_menu:after {
     content: "NEW";
     color: red;
     font-weight: bold;
     margin-left: 5px;
+    position: absolute;
+    right: 0;
+    top: -10px;
 }
 
 .header__search-block {
@@ -1123,6 +1130,13 @@ ol.breadcrumb li:last-child {
 
 	.header__search-block .header__main__logo {
 		display: none;
+	}
+
+	.nb_new_menu:after {
+		right: auto;
+		top: 50%;
+		left: 100%;
+		transform: translateY(-50%);
 	}
 }
 
@@ -9538,7 +9552,7 @@ button.openSocial-sft:after{
 }
 
 .loyalty-banner-1 .footer-banner__content {
-	background-image: url(/img/loyalty-bg.png);
+	background-image: url(/wp-content/themes/beautysystema/img/loyalty-bg.png);;
 	background-color: transparent;
 	padding: 50px;
 	border-radius: 13px;
@@ -10855,7 +10869,8 @@ button.openSocial-sft:after{
 }
 
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table .product-name {
-    font-size: 12px;
+    width: 100%;
+	font-size: 12px;
     line-height: 17.45px;
     text-align: left;
 
