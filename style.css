@@ -1312,7 +1312,7 @@ ol.breadcrumb li:last-child {
 }
 
 .search-results .product__card__info__button {
-	display: inline-block;
+	display: inline-flex;
 	font-size: 13px;
 	padding: 5px 10px;
 	width: auto;
@@ -7082,9 +7082,14 @@ ul.woocommerce-error {
 }
 
 .shop_table.woocommerce-checkout-review-order-table .product-thumbnail img {
+	width: 100%;
 	max-width: 80px;
 	height: auto;
 	object-fit: contain;
+}
+
+.shop_table.woocommerce-checkout-review-order-table .product-thumbnail img.product-thumbnail-label {
+	max-width: 24px;
 }
 
 @media (max-width: 768px) {
@@ -10869,11 +10874,9 @@ button.openSocial-sft:after{
 }
 
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table .product-name {
-    width: 100%;
 	font-size: 12px;
     line-height: 17.45px;
     text-align: left;
-
 }
 
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table .product-quantity {
@@ -11084,6 +11087,10 @@ button.openSocial-sft:after{
     .col-2 .button.alt {
         width: 100%;
     }  
+
+	.woocommerce table.shop_table.woocommerce-checkout-review-order-table .product-name {
+		width: 100%;
+	}
 }
 
 .woocommerce-form-coupon-toggle, .showcoupon {
