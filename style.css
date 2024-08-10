@@ -4346,7 +4346,8 @@ ol.breadcrumb li:last-child {
 	}
 }
 
-.product-page__content__carousel {
+.product-page__content__carousel,
+.product-page__content__img {
 	--product-view-height: 470px;
 	position: relative;
 }
@@ -4413,7 +4414,6 @@ ol.breadcrumb li:last-child {
 	width: 100%;
 	height: 100%;
 	/* object-fit: cover; */
-
 	object-fit: contain;
 	max-height: 410px;
 }
@@ -4455,7 +4455,8 @@ ol.breadcrumb li:last-child {
 }
 
 @media (max-width: 768px) {
-	.product-page__content__carousel {
+	.product-page__content__carousel,
+	.product-page__content__img {
 		--product-view-height: 255px;
 	}
 
