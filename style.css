@@ -4585,6 +4585,7 @@ ol.breadcrumb li:last-child {
 	font-size: 24px;
 	user-select: text;
 	display: block;
+	height: auto;
 }
 
 @media (max-width: 768px) {
