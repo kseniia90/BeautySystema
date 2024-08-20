@@ -11360,3 +11360,7 @@ span.mini_cart_notification {
 }
 
 /* Mini-cart gifts end*/
+
+#login_cart {
+	cursor: pointer;
+}
