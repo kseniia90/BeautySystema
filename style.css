@@ -981,11 +981,53 @@ ol.breadcrumb li:last-child {
 
 .header__main-right {
 	width: 100%;
-	max-width: 790px;
+	max-width: 800px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
+	gap: 10px;
+}
+
+.header__main__lang {
+	display: flex;
+    white-space: nowrap;
+    margin-left: 20px
+}
+
+.header__main__lang-item {
+    border: none;
+    background-color: inherit;
+	position: relative;
+    margin-right: 5px
+}
+
+.header__main__lang a {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    font-size: 12px !important;
+    position: relative;
+}
+
+.header__main__lang-item:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: -5px;
+    width: .8px;
+    height: 17px;
+    background-color: #4B6D74;
+}
+
+.header__main__lang-item:not(:first-child) {
+    margin-left: 5px
+}
+
+.header__main__lang-item.active {
+    font-size: inherit;
+	font-weight: 700;
+    line-height: inherit;
+    color: #4B6D74;
 }
 
 @media (max-width: 1210px) {
@@ -1014,6 +1056,10 @@ ol.breadcrumb li:last-child {
 	.header__main__list {
 		gap: 11px;
 		/* gap: 5px; */
+	}
+
+	.header__main__lang {
+		margin-left: 5px
 	}
 }
 
@@ -1118,7 +1164,7 @@ ol.breadcrumb li:last-child {
 .header__main-form {
 	position: relative;
 	width: 100%;
-	max-width: 790px;
+	max-width: 800px;
 	z-index: 99;
 }
 
