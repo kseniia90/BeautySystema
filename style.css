@@ -9216,6 +9216,12 @@ button.openSocial-sft:after{
 	.posts-slider .slider-insta .useful-info__card {
 		min-width: 330px;
 	}
+
+	.post-page__content.page_content_text img {
+		width: 100%;
+		object-fit: cover;
+		float: none;
+	}
 }
 
 .wayforpay,
