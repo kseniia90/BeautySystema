@@ -994,6 +994,10 @@ ol.breadcrumb li:last-child {
     margin-left: 20px
 }
 
+.header__nav .header__main__lang {
+	display: none;
+}
+
 .header__main__lang-item {
     border: none;
     background-color: inherit;
@@ -1058,12 +1062,13 @@ ol.breadcrumb li:last-child {
 		/* gap: 5px; */
 	}
 
-	.header__main__lang {
-		padding: 20px 0;
-	}
-
 	.header__main .header__main__lang {
 		display: none;
+	}
+
+	.header__nav .header__main__lang {
+		display: flex;
+		padding: 20px 0;
 	}
 
 	.header__main__lang-item.active {
