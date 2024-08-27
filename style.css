@@ -1059,7 +1059,7 @@ ol.breadcrumb li:last-child {
 	}
 
 	.header__main__lang {
-		margin-left: 5px
+		padding: 20px 0;
 	}
 
 	.header__main .header__main__lang {
@@ -1068,6 +1068,10 @@ ol.breadcrumb li:last-child {
 
 	.header__main__lang-item.active {
 		color: #fff;
+	}
+
+	.header__main__lang a {
+		font-size: 16px !important;
 	}
 
 	.header__main__lang-item:not(:last-child)::after {
