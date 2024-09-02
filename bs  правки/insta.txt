@@ -1,0 +1,6 @@
+В блоці "Слідкуйте за нами в Instagram" заголовок і блок зі слайдером(.slider-insta) замінити на:
+
+<div class="insta-img">
+    <img src="./img/insta_desk.JPG" alt="" class="desktop">
+    <img src="./img/insta_mob.JPG" alt="" class="mobile">
+</div>
