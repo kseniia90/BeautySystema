@@ -4,3 +4,6 @@
     <img src="./img/insta_desk.JPG" alt="" class="desktop">
     <img src="./img/insta_mob.JPG" alt="" class="mobile">
 </div>
+
+
+.order_form_popup .order__form button span 
