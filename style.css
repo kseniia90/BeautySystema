@@ -10482,13 +10482,13 @@ button.openSocial-sft:after{
 @media (min-width: 769px) {
 
 	.account-section .contacts__form__btn:hover {
-		color: var(--accent) !important;
-		background-color: #fff !important;
+		/* color: var(--accent) !important;
+		background-color: #fff !important; */
 	}
 
 	.account-section .product__card__info__button:hover {
-		color: var(--accent) !important;
-		background-color: #fff !important;
+		/* color: var(--accent) !important;
+		background-color: #fff !important; */
 	}
 }
 
