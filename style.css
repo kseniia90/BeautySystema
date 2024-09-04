@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--light: ;
 	--accent: #3e6d74;
 	--accent-hover: #668b90;
-	--text-color: var(--text-color);
+	--text-color: #213235;
 	--btn: linear-gradient(90deg, rgba(62,109,116,1) 34%, rgba(229,244,114,1) 100%);
 	--progress: linear-gradient(90deg, rgba(229,244,114,1) 34%, rgba(62,109,116,1) 100%);
 	
@@ -7058,6 +7058,7 @@ form.woocommerce-form.woocommerce-form-register.register input {
 	display: inline-block;
     width: 16px;
     height: 16px;
+	min-height: 16px;
 	border-radius: 3px;
 	border: 1px solid #213235;
 	padding: 0;

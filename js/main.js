@@ -223,6 +223,12 @@ $(function () {
     nav: true,
     loop: true,
     items: 1,
+    margin: 20,
+    autoplay:true,
+    slideTransition: 'linear',
+    autoplaySpeed: 3000,
+    autoplayTimeout: 5000,
+    autoplayHoverPause:true,
   });
 
   function fadeSlides(e) {
