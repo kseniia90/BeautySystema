@@ -2310,6 +2310,11 @@ ol.breadcrumb li:last-child {
 	vertical-align: middle;
 }
 
+.product__card__lable.discount-one-plus-one {
+	background: #65a0db;
+	color: white;
+}
+
 .gift_slider .product__card__lables-block {
 	left: 5px;
 	top: 5px;
@@ -3109,7 +3114,6 @@ ol.breadcrumb li:last-child {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 23px;
-
 }
 
 .questions__block__item h3 {
@@ -3155,9 +3159,10 @@ ol.breadcrumb li:last-child {
 .faq-title-icon::after {
 	content: "+";
 	display: block;
-	width: 20px;
+	width: 19px;
 	height: 20px;
-	line-height: 20px;
+	padding-left: 1px;
+	line-height: 19px;
 	border-radius: 50%;
 	text-align: center;
 	color: var(--accent);
@@ -3166,6 +3171,7 @@ ol.breadcrumb li:last-child {
 
 .faq-title-icon.minus::after {
 	content: "-";
+	padding-bottom: 1px;
 } 
 
 @media (max-width: 768px) {
@@ -3187,6 +3193,16 @@ ol.breadcrumb li:last-child {
 	flex-direction: column;
 	gap: 5px;
 	margin-bottom: 40px;
+}
+
+.title_cat_product {
+	font-size: 45px;
+}
+
+@media (max-width: 768px) {
+	.title_cat_product {
+		font-size: 28px;
+	}
 }
 
 .block_new__title p {
@@ -3325,13 +3341,15 @@ ol.breadcrumb li:last-child {
 }
 
 .slider-insta .insta-carousel,
-.posts-carousel {
+.posts-carousel,
+.block_set_list {
 	margin: 0px auto;
 	height: 100%;
 }
 
 .slider-insta .insta-carousel .owl-stage,
-.posts-carousel .owl-stage {
+.posts-carousel .owl-stage,
+.block_set_list .owl-stage {
 	display: flex;
 	justify-content: stretch;
 	align-items: stretch;
@@ -4730,11 +4748,13 @@ ol.breadcrumb li:last-child {
 
 .product-page__content__right {
 	flex: 0 0 58%; /* 700/1200 */
+	max-width: 58%;
 }
 
 @media (max-width: 1150px) {
 	.product-page__content__right {
 		flex: 0 0 100%;
+		max-width: 100%;
 		padding: 0 15px;
 	}
 }
@@ -4848,8 +4868,8 @@ ol.breadcrumb li:last-child {
 
 .product-page__content__buttons-block {
 	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr;
+	display: flex;
+	flex-direction: column;
 	gap: 10px;
 }
 
@@ -6329,8 +6349,7 @@ ol.breadcrumb li:last-child {
 }
 
 .contacts__form__btn {
-	/* color: white; */
-	background: transparent;
+	color: white;
 	font-weight: 500;
 	font-size: 17px;
 }
@@ -6344,6 +6363,11 @@ ol.breadcrumb li:last-child {
 
 	.contacts__list.main {
 		font-size: 18px;
+	}
+	
+	.contacts__form__btn {
+		color: white;
+		background: var(--accent);
 	}
 }
 
@@ -9417,6 +9441,10 @@ button.openSocial-sft:after{
 		object-fit: cover;
 		float: none;
 	}
+
+	.post-page  .product__card__info__buy-button {
+		color: white !important;
+	}
 }
 
 .wayforpay,
@@ -10983,8 +11011,8 @@ button.openSocial-sft:after{
 	font-size: 17px;
 	font-weight: 500;
 	line-height: 20.72px;
-
 }
+
 
 .order__repeat-btn .product__card__info__button:hover {
 	color: #fff !important;
@@ -11060,6 +11088,7 @@ button.openSocial-sft:after{
 	
 	.order__repeat-btn .product__card__info__button {
 		display: flex;
+		color: white !important;
 	}
 
 	.orders-title {
@@ -11640,3 +11669,4 @@ span.mini_cart_notification {
 #login_cart {
 	cursor: pointer;
 }
+

@@ -373,6 +373,14 @@ $(function () {
     },
   });
 
+    // slider buy together
+    $(".carousel_set").owlCarousel({
+      dots: false,
+      nav: true,
+      loop: false,
+      items: 1,
+  });
+
   //mini-cart popular 
   // $(".mini-cart-carousel").owlCarousel({
   //   loop: true,
