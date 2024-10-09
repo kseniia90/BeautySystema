@@ -7621,6 +7621,14 @@ ul.woocommerce-error {
   opacity: 0;
 }
 
+@media (max-width: 768px) {
+
+	.page_content_text .thanks__block2 .product__card__info__button,
+	.language-popup .product__card__info__button {
+		color: white;
+	}
+}
+
 .page_content_text .thanks__block2 .product__card__info__button span,
 .language-popup .product__card__info__button span {
 	position: relative;
