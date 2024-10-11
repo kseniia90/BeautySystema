@@ -714,7 +714,8 @@ h3 {
 	}
 }
 
-.title {
+.title,
+.categories h1 {
 	font-size: 60px;
 	font-family: "Montserrat", sans-serif;
 	line-height: normal;
@@ -723,7 +724,8 @@ h3 {
 }
 
 @media (max-width: 992px) {
-	.title {
+	.title,
+	.categories h1 {
 		font-size: 30px;
 		letter-spacing: 0.75px;
 		margin-bottom: 30px;
@@ -1770,6 +1772,7 @@ ol.breadcrumb li:last-child {
         padding: 15px 20px 80px 35px;
         width: 100%;
         position: absolute;
+		/* position: fixed; */
         right: -100% !important;
         top: 0;
         font-size: 18px;
@@ -1841,6 +1844,7 @@ ol.breadcrumb li:last-child {
 }
 
 .burger-menu-btn {
+	position: relative;
 	z-index: 99;
 	cursor: pointer;
 	display: flex;
@@ -3107,7 +3111,12 @@ ol.breadcrumb li:last-child {
 .questions__block {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
-	gap: 30px;
+	gap: 40px;
+}
+
+.categories .questions__block {
+	grid-template-columns: 1fr;
+	margin-top: 30px;
 }
 
 .questions__block__item {
@@ -3179,7 +3188,6 @@ ol.breadcrumb li:last-child {
 	.questions__block__item {
 		font-size: 14px;
 		line-height: 20px;
-	
 	}
 	
 	.questions__block__item h3 {
@@ -6349,7 +6357,8 @@ ol.breadcrumb li:last-child {
 }
 
 .contacts__form__btn {
-	color: white;
+	color: var(--accent);
+	background: transparent;
 	font-weight: 500;
 	font-size: 17px;
 }
@@ -6367,7 +6376,7 @@ ol.breadcrumb li:last-child {
 	
 	.contacts__form__btn {
 		color: white;
-		background: var(--accent);
+		background: var(--btn);
 	}
 }
 

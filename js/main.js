@@ -93,14 +93,11 @@ function dropDownFunc(dropDown) {
   } else {
     if (dropDown.classList.contains("dropdown-link") === true) {
       dropDown.addEventListener("click", function (e) {
-        if (
-          !!this.nextElementSibling &&
-          this.nextElementSibling.classList.contains("dropdown-active") === true
-        ) {
+        if (!!this.nextElementSibling && this.nextElementSibling.classList.contains("dropdown-active") === true) {
           // Close the clicked dropdown
           this.parentElement.classList.remove("dropdown-open");
           this.nextElementSibling.classList.remove("dropdown-active");
-
+          
           closeDropdown();
         } else {
           // Close the opend dropdown
@@ -112,7 +109,10 @@ function dropDownFunc(dropDown) {
             this.querySelector(".arrow_down").classList.add("rotate");
           }
           if (!!this.nextElementSibling) {
+            // this.nextElementSibling.scrollIntoView({ block: "start", inline: "end"});
             this.nextElementSibling.classList.add("dropdown-active");
+           
+            console.log(this);
           }
         }
       });
