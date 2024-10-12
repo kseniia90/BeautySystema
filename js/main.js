@@ -109,10 +109,11 @@ function dropDownFunc(dropDown) {
             this.querySelector(".arrow_down").classList.add("rotate");
           }
           if (!!this.nextElementSibling) {
-            // this.nextElementSibling.scrollIntoView({ block: "start", inline: "end"});
             this.nextElementSibling.classList.add("dropdown-active");
-           
-            console.log(this);
+ 
+            setTimeout(() => {
+              this.closest('.header__nav-container').scrollTo({top: 0, behavior: "smooth"});
+            }, 300);
           }
         }
       });

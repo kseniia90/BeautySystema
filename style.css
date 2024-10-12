@@ -1468,7 +1468,8 @@ ol.breadcrumb li:last-child {
 		overflow: hidden;
 		position: fixed;
 		z-index: 200;
-		width: calc(100% - 55px);
+		margin-left: -15px;
+		width: calc(100% - 34px);
 	}
 
 	.header__nav__title h2,
