@@ -4353,7 +4353,7 @@ ol.breadcrumb li:last-child {
 	}
 }
 
-@media (max-width: 395px) {
+@media (max-width: 405px) {
 	.categories__content__right .categories-result__item {
 		width: 155px;
 	}
