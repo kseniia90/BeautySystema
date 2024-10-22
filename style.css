@@ -8970,6 +8970,10 @@ button.openSocial-sft:after{
 	object-fit: cover;
 }
 
+.custom-banner img.mobile-only {
+	display: none;
+}
+
 .custom-banner .title {
 	padding: 114px 0 79px;
 	color: white;
@@ -8988,6 +8992,14 @@ button.openSocial-sft:after{
 }
 
 @media (max-width: 768px) {
+
+	.custom-banner img {
+		display: none;
+	}
+	
+	.custom-banner img.mobile-only {
+		display: block;
+	}
 
 	.custom-banner .title {
 		padding: 60px 0 30px;
