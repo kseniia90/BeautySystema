@@ -8958,9 +8958,16 @@ button.openSocial-sft:after{
 
 .custom-banner {
 	/* background: url(./img/banner-12.png); */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.custom-banner img {
+	width: 100%;
+	object-fit: cover;
 }
 
 .custom-banner .title {
@@ -8974,10 +8981,10 @@ button.openSocial-sft:after{
 }
 
 .custom-choice .breadcrumb {
-	color: white;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 40px;
+	/* color: white; */
+	/* margin-top: 0;
+	margin-bottom: 0; */
+	/* padding-top: 40px; */
 }
 
 @media (max-width: 768px) {
