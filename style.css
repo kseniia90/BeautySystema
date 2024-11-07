@@ -795,6 +795,10 @@ h3 {
 	display: none;
 }
 
+.light {
+	color: #2A3A498A;
+}
+
 .breadcrumb {
 	margin-top: 40px;
 	margin-bottom: 10px;
@@ -11731,13 +11735,19 @@ span.mini_cart_notification {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 18px 16px;
 	color: #2A3A498A;
 	border-radius: 35px;
 	white-space: nowrap;
 	margin: 15px 0;
 	background: radial-gradient(74.88% 69.17% at 49.86% 50%, rgba(255, 255, 255, 0.64) 51%, rgba(246, 251, 207, 0.8) 75%, rgba(234, 245, 146, 0.8) 100%);
 	transition: all .2s ease;
+}
+
+.sale-categories li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 18px 16px;
 }
 
 .sale-categories li:hover {
@@ -11777,6 +11787,13 @@ span.mini_cart_notification {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	gap: 10px;
+}
+
+.sale-card-content h4 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
 }
 
 .sale-card-row {
@@ -11785,33 +11802,189 @@ span.mini_cart_notification {
 	align-items: center;
 	gap: 15px;
 }
-.sale-card-content .sale-data {
-	font-weight: 300;
-	line-height: 17.07px;
-	letter-spacing: 0.025em;
-	color: rgba(33, 50, 53, 0.5);
-	margin-bottom: 10px;
-}
 
-.sale-card-content h4 {
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 26.17px;
-	letter-spacing: 0.025em;
-}
-
-.sale-card-content .sale-descr {
+.sale-card-data {
+	padding: 8px 12px;
+	color:  #2A3A49A3;
 	font-weight: 400;
-	line-height: 20.01px;
-	color:rgba(33, 50, 53, 0.5);
-	margin: 10px auto 15px;
+	background: #3F4E5D0F;
+	border-radius: 60px;
 }
 
-.sale-card .product__card__info__buy-button {
-	font-size: 17px;
-	font-weight: 500;
-	line-height: 20.72px;
-	text-align: left;
-	padding: 15px 20px;
+.sale-card-content .sale-data {
+	font-weight: 600;
+	color: #000000DE;
 }
+
+.sale-btn {
+	padding: 7px 20px;
+	color:  var(--accent);
+	font-weight: 600;
+	background: #496D7324;
+	border-radius: 22px;
+	transition: all .2s ease;
+}
+
+.sale-btn:hover {
+	background: var(--accent-hover);
+	color: #fff;
+}
+
+ul.pagination {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+	padding: 24px 0;
+}
+
+ul.pagination li {
+	display: block;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21.09px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #0506110F;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+ul.pagination li.active,
+ul.pagination li:hover {
+	color: #fff;
+	background-color: var(--accent);
+
+}
+
+.pagination-first {
+	margin-right: 12px;
+}
+
+.pagination-last {
+	margin-left: 12px;
+}
+
+.sale-show-btn {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 23.8px;
+	text-align: center;
+	padding: 11px;
+	border-radius: 22px;
+	border: none;
+	margin: 16px 0; 
+}
+
+@media (min-width: 769px) {
+	.sale-show-btn {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+		
+	.sale-categories li a {
+		padding: 14px;
+	}
+		
+	.sale-result {
+		grid-gap: 16px;
+	}
+		
+	.sale-card-content h4 {
+		font-size: 14px;
+		line-height: 18px;
+	}
+		
+	.sale-card-data {
+		padding: 4px 8px;
+	}
+	
+	ul.pagination {
+		display: none;
+	}	
+}
+
+.sale-timer-block {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 26.4px;
+}
+.sale-timer-block p {
+	margin-bottom: 8px;
+}
+.sale-timer-block .light {
+	font-size: 18px;
+	line-height: 21.6px;
+}
+
+.sale-timer-block .light-data {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20.8px;
+	color: #2A3A49A3;
+}
+
+.coutndown {
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.coutndown ul>span {
+	font-size: 32px;
+	line-height: 45px;
+	color: var(--accent);
+}
+
+.coutndown ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	gap: 8px;
+}
+
+.coutndown ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	width: 53px;
+	height: 53px;
+	font-size: 32px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #fff;
+	padding: 4px 6px;
+	background: var(--accent);
+	border-radius: 8px;
+    list-style-type: none;
+}
+
+.sale-page .categories__content {
+	align-items: stretch;
+}
+
+.sale-page .categories__content__right {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	height: auto;
+}
+
+.sale-page .categories__content__right .pagination {
+	margin-top: auto;
+}
+
 
