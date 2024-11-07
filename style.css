@@ -11707,3 +11707,111 @@ span.mini_cart_notification {
 	cursor: pointer;
 }
 
+/* sale page start*/
+
+.sale-categories {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 16px;
+	width: 100%;
+	overflow-x: auto;
+}
+
+.sale-categories::-webkit-scrollbar {
+	height: 6px;
+}
+
+.sale-categories::-webkit-scrollbar-thumb {
+	background: #C8C8C8;
+	border-radius: 4px;
+}
+
+.sale-categories li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 18px 16px;
+	color: #2A3A498A;
+	border-radius: 35px;
+	white-space: nowrap;
+	margin: 15px 0;
+	background: radial-gradient(74.88% 69.17% at 49.86% 50%, rgba(255, 255, 255, 0.64) 51%, rgba(246, 251, 207, 0.8) 75%, rgba(234, 245, 146, 0.8) 100%);
+	transition: all .2s ease;
+}
+
+.sale-categories li:hover {
+	color: #000;
+	background: #E8F28580;
+}
+
+.sale-result {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    grid-gap: 24px;
+	padding: 15px 0;
+}
+
+.sale-card {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: #fff;
+    border: 1px solid #0506110F;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+}
+
+.sale-card img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 16px;
+}
+
+.sale-card-content {
+	width: 100%;
+	flex: 1 0 auto;
+	padding: 16px;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.sale-card-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+.sale-card-content .sale-data {
+	font-weight: 300;
+	line-height: 17.07px;
+	letter-spacing: 0.025em;
+	color: rgba(33, 50, 53, 0.5);
+	margin-bottom: 10px;
+}
+
+.sale-card-content h4 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 26.17px;
+	letter-spacing: 0.025em;
+}
+
+.sale-card-content .sale-descr {
+	font-weight: 400;
+	line-height: 20.01px;
+	color:rgba(33, 50, 53, 0.5);
+	margin: 10px auto 15px;
+}
+
+.sale-card .product__card__info__buy-button {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 20.72px;
+	text-align: left;
+	padding: 15px 20px;
+}
+
