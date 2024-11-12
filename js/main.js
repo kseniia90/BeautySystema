@@ -917,10 +917,11 @@ if (document.querySelector(".sale-coutndown") !== null) {
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24;
-  let countDown = new Date("November 10, 2024 00:00:00").getTime(),
+
+  let timeleft = JSON.parse(document.querySelector(".sale-timer-right").getAttribute("data-timeleft")),
+    distance = timeleft.days * day + timeleft.hours * hour + timeleft.minutes * minute + timeleft.seconds * second,
     x = setInterval(function () {
-      let now = new Date().getTime(),
-        distance = countDown - now;
+        
       days = Math.floor(distance / day);
       days = days < 10 ? "0" + days : days;
       (document.getElementById("days").innerText = days),
@@ -934,5 +935,6 @@ if (document.querySelector(".sale-coutndown") !== null) {
         (seconds = seconds < 10 ? "0" + seconds : seconds);
       document.getElementById("seconds").innerText = seconds;
       var sec = Math.floor((distance % minute) / second);
+      distance = distance - second;
     }, second);
 }
