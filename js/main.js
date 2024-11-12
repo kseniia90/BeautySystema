@@ -777,7 +777,6 @@ $.fn.showMore = function (options) {
                   element.css("max-height", settings.minheight);
                 }
               );
-              console.log("scsdv");
             }
           },
           html: settings.buttontxtmore,
@@ -803,6 +802,15 @@ $(document).ready(function () {
     buttontxtmore: "Читати повністю",
     buttontxtless: "Приховати",
   });
+
+  if ($(window).width() < 768) {
+    $(".sale-hide-text").showMore({
+      minheight: 50,
+      buttontxtmore: "Читати повністю",
+      buttontxtless: "Приховати",
+    });
+  };
+  
 });
 
 //show more-less end
