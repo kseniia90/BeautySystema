@@ -803,13 +803,11 @@ $(document).ready(function () {
     buttontxtless: "Приховати",
   });
 
-  if ($(window).width() < 768) {
-    $(".sale-hide-text").showMore({
-      minheight: 50,
-      buttontxtmore: "Читати повністю",
-      buttontxtless: "Приховати",
-    });
-  };
+  $(".sale-hide-text").showMore({
+    minheight: 50,
+    buttontxtmore: "Читати повністю",
+    buttontxtless: "Приховати",
+  });
   
 });
 

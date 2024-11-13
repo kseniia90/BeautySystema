@@ -6804,7 +6804,7 @@ textarea.cr-review-form-comment-txt {
 }
 
 .sale-hide-text::after {
-	display: none;
+	/* display: none; */
 	height: 35px;
 }
 
@@ -6820,9 +6820,9 @@ textarea.cr-review-form-comment-txt {
 		margin: 30px auto 60px;
 	}
 
-	.sale-hide-text::after {
+	/* .sale-hide-text::after {
 		display: block;
-	}
+	} */
 }
 
 /* страница оформления заказа start*/
