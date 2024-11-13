@@ -1176,8 +1176,8 @@ ol.breadcrumb li:last-child {
 
 .nb_new_menu,
 .header__nav-link.nb_new_menu {
-    position: relative;
-	width: auto;
+    position: relative !important;
+	width: auto !important;
 }
 
 .nb_new_menu:after {
