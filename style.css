@@ -1174,8 +1174,10 @@ ol.breadcrumb li:last-child {
 	display: flex;
 }
 
-.nb_new_menu {
+.nb_new_menu,
+.header__nav-link.nb_new_menu {
     position: relative;
+	width: auto;
 }
 
 .nb_new_menu:after {
@@ -1220,6 +1222,9 @@ ol.breadcrumb li:last-child {
 
 	.nb_new_menu:after {
 		right: auto;
+		font-size: 13px;
+     	line-height: 16px;
+		margin-left: 7px;
 		top: 50%;
 		left: 100%;
 		transform: translateY(-50%);
