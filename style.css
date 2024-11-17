@@ -4459,6 +4459,7 @@ ol.breadcrumb li:last-child {
 	flex-direction: row;
 	box-shadow: inset 0px 1px rgba(33, 50, 53, 0.2), inset 0px -1px rgba(33, 50, 53, 0.2);
 	gap: 20px;
+	border-right: 1px solid white;
 	width: 100%;
 }
 
@@ -4481,7 +4482,14 @@ ol.breadcrumb li:last-child {
 	.categories__content__right .page_navigation.pagination .page-numbers:hover {
 		color: var(--accent);
 	}
-	
+}
+
+@media (max-width: 768px) {
+
+	.categories__content__right .page_navigation.pagination .page-numbers.next,
+	.categories__content__right .page_navigation.pagination .page-numbers.prev {
+	display: none;
+	}
 }
 
 .categories__content__right .page_navigation.pagination span.page-numbers {
