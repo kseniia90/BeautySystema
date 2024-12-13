@@ -892,7 +892,6 @@ ol.breadcrumb li:last-child {
 .header-img {
 	display: flex;
 	justify-content: center;
-	background: #e55737;
 }
 
 .header-img img {
