@@ -897,6 +897,7 @@ ol.breadcrumb li:last-child {
 .header-img img {
 	display: block;
 	max-height: 70px;
+	max-width: 1210px !important;
 }
 
 .header-img img.mobile {
