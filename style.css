@@ -647,15 +647,15 @@ footer {
 
 main {
 	flex: 1 1 auto;
-	/* margin-top: 183px; */
-	margin-top: 213px;
+	margin-top: 183px;
+	/* margin-top: 213px; */
 	width: 100%;
 }
 
 @media (max-width: 1210px) {
 	main {
 		/* margin-top: 115px; */
-		margin-top: 185px;
+		margin-top: 150px;
 	}
 }
 
@@ -7785,7 +7785,7 @@ ul.woocommerce-error {
 }
 
 .listing_brand .brand_block {
-	scroll-margin-top: 170px; 
+	scroll-margin-top: 185px; 
 }
 
 @media (max-width: 1210px) {
