@@ -6837,7 +6837,7 @@ textarea.cr-review-form-comment-txt {
 
 .sale-hide-text::after {
 	/* display: none; */
-	height: 35px;
+	height: 15px;
 }
 
 @media (min-width: 769px) {
