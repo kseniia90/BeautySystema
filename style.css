@@ -2416,13 +2416,13 @@ ol.breadcrumb li:last-child {
 	position: relative;
 	height: 225px;
 	border-bottom: 1px solid rgba(33, 50, 53, 0.2);
-	padding: 25px;
+	/* padding: 25px; */
 	box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
 	.product__card__img {
-		padding: 10px;
+		/* padding: 10px; */
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -8289,7 +8289,7 @@ ul.woocommerce-error {
 
 .mini-cart-carousel .product__card__img {
 	height: 130px;
-	padding: 10px;
+	/* padding: 10px; */
 }
 
 .mini-cart-carousel .product__card__lables-block {
@@ -11630,7 +11630,7 @@ span.mini_cart_notification {
     position: relative;
     height: 130px;
     border-bottom: 1px solid rgba(33, 50, 53, 0.2);
-    padding: 10px;
+    /* padding: 10px; */
     box-sizing: border-box;
 }
 
