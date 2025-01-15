@@ -50,6 +50,31 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2");
+}
+
 :root {
 	--light: ;
 	--accent: #3e6d74;
@@ -57,7 +82,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--text-color: #213235;
 	--btn: linear-gradient(90deg, rgba(62,109,116,1) 34%, rgba(229,244,114,1) 100%);
 	--progress: linear-gradient(90deg, rgba(229,244,114,1) 34%, rgba(62,109,116,1) 100%);
-	
 
 }
 
@@ -636,7 +660,9 @@ body {
 }
 
 .wl_body .wrapper,
-.tax-promotion .wrapper {
+.tax-promotion .wrapper,
+.tax-pa_brand .wrapper,
+.tax-product_cat .wrapper {
 	overflow: initial;
 }
 
@@ -4101,7 +4127,7 @@ ol.breadcrumb li:last-child {
 		min-width: auto;
 		width: 100%;
 		position: sticky;
-		top: 105px;
+		top: 115px;
 		z-index: 12;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -4112,20 +4138,26 @@ ol.breadcrumb li:last-child {
 		width: 100%;
 		text-align: start;
 		background: white;
+		margin: 0;
 	}
 
 	.categories-sorting {
 		position: sticky;
-		top: 153px;
+		top: 163px;
 		z-index: 10;
 	}
 
 	.header_banner_active .categories__content__left {
-		top: 125px;
+		top: 135px;
 	}
 
 	.header_banner_active .categories-sorting {
-		top: 173px;
+		top: 183px;
+	}
+	.categories__content .categories-sorting select {
+		margin-left: 0;
+		max-width: 100%;
+		padding: 10px 15px 10px 0;
 	}
 }
 

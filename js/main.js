@@ -240,7 +240,7 @@ $(function () {
     margin: 20,
     autoplay: true,
     slideTransition: "linear",
-    autoplaySpeed: 3000,
+    autoplaySpeed: 500,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
   });
