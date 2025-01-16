@@ -12276,14 +12276,3 @@ ul.pagination li:hover {
 	mask-size: 100% 100%;
 }
 
-.owl-carousel {
-    display: block;
-}
- 
-.owl-carousel .slide-owl-wrap:not(:first-child) {
-    display: none;
-}
- 
-.owl-carousel img {
-    width: 100%;
-}
