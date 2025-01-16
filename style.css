@@ -4127,7 +4127,7 @@ ol.breadcrumb li:last-child {
 		min-width: auto;
 		width: 100%;
 		position: sticky;
-		top: 115px;
+		top: 105px;
 		z-index: 12;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -4143,21 +4143,22 @@ ol.breadcrumb li:last-child {
 
 	.categories-sorting {
 		position: sticky;
-		top: 163px;
+		top: 153px;
 		z-index: 10;
 	}
 
 	.header_banner_active .categories__content__left {
-		top: 135px;
+		top: 125px;
 	}
 
 	.header_banner_active .categories-sorting {
-		top: 183px;
+		top: 173px;
 	}
 	.categories__content .categories-sorting select {
 		margin-left: 0;
 		max-width: 100%;
-		padding: 10px 15px 10px 0;
+		width: 98%;
+		padding: 10px 15px 10px 0 !important;
 	}
 }
 

@@ -231,7 +231,7 @@ $(".has-submenu > a").click(function (e) {
 $(function () {
   // SLIDERS START
 
-  // slider banner
+  // slider banner //autoplaySpeed: 500,
   $(".banner-carousel").owlCarousel({
     dots: true,
     nav: true,
@@ -240,7 +240,6 @@ $(function () {
     margin: 20,
     autoplay: true,
     slideTransition: "linear",
-    autoplaySpeed: 500,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
   });
