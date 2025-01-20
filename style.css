@@ -75,6 +75,45 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./fonts/Roboto/Roboto-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./fonts/Roboto/Roboto-Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./fonts/Roboto/Roboto-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("./fonts/Roboto/Roboto-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "StudioScriptCTT";
+	font-style: italic;
+    font-weight: normal;
+    src: url("./fonts/StudioScriptCTT/StudioScriptCTT.woff2") format("woff2"),
+}
+
 :root {
 	--light: ;
 	--accent: #3e6d74;
@@ -12281,4 +12320,285 @@ ul.pagination li:hover {
 	-webkit-mask-size: 100% 100%;
 	mask-size: 100% 100%;
 }
+
+/*corporate-gifts start*/
+
+.corporate-gifts {
+	font-family: 'Roboto';
+	color: #000;
+	background: linear-gradient(180deg, #E4F0B1 0%, #478174 100%);
+}
+
+.corporate-gifts .custom-banner {
+	margin-bottom: 0;
+}
+
+.corporate-block1-bg {
+	margin-top: -10px;
+	background: url('./img/corporate-block-bg.png') no-repeat;
+	background-position-y: 20%;
+}
+
+.corporate-block1 {
+	padding: 80px 80px 100px;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 54px;
+	text-align: center;
+	color: rgba(19, 15, 28, 0.6);
+	border-radius: 60px;
+	background: #ffffff80;
+	backdrop-filter: blur(154px);
+	box-shadow: 0px 30px 60px 0px #0000000F;
+}
+
+.corporate-block1 .title {
+	font-family: 'Roboto';
+	font-size: 56px;
+	font-weight: 700;
+	line-height: 72.8px;
+	margin-bottom: 16px;
+	color: #000;
+}
+
+.corporate-block {
+	max-width: 1165px;
+}
+
+.corporate-block .subtitle {
+	font-family: 'Roboto';
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 59.8px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 60px;
+}
+
+.corporate-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+	row-gap: 16px;
+}
+
+.corporate-grid .item {
+	padding: 24px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23.4px;
+	letter-spacing: 0.01em;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0px 30px 60px 0px #4900460D;
+}
+
+.corporate-grid .item .subtitle {
+	font-family: 'Roboto';
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 36.4px;
+	letter-spacing: 0.01em;
+	text-align: left;
+	color: #000;
+	margin-bottom: 24px;
+}
+
+.corporate-block3-bg {
+	margin-top: -10px;
+	background: url('./img/corporate-block3-bg.png') no-repeat;
+	background-position-y: 20%;
+}
+
+.corporate-block3 .subtitle {
+	max-width: 830px;
+	margin: 0 auto 40px;
+}
+
+.corporate-block3 .corporate-grid {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	margin-bottom: 40px;
+}
+
+.corporate-block3 .corporate-grid .item {
+	min-width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	text-align: center;
+	padding: 0 10px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 31.2px;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	color: #fff;
+}
+
+.corporate-block3  .item .img {
+	flex: 0 0 auto;
+	aspect-ratio: 1/1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
+	background: #FFFFFF80;
+	border-radius: 50%;
+	backdrop-filter: blur(154px);
+	box-shadow: 0px 30px 60px 0px #0000000F;
+}
+
+.corporate-block3  .item img {
+	aspect-ratio: 1/1;
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+}
+
+.corporate-btn {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+
+.corporate-btn .read-btn {
+	padding-bottom: 70px;
+	position: relative;
+	font-family: 'StudioScriptCTT';
+	font-size: 64px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 85.7px;
+	text-align: center;
+}
+.corporate-btn .read-btn::after {
+	content: "";
+	position: absolute;
+	right: -45%;
+	top: -15px;
+	display: block;
+	width: 284px;
+	height: 160px;
+	background: url('./img/corporate-btn-arrow.svg') no-repeat;
+}
+
+.corporate-block .questions__block { 
+	grid-template-columns: auto;
+	gap: 16px;
+	margin-bottom: 40px;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(211, 233, 116, 0.4) 0%, rgba(203, 226, 118, 0) 100%);
+
+}
+
+.corporate-block .questions__block__item {
+	padding: 24px 24px 24px 32px;
+	border-radius: 40px;
+	background: #FAFAFA80;
+	transition: all .2s ease;
+}
+
+.corporate-block .questions__block__item.bg {
+	background: #fff;
+}
+
+.corporate-block .questions__block__item .icon-arrow_down {
+	transition: all .2s ease;
+}
+
+.corporate-block .questions__block__item.bg .icon-arrow_down {
+	color: #A17DF0;
+}
+
+.corporate-block .questions__block__item .icon-arrow_down::before {
+	font-size: 16px;
+}
+
+.corporate-block .questions__block__item .accordion-active .icon-arrow_down {
+	transform: rotate(180deg);
+}
+
+.corporate-block .questions__block__item p {
+	padding: 20px 0;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: left;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+}
+
+.form-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 604px;
+	padding: 16px 25px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25.2px;
+	text-align: center;
+	color: #000;
+	background: #E5F370;
+	border-radius: 28px;
+}
+
+.corporate-block4-bg {
+	padding: 80px 0;
+	background: url('./img/corporate-block4-bg.png') no-repeat;
+	background-size: cover;
+}
+
+.corporate-block4 .corporate-grid {
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 16px;
+	row-gap: 24px;
+}
+
+.corporate-block4 .corporate-grid .item {
+	min-width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	text-align: center;
+	padding: 0 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 31.2px;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	color: #0000008A;
+}
+
+.corporate-block4  .item .img {
+	flex: 0 0 auto;
+	aspect-ratio: 1/1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.corporate-block4  .item img {
+	aspect-ratio: 1/1;
+	width: 100%;
+	max-width: 160px;
+	height: auto;
+}
+
+.corporate-block5-bg {
+	margin-top: -10px;
+	background: url('./img/corporate-block5-bg.png') no-repeat;
+	background-position: top;
+	background-size: contain;
+}
+
+
+/* corporate-gifts end*/
 

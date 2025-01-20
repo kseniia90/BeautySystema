@@ -520,6 +520,8 @@ $(function () {
     e.preventDefault();
     var $this = $(this);
 
+    $this.parent().toggleClass('bg');
+
     $this.toggleClass("accordion-active");
     $this.next().slideToggle();
     $(".faq-title-icon", this).toggleClass("minus");
