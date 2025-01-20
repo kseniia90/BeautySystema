@@ -6502,6 +6502,7 @@ ol.breadcrumb li:last-child {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	gap: 20px;
 	flex-direction: row;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -6583,7 +6584,7 @@ ol.breadcrumb li:last-child {
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-direction: row;
-	gap: 62px;
+	gap: 45px;
 }
 
 @media (max-width: 1100px) {
@@ -6673,6 +6674,10 @@ ol.breadcrumb li:last-child {
 	.footer-main .footer-main__side.center .accordion__item .accordion__title .accordion__arrow {
 		display: flex;
 	}
+}
+
+.footer-main .footer-main__side.right>img {
+	object-fit: contain;
 }
 
 @media (max-width: 1200px) {
