@@ -720,12 +720,28 @@ main {
 	margin-top: 218px;
 }
 
+.header {
+	height: 183px;
+}
+
+.header_banner_active .header {
+	height: 218px;
+}
+
 @media (max-width: 1210px) {
 	main {
 		margin-top: 115px;
 	}
 	.header_banner_active main {
 		margin-top: 140px;
+	}
+
+	.header {
+		height: 115px;
+	}
+	
+	.header_banner_active .header {
+		height: 140px;
 	}
 }
 
@@ -12552,6 +12568,8 @@ ul.pagination li:hover {
 	padding: 80px 0;
 	background: url('./img/corporate-block4-bg.png') no-repeat;
 	background-size: cover;
+	background-position-y: top;
+    background-position-x: center;
 }
 
 .corporate-block4 .corporate-grid {
@@ -12595,10 +12613,47 @@ ul.pagination li:hover {
 .corporate-block5-bg {
 	margin-top: -10px;
 	background: url('./img/corporate-block5-bg.png') no-repeat;
-	background-position: top;
+	background-position-y: top;
+    background-position-x: center;
 	background-size: contain;
+	padding: 0 20px;
 }
 
+.corporate-brands-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.corporate-brands {
+	display: inline-flex;
+	align-items: center;
+	gap: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 24px;
+	background: #fff;
+	border-radius: 40px;
+}
+
+.corporate-brands li {
+	padding: 0 10px;
+}
+
+.corporate-brands li.big {
+	padding: 3px;
+	font-family: 'Roboto';
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 54.6px;
+	text-align: center;
+
+}
+
+.corporate-btn .read-btn.title-btn::after{
+	top: -30px;
+	right: -20%;
+}
 
 /* corporate-gifts end*/
 
