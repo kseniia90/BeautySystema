@@ -53,34 +53,43 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @font-face {
     font-family: "Montserrat";
-    font-style: normal;
-	font-weight: normal;
+    font-weight: 400;
+	font-style: normal;
     font-display: swap;
-    src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2") format("woff2");
+    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 @font-face {
     font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
+	font-style: normal;
     font-display: swap;
-    src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2") format("woff2");
+    src: url("./fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
 @font-face {
     font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
+	font-style: normal;
     font-display: swap;
-    src: url("./fonts/montserrat/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2");
+    src: url("./fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+	font-style: normal;
+    font-display: swap;
+    src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
 
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("./fonts/Roboto/Roboto-Regular.ttf") format("opentype");
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -88,7 +97,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url("./fonts/Roboto/Roboto-Medium.ttf") format("opentype");
+    src: url("./fonts/Roboto/Roboto-Medium.ttf");
 }
 
 @font-face {
@@ -96,7 +105,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url("./fonts/Roboto/Roboto-SemiBold.ttf") format("opentype");
+    src: url("./fonts/Roboto/Roboto-SemiBold.ttf");
 }
 
 @font-face {
@@ -104,7 +113,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("./fonts/Roboto/Roboto-Bold.ttf") format("opentype");
+    src: url("./fonts/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
@@ -112,6 +121,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	font-style: italic;
     font-weight: normal;
     src: url("./fonts/StudioScriptCTT/StudioScriptCTT.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "StudioScriptCTT";
+	font-style: italic;
+    font-weight: normal;
+    src: url("./fonts/StudioScriptCTT/StudioScriptCTT\ Regular.ttf"),
 }
 
 :root {
@@ -4203,11 +4219,11 @@ ol.breadcrumb li:last-child {
 	}
 
 	.header_banner_active .categories__content__left {
-		top: 125px;
+		top: 140px;
 	}
 
 	.header_banner_active .categories-sorting {
-		top: 173px;
+		top: 187px;
 	}
 	.categories__content .categories-sorting select {
 		margin-left: 0;
@@ -12423,7 +12439,7 @@ ul.pagination li:hover {
 .corporate-block3-bg {
 	margin-top: -10px;
 	background: url('./img/corporate-block3-bg.png') no-repeat;
-	background-position-y: 20%;
+	background-position-y: top;
 }
 
 .corporate-block3 .subtitle {
@@ -12612,7 +12628,8 @@ ul.pagination li:hover {
 
 .corporate-block5-bg {
 	margin-top: -10px;
-	background: url('./img/corporate-block5-bg.png') no-repeat;
+	background: url('./img/corporate-block5-bg.png'), radial-gradient(88.05% 153.51% at 2.6% 95.83%, #D4E87F 0%, #93B87B 29.92%, #498376 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	background-repeat: no-repeat;
 	background-position-y: top;
     background-position-x: center;
 	background-size: contain;
@@ -12653,6 +12670,26 @@ ul.pagination li:hover {
 .corporate-btn .read-btn.title-btn::after{
 	top: -30px;
 	right: -20%;
+}
+
+.corporate-perevaga {
+	max-width: 830px;
+	margin: 0 auto 100px;
+	font-family: 'Roboto';
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 31.2px;
+	color: #fff;
+}
+
+.corporate-perevaga li {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.corporate-perevaga li:not(:last-of-type) {
+	margin-bottom: 24px;
 }
 
 /* corporate-gifts end*/
