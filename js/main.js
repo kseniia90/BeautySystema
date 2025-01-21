@@ -545,6 +545,16 @@ $(function () {
     $(".accordion__arrow", this).toggleClass("active");
   });
   //END
+
+  // remove label corporate-form
+  $(".corporate-form-block input").on("change", function (e) {
+    if ($('.corporate-form-block input').val()) {
+      $(this).parents('.input').addClass('change');
+    } else {
+      $(this).parents('.input').removeClass('change');
+    }
+  });
+ 
 });
 
 // filter check square
