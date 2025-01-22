@@ -4230,7 +4230,7 @@ ol.breadcrumb li:last-child {
 		min-width: auto;
 		width: 100%;
 		position: sticky;
-		top: 105px;
+		top: 115px;
 		z-index: 12;
 		overflow-y: auto;
 		overflow-x: hidden;
@@ -4246,7 +4246,7 @@ ol.breadcrumb li:last-child {
 
 	.categories-sorting {
 		position: sticky;
-		top: 153px;
+		top: 163px;
 		z-index: 10;
 	}
 
