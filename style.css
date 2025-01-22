@@ -9272,7 +9272,8 @@ button.openSocial-sft:after {
 	object-fit: cover;
 }
 
-.custom-banner img.mobile-only {
+.custom-banner img.mobile-only,
+.custom-banner img.mobile-small-only {
 	display: none;
 }
 
@@ -12490,7 +12491,7 @@ ul.pagination li:hover {
 
 .corporate-block1-bg {
 	margin-top: -10px;
-	padding: 0 20px 40px;
+	padding: 0 80px 40px;
 	background: url('./img/corporate-block-bg.png') no-repeat;
 	background-position-y: 20%;
 }
@@ -12994,6 +12995,7 @@ ul.pagination li:hover {
 
 	.corporate-block3-bg {
 		padding: 50px 0;
+		background-size: cover, 60px, 180px;
 	}
 	
 	.corporate-block3 .subtitle {
@@ -13036,6 +13038,7 @@ ul.pagination li:hover {
 	
 	.corporate-block4-0-bg {
 		padding-bottom: 60px;
+		background-size: 100px;
 	}
 	
 	.corporate-block4-bg {
@@ -13052,7 +13055,7 @@ ul.pagination li:hover {
 	}
 	
 	.corporate-block5-bg {
-		background-size: contain, 150px, auto;
+		background-size: contain, 100px, auto;
 		padding: 0 20px 60px;
 	}
 	
@@ -13071,6 +13074,11 @@ ul.pagination li:hover {
 		max-width: 650px;
 		font-size: 20px;
 		line-height: 26px;
+	}
+
+	.corporate-perevaga li>img {
+		width: 80px;
+		height: 80px;
 	}
 	
 	.corporate-block6-bg {
@@ -13091,6 +13099,83 @@ ul.pagination li:hover {
 	.corporate-form-block form textarea,
 	.corporate-form-block form button {
 		padding: 13px 24px 13px 32px;
+	}
+}
+
+@media (max-width:768px) {
+	
+	.corporate-block1 {
+		padding: 40px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	.corporate-block1 .title {
+		font-size: 28px;
+		line-height: 36px;
+	}
+	
+	.corporate-block .subtitle {
+		font-size: 28px;
+		line-height: 36px;
+		margin-bottom: 32px;
+	}
+	
+	.corporate-grid {
+		gap: 16px;
+	}
+
+	.corporate-block3-bg {
+		padding: 20px 0;
+	}
+	
+	.corporate-block3 .corporate-grid .item {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.corporate-btn {
+		margin-bottom: 30px;
+	}
+	
+	.corporate-btn .read-btn::after {
+		top: -30px;
+		width: 135px;
+		height: 80px;
+	}
+	
+	.corporate-block4-0-bg {
+		padding-bottom: 30px;
+	}
+	
+	.corporate-block4-bg {
+		padding: 50px 0;
+	}
+	
+	.corporate-block4 .corporate-grid .item {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.corporate-block5-bg {
+		background-size: contain, 150px, auto;
+		padding: 0 20px 60px;
+	}
+	
+	.corporate-brands li.big {
+		font-size: 26px;
+		line-height: 36px;
+	}
+}
+
+@media (max-width: 420px) {
+
+	.corporate-gifts .custom-banner img.mobile-only {
+		display: none;
+	}
+
+	.corporate-gifts .custom-banner img.mobile-small-only {
+		display: block;
 	}
 }
 
