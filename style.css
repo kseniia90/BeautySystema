@@ -2399,6 +2399,7 @@ ol.breadcrumb li:last-child {
 	justify-content: flex-start;
 	align-items: stretch;
 	flex-direction: column;
+	position: relative;
 }
 
 .product__card__lables-block {
@@ -2876,6 +2877,54 @@ span.custom_title_two {
 		fill: white;
 	}
 }
+
+/* .product__card__extra {
+	display: none;
+	flex-direction: column;
+	gap: 20px;
+	position: absolute;
+    width: 100%;
+	padding: 10px 15px;
+	background: #fff;
+	background: pink;
+	box-shadow: 0 5px 4px 18px 0px #0000000D;
+    border-radius: 0 0 10px 10px;
+}
+
+.product__card:hover .product__card__extra {
+	display: flex;
+	width: auto;
+    left: -2px;
+    right: -2px;
+	bottom: 0;
+}
+
+.product__characteristic {
+
+}
+
+.product__characteristic .item-row {
+	padding-top: 5px;
+	display: flex	;
+	justify-content: space-between;
+	white-space: nowrap;
+}
+
+.product__characteristic-item-name,
+.product__characteristic-item-value {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product__characteristic-item-name {
+	color: #999;
+    max-width: 60%;
+	padding-right: 10px;
+} */
+
+
+
 
 .new-popular__tab .tab {
 	border-top: 1px solid rgba(33, 50, 53, 0.2);
