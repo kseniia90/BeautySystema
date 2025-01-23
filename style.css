@@ -2878,7 +2878,7 @@ span.custom_title_two {
 	}
 }
 
-/* .product__card__extra {
+.product__card__extra {
 	display: none;
 	flex-direction: column;
 	gap: 20px;
@@ -2886,44 +2886,69 @@ span.custom_title_two {
     width: 100%;
 	padding: 10px 15px;
 	background: #fff;
-	background: pink;
-	box-shadow: 0 5px 4px 18px 0px #0000000D;
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+	clip-path: inset(0px -10px -10px -10px);
     border-radius: 0 0 10px 10px;
 }
 
-.product__card:hover .product__card__extra {
-	display: flex;
-	width: auto;
-    left: -2px;
-    right: -2px;
-	bottom: 0;
+@media (min-width: 986px) {
+
+	.product__card .product__card__info__buy-button {
+		display: none;
+	}
+
+	.product__card ,
+	.product__card .product__card__info {
+		border-radius: 0 0 10px 10px;
+	}
+
+	.product__card .product__card__extra .product__card__info__buy-button {
+		display: flex;
+	}
+
+	.owl-carousel .item:hover {
+		border-radius: 10px 10px 0 0 !important;
+	}
+	
+	.product__card:hover {
+		border-radius: 10px 10px 0 0;
+		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+	}
+	
+	.product__card:hover .product__card__extra {
+		display: flex;
+		width: auto;
+		top: 100%;
+		left: 0px;
+		right: 0px;
+	}
+	
+	.product__characteristic {
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+	}
+	
+	.product__characteristic .item-row {
+		display: flex;
+		justify-content: space-between;
+		white-space: nowrap;
+	}
+	
+	.product__characteristic-item-name,
+	.product__characteristic-item-value {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.product__characteristic-item-name {
+		color: #999;
+		max-width: 60%;
+		padding-right: 10px;
+	}
+
 }
-
-.product__characteristic {
-
-}
-
-.product__characteristic .item-row {
-	padding-top: 5px;
-	display: flex	;
-	justify-content: space-between;
-	white-space: nowrap;
-}
-
-.product__characteristic-item-name,
-.product__characteristic-item-value {
-	white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.product__characteristic-item-name {
-	color: #999;
-    max-width: 60%;
-	padding-right: 10px;
-} */
-
-
 
 
 .new-popular__tab .tab {
