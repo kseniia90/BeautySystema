@@ -12341,30 +12341,23 @@ ul.pagination li:hover {
 	overflow: auto;
 }
 
-.header_banner_active .tax-promotion .categories__content__left {
+.tax-promotion .header_banner_active .categories__content__left {
 	top: 218px;
 }
 
-
 @media (max-width: 1210px) {
 	.tax-promotion .categories__content__left {
-		top: 110px;
+		top: 120px;
+		max-height: calc(100vh - 110px);
 	}
 
-	.header_banner_active .tax-promotion .categories__content__left {
+	.tax-promotion .header_banner_active .categories__content__left {
 		top: 145px;
 	}
 }
 
 .tax-promotion .categories__content__left::-webkit-scrollbar {
 	display: none;
-}
-
-@media (max-width: 1210px) {
-	.tax-promotion .categories__content__left {
-		top: 110px;
-		max-height: calc(100vh - 110px);
-	}
 }
 
 @media (max-width: 768px) {
