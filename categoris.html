@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <!-- <header class="header">
             <div class="header-container container">
                 <div class="header__main">
                     <div class="header__main-left">
@@ -222,7 +222,7 @@
                     </div>
                 </nav>
             </div>
-        </header>
+        </header> -->
         <main class="main" >
             <ol class="breadcrumb container">
                 <li class="breadcrumb-item"><a href="#"><span class="icon-Home-Page"></span></a></li>
@@ -233,326 +233,7 @@
                     <h2 class="title">Догляд за шкірою обличчя</h2> 
                 </div>
                 <div class="categories__content">
-                    <div class="categories__content__left ">
-                        <div class="filter__accordion">
-                            <div class="accordion__item">
-                                <div class="accordion__title filter__accordion__title">
-                                    <span class="accordion__title-text">Фільтри</span>
-                                    <div class="accordion__arrow"></div>
-                                </div>
-                                <div class="accordion__content">
-                                    <aside id="secondary" class="widget-area">
-                                        <section id="block-11" class="widget widget_block">
-                                            <div data-block-name="woocommerce/filter-wrapper" data-filter-type="stock-filter"
-                                                data-heading="Фильтрация по статусу" class="wp-block-woocommerce-filter-wrapper">
-                                                <div class="wc-blocks-filter-wrapper">
-                                                    <h3 class="wp-block-heading">Наявність</h3>
-                                                    <div class="wp-block-woocommerce-stock-filter">
-                                                        <div class="wc-block-stock-filter style-list">
-                                                            <ul class="wc-block-checkbox-list wc-block-components-checkbox-list wc-block-stock-filter-list">
-                                                                <li>
-                                                                    <div class="wc-block-components-checkbox wc-block-checkbox-list__checkbox">
-                                                                        <label for="instock">
-                                                                            <input id="instock" class="wc-block-components-checkbox__input" type="checkbox"
-                                                                                aria-invalid="false">
-                                                                                <svg class="wc-block-components-checkbox__mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                                                    viewBox="0 0 24 20">
-                                                                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z">
-                                                                                    </path>
-                                                                                </svg>
-                                                                            <span class="wc-block-components-checkbox__label">Є в  наявності</span>
-                                                                        </label>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="wc-block-stock-filter__actions"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section id="block-12" class="widget widget_block">
-                                            <div data-block-name="woocommerce/filter-wrapper" data-filter-type="price-filter"
-                                                data-heading="Фильтрация по цене" class="wp-block-woocommerce-filter-wrapper">
-                                                <div class="wc-blocks-filter-wrapper">
-                                                    <h3 class="wp-block-heading">Ціна</h3>
-                                                    <div class="wp-block-woocommerce-price-filter is-loading">
-                                                        <div class="wc-block-price-slider">
-                                                            <div
-                                                                class="wc-block-price-filter wc-block-components-price-slider wc-block-price-filter--has-input-fields wc-block-components-price-slider--has-input-fields wc-block-components-price-slider--is-input-inline">
-                                                                <div class="wc-block-price-filter__range-input-wrapper wc-block-components-price-slider__range-input-wrapper">
-                                                                    <div aria-hidden="true">
-                                                                        <div class="wc-block-price-filter__range-input-progress wc-block-components-price-slider__range-input-progress"
-                                                                            style="--low: 0%; --high: 100%;">
-                                                                        </div>
-                                                                        <input type="range"  class="wc-block-price-filter__range-input wc-block-price-filter__range-input--min wc-block-components-price-slider__range-input wc-block-components-price-slider__range-input--min"
-                                                                            aria-label="Фільтрувати товари за мінімальною ціною" aria-valuetext="500" step="1" min="50000" max="80000"
-                                                                            tabindex="-1" value="50000">
-                                                                        <input type="range" class="wc-block-price-filter__range-input wc-block-price-filter__range-input--max wc-block-components-price-slider__range-input wc-block-components-price-slider__range-input--max"
-                                                                            aria-label="Фільтрувати товари за максимальною ціною" aria-valuetext="800" step="1" min="50000" max="80000"
-                                                                            tabindex="-1" value="80000">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="wc-block-price-filter__controls wc-block-components-price-slider__controls">
-                                                                    <input  class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-price-filter__amount wc-block-price-filter__amount--min wc-block-form-text-input wc-block-components-price-slider__amount wc-block-components-price-slider__amount--min"
-                                                                        aria-label="Фільтрувати товари за мінімальною ціною" type="text" value="500 ₴" inputmode="numeric">
-                                                                    <input class="wc-block-formatted-money-amount wc-block-components-formatted-money-amount wc-block-price-filter__amount wc-block-price-filter__amount--max wc-block-form-text-input wc-block-components-price-slider__amount wc-block-components-price-slider__amount--max"
-                                                                        aria-label="Фільтрувати товари за максимальною ціною" type="text" value="800 ₴" inputmode="numeric">
-                                                                </div>
-                                                                <div class="wc-block-components-price-slider__actions"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section id="block-8" class="widget widget_block">
-                                            <div data-block-name="woocommerce/filter-wrapper" data-filter-type="attribute-filter"
-                                                data-heading="Фильтрация по атрибутам" class="wp-block-woocommerce-filter-wrapper">
-                                                <div class="wc-blocks-filter-wrapper">
-                                                    <h3 class="wp-block-heading">Об'єм:</h3>
-                                                    <div class="wp-block-woocommerce-attribute-filter is-loading">
-                                                        <div class="wc-block-attribute-filter style-list">
-                                                            <ul class="wc-block-checkbox-list wc-block-components-checkbox-list wc-block-attribute-filter-list">
-                                                                <li>
-                                                                    <div class="wc-block-components-checkbox wc-block-checkbox-list__checkbox">
-                                                                        <label for="100-ml">
-                                                                            <input id="100-ml" class="wc-block-components-checkbox__input" type="checkbox" aria-invalid="false">
-                                                                            <svg class="wc-block-components-checkbox__mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                                                viewBox="0 0 24 20">
-                                                                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z">
-                                                                                </path>
-                                                                            </svg>
-                                                                            <span class="wc-block-components-checkbox__label">100 мл</span>
-                                                                        </label>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="wc-block-components-checkbox wc-block-checkbox-list__checkbox">
-                                                                        <label for="80-ml">
-                                                                            <input id="80-ml" class="wc-block-components-checkbox__input" type="checkbox" aria-invalid="false"
-                                                                                checked="">
-                                                                            <svg class="wc-block-components-checkbox__mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                                                viewBox="0 0 24 20">
-                                                                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z">
-                                                                                </path>
-                                                                            </svg>
-                                                                            <span class="wc-block-components-checkbox__label">80 мл</span>
-                                                                        </label>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="wc-block-attribute-filter__actions">
-                                                            <button class="wc-block-components-filter-reset-button">
-                                                                <span aria-hidden="true">Скинути</span>
-                                                                <!-- <span class="screen-reader-text">Скинути фільтр атрибутів</span> -->
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section id="block-10" class="widget widget_block">
-                                            <div data-block-name="woocommerce/filter-wrapper" data-filter-type="attribute-filter"
-                                                data-heading="Фильтрация по атрибутам" class="wp-block-woocommerce-filter-wrapper">
-                                                <div class="wc-blocks-filter-wrapper">
-                                                    <h3 class="wp-block-heading">Виробник:</h3>
-                                                    <div class="wp-block-woocommerce-attribute-filter is-loading">
-                                                        <div class="wc-block-attribute-filter style-dropdown">
-                                                            <div class="wc-blocks-components-form-token-field-wrapper">
-                                                                <div class="components-form-token-field" tabindex="-1">
-                                                                    <label for="components-form-token-input-1" class="components-form-token-field__label">
-                                                                    </label>
-                                                                    <div class="components-form-token-field__input-container" tabindex="-1">
-                                                                        <input id="components-form-token-input-1" type="text" autocomplete="off" placeholder="Виберіть Madein"
-                                                                            class="components-form-token-field__input" role="combobox" aria-expanded="false"
-                                                                            aria-autocomplete="list" aria-describedby="components-form-token-suggestions-howto-1" value="">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" height="30" aria-hidden="true"
-                                                                focusable="false">
-                                                                <path d="M17.5 11.6L12 16l-5.5-4.4.9-1.2L12 14l4.5-3.6 1 1.2z"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="wc-block-attribute-filter__actions"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <section id="block-9" class="widget widget_block">
-                                            <div data-block-name="woocommerce/filter-wrapper" data-filter-type="active-filters"
-                                                data-heading="Активные фильтры" class="wp-block-woocommerce-filter-wrapper">
-                                                <div class="wc-blocks-filter-wrapper">
-                                                    <h3 class="wp-block-heading">Активні фільтри</h3>
-                                                    <div class="wp-block-woocommerce-active-filters is-loading">
-                                                        <div class="wc-block-active-filters">
-                                                            <ul class="wc-block-active-filters__list">
-                                                                <li><span class="wc-block-active-filters__list-item-type">Об'єм:</span>
-                                                                    <ul>
-                                                                        <li class="wc-block-active-filters__list-item">
-                                                                            <span class="wc-block-active-filters__list-item-name">
-                                                                                <button class="wc-block-active-filters__list-item-remove">
-                                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
-                                                                                        class="wc-block-components-chip__remove-icon" aria-hidden="true" focusable="false">
-                                                                                        <path
-                                                                                            d="M12 13.06l3.712 3.713 1.061-1.06L13.061 12l3.712-3.712-1.06-1.06L12 10.938 8.288 7.227l-1.061 1.06L10.939 12l-3.712 3.712 1.06 1.061L12 13.061z">
-                                                                                        </path>
-                                                                                    </svg>
-                                                                                    <!-- <span class="screen-reader-text">Видалити фільтр 80 мл</span> -->
-                                                                                </button>80 мл
-                                                                            </span>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                            <button class="wc-block-active-filters__clear-all">
-                                                                <span aria-hidden="true">Очистити все</span>
-                                                                <!-- <span class="screen-reader-text">Очистити всі фільтри</span> -->
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </aside>
-                                    <!-- #secondary -->
-                                    <!-- <div class="clear_all_filters">
-                                                            <div id="clear_filter" class="clear_all_filters__btn">
-                                                                <span>Очистити фільтри</span>
-                                                                <img src="./img/clear_filters.svg" alt="x">
-                                                            </div>
-                                                        </div>
-                                                        <div class="categories__price-filter">
-                                                            <p>Ціна</p>
-                                                            <div class="price-range range_container">
-                                                                <div class="sliders_control">
-                                                                    <input id="fromSlider" type="range" value="100" min="0" max="5000" step="100" />
-                                                                    <output id="fromInput" class="bubble"></output>
-                                                                    <input id="toSlider" type="range" value="1000" min="0" max="5000" step="100" />
-                                                                    <output id="toInput" class="bubble"></output>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="categories__content__left__filters">
-                                                            <div class="filters__accordion">
-                                                                <div class="accordion__item">
-                                                                    <div class="accordion__title">
-                                                                        <span class="accordion__title-text">Активні інгрідієнти</span>
-                                                                        <div class="accordion__arrow"></div>
-                                                                    </div>
-                                                                    <div class="accordion__content">
-                                                                        <ul class="filter__list">
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="accordion__item">
-                                                                    <div class="accordion__title">
-                                                                        <span class="accordion__title-text">Країна виробництва</span>
-                                                                        <div class="accordion__arrow"></div>
-                                                                    </div>
-                                                                    <div class="accordion__content">
-                                                                        <ul class="filter__list">
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="accordion__item">
-                                                                    <div class="accordion__title">
-                                                                        <span class="accordion__title-text">Бренд</span>
-                                                                        <div class="accordion__arrow"></div>
-                                                                    </div>
-                                                                    <div class="accordion__content">
-                                                                        <ul class="filter__list">
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="accordion__item">
-                                                                    <div class="accordion__title">
-                                                                        <span class="accordion__title-text">Час застосування</span>
-                                                                        <div class="accordion__arrow"></div>
-                                                                    </div>
-                                                                    <div class="accordion__content">
-                                                                        <ul class="filter__list">
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="accordion__item">
-                                                                    <div class="accordion__title">
-                                                                        <span class="accordion__title-text">Тип шкіри</span>
-                                                                        <div class="accordion__arrow"></div>
-                                                                    </div>
-                                                                    <div class="accordion__content">
-                                                                        <ul class="filter__list">
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                            <li class="filter__list-item">
-                                                                                <span class="el_properties" data-properties="">
-                                                                                    <p class="square"></p>
-                                                                                    <p>ACNEMY</p>
-                                                                                </span>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              
                     <div class="categories__content__right">
                         <div class="categories-sorting">
                             <span>Сортувати за: </span>
@@ -590,9 +271,29 @@
                                                 <p class="old-price">₴999,00</p>
                                                 <p>₴938,00</p>
                                             </div>
+                                            <!-- <div class="product__card__info__buy-button">
+                                                <span>Додати до кошика</span>
+                                                <span class="icon-right-arrow"></span>
+                                            </div> -->
+                                        </div>
+                                        <div class="product__card__extra">
                                             <div class="product__card__info__buy-button">
                                                 <span>Додати до кошика</span>
                                                 <span class="icon-right-arrow"></span>
+                                            </div>
+                                            <div class="product__characteristic">
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Вид:</span>
+                                                    <span class="product__characteristic-item-value">Гель</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Країна виробництва:</span>
+                                                    <span class="product__characteristic-item-value">Україна</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Тип упаковки:</span>
+                                                    <span class="product__characteristic-item-value">Флакон з дозатором</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -601,7 +302,7 @@
                             <div class="categories-result__item"> 
                                 <a href="#">
                                     <div class="product__card">
-                                        <a class="product__card__img" href="product_page.html">
+                                        <a class="product__card__img out-of-stock" href="product_page.html">
                                             <img src="./img/popular_1.png" alt="img">
                                             <p class="product__card__lable">Розпродаж</p>
                                             <span class="icon-favorite_icon"></span>
@@ -626,18 +327,38 @@
                                                 <p class="old-price">₴999,00</p>
                                                 <p>₴938,00</p>
                                             </div>
+                                            <!-- <div class="product__card__info__buy-button">
+                                                <span>Додати до кошика</span>
+                                                <span class="icon-right-arrow"></span>
+                                            </div> -->
+                                        </div>
+                                        <div class="product__card__extra">
                                             <div class="product__card__info__buy-button">
                                                 <span>Додати до кошика</span>
                                                 <span class="icon-right-arrow"></span>
                                             </div>
+                                            <div class="product__characteristic">
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Вид:</span>
+                                                    <span class="product__characteristic-item-value">Гель</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Країна виробництва:</span>
+                                                    <span class="product__characteristic-item-value">Україна</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Тип упаковки:</span>
+                                                    <span class="product__characteristic-item-value">Флакон з дозатором</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div>    
                             <div class="categories-result__item"> 
                                 <a href="#">
                                     <div class="product__card">
-                                        <a class="product__card__img" href="product_page.html">
+                                        <a class="product__card__img out-of-stock" href="product_page.html">
                                             <img src="./img/popular_1.png" alt="img">
                                             <p class="product__card__lable">Розпродаж</p>
                                             <span class="icon-favorite_icon"></span>
@@ -662,9 +383,29 @@
                                                 <p class="old-price">₴999,00</p>
                                                 <p>₴938,00</p>
                                             </div>
+                                            <!-- <div class="product__card__info__buy-button">
+                                                <span>Додати до кошика</span>
+                                                <span class="icon-right-arrow"></span>
+                                            </div> -->
+                                        </div>
+                                        <div class="product__card__extra">
                                             <div class="product__card__info__buy-button">
                                                 <span>Додати до кошика</span>
                                                 <span class="icon-right-arrow"></span>
+                                            </div>
+                                            <div class="product__characteristic">
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Вид:</span>
+                                                    <span class="product__characteristic-item-value">Гель</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Країна виробництва:</span>
+                                                    <span class="product__characteristic-item-value">Україна</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Тип упаковки:</span>
+                                                    <span class="product__characteristic-item-value">Флакон з дозатором</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -673,7 +414,7 @@
                             <div class="categories-result__item"> 
                                 <a href="#">
                                     <div class="product__card">
-                                        <a class="product__card__img" href="product_page.html">
+                                        <a class="product__card__img out-of-stock" href="product_page.html">
                                             <img src="./img/popular_1.png" alt="img">
                                             <p class="product__card__lable">Розпродаж</p>
                                             <span class="icon-favorite_icon"></span>
@@ -698,14 +439,34 @@
                                                 <p class="old-price">₴999,00</p>
                                                 <p>₴938,00</p>
                                             </div>
+                                            <!-- <div class="product__card__info__buy-button">
+                                                <span>Додати до кошика</span>
+                                                <span class="icon-right-arrow"></span>
+                                            </div> -->
+                                        </div>
+                                        <div class="product__card__extra">
                                             <div class="product__card__info__buy-button">
                                                 <span>Додати до кошика</span>
                                                 <span class="icon-right-arrow"></span>
                                             </div>
+                                            <div class="product__characteristic">
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Вид:</span>
+                                                    <span class="product__characteristic-item-value">Гель</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Країна виробництва:</span>
+                                                    <span class="product__characteristic-item-value">Україна</span>
+                                                </div>
+                                                <div class="item-row">
+                                                    <span class="product__characteristic-item-name">Тип упаковки:</span>
+                                                    <span class="product__characteristic-item-value">Флакон з дозатором</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
-                            </div>                           
+                            </div>                     
                         </div> 
                         <button id="load-more-product-cat">Показати більше</button>                         
                         <div class="page_navigation">
