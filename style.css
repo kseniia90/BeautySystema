@@ -12549,6 +12549,7 @@ ul.pagination li:hover {
 .corporate-gifts {
 	font-family: 'Roboto';
 	color: #000;
+	margin-bottom: 0;
 }
 
 .corporate-gifts .bg {
@@ -12573,6 +12574,12 @@ ul.pagination li:hover {
 	background: url('./img/corporate-block-bg0.png') no-repeat;
 	background-position: bottom center;
 	background-size: cover;
+}
+
+.corporate-gifts .custom-banner .banner__img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 .corporate-block1-bg {

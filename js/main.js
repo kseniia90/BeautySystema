@@ -402,14 +402,19 @@ $(function () {
     responsive: {
       0: {
         items: 1,
-        center: true,
+        center: false,
         autoWidth: false,
       },
-      500: {
+      768: {
         center: false,
         autoWidth: true,
-        margin: 10,
+        margin: 15,
       },
+      // 500: {
+      //   center: false,
+      //   autoWidth: true,
+      //   margin: 10,
+      // },
       1200: {
         items: 3,
         center: false,
