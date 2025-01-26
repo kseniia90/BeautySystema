@@ -9729,6 +9729,7 @@ button.openSocial-sft:after {
 	padding: 0;
 	max-width: 100%;
 	margin-top: 20px;
+	padding-bottom: 100px;
 }
 
 .post-page-top-categoris {
@@ -9797,6 +9798,10 @@ button.openSocial-sft:after {
 	float: left;
 	margin: 0 15px 15px 0;
 	border-radius: 20px;
+}
+
+.post-page__content.page_content_text .product__card img {
+	margin: 0;
 }
 
 .post-page .product__card__info__buy-button {
@@ -9881,6 +9886,10 @@ button.openSocial-sft:after {
 
 	.post-page .product__card__info__buy-button {
 		color: white !important;
+	}
+
+	.post-page .page_content_text {
+		padding-bottom: 0;
 	}
 }
 
