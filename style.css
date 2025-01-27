@@ -4370,6 +4370,20 @@ span.custom_title_two {
 		width: 98%;
 		padding: 10px 15px 10px 0 !important;
 	}
+
+	.filter__icon-minus, .filter__icon-plus {
+		width: 12px !important;
+		height: 12px !important;
+	}
+
+	.filter__icon-minus:before, .filter__icon-plus:before {
+		height: 1px !important;
+	}
+
+	.filter__icon-plus:after {
+		width: 1px !important;
+	}
+
 }
 
 .categories__content__left .filter__accordion {
@@ -9143,7 +9157,8 @@ ul.woocommerce-error {
 	padding: 0;
 	opacity: 0;
 	visibility: hidden;
-	position: relative;
+	/* position: relative; */
+	position: absolute;
 	bottom: -500px;
 	z-index: 1;
 	transition: opacity .2s, visibility .2s, bottom .2s;
@@ -9171,6 +9186,7 @@ ul.woocommerce-error {
 }
 
 .listSocial--active {
+	position: relative;
 	opacity: 1;
 	visibility: visible;
 	bottom: 20px;
@@ -12383,7 +12399,8 @@ ul.pagination li:hover {
 	}
 
 	.tax-promotion .header_banner_active .categories__content__left {
-		top: 145px;
+		top: 140px;
+        position: sticky;
 	}
 }
 
