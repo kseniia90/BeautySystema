@@ -480,9 +480,17 @@ $(function () {
 
     $this.toggleClass("accordion-active");
     $this.parent().toggleClass("border");
-    $this.next().slideToggle();
+    // $this.next().slideToggle();
     $(".accordion__arrow", this).toggleClass("minus");
+    $('body').addClass("_lock");
   });
+
+  $(".categories__content__left .filters-heder .close").on("click", function (e) {
+    $(".accordion__title").removeClass("accordion-active");
+    $(".accordion__item").removeClass("border");
+    $(".accordion__arrow").removeClass("minus");
+    $('body').removeClass("_lock");
+});
 
   //END
 
@@ -510,15 +518,14 @@ $(function () {
       $(".accordion__title").removeClass("accordion-active");
       $(".accordion__item").removeClass("border");
       $(".accordion__arrow").removeClass("minus");
-      $(body).removeClass("_lock");
     }
 
     $this.toggleClass("accordion-active");
     $this.parent().toggleClass("border");
     $this.next().slideToggle();
-    $(body).addClass("_lock");
     $(".accordion__arrow", this).toggleClass("minus");
   });
+
   //END
 
   //BEGIN FAQ accordion
