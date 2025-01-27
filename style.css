@@ -4453,6 +4453,14 @@ span.custom_title_two {
 	padding-bottom: 16px;
 }
 
+@media (max-width: 767px) {
+	.categories .filter__item {
+		margin-bottom: 30px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+}
+
 .categories .filter__item:first-child,
 .categories .filter__item:last-child {
 	border: none;
