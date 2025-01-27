@@ -12938,8 +12938,8 @@ ul.pagination li:hover {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	gap: 24px;
+	/* flex-wrap: wrap; */
+	gap: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px 24px;
@@ -12958,6 +12958,7 @@ ul.pagination li:hover {
 	font-size: 42px;
 	font-weight: 700;
 	line-height: 54.6px;
+	white-space: nowrap;
 	text-align: center;
 }
 
@@ -13087,7 +13088,9 @@ ul.pagination li:hover {
 	}
 
 	.corporate-brands li.big {
-		width: 100%;
+		/* width: 100%; */
+		font-size: 36px;
+		line-height: 47px;
 	}
 }
 
@@ -13200,14 +13203,16 @@ ul.pagination li:hover {
 	}
 	
 	.corporate-brands {
+		flex-wrap: wrap;
 		max-width: 650px;
 		row-gap: 16px;
 		column-gap: 24px;
 	}
 	
 	.corporate-brands li.big {
-		font-size: 36px;
-		line-height: 47px;
+		width: 100%;
+		/* font-size: 36px;
+		line-height: 47px; */
 	}
 	
 	.corporate-perevaga {
