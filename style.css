@@ -4339,6 +4339,7 @@ span.custom_title_two {
 		z-index: 12;
 		overflow-y: auto;
 		overflow-x: hidden;
+		max-height: calc(100vh - 185px);
 		background: white;
 	}
 
@@ -4455,7 +4456,7 @@ span.custom_title_two {
 
 @media (max-width: 767px) {
 	.categories .filter__item {
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		padding-top: 5px;
 		padding-bottom: 10px;
 	}
