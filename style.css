@@ -2886,6 +2886,7 @@ span.custom_title_two {
 	background: #fff;
 	clip-path: inset(0px -10px -10px -10px);
     border-radius: 0 0 10px 10px;
+	will-change: transform;
 }
 
 
