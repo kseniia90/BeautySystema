@@ -10073,6 +10073,7 @@ button.openSocial-sft:after {
 
 .loyalty-column.column2 img {
 	width: 100%;
+	max-width: 200px;
 	height: auto;
 	object-fit: cover;
 }
@@ -10766,7 +10767,8 @@ button.openSocial-sft:after {
 
 	.loyalty-column.column2 img {
 		width: auto;
-		max-width: 100%;
+		/* max-width: 100%; */
+		max-width: 120px;
 	}
 
 	.loyalty-wyg.desktop {
