@@ -833,6 +833,23 @@ $(document).ready(function () {
     buttontxtmore: "Читати повністю",
     buttontxtless: "Приховати",
   });
+
+  if ($(".categories-title span").length) {
+
+  if ($(window).width() < 768) {
+    $(".categories-title:not(span)").showMore({
+      minheight: 80,
+      buttontxtmore: "Читати повністю",
+      buttontxtless: "Приховати",
+    });
+  } else {
+    $(".categories-title:not(span)").showMore({
+      minheight: 40,
+      buttontxtmore: "Читати повністю",
+      buttontxtless: "Приховати",
+    });
+  }
+};
   
 });
 
