@@ -754,7 +754,7 @@ $.fn.showMore = function (options) {
     var currentid = "";
     var element = $(this);
     var auto = parseInt(element.innerHeight()) / 2;
-    var fullheight = element.innerHeight() + 40;
+    var fullheight = element.innerHeight() + 20;
     var maxWidth = element.css("width");
     var settings = $.extend(
       {
@@ -834,24 +834,26 @@ $(document).ready(function () {
     buttontxtless: "Приховати",
   });
 
-  if ($(".categories-title span").length) {
+  if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length ) {
 
   if ($(window).width() < 768) {
     $(".categories-title:not(span)").showMore({
       minheight: 80,
-      buttontxtmore: "Читати повністю",
+      buttontxtmore: "Показати весь текст",
       buttontxtless: "Приховати",
     });
   } else {
     $(".categories-title:not(span)").showMore({
       minheight: 40,
-      buttontxtmore: "Читати повністю",
+      buttontxtmore: "Показати весь текст",
       buttontxtless: "Приховати",
     });
   }
 };
   
 });
+
+
 
 //show more-less end
 
