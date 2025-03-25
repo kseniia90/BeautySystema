@@ -9381,6 +9381,10 @@ button.openSocial-sft:after {
 		bottom: 80px;
 	}
 
+	.single-product {
+		bottom: 135px;
+	}
+
 	.listSocial--active {
 		bottom: 15px;
 	}
@@ -13504,4 +13508,35 @@ ul.pagination li:hover {
 .product__card__lable.shelf_life {
     background: #ff12008a;
     color: #fff;
+}
+
+.add-fixed-btn {
+	width: calc(100% - 10px);
+	position: fixed;
+	bottom: 80px;
+	left: 5px;
+	z-index: 20;
+	justify-content: space-between;
+	gap: 10px;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 23.8px;
+	color: #fff;
+	background: var(--btn);
+	display: none;
+}
+
+.add-fixed-btn span:first-of-type {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 8px;
+}
+
+@media (min-width:769px) {
+	.add-fixed-btn {
+		display: none !important;
+	}
 }

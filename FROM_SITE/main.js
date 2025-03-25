@@ -833,8 +833,8 @@ $(document).ready(function () {
     buttontxtmore: "Читати повністю",
     buttontxtless: "Приховати",
   });
-
-  if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length ) {
+  
+   if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length ) {
 
   if ($(window).width() < 768) {
     $(".categories-title:not(span)").showMore({
@@ -852,8 +852,6 @@ $(document).ready(function () {
 };
   
 });
-
-
 
 //show more-less end
 
@@ -987,23 +985,4 @@ if (document.querySelector(".sale-coutndown") !== null) {
       var sec = Math.floor((distance % minute) / second);
       distance = distance - second;
     }, second);
-};
-
-// When the user scrolls down 250px from the top of the document, show the button
-if (document.querySelector(".add-fixed-btn") !== null) {
-  let addBtnFixed = document.querySelector(".add-fixed-btn");
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 250 ||
-      document.documentElement.scrollTop > 250
-    ) {
-      addBtnFixed.style.display = "flex";
-    } else {
-      addBtnFixed.style.display = "none";
-    }
-  }
 }
