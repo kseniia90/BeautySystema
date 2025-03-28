@@ -9381,8 +9381,8 @@ button.openSocial-sft:after {
 		bottom: 80px;
 	}
 
-	.single-product {
-		bottom: 135px;
+	.single-product .socialBlock {
+		bottom: 155px;
 	}
 
 	.listSocial--active {
