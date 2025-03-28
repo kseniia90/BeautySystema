@@ -986,3 +986,22 @@ if (document.querySelector(".sale-coutndown") !== null) {
       distance = distance - second;
     }, second);
 }
+
+// When the user scrolls down 250px from the top of the document, show the button
+if (document.querySelector(".add-fixed-btn") !== null) {
+  let addBtnFixed = document.querySelector(".add-fixed-btn");
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 250 ||
+      document.documentElement.scrollTop > 250
+    ) {
+      addBtnFixed.style.display = "flex";
+    } else {
+      addBtnFixed.style.display = "none";
+    }
+  }
+}
