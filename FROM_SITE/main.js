@@ -1005,3 +1005,99 @@ if (document.querySelector(".add-fixed-btn") !== null) {
     }
   }
 }
+
+
+// sing in email/phone
+$(".sign-in-btn").on("click", function (e) {
+  e.preventDefault();
+  $(".email-block, .phone-block").toggleClass("open");
+});
+
+// show sms verify 
+function showSmsVerify(){
+       
+  if (document.querySelector(".sign-in__phone-code") !== null) {
+    
+    document.querySelector(".sign-in__content>form").style.display = "none";
+    document.querySelector(".sign-in__phone-code").style.display = "flex";
+
+    window.addEventListener("click", function (e) {
+  
+      if (!e.target.closest(".sign-in__phone-code")) {
+        document.querySelector(".sign-in__content>form").style.display = "block";
+        document.querySelector(".sign-in__phone-code").style.display = "none";
+      }
+    });
+  }
+  countdownSmsVerify();
+}
+
+function countdownSmsVerify() {
+  document.getElementById("timer-counter").style.display= "block"
+  document.querySelector(".timer-block .repeat-code-btn").style.display= "none"
+  var seconds = 59;
+  function tick() {
+    var counter = document.getElementById("timer-counter");
+    seconds--;
+    counter.innerHTML =
+      "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+    if (seconds > 0) {
+      setTimeout(tick, 1000);
+    } else {
+      document.querySelector(".timer-block .repeat-code-btn").style.display= "block"
+      document.getElementById("timer-counter").style.display= "none"
+    }
+  }
+  tick();
+}
+
+// show email verify 
+function showEmailVerify(){
+       
+  if (document.querySelector(".contacts-input-block.email-block") !== null) {
+    
+    document.querySelector(".email-block-row.email").style.display = "none";
+    document.querySelector(".email-block-row.pass").style.display = "flex";
+
+    window.addEventListener("click", function (e) {
+  
+      if (!e.target.closest(".email-block-row.pass")) {
+        document.querySelector(".email-block-row.email").style.display = "flex";
+    document.querySelector(".email-block-row.pass").style.display = "none";
+      }
+    });
+  }
+}
+
+if (document.querySelector(".sign-in__choice") !== null) {
+  document.querySelector(".sign-in__choice-email").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".sign-in__choice").classList.remove("open");
+    document.querySelector(".sign-in__content>form").style.display = "block";
+    document.querySelector(".sign-in__phone-code").style.display = "none";
+    document.querySelector(".contacts-input-block.phone-block").classList.remove("open");
+    document.querySelector(".contacts-input-block.email-block").classList.add("open");
+  });
+}
+
+if (document.querySelector(".sign-in__choice") !== null) {
+  document.querySelector(".sign-in__choice-phone").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".sign-in__choice").classList.remove("open");
+    document.querySelector(".sign-in__content>form").style.display = "block";
+    document.querySelector(".sign-in__phone-code").style.display = "none";
+  });
+
+  document.querySelector(".sign-in__choice-repeat").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".sign-in__choice").classList.remove("open");
+    showSmsVerify();
+  });
+
+  document.querySelector(".sign-in__choice-cancel").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".sign-in__content>form").style.display = "flex";
+    document.querySelector(".sign-in__phone-code").style.display = "none";
+  });
+
+}
