@@ -13832,11 +13832,16 @@ button.nb_open_form_review:hover {
 
 .email-block-row {
 	width: 100%;
+	position: relative;
 }
 
-.email-block-row.pass {
-    display: none;
+.email-block-row.email {
+	margin-bottom: 15px;
 }
+
+/* .email-block-row.pass {
+    display: none;
+} */
 
 .phone-block,
 .email-block {
