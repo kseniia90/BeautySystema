@@ -13846,6 +13846,8 @@ button.nb_open_form_review:hover {
 .phone-block.open,
 .email-block.open {
 	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
 .sign-in-btn {

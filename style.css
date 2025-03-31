@@ -13565,6 +13565,8 @@ ul.pagination li:hover {
 .phone-block.open,
 .email-block.open {
 	display: flex;
+	flex-direction: column;
+	gap: 5px;
 }
 
 .sign-in-btn {
