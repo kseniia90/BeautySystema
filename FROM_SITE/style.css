@@ -123,7 +123,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 :root {
-	--light: ;
+	--light: #edf1f2;
 	--accent: #3e6d74;
 	--accent-hover: #668b90;
 	--text-color: #213235;
