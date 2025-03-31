@@ -1033,6 +1033,8 @@ function showSmsVerify(){
   countdownSmsVerify();
 }
 
+let timeoutSmsVerify;
+
 function countdownSmsVerify() {
   document.getElementById("timer-counter").style.display= "block"
   document.querySelector(".timer-block .repeat-code-btn").style.display= "none"
@@ -1043,7 +1045,7 @@ function countdownSmsVerify() {
     counter.innerHTML =
       "0:" + (seconds < 10 ? "0" : "") + String(seconds);
     if (seconds > 0) {
-      setTimeout(tick, 1000);
+      timeoutSmsVerify = setTimeout(tick, 1000);
     } else {
       document.querySelector(".timer-block .repeat-code-btn").style.display= "block"
       document.getElementById("timer-counter").style.display= "none"
@@ -1099,6 +1101,7 @@ if (document.querySelector(".sign-in__choice") !== null) {
     e.preventDefault();
     document.querySelector(".sign-in__content>form").style.display = "flex";
     document.querySelector(".sign-in__phone-code").style.display = "none";
+    clearTimeout(timeoutSmsVerify);
   });
 
 }
