@@ -13875,7 +13875,7 @@ button.nb_open_form_review:hover {
 	display: none;
 	flex-direction: column;
 	text-align: center;
-	min-height: calc(100vh - 280px);
+	/* min-height: calc(100vh - 280px); */
 }
 
 .sign-in__phone-code .popup-title {
@@ -13883,8 +13883,8 @@ button.nb_open_form_review:hover {
 }
 
 .sign-in__phone-code .light {
-	max-width: 330px;
-	margin: 0 auto 24px;
+	/* max-width: 330px; */
+	margin: 0 auto 10px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20.8px;
@@ -13898,7 +13898,7 @@ button.nb_open_form_review:hover {
 	align-items: center;
 	gap: 5px;
 	min-height: auto;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .sign-in__phone-code form .inputs {
@@ -13976,7 +13976,7 @@ form.error .error-text {
 }
 
 .sign-in__choice-body {
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .sign-in__choice-body,
