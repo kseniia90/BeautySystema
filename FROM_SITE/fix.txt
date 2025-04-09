@@ -1,95 +1,33 @@
-<div id="sign-in" class="tabcontent" style="display: block;">
-    <div class="sign-in__content">
-        <!-- <form class="contacts__form">
-            <div class="contacts__form__input-block">
-                <p class="contacts__form__lable">E-mail</p>
-                <input type="email" name="user_email">
-            </div>
-            <div class="contacts__form__input-block">
-                <p class="contacts__form__lable">Пароль</p>
-                <input type="text" name="user_password">
-            </div>
-            <div class="input-row links">
-                <div class="auth-link forget-password-btn">Забули пароль?</div>
-            </div>
-            <button class="contacts__form__btn product__card__info__button">Вхід</button>
-        </form> -->
-
+<div class="related_products"> 
+    <h3 class="related_products-title">Класно процює з цим товаром:</h3>
+    <div class="slider-new">
         
-        <form action="" class="contacts__form sign-in__form">
-            <div class="contacts__form__input-block contacts-input-block phone-block open">
-                <p class="contacts__form__lable contacts-lable">Номер телефону</p>
-                <input type="phone" name="user-phone" maxlength="13" value="+380">
-            </div>
+        <div class="related_products-carousel about-us-carousel1 owl-carousel owl-theme">
             
-            <div class="contacts__form__input-block contacts-input-block email-block">
-                <div class="email-block-row email">
-                    <p class="contacts__form__lable contacts-lable">E-mail</p>
-                    <input type="email" name="user_email">
-                </div>
-                <div class="email-block-row pass">
-                    <p class=" contacts__form__lable contacts-lable">Пароль</p>
-                    <input type="text" name="user_password">
-                </div>
-                
-                <div class="input-row links">
-                    <div class="auth-link forget-password-btn">Забули пароль?</div>
-                </div>
-            </div>
-
-            <p class="sign-in-text">Відправляючи форму для авторизації/реєстрації ви приймаєте умови <a href="#">Угоди користувача</a></p>
-            <p class="sign-in-btn phone-block open">Увiйти через E-mail</p>  
-            <p class="sign-in-btn email-block">Увiйти по номеру телефону</p>        
-            <button id="login_site" class="contacts__form__btn product__card__info__button not-active"><span>Далі</span></button>
-        </form>
-
-        <div class="sign-in__phone-code">
-            <p class="popup-title">+38 063 123 45 67</p>
-            <p class="light">Будь ласка, введіть 4-значний код, надісланий на ваш номер.</p>
-            <!-- add to form class error -->
-            <form action="" name="verify-SMS">
-                <div class="inputs">
-                    <input type="text" maxlength="1">
-                    <input type="text" maxlength="1">
-                    <input type="text" maxlength="1">
-                    <input type="text" maxlength="1">
-                </div>
-                <p class="error-text">Код не підходить, спробуйте ще раз</p>
-            </form>
-            <div class="row-bottom">
-                <p>Код повинен бути в бізнес чаті Viber або SMS</p>
-                <div class="timer-block">
-                    <span class="timer">
-                        <span id="timer-counter"></span>
-                        </span>
-                    <button class="contacts__form__btn product__card__info__button repeat-code-btn"><span>Не отримали код?</span></button>
-                </div>
-
-                <button class="contacts__form__btn product__card__info__button"><span>Далі</span></button>
-            </div>
-            <div class="sign-in__choice">
-                <div class="sign-in__choice-body">
-                    <div>
-                        <button class="sign-in__choice-email">Ввійти за допомогою E-mail</button>
-                        <button class="sign-in__choice-repeat">Відправити код ще раз</button>
-                        <button class="sign-in__choice-phone">Ввести інший номер</button>
+            <div class="item">
+                <div class="product-card">
+                    <a class="product-card__img" href="">
+                        <img src="./img/popular_1.png" alt="img">
+                    </a>
+                    <div class="product-card__info">
+                        <div class="product-card__info__content">
+                            <a href="" class="product-card__info__name">Протизапальна
+                                освітлювальна сироватка з бурштиновою освітлювальна сироватка з
+                                бурштиновою</a>
+                        </div>
+                        <div class="row">
+                            <div class="product-card__info__price">
+                                <p class="old-price">1300 ₴</p>
+                                <p class="new-price">1050₴</p>
+                            </div>
+                            <div class="btn">
+                                <span class="icon-shopping_cart_icon"></span>
+                            </div>
+                        </div>
                     </div>
-                    <button class="sign-in__choice-cancel">Скасувати</button>
                 </div>
             </div>
-
+                                
         </div>
-
-    </div>
-    <div class="remind-password__content">
-        <h3>Відновлення паролю</h3>
-        <form class="contacts__form">
-            <div class="contacts__form__input-block">
-                <p class="contacts__form__lable">E-mail</p>
-                <input type="email" name="user_email">
-            </div>
-            <button id="reset_password"
-                class="contacts__form__btn product__card__info__button"><span>Нагадати</span></button>
-        </form>
     </div>
 </div>

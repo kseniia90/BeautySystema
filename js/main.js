@@ -451,6 +451,16 @@ $(function () {
     },
   });
 
+   // slider posts
+   $(".related_products-carousel").owlCarousel({
+    dots: false,
+    nav: false,
+    loop: false,
+    autoWidth: true,
+    center: false,
+    margin: 10,
+  });
+
   // END
 
   //BEGIN footer accordion

@@ -451,6 +451,16 @@ $(function () {
     },
   });
 
+   // slider posts
+   $(".related_products-carousel").owlCarousel({
+    dots: false,
+    nav: false,
+    loop: false,
+    autoWidth: true,
+    center: false,
+    margin: 10,
+  });
+
   // END
 
   //BEGIN footer accordion
@@ -834,7 +844,7 @@ $(document).ready(function () {
     buttontxtless: "Приховати",
   });
   
-   if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length ) {
+   if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length && $(".categories-title .auth-link").length == 0){
 
   if ($(window).width() < 768) {
     $(".categories-title:not(span)").showMore({
