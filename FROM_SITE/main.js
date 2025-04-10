@@ -1100,11 +1100,11 @@ if (document.querySelector(".sign-in__choice") !== null) {
     document.querySelector(".sign-in__phone-code").style.display = "none";
   });
 
-  document.querySelector(".sign-in__choice-repeat").addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".sign-in__choice").classList.remove("open");
-    showSmsVerify();
-  });
+  // document.querySelector(".sign-in__choice-repeat").addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   document.querySelector(".sign-in__choice").classList.remove("open");
+  //   showSmsVerify();
+  // });
 
   document.querySelector(".sign-in__choice-cancel").addEventListener("click", function (e) {
     e.preventDefault();
