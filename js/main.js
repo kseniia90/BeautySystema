@@ -461,6 +461,30 @@ $(function () {
     margin: 10,
   });
 
+  // mini-cart-gift-wrapper 
+  $(".mini-cart-gift-wrapper").owlCarousel({
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+      },
+      340: {
+        dots: true,
+        nav: false,
+        autoWidth: true,
+        margin: 10,
+      },
+      767: {
+        dots: false,
+        items: 4,
+        nav: true,
+        autoWidth: false,
+        margin: 15,
+      },
+    },
+  });
+
   // END
 
   //BEGIN footer accordion
