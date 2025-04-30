@@ -463,7 +463,7 @@ $(function () {
 
   // mini-cart-gift-wrapper 
   $(".mini-cart-gift-wrapper").owlCarousel({
-    loop: true,
+    loop: false,
     responsive: {
       0: {
         items: 1,
