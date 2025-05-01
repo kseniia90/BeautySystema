@@ -464,6 +464,7 @@ $(function () {
   // mini-cart-gift-wrapper 
   $(".mini-cart-gift-wrapper").owlCarousel({
     loop: false,
+    autoWidth: true,
     responsive: {
       0: {
         items: 1,
@@ -472,14 +473,11 @@ $(function () {
       340: {
         dots: true,
         nav: false,
-        autoWidth: true,
         margin: 10,
       },
       767: {
         dots: false,
-        items: 4,
         nav: true,
-        autoWidth: false,
         margin: 15,
       },
     },

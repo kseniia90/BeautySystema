@@ -14035,6 +14035,31 @@ form.error .error-text {
 	transition: all 0.3s ease;
 }
 
+.mini-cart-gift-wrapper .owl-stage {
+	min-width: 100%;
+}
+
+.mini-cart-gift-wrapper .owl-item {
+	min-width: 170px;
+	max-width: 175px;
+}
+
+.mini-cart-gift-wrapper  .product__card__info__name {
+	font-size: 12px;
+	min-height: unset;
+	text-align: center;
+	width: 100%;
+}
+
+.mini-cart-gift-wrapper .owl-item .product__card__info__buy-button {
+	font-size: 12px;
+	padding: 12px 18px;
+}
+
+.mini-cart-gift-wrapper .owl-item .product__card__info__buy-button .icon-right-arrow {
+	display: none;
+}
+
 @media (max-width: 768px) {
 
 	.slider_wrapper_gift {
