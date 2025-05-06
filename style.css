@@ -14060,6 +14060,10 @@ form.error .error-text {
 	display: none;
 }
 
+.mini-cart-gift-wrapper .owl-dot {
+	border: none !important;
+}
+
 @media (max-width: 768px) {
 
 	.slider_wrapper_gift {

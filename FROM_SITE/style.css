@@ -14339,6 +14339,9 @@ form.error .error-text {
 .mini-cart-gift-wrapper .owl-item .product__card__info__buy-button .icon-right-arrow {
 	display: none;
 }
+.mini-cart-gift-wrapper .owl-dot {
+	border: none !important;
+}
 
 @media (max-width: 768px) {
 
