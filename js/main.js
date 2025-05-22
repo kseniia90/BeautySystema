@@ -451,7 +451,7 @@ $(function () {
     },
   });
 
-   // slider posts
+   // slider related_products
    $(".related_products-carousel").owlCarousel({
     dots: false,
     nav: false,
@@ -479,6 +479,22 @@ $(function () {
         dots: false,
         nav: true,
         margin: 15,
+      },
+    },
+  });
+
+   // compare-carousel 
+   $(".compare-carousel").owlCarousel({
+    loop: false,
+    autoWidth: true,
+    dots: false,
+    nav: false,
+    responsive: {
+      0:  {
+        margin: 8,
+      },
+      767: {
+        margin: 17,
       },
     },
   });
