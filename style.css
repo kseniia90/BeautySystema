@@ -14647,6 +14647,7 @@ form.error .error-text {
 }
 
 .compare-products__main .product__card__info {
+	flex: none;
 	padding: 6px 8px;
 	border-radius: 0;
 	border-bottom: 0.76px solid #D3D6D7;
@@ -14680,7 +14681,12 @@ form.error .error-text {
 	font-size: 12px;
 }
 
+.compare-products__main span.custom_title_one {
+	height: 34px;
+}
+
 .compare-products__main span.custom_title_two {
+	height: 28px;
 	font-size: 10px;
 	line-height: 140%;
 	letter-spacing: 0px;
