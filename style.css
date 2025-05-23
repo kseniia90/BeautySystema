@@ -14511,7 +14511,7 @@ form.error .error-text {
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	margin-bottom: 108px;
+	margin-bottom: 10px;
 }
 
 .compare-products__title .title {
@@ -14706,9 +14706,20 @@ form.error .error-text {
 .product-parameters__list__item {
 	width: 100%;
 	overflow: hidden;
+	overflow-x: auto;
+}
+
+.product-parameters__list__item::-webkit-scrollbar {
+		height: 6px;
+}
+	
+.product-parameters__list__item::-webkit-scrollbar-thumb {
+	background: #C8C8C8;
+	border-radius: 6px;
 }
 
 .product-parameter-container {
+	width: max-content;
 	display: flex;
 	align-items: center;
 	gap: 3px;
@@ -14746,7 +14757,7 @@ form.error .error-text {
 	align-items: center;
 	font-size: 120px;
 	color: #D3D6D7;
-	padding-bottom: 108px;
+	padding-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -14758,7 +14769,6 @@ form.error .error-text {
 	.compare-products__title {
 		flex-wrap: wrap;
 		gap: 20px;
-		margin-bottom: 30px;
 	}
 	
 	.compare-products__title .title {
@@ -14822,21 +14832,10 @@ form.error .error-text {
 	.compare-products__list {
 		gap: 12px;
 	}
-	
-	.product-parameters__list__item {
-		width: 100%;
-		overflow: hidden;
-		overflow-x: auto;
-	}
-
-	.product-parameter-container {
-		width: max-content;
-	}
 
 	.compare-products__empty {
 		min-height: 40vh;
 		font-size: 120px;
-		padding-bottom: 30px;
 	}
 }
 
