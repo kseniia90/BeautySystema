@@ -137,7 +137,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	user-select: none;
+	/* user-select: none; */
 }
 
 html {
@@ -7867,6 +7867,11 @@ ul.woocommerce-error {
 
 .checkout-authorization .sign-in-text {
 	margin-top: 15px;
+}
+
+.sign-in-text a {
+	color: var(--accent);
+	font-weight: 600;
 }
 
 .checkout-authorization .contacts__form__input-block input {
