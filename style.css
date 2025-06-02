@@ -1504,8 +1504,7 @@ ol.breadcrumb li:last-child {
 @media (max-width: 768px) {
 
 	.back_top-btn {
-		/* bottom: 20px;
-		right: 20px; */
+		bottom: 160px;
 		z-index: 99;
 		padding: 13px;
 	}
@@ -3434,7 +3433,7 @@ span.custom_title_two {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
 	gap: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
 }
 
 .categories .questions__block {
@@ -10174,7 +10173,8 @@ button.openSocial-sft:after {
 .posts-block .useful-info__card-content {
 	padding: 0;
 	height: 100%;
-	padding-right: 10px;
+	/* padding-right: 10px; */
+	padding: 5px 10px;
 }
 
 .posts-block .useful-info__card-content-top {
