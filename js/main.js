@@ -267,13 +267,13 @@ $(function () {
         center: true,
         autoWidth: true,
       },
-      360: {
-        items: 2,
-        center: false,
-        autoWidth: false,
-        margin: 10,
-      },
-      500: {
+      // 360: {
+      //   items: 2,
+      //   center: false,
+      //   autoWidth: false,
+      //   margin: 10,
+      // },
+      300: {
         center: false,
         autoWidth: true,
         margin: 20,
@@ -882,7 +882,7 @@ $(document).ready(function () {
     buttontxtless: "Приховати",
   });
 
-  if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length ) {
+  if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length && $(".categories-title .auth-link").length == 0){
 
   if ($(window).width() < 768) {
     $(".categories-title:not(span)").showMore({

@@ -267,13 +267,13 @@ $(function () {
         center: true,
         autoWidth: true,
       },
-      360: {
-        items: 2,
-        center: false,
-        autoWidth: false,
-        margin: 10,
-      },
-      500: {
+      // 360: {
+      //   items: 2,
+      //   center: false,
+      //   autoWidth: false,
+      //   margin: 10,
+      // },
+      300: {
         center: false,
         autoWidth: true,
         margin: 20,
@@ -451,7 +451,7 @@ $(function () {
     },
   });
 
-   // slider posts
+   // slider related_products
    $(".related_products-carousel").owlCarousel({
     dots: false,
     nav: false,
@@ -1033,7 +1033,7 @@ if (document.querySelector(".sale-coutndown") !== null) {
       var sec = Math.floor((distance % minute) / second);
       distance = distance - second;
     }, second);
-}
+};
 
 // When the user scrolls down 250px from the top of the document, show the button
 if (document.querySelector(".add-fixed-btn") !== null) {
