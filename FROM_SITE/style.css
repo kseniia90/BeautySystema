@@ -9670,7 +9670,7 @@ button.openSocial-sft:after {
 /* Вибір Яни end*/
 
 
-/* Корисна інфорамація start*/
+/* Корисна інфорамація Blog start*/
 
 .useful-info .categories-list {
 	align-self: center;
@@ -9741,15 +9741,65 @@ button.openSocial-sft:after {
 	transition: all 0.3s ease;
 }
 
+.useful-info .useful-info__card {
+	text-align: start;
+	box-shadow: none;
+}
+
+.useful-info .useful-info__title {
+	height: auto !important;
+	display: flex;
+	gap: 16px;
+	font-size: 20px;
+}
+
+.useful-info .useful-info__title svg {
+	flex: 1 0 24px;
+	height: 24px;
+	width: 24px;
+	transition: all 0.3s ease;
+}
+
+.useful-info .useful-info__title:hover svg {
+	transform: scale(1.25);
+}
+
 .useful-info__card img {
 	width: 100%;
 	object-fit: cover;
 	border-radius: 10px;
 }
 
+.useful-info .useful-info__card,
+.useful-info .useful-info__card img {
+	border-radius: 16px;
+}
+
+.useful-info__card-labels {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.useful-info__label {
+	padding: 4px 16px;
+	text-align: center;
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	border-radius: 8px;
+	background: #E7F471;
+}
+
 @media (min-width: 769px) {
 	.useful-info__card:hover {
 		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+	}
+
+	.useful-info .useful-info__card:hover {
+		box-shadow: none;
 	}
 }
 
@@ -9768,12 +9818,21 @@ button.openSocial-sft:after {
 	flex: 1 0 auto;
 }
 
+.useful-info .useful-info__card-content-top {
+	flex: unset;
+}
+
 .useful-info__card-content .useful-info__data {
 	font-weight: 300;
 	line-height: 17.07px;
 	letter-spacing: 0.025em;
 	color: rgba(33, 50, 53, 0.5);
 	margin-bottom: 10px;
+}
+
+.useful-info .useful-info__card-content .useful-info__data {
+	font-weight: 600;
+	color: var(--accent);
 }
 
 .useful-info__card-content h4 {
@@ -9788,6 +9847,14 @@ button.openSocial-sft:after {
 	line-height: 20.01px;
 	color: rgba(33, 50, 53, 0.5);
 	margin: 10px auto 15px;
+}
+
+.useful-info .useful-info__card-content .useful-info__descr {
+	display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .useful-info__card .product__card__info__buy-button {
