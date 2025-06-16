@@ -461,29 +461,29 @@ $(function () {
     margin: 10,
   });
 
-    // mini-cart-gift-wrapper 
-    $(".mini-cart-gift-wrapper").owlCarousel({
-      loop: false,
-      autoWidth: true,
-      responsive: {
-        0: {
-          items: 1,
-          center: true,
-        },
-        340: {
-          dots: true,
-          nav: false,
-          margin: 10,
-        },
-        767: {
-          dots: false,
-          nav: true,
-          margin: 15,
-        },
+  // mini-cart-gift-wrapper 
+  $(".mini-cart-gift-wrapper").owlCarousel({
+    loop: false,
+    autoWidth: true,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
       },
-    });
+      340: {
+        dots: true,
+        nav: false,
+        margin: 10,
+      },
+      767: {
+        dots: false,
+        nav: true,
+        margin: 15,
+      },
+    },
+  });
 
-     // compare-carousel 
+   // compare-carousel 
    $(".compare-carousel").owlCarousel({
     loop: false,
     autoWidth: true,
@@ -791,6 +791,25 @@ if (document.querySelector(".mini-cart-popup .auth-link") !== null) {
     });
 }
 
+//post-page-popup
+
+if (document.querySelector(".post-page-popup") !== null) {
+  document.querySelectorAll(".post-page-popup-close").forEach(function (button) {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.body.style.overflow = "visible";
+      document.querySelectorAll(".post-page-popup").forEach(el => el.classList.remove("active"));
+    });
+  });
+  document.addEventListener('click', function(event) {
+  document.querySelectorAll('.post-page-popup.active').forEach(function(popup) {
+    if (!popup.querySelector('.post-page-popup-content').contains(event.target)) {
+      popup.classList.remove('active');
+    }
+  });
+});
+}
+
 //show more-less start
 
 $.fn.showMore = function (options) {
@@ -881,8 +900,8 @@ $(document).ready(function () {
     buttontxtmore: "Читати повністю",
     buttontxtless: "Приховати",
   });
-  
-   if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length && $(".categories-title .auth-link").length == 0){
+
+  if ($(".categories-title .title").text().length != $(".categories-title .title span").text().length && $(".categories-title .auth-link").length == 0){
 
   if ($(window).width() < 768) {
     $(".categories-title:not(span)").showMore({
@@ -1053,7 +1072,6 @@ if (document.querySelector(".add-fixed-btn") !== null) {
     }
   }
 }
-
 
 // sing in email/phone
 $(".sign-in-btn").on("click", function (e) {

@@ -1,0 +1,60 @@
+Add button to product mini-card in compare page^
+
+Add .product__card__button-container after .product-parameters__list:
+
+ <div class="product__card__button-container">
+    <div class="product__card__info__buy-button">
+        <span>Додати до кошика</span>
+        <span class="icon-right-arrow"></span>
+    </div>
+</div>
+
+EXAMPLE:
+
+ <div class="item">
+    <div class="product__card product_element">
+
+        <div class="product-compare-delete"><svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_130_2119)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.25289 6.76558L2.94592 9.07255C2.57975 9.43873 1.98601 9.43896 1.61995 9.07289L1.17795 8.63089C0.811889 8.26483 0.81212 7.6711 1.17829 7.30493L3.48527 4.99795L1.17982 2.6925C0.813753 2.32644 0.813984 1.73271 1.18016 1.36654L1.62247 0.924223C1.98864 0.558052 2.58237 0.557822 2.94843 0.923884L5.25388 3.22934L7.56086 0.92236C7.92703 0.556188 8.52076 0.555957 8.88683 0.922019L9.32883 1.36402C9.69489 1.73008 9.69466 2.32381 9.32849 2.68999L7.02151 4.99696L9.32696 7.30241C9.69302 7.66847 9.69279 8.26221 9.32662 8.62838L8.88431 9.07069C8.51814 9.43686 7.92441 9.43709 7.55834 9.07103L5.25289 6.76558Z"
+                        fill="#3E6D74" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_130_2119">
+                        <rect width="10" height="10" fill="white" transform="translate(0.25)" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    
+        <div class=" product__card__img">
+            <img src="./img/popular_5.png">
+        </div>
+    
+        <div class="product__card__info">
+            <div class="product__card__info__content">
+                <p class="product__card__info__description">
+                    <a class="brand_product_mini_card" href="">Real </a>
+                </p>
+                <a href="" class="product__card__info__name">
+                    <span class="custom_title_one">Aqua+ </span>
+                    <span class="custom_title_two">Зволожувальний SPF50+, 50 мл</span>
+                </a>                            
+            </div>
+        </div>
+
+        <div class="compare-products__list product-parameters__list">
+            ...........
+        </div>
+
+            <div class="product__card__button-container">
+            <div class="product__card__info__buy-button">
+                <span>Додати до кошика</span>
+                <span class="icon-right-arrow"></span>
+            </div>
+        </div>
+
+    </div>
+</div>

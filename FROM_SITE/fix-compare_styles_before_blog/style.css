@@ -14768,6 +14768,32 @@ form.error .error-text {
 	border-radius: 5px;
 }
 
+.compare-products__main .product__card__button-container {
+	margin-top: 14px;
+	padding: 0 8px 16px 8px;
+}
+
+.compare-products__main .product__card__info__buy-button {
+	padding: 10px;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: #ffffff;
+	background: var(--accent);
+	border: 1px solid var(--accent);
+}
+
+.compare-products__main .product__card__info__buy-button:hover {
+	color: var(--accent);
+	background: transparent;
+}
+
+.compare-products__main .product__card__info__buy-button::after {
+	display: none;
+}
+
 .product-parameter-container {
 	width: max-content;
 	display: flex;

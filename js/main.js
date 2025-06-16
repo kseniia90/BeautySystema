@@ -920,8 +920,6 @@ $(document).ready(function () {
   
 });
 
-
-
 //show more-less end
 
 // mini-cart start
