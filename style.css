@@ -4,7 +4,7 @@ Theme URI: https://nb-soft.tech
 Author: NB-SOFT
 Author URI: https://nb-soft.tech
 Description: Шаблон для інтернет магазину косметики Beauty-Systema, розроблений персонально для магазину.
-Version: 1.2.4 Mobile App 0.0.9 RC
+Version: 1.2.17 Mobile App 0.0.14
 Tested up to: 5.4
 Requires PHP: 7.4
 Requires WordPress: 6.0
@@ -50,7 +50,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
-
 @font-face {
 	font-family: "Montserrat";
 	font-weight: 400;
@@ -725,7 +724,8 @@ body {
 .wl_body .wrapper,
 .tax-promotion .wrapper,
 .tax-pa_brand .wrapper,
-.tax-product_cat .wrapper {
+.tax-product_cat .wrapper,
+.single-post .wrapper {
 	overflow: initial;
 }
 
@@ -4109,6 +4109,7 @@ span.custom_title_two {
 
 .remind-password__content .contacts__form {
 	gap: 30px;
+	margin-top: 30px;
 }
 
 .authorization-popup .order__form {
@@ -9788,9 +9789,9 @@ button.openSocial-sft:after {
 	height: auto;
 }
 
-.useful-info__item a {
+/* .useful-info__item a {
 	height: 100% !important;
-}
+} */
 
 .useful-info__card {
 	max-width: 370px;
@@ -9819,6 +9820,7 @@ button.openSocial-sft:after {
 
 .useful-info .useful-info__card-content h4 {
 	font-size: 20px;
+	height: 80px;
 }
 
 .useful-info .useful-info__title svg {
@@ -10026,7 +10028,11 @@ button.openSocial-sft:after {
 	font-size: 14px;
 	line-height: normal;
 	border-radius: 8px;
-	background-color: #F4F5F7;
+	background-color: transparent;
+}
+
+.pagination-last > .page-link , .pagination-first > .page-link{
+	background: transparent!important;
 }
 
 .blog-subscribe {
@@ -10134,6 +10140,10 @@ button.openSocial-sft:after {
 	gap: 16px;
 }
 
+.blog-search-block.margin-bottom{
+	margin-bottom: 50px;
+}
+
 .blog-search-block .search-form {
 	background: #EAECF080;
 	border-radius: 14px;
@@ -10190,6 +10200,8 @@ button.openSocial-sft:after {
 	white-space: nowrap;
 	background: #F4F5F7;
 	transition: all 0.3s ease;
+	user-select: none;
+	cursor: pointer;
 }
 
 .blog-tags__item svg {
@@ -10534,22 +10546,26 @@ button.openSocial-sft:after {
 	margin: 0;
 }
 
-.post-anchor  {
+.post-anchor,
+.post-page__content-right h2  {
 	scroll-margin-top: 185px;
 }
 
 
-.header_banner_active .post-anchor  {
+.header_banner_active .post-anchor,
+.header_banner_active .post-page__content-right h2  {
 	scroll-margin-top: 235px;
 }
 
 @media (max-width: 1210px) {
 
-	.post-anchor  {
+	.post-anchor,
+	.post-page__content-right h2   {
 		scroll-margin-top: 120px;
 	}
 
-	.header_banner_active .post-anchor  {
+	.header_banner_active .post-anchor,
+	.header_banner_active .post-page__content-right h2  {
 		scroll-margin-top: 140px;
 	}
 }
@@ -10558,12 +10574,64 @@ button.openSocial-sft:after {
 	display: grid;
 	grid-template-columns: 280px 1fr;
 	gap: 64px;
+	position: relative;
+}
+
+#sticky-block {
+    transition: all 0.3s ease;
+}
+
+#sticky-block.sticky-active {
+    position: fixed;
+    top: 80px; /* подстрой под высоту шапки */
+    width: 280px; /* та же ширина, что и у оригинального блока */
+    z-index: 100;
 }
 
 .post-page__content-left {
+	position: sticky;
+	top: 185px;
+	max-height: calc(100vh - 185px);
+	overflow: auto;
 	flex-direction: column;
 	padding-top: 15px;
 }
+
+
+.header_banner_active .post-page__content-left {
+	top: 218px;
+}
+
+@media (max-width: 1210px) {
+	.post-page__content-left {
+		top: 120px;
+		max-height: calc(100vh - 110px);
+	}
+
+	.header_banner_active .post-page__content-left {
+		top: 140px;
+        position: sticky;
+	}
+}
+
+.post-page__content-left::-webkit-scrollbar {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.post-page__content-left {
+		position: relative;
+		top: 0;
+		max-height: none;
+	}
+}
+
+
+
+
+
+
+
 
 .post-page__content-left-item {
 	padding: 32px 0;
@@ -10691,6 +10759,10 @@ button.openSocial-sft:after {
 	overflow: hidden;
 }
 
+.post-page__content-right img{
+	border-radius: 16px;
+}
+
 .post-page__content-right .posts-carousel .owl-dots,
 .post-page__content-right .posts-carousel .owl-nav {
 	display: none;
@@ -10722,6 +10794,7 @@ button.openSocial-sft:after {
 
 .post-page__content-right .product__card__info p {
 	margin-bottom: 0;
+	height: 31px;
 }
 
 .product__card__button-container {
@@ -10751,7 +10824,35 @@ button.openSocial-sft:after {
     margin-bottom: 24px;
 }
 
-.post-page-list {
+
+.wp-singular .post-page__content-right ul {
+	margin: 5px 0px 24px;
+    list-style: none;
+    padding-left: 24px;
+    text-indent: 0em;
+}
+
+.wp-singular .post-page__content-right ul li {
+	position: relative;
+	padding-left: 28px;
+	margin-bottom: 10px
+}
+
+.wp-singular .post-page__content-right ul li::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	transform: translateY(-50%);
+	background: url(./img/loyalty-logo.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+/* .post-page-list {
 	margin: 5px 0px 24px;
     list-style: none;
     padding-left: 24px;
@@ -10776,7 +10877,7 @@ button.openSocial-sft:after {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 50%;
-}
+} */
 
 .post-page .product__card__info__buy-button {
 	color: var(--accent) !important;
@@ -10844,6 +10945,7 @@ button.openSocial-sft:after {
 	line-height: 160%;
 	letter-spacing: 0.4px;
 	text-align: center;
+	margin-top: 96px;
 }
 
 .post-page__bottom .post-page-title {
@@ -10870,6 +10972,16 @@ button.openSocial-sft:after {
     height: 40px;
 	cursor: pointer;
     background: url(./img/post-star-light.svg);
+    background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.post_star_active{
+	width: 42px;
+    height: 40px;
+	cursor: pointer;
+	background: url(./img/star-yellow.svg);
     background-position: center;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -10905,12 +11017,13 @@ button.openSocial-sft:after {
 }
 
 .post-page__review-form-unsing {
-	margin: 24px auto 0;
-	max-width: 400px;
+	flex-direction: column;
+	margin: 32px auto 48px;
 }
 
 .post-page__review-form-unsing input {
 	margin: 0 auto;
+	max-width: 400px;
 }
 
 .post-page__bottom-form button {
@@ -10930,6 +11043,12 @@ button.openSocial-sft:after {
 .post-page__review-form button {
 	color: #ffffff;
 	background: var(--accent);
+}
+
+.post-page__review-slider {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 20px;
 }
 
 .post-page  .review-carousel .opacity {
@@ -11172,6 +11291,7 @@ button.openSocial-sft:after {
 
 	.posts-slider.new .posts-carousel .item .product__card__info__description {
 		padding-right: 70px;
+		height: 45px;
 	}
 
 	.posts-slider.new .posts-carousel .item .custom_title_two {
@@ -11228,7 +11348,7 @@ button.openSocial-sft:after {
 	}
 
 	.post-page__review-form-unsing {
-		margin: 20px auto 0;
+		margin: 20px auto 32px;
 		max-width: 100%;
 	}
 
@@ -11237,12 +11357,13 @@ button.openSocial-sft:after {
 	}
 
 	.post-page__subscribe {
+		margin-top: 10px;
 		padding: 32px 12px 40px;
 	}
 
 	.post-page__subscribe-content {
 		justify-content: flex-start;
-		align-items: flex-start;
+		align-items: center;
 		font-size: 14px;
 	}
 
@@ -13896,9 +14017,9 @@ ul.pagination li:hover {
 		padding: 4px 8px;
 	}
 
-	ul.pagination {
+	/* ul.pagination {
 		display: none;
-	}
+	} */
 
 	.sale-page .banner-block {
 		margin-bottom: 16px;
