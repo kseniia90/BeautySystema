@@ -1,6 +1,0 @@
-show popup: add class "active" + document.body.style.overflow = "hidden";
-
-.subscribe-popup.succes (.subscribe-popup.success.active)
-.subscribe-popup.error (.subscribe-popup.error.active)
-.add-review-popup.success (.add-review-popup.success.active)
-.add-review-popup.error (.add-review-popup.error.active)
