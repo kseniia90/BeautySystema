@@ -349,6 +349,27 @@ $(function () {
     },
   });
 
+  // post-page review caorusel
+  $(".post-page__review-carousel").owlCarousel({
+    dots: true,
+    nav: true,
+    loop: true,
+    center: true,
+    autoWidth: true,
+    margin: 10,
+    responsive: {
+      0: {
+        center: false,
+        margin: 10,
+      },
+     
+      768: {
+        center: true,
+        margin: 16,
+      },
+    },
+  });
+
   $(".viewed-product-carousel").owlCarousel({
     dots: true,
     nav: true,
