@@ -16230,6 +16230,16 @@ form.error .error-text {
 	flex-wrap: wrap;
 }
 
+.compare-products__subgrid .compare-products__list li {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px 8px;
+}
+
+.compare-products__subgrid .product-parameter-container {
+	border: 1px solid red;
+}
+
 
 /* compare subgrid end */
 
