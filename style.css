@@ -16200,8 +16200,38 @@ form.error .error-text {
 	}
 }
 
-
 /* compare table end */
+
+/* compare subgrid start */
+
+.compare-products__subgrid .compare-products__main {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 240px));
+	gap: 15px;
+}
+
+.compare-products__subgrid .item {
+	display: grid;
+	grid-template-columns: subgrid;
+	justify-content: normal;
+	border: 1px solid red;
+}
+
+.compare-products__subgrid .compare-products__sidebar__list {
+	padding-top: 0;
+}
+
+.compare-products__subgrid .product__card__info {
+	max-height: 115px;
+}
+
+.compare-products__subgrid .product-parameter-container {
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+
+/* compare subgrid end */
 
 @media (max-width: 768px) {
 	.compare-products__content {
