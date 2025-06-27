@@ -16212,7 +16212,8 @@ form.error .error-text {
 
 .compare-products__subgrid .item {
 	display: grid;
-	grid-template-columns: subgrid;
+	/* grid-template-columns: subgrid; */
+	grid-template-rows: 186px 115px 1fr 65px;
 	justify-content: normal;
 	border: 1px solid red;
 }
@@ -16238,6 +16239,11 @@ form.error .error-text {
 
 .compare-products__subgrid .product-parameter-container {
 	border: 1px solid red;
+}
+
+.compare-products__subgrid .compare-products__list {
+	display: grid;
+	grid-template-columns: subgrid;
 }
 
 
