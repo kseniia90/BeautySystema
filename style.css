@@ -15887,7 +15887,8 @@ form.error .error-text {
 }
 
 .compare-products__sidebar {
-	padding: 300px 0 10px;
+	/* padding: 300px 0 10px; */
+	padding: 325px 0 10px;
 }
 
 .compare-products__sidebar__list {
@@ -16265,7 +16266,7 @@ form.error .error-text {
 	}
 	
 	.compare-products__sidebar {
-		padding: 318px 0 10px;
+		padding: 324px 0 10px;
 	}
 	
 	.compare-products__sidebar__list {
