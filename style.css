@@ -4,7 +4,7 @@ Theme URI: https://nb-soft.tech
 Author: NB-SOFT
 Author URI: https://nb-soft.tech
 Description: Шаблон для інтернет магазину косметики Beauty-Systema, розроблений персонально для магазину.
-Version: 1.2.17 Mobile App 0.0.14
+Version: 1.2.18 Mobile App 0.0.15
 Tested up to: 5.4
 Requires PHP: 7.4
 Requires WordPress: 6.0
@@ -15608,6 +15608,37 @@ form.error .error-text {
 
 /* related_products end */
 
+/* video block product start */
+
+.video_block {
+	display: flex;
+	gap: 15px;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+	padding: 10px 0;
+}
+
+.video_block_yt {
+	max-width: 400px;
+}
+
+@media (max-width: 768px) {
+
+	.video_block {
+		flex-wrap: wrap;
+	}
+
+	.video_block_yt-container,
+	.video_block_yt {
+		max-width: 100%;
+		width: 100%;
+	}
+	
+}
+
+/* video block product end */
+
 
 /* block_gift_wrapper start */
 .slider_wrapper_gift {
@@ -15912,6 +15943,8 @@ form.error .error-text {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	display: flex;
+	align-items: center;
 }
 
 .compare-products__main {
@@ -16082,10 +16115,11 @@ form.error .error-text {
 }
 
 .product-parameter-container {
-	width: max-content;
+	/* width: max-content; */
 	display: flex;
 	align-items: center;
 	gap: 3px;
+	flex-wrap: wrap;
 }
 
 .product-parameter {
