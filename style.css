@@ -15611,12 +15611,22 @@ form.error .error-text {
 /* video block product start */
 
 .video_block {
-	display: flex;
-	gap: 15px;
 	font-size: 14px;
     font-weight: 400;
     line-height: 20px;
 	padding: 10px 0;
+}
+
+.video_block_content {
+	display: flex;
+	gap: 15px;
+}
+
+.video_block_title {
+	color: var(--accent);
+    font-size: 18px;
+    font-weight: 700;
+	margin-bottom: 20px;
 }
 
 .video_block_yt {
@@ -15625,7 +15635,7 @@ form.error .error-text {
 
 @media (max-width: 768px) {
 
-	.video_block {
+	.video_block_content {
 		flex-wrap: wrap;
 	}
 
@@ -15633,6 +15643,11 @@ form.error .error-text {
 	.video_block_yt {
 		max-width: 100%;
 		width: 100%;
+	}
+
+	.video_block_title {
+		font-size: 16px;
+		margin-bottom: 15px;
 	}
 	
 }
