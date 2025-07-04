@@ -16102,8 +16102,26 @@ form.error .error-text {
 }
 
 .compare-products__main .product__card__button-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 	margin-top: 14px;
 	padding: 0 8px 16px 8px;
+}
+
+.price_compare_product {
+	color: var(--accent);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.625px;
+}
+
+@media (max-width: 768px) {
+	.price_compare_product {
+		font-size: 16px;
+	}
+	
 }
 
 .compare-products__main .product__card__info__buy-button,
