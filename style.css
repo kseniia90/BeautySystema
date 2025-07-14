@@ -10187,6 +10187,7 @@ button.openSocial-sft:after {
 .blog-search-block .search-form-button {
 	color: #49454F;
 	font-size: 26px;
+	background: transparent;
 }
 
 .blog-tags {
