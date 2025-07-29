@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./lib/owlcarousel/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="./lib/owlcarousel/styles/owl.theme.default.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="mini-cart gifts.css">
+    <!-- <link rel="stylesheet" href="mini-cart gifts.css"> -->
     <title>Beauty Systema</title>
 </head>
 
@@ -3135,21 +3135,28 @@
             </div> -->
 
              <!-- mini-cart popup -->
-            <div class="mini-cart-popup active">
+
+            <!-- if user is registered add class registered -->
+            <!-- if user is't registered add class not-registered -->
+            <!-- for vip user add class vip -->
+
+            <div class="mini-cart-popup vip registered not-registered active">
                 <div class="mini-cart-popup-dialog">
                     <div class="mini-cart-popup-content">
             
                         <div class="mini-cart-popup-body">
                             <div class="shopping-cart">
                                 <div class="shopping-cart__title">
-                                    <h2 class="title">Кошик</h2>
-                                    <div class="mini-cart-popup__close">
-                                        <svg class="mini-cart__close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.8292 0.170795C13.7198 0.0614351 13.5715 0 13.4168 0C13.2621 0 13.1138 0.0614351 13.0044 0.170795L7 6.17515L0.995643 0.170795C0.88625 0.0614351 0.737901 0 0.583219 0C0.428537 0 0.280188 0.0614351 0.170795 0.170795C0.0614351 0.280188 0 0.428537 0 0.583219C0 0.737901 0.0614351 0.88625 0.170795 0.995643L6.17515 7L0.170795 13.0044C0.0614351 13.1138 0 13.2621 0 13.4168C0 13.5715 0.0614351 13.7198 0.170795 13.8292C0.280188 13.9386 0.428537 14 0.583219 14C0.737901 14 0.88625 13.9386 0.995643 13.8292L7 7.82485L13.0044 13.8292C13.1138 13.9386 13.2621 14 13.4168 14C13.5715 14 13.7198 13.9386 13.8292 13.8292C13.9386 13.7198 14 13.5715 14 13.4168C14 13.2621 13.9386 13.1138 13.8292 13.0044L7.82485 7L13.8292 0.995643C13.9386 0.88625 14 0.737901 14 0.583219C14 0.428537 13.9386 0.280188 13.8292 0.170795Z"
-                                                fill="#1B1B1D" />
-                                        </svg>
+                                    <div class="shopping-cart__title-container">
+                                        <h2 class="title">Кошик</h2>
+                                        <div class="mini-cart-popup__close">
+                                            <svg class="mini-cart__close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.8292 0.170795C13.7198 0.0614351 13.5715 0 13.4168 0C13.2621 0 13.1138 0.0614351 13.0044 0.170795L7 6.17515L0.995643 0.170795C0.88625 0.0614351 0.737901 0 0.583219 0C0.428537 0 0.280188 0.0614351 0.170795 0.170795C0.0614351 0.280188 0 0.428537 0 0.583219C0 0.737901 0.0614351 0.88625 0.170795 0.995643L6.17515 7L0.170795 13.0044C0.0614351 13.1138 0 13.2621 0 13.4168C0 13.5715 0.0614351 13.7198 0.170795 13.8292C0.280188 13.9386 0.428537 14 0.583219 14C0.737901 14 0.88625 13.9386 0.995643 13.8292L7 7.82485L13.0044 13.8292C13.1138 13.9386 13.2621 14 13.4168 14C13.5715 14 13.7198 13.9386 13.8292 13.8292C13.9386 13.7198 14 13.5715 14 13.4168C14 13.2621 13.9386 13.1138 13.8292 13.0044L7.82485 7L13.8292 0.995643C13.9386 0.88625 14 0.737901 14 0.583219C14 0.428537 13.9386 0.280188 13.8292 0.170795Z"
+                                                    fill="#1B1B1D" />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -3164,7 +3171,8 @@
                                                     </div>
                                                     <span class="gift-accordion-title__text">Оберіть подарунок від Beauty
                                                         Systema</span>
-                                                    <span class="gift-accordion-title__count">1 подарунок</span>
+                                                    <span class="gift-accordion-title__count registered">1 подарунок</span>
+                                                    <span class="gift-accordion-title__count vip">1 подарунок + 1 таємний подарунок</span>
                                                 </div>
             
                                                 <span class="gift-accordion-title__arrow icon-arrow_down"></span>
@@ -3183,27 +3191,25 @@
                                                                             </div>
                                                                             <div class="product__card__info">
                                                                                 <div class="product__card__info__content">
-                                                                                    <p class="product__card__info__name">Крем для
-                                                                                        шкіри
-                                                                                        навколо очей з колагеном BLIV:U
-                                                                                        Collagen Bouncing Firming Eye Cream 30 ml
-                                                                                    </p>
+                                                                                    <p class="product__card__info__name">2 семпли бренду Needly бренду Needly </p>
                                                                                 </div>
                                                                                 <div class="gift_price">
-                                                                                    <span class="old-price">₴999,00</span>
                                                                                     <span>₴1,00</span>
+                                                                                    <span class="old-price">₴999,00</span>                                                                                    
                                                                                 </div>
             
-                                                                                <div class="gift_buy">
-                                                                                    <span>Обрати подарунок</span>
-                                                                                    <span class="icon-right-arrow"></span>
+                                                                                <div class="gift_buy bs-btn-gray">
+                                                                                    <div>
+                                                                                        <span class="icon-gift_new"></span>
+                                                                                        <span>Обрати подарунок</span>
+                                                                                    </div>                                                                                    
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
             
-            
+        
                                                             </div>
                                                         </div>
                                                         <div class="owl-nav disabled"><button type="button" role="presentation"
@@ -3294,7 +3300,87 @@
             
                                             </div>
                                         </div>
+
+                                        <div class="mini-cart__sing-in">
+                                            <div class="mini-cart__sing-in__content">
+                                                <h3 class="mini-cart__sing-in__title">Зареєструйся, щоб отримати бонуси з цього замовлення</h3>
+                                                <ul class="mini-cart__sing-in__list">                                                
+                                                    <li>
+                                                        <img class="sing-in__list__icon" src="./img/loyalty-logo.svg" alt="logo" width="24" height="24">
+                                                        <span>+35₴ кешбек</span>
+                                                    </li>
+                                                     <li>
+                                                        <span class="sing-in__list__icon icon-gift_new"></span>
+                                                        <span>подарунки до замовлення</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="sing-in__list__icon icon-delivery_new"></span>
+                                                        <span>безкоштовна доставка</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="sing-in__list__icon icon-new_heart"></span>
+                                                        <span>доступ до Приватного Клубу</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="bs-btn sing-in__btn">
+                                                    <span>
+                                                    <span class="icon-btn_arrow"></span>
+                                                    Увійти
+                                                </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mini-cart__for-you">
+                                            <p class="mini-cart__for-you__title">Пропозиції для тебе</p>
+                                            <div class="mini-cart__slider gift_slider">
+                                                <div class="mini-cart-gift owl-carousel owl-theme owl-loaded">
+                                                    <div class="owl-stage-outer">
+                                                        <div class="owl-stage">
+                                                            <div class="owl-item">
+                                                                <div class="item">
+                                                                    <div class="product__card product_element">
+                                                                        <div class=" product__card__img">
+                                                                            <img src="./img/popular_5.png" alt="product" width="80" height="80">                                                                                
+                                                                        </div>
+                                                                        <div class="product__card__info">
+                                                                            <div class="product__card__info__content">
+                                                                                <p class="product__card__info__name">
+                                                                                    <span class="title-one">The seam</span>
+                                                                                    <span class="title-two">Відновлюючий бальзам для губ </span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="gift_price">                                                                               
+                                                                                <span class="old-price">₴999,00</span> 
+                                                                                 <span>₴1,00</span>                                                                                   
+                                                                            </div>
+        
+                                                                            <div class="bs-buy-btn">
+                                                                                <span class="icon-buy_btn"></span>                                                                                   
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        
+    
+                                                        </div>
+                                                    </div>
+                                                    <div class="owl-nav disabled"><button type="button" role="presentation"
+                                                            class="owl-prev disabled"><span
+                                                                aria-label="Previous">‹</span></button><button type="button"
+                                                            role="presentation" class="owl-next disabled"><span
+                                                                aria-label="Next">›</span></button></div>
+                                                    <div class="owl-dots disabled"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
                                     </div>
+
+
                                     <!-- <div class="shopping-cart-empty">
                                                 
                                                                         <svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 231.523 231.523" xml:space="preserve">
@@ -3334,7 +3420,7 @@
                                 </div>
                                 <div class="shopping-cart__footer">
                                     <div class="minicart-progress-bar">
-                                        <div class="minicart-progress-bar-content">
+                                        <div class="minicart-progress-bar-content not-free-del">
                                             <div class="row row-bottom">
                                                 <span class="icon-delivery_new"></span>
                                                 <span>До безкоштовної доставки залишилось 1200₴</span>
@@ -3345,8 +3431,14 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="minicart-progress-bar-content free-del">
+                                            <div class="row row-bottom">
+                                                <span class="icon-delivery_new"></span>
+                                                <span>Безкоштовна доставка</span>
+                                            </div>
+                                        </div>
                                     </div>
-            
+                                            
                                     <div class="mini-cart__foot">
                                         <div class="mini-cart__foot-row">
                                             <p>Всього:</p>
@@ -3533,7 +3625,7 @@
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
-    <!-- <script src="./js/mini-cart gifts.js"></script> -->
+    <script src="./js/mini-cart gifts.js"></script>
 </body>
 
 </html>

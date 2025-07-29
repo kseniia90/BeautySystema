@@ -504,30 +504,6 @@ $(function () {
     },
   });
 
-  // mini-cart gift  
-  $(".mini-cart-gift").owlCarousel({
-    loop: true,
-    dots: false,
-    nav: false,
-    autoWidth: true,
-    center: false,
-     margin: 15,
-    responsive: {
-      0: {
-        items: 1,
-        center: true,
-      },
-      340: {
-        autoWidth: true,
-      },
-      767: {
-        items: 4,
-        autoWidth: false,
-        margin: 15,
-      },
-    },
-  });
-
    // compare-carousel 
    $(".compare-carousel").owlCarousel({
     loop: false,
@@ -661,6 +637,7 @@ $(function () {
     $this.toggleClass("accordion-active");
     $this.next().slideToggle();
     $(".gift-accordion-title__arrow", this).toggleClass("rotate");
+    $(".mini-cart-gift").trigger("refresh.owl.carousel");
   });
   //END
 
