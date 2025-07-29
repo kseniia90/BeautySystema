@@ -9458,7 +9458,7 @@ ul.woocommerce-error {
 
 .mini-cart-popup-dialog {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1240px;
 	padding: 0 20px;
 	font-family: 'Comfortaa',  sans-serif;
 	color: #1B1B1D;
@@ -9523,13 +9523,28 @@ ul.woocommerce-error {
 	padding: 16px 16px 18px;
 }
 
-.mini-cart__slider .item {
+.shopping-cart__body .gift_slider .owl-carousel .item {
+    height: auto !important;
+    box-shadow: none;
+	max-width: 268px;
+	min-width: 268px;
+    width: 268px;
 	border: double 1px transparent;
-	border-radius: 8px;
+	border-radius: 10px;
 	background-image: linear-gradient(white, white), linear-gradient(to left, #E1F56F, #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
+
+
+
+
+
+
+
+
+
+
 
 .gift-accordion-title {
 	display: grid;
@@ -9588,7 +9603,7 @@ ul.woocommerce-error {
 
 .gift-accordion-content {
 	display: none;
-	padding: 20px;
+	padding: 16px;
 }
 
 .mini-cart-popup-body .shopping-cart__table__row {
