@@ -22,6 +22,8 @@
   //   },
   // });
 
+  
+
   // mini-cart gift  
   $(".mini-cart-gift").owlCarousel({
      loop: true,
@@ -37,5 +39,9 @@
         },
     },
   });
+
+  if (window.innerWidth <= 768) {
+    $(".gift-accordion .mini-cart-gift").trigger('destroy.owl.carousel')
+  }
 
  
