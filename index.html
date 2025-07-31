@@ -16,7 +16,7 @@
     <title>Beauty Systema</title>
 </head>
 
-<body>
+<body class="_lock">
     
     <div class="wrapper">
         <header class="header">
@@ -3136,13 +3136,13 @@
 
              <!-- mini-cart popup -->
 
-            <!-- if user is registered add class registered -->
-            <!-- if user is't registered add class not-registered -->
-            <!-- for vip user add class vip -->
-            <!-- if cart is empty add class empty -->
+            <!-- коистувач зараєстрований - add class 'registered' -->
+            <!-- коистувач не зараєстрований - add  class 'not-registered' -->
+            <!-- VIP коистувач - add class 'vip' -->
+            <!-- кошик попрожній - add class 'empty' -->
 
 
-            <div class="mini-cart-popup vip registered not-registered active">
+            <div class="mini-cart-popup vip registered not-registered empty  active">
                 <div class="mini-cart-popup-dialog">
                     <div class="mini-cart-popup-content">
             
@@ -3233,7 +3233,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                        </div>                                              
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3350,14 +3350,34 @@
                                             </div>
                                         </div>
 
-                                        <div class="minicart-progress-bar sign-in">
-                                            <div class="minicart-progress-bar-content free-del">
+                                        <div class="minicart-progress-bar for-empty">
+
+                                            <div class="minicart-progress-bar-content sign-in">
                                                 <a class="row row-bottom" href="">
                                                     <span class="icon-delivery_new"></span>
                                                     <span>Увійди, щоб отримати безкоштовну доставку від 1500₴</span>
                                                 </a>
                                             </div>
-                                        </div>
+
+                                            <div class="minicart-progress-bar-content not-free-del">
+                                                <div class="row row-bottom">
+                                                    <span class="icon-delivery_new"></span>
+                                                    <span>До безкоштовної доставки залишилось 1500₴</span>
+                                                </div>
+                                                <div class="row row-top">
+                                                    <div class="range-line">
+                                                        <div class="range-line-active"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="minicart-progress-bar-content free-del">
+                                                <div class="row row-bottom">
+                                                    <span class="icon-delivery_new"></span>
+                                                    <span>Безкоштовна доставка</span>
+                                                </div>
+                                            </div>
+                                        </div>                                       
                                 
                                         <div class="mini-cart__for-you">
                                             <p class="mini-cart__for-you__title">Пропозиції для тебе</p>
@@ -3621,7 +3641,7 @@
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/mini-cart gifts.js"></script>
+    <!-- <script src="./js/mini-cart gifts.js"></script> -->
 </body>
 
 </html>

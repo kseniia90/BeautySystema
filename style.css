@@ -6527,7 +6527,7 @@ span.custom_title_two {
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 .search-results-page__title {
@@ -6796,12 +6796,14 @@ span.custom_title_two {
 }
 
 .sing-in__list__icon {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
 	padding: 5px;
-	font-size: 14px;
+	font-size: 12px;
 	background: #E1F56F;
 }
 
@@ -9135,6 +9137,7 @@ ul.woocommerce-error {
 	max-height: calc(100vh - 108px);
 	min-height: calc(100vh - 108px);
 	overflow: hidden;
+	overflow-y: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -9370,18 +9373,34 @@ ul.woocommerce-error {
 	left: 0;
 }
 
+.empty .minicart-progress-bar .range-line-active {
+	width: 1%;
+}
+
 .minicart-progress-bar-content {
 	width: 100%;
 	align-items: center;
 	gap: 5px;
 }
 
-.minicart-progress-bar-content.not-free-del,
-.minicart-progress-bar-content.free-del {
+.for-empty.minicart-progress-bar,
+.for-empty.minicart-progress-bar .not-free-del,
+.for-empty.minicart-progress-bar .sign-in,
+.for-empty.minicart-progress-bar .free-del {
 	display: none;
 }
 
-.registered .minicart-progress-bar-content.not-free-del {
+.empty .for-empty.minicart-progress-bar {
+	display: block;
+	padding-top: 24px;
+	border-top: 1px solid #ECECEC;
+	box-shadow: 0px 1px 15px 0px #F4F5F7;
+
+}
+
+.empty.registered  .for-empty.minicart-progress-bar .not-free-del,
+.empty.not-registered .for-empty.minicart-progress-bar .sign-in,
+.empty.vip .for-empty.minicart-progress-bar .free-del {
 	display: block;
 }
 
@@ -9389,7 +9408,8 @@ ul.woocommerce-error {
 	display: block;
 }
 
-.minicart-progress-bar-content.free-del .row-bottom {
+.minicart-progress-bar-content.free-del .row-bottom,
+.minicart-progress-bar-content.sign-in .row-bottom {
 	width: 100%;
 	justify-content: center;
 	padding: 9px 20px;
@@ -9758,7 +9778,7 @@ ul.woocommerce-error {
 	gap: 32px;
 	align-items: center;
 	justify-content: center;
-	padding: 30px 0 40px;
+	padding: 30px 0;
 }
 
 .shopping-cart-empty .title {
@@ -14080,9 +14100,10 @@ span.mini_cart_notification {
 
 @media (max-width: 768px) {
 
-    .mini-cart__slider.gift_slider {
-        /* margin: 15px 0; */
-    }
+    .gift_slider .mini-cart-gift {
+		flex-direction: column;
+		gap: 8px;
+	}
 
     .gift_slider .title {
         font-size: 14px;
