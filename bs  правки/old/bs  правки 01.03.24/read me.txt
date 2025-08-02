@@ -1,7 +1,0 @@
-1. Стрілки в меню в моб версії чорні, мають бути білі:
-   в li-шках меню (.header__nav__list) img стрілки (<img class="arrow_down ls-is-cached lazyloaded">)
-   і в li-шках сабменю (.header__submenu__list) img стрілки (<img  class="submenu__arrow lazyload">)
-   замінити на: <span class="icon-arrow_down arrow_down"></span>;
-
-2. Слайдер "З цим товаром купують" на сторінці товару: батьківському блоку 
-    <div class="block block_popular margin-bottom container1600"> поміняти клас container1600 на container;

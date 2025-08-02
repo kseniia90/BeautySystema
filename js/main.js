@@ -540,6 +540,29 @@ $(function () {
     },
   });
 
+   // account-info-slider
+  $(".account-info-slider").owlCarousel({
+    loop: false,
+    dots: true,
+    items: 4,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+        center: false,
+        autoWidth: false,
+      },
+      768: {
+        center: false,
+        autoWidth: true,
+      },
+      992: {
+        center: false,
+        autoWidth: true,
+      },
+    },
+  });
+
   // END
 
   //BEGIN footer accordion

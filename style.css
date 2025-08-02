@@ -151,6 +151,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--light: #edf1f2;
 	--accent: #3e6d74;
 	--accent-hover: #668b90;
+	--accent-yellow: #E1F56F;
 	--text-color: #213235;
 	--btn: linear-gradient(90deg, rgba(62, 109, 116, 1) 34%, rgba(229, 244, 114, 1) 100%);
 	--progress: linear-gradient(90deg, rgba(229, 244, 114, 1) 34%, rgba(62, 109, 116, 1) 100%);
@@ -507,6 +508,27 @@ ul {
 	height: 100%;
 }
 
+.icon-exit::before {
+  content: "\e92a";
+}
+.icon-icon_new::before {
+  content: "\e92b";
+  color: #4b6d74;
+}
+.icon-icon_click::before {
+  content: "\e92c";
+}
+.icon-icon_meduza::before {
+  content: "\e92d";
+}
+.icon-favorite-col-new::before {
+  content: "\e92e";
+  color: #4b6d74;
+}
+.icon-present::before {
+  content: "\e92f";
+}
+
 .icon-new_heart::before {
   content: "\e92a";
 }
@@ -735,7 +757,7 @@ ul {
 
 .icon-data_icon::before {
 	content: "\e91f";
-	color: var(--accent);
+	/* color: var(--accent); */
 }
 
 .icon-order_icon::before {
@@ -1054,7 +1076,7 @@ ol.breadcrumb li:last-child {
 	align-items: center;
 	padding: 0 !important;
 	border-radius: 10px;
-	background: #E1F56F;
+	background: var(--accent-yellow);
 	border: 1px solid transparent;
 	cursor: pointer;
 	transition: all 0.2s ease;
@@ -1063,7 +1085,7 @@ ol.breadcrumb li:last-child {
 .bs-btn:hover {
 	width: 100%;
 	border: double 1px transparent;
-	background-image: linear-gradient(#E1F56F, #E1F56F), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(var(--accent-yellow), var(--accent-yellow)), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 } */
@@ -1074,7 +1096,7 @@ ol.breadcrumb li:last-child {
 	align-items: center;
 	padding: 0 !important;
 	border-radius: 10px;
-	background: #E1F56F;
+	background: var(--accent-yellow);
 	border: 1px solid transparent;
 	cursor: pointer;
 	transition: all 0.2s ease;
@@ -1089,7 +1111,7 @@ ol.breadcrumb li:last-child {
 	border-radius: 10px;
 	width: 100%;
 	border: double 1px transparent;
-	background-image: linear-gradient(#E1F56F, #E1F56F), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(var(--accent-yellow), var(--accent-yellow)), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	opacity: 0;
@@ -1108,7 +1130,7 @@ ol.breadcrumb li:last-child {
 	border-radius: 10px;
 	width: 100%;
 	border: double 1px transparent;
-	background-image: linear-gradient(#F4F5F7, #F4F5F7), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(#F4F5F7, #F4F5F7), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box; 
 	opacity: 0;
@@ -1137,7 +1159,7 @@ ol.breadcrumb li:last-child {
 	padding: 12px !important;
 	border-radius: 50%;
 	color: #000;
-	background: #E1F56F;
+	background: var(--accent-yellow);
 	cursor: pointer;
 	transition: all 0.2s ease;
 }
@@ -6758,7 +6780,7 @@ span.custom_title_two {
 	margin-bottom: 32px;
 	border: double 1px transparent;
 	border-radius: 8px;
-	background-image: linear-gradient(white, white), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(white, white), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
@@ -6804,21 +6826,21 @@ span.custom_title_two {
 	border-radius: 50%;
 	padding: 5px;
 	font-size: 12px;
-	background: #E1F56F;
+	background: var(--accent-yellow);
 }
 
 .mini-cart__sing-in__content .sing-in__btn {
 	background: #ffffff;
 	width: 100%;
 	border: double 1px transparent;
-	background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 	transition: all .2s ease;
 }
 
 .mini-cart__sing-in__content .sing-in__btn:hover {
-	background: #E1F56F;
+	background: var(--accent-yellow);
 }
 
 .mini-cart__for-you__title {
@@ -7168,7 +7190,7 @@ span.custom_title_two {
 	width: 100%;
 	border: 1px solid #4B6D7433;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 5px 20px;
 	outline: none;
 }
 
@@ -9214,7 +9236,7 @@ ul.woocommerce-error {
 	margin-bottom: 32px;
 	border: double 1px transparent;
 	border-radius: 8px;
-	background-image: linear-gradient(white, white), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(white, white), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
@@ -9249,7 +9271,7 @@ ul.woocommerce-error {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background: #E1F56F;
+	background: var(--accent-yellow);
 }
 
 .gift-accordion-title__text {
@@ -12718,18 +12740,22 @@ button.openSocial-sft:after {
 	margin-bottom: -20px;
 	display: grid;
 	grid-template-columns: auto 1fr;
+	font-family: 'Comfortaa';
+}
+
+.account-title {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 100%;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	margin-bottom: 80px;
 }
 
 .account-sidebar {
 	border-right: 1px solid #2132351A;
 	display: flex;
 	flex-direction: column;
-}
-
-.account-sidebar h1 {
-	font-size: 30px;
-	line-height: 36.57px;
-	margin-bottom: 10px;
 }
 
 .account-nav {
@@ -12743,12 +12769,10 @@ button.openSocial-sft:after {
 
 .account-nav a {
 	font-size: 18px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	white-space: nowrap;
-	gap: 15px;
-	/* opacity: 0.3; */
-	transition: opacity .2s ease;
+	gap: 8px;
 }
 
 .account-nav-icon {
@@ -12759,44 +12783,42 @@ button.openSocial-sft:after {
 	margin-top: auto;
 }
 
-.account-nav .logout a {
-	opacity: 1;
-	font-weight: 600;
-}
-
 .account-nav>li {
-	padding-right: 70px;
+	padding-right: 30px;
+	cursor: pointer;
 }
 
-.account-nav>.active {
-	position: relative;
+.account-nav>li a {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: 0;
+	border-bottom: 2px solid transparent;
+	transition: all .2s ease;
 }
 
-.account-nav>.active a {
-	opacity: 1;
-	font-weight: 600;
+.account-nav li:hover a,
+.account-nav>li.active a {
+	border-bottom: 2px solid var(--accent-yellow);
 }
 
-.account-nav>.active::after {
-	content: '';
-	display: block;
-	width: 3px;
-	background: var(--accent);
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -2px;
+.account-bonus-count {
+	display: inline-block;
+	padding: 0 6px;
+	border-radius: 4px;
+	background: #F4F5F7;
 }
 
 .account-sidebar,
 .account-content {
-	padding: 50px 0;
+	/* padding: 50px 0; */
+	min-width: 220px;
 }
 
 .account-content {
 	width: 100%;
-	padding-left: 30px;
-	padding-top: 97px;
+	padding-left: 80px;
+	/* padding-top: 97px; */
 }
 
 .account-section:not(.active) {
@@ -12833,7 +12855,93 @@ button.openSocial-sft:after {
 	}
 }
 
-.account-info {
+.account-banner {
+	padding: 40px 10%;
+	background: #ccc5c5;
+	margin-bottom: 16px;
+	/* background: url('./img/Consultation\ banner.png') no-repeat center;
+	background-size: contain; */
+}
+
+.account-banner__content {
+	max-width: 565px;
+	font-weight: 400;
+	font-size: 15.59px;
+	line-height: 120%;
+}
+
+.account-banner__content h2 {
+	font-weight: 500;
+	font-size: 17.15px;
+	line-height: 120%;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+
+.account-banner__content p {
+	margin-bottom: 25px;
+}
+
+.account-banner__content .bs-btn {
+	display: inline-flex;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.account-banner__content .bs-btn>span {
+	padding: 10px 15px;
+}
+
+.account-info-slider__wrapper {
+	margin-bottom: 48px;
+}
+
+.account-info-slider .item {
+    height: auto !important;
+    box-shadow: none;
+    max-width: 257px;
+    min-width: 257px;
+    width: 257px;
+    border: double 1px transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(white, white), linear-gradient(to left, var(--accent-yellow), #668b90);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.account-info-slider .item:hover {
+	border-radius: 10px !important;
+}
+
+.account-info-slider__item {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50% 50%;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 16px 14px;
+}
+
+.account-info-slider__item .row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.account-info-slider__item .top {
+	padding-bottom: 16px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.account-info-slider__item .bottom {
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 100%;
+	text-transform: uppercase;
+	padding-top: 16px;
+}
+
+/* .account-info {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -12854,11 +12962,19 @@ button.openSocial-sft:after {
 	text-align: center;
 	border: 1px solid var(--accent);
 	border-radius: 50%;
-}
+} */
 
 .account-content .contacts__form {
 	margin-top: 35px;
 	gap: 30px;
+}
+
+.account-content .contacts__form h2 {
+	font-weight: 400;
+	font-size: 18px;
+	padding-bottom: 16px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #EBEBEB;
 }
 
 .account-content .contacts__form input {
@@ -12867,10 +12983,33 @@ button.openSocial-sft:after {
 	line-height: 20.01px;
 }
 
+.account-content .contacts__form .contacts__form__lable {
+	position: static;
+	padding: 0;
+}
+
+.account-content .contacts__form input[type="date"]::-webkit-inner-spin-button,
+.account-content .contacts__form input[type="date"]::-webkit-calendar-picker-indicator {
+	background: transparent;
+	bottom: 0;
+	color: transparent;
+	cursor: pointer;
+	height: auto;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+}
+
 .contacts__form-row {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 30px;
+}
+
+.contacts__form-row:last-of-type {
+	grid-template-columns: 1fr;
 }
 
 .account-content input[type="date"] {
@@ -13943,7 +14082,7 @@ span.mini_cart_notification {
     width: 268px;
 	border: double 1px transparent;
 	border-radius: 10px;
-	background-image: linear-gradient(white, white), linear-gradient(to left, #E1F56F, #668b90);
+	background-image: linear-gradient(white, white), linear-gradient(to left, var(--accent-yellow), #668b90);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }

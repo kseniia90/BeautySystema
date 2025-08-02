@@ -1,2 +1,0 @@
-якщо товарів в корзині немає: додати блоку .shopping-cart-products клас .hidden;
-якщо товари в корзині є: додати блоку .shopping-cart-empty клас .hidden;

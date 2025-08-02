@@ -19,7 +19,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <!-- <header class="header">
             <div class="header-container container">
                 <div class="header__main">
                     <div class="header__main-left">
@@ -409,441 +409,534 @@
                     </nav>
                 </div>
             </div>
-        </header>
+        </header> -->
         <main class="main">
-            <div class="container account-container">
-                <div class="account-sidebar">
-                    <h1>Мій акаунт</h1>
-                    <ul class="account-nav">
-                        <li><a href="#info">
-                                <span class="icon-admin account-nav-icon"></span>
-                                <span>Мої дані</span>
-                            </a></li>
-                        <li><a href="#orders">
-                                <span class="icon-Mobile-Order account-nav-icon"></span>
-                                <span>Мої замовлення</span>
-                            </a></li>
-                        <li><a href="#bonus">
-                                <span class="icon-Gift account-nav-icon"></span>
-                                <span>Бонуси</span>
-                            </a></li>
-                        <li><a href="#referral">
-                                <span class="icon-Add-Male-User-Group account-nav-icon"></span>
-                                <span>Реферальна програма</span>
-                            </a></li>
-                        <li class="logout"><a href="#">
-                            <span class="icon-Logout account-nav-icon"></span>
-                            <span>Вихід з акаунту</span>
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="account-content">
-                    <div data-id="#info" class="account-section">
-                        <div class="account-info">
-                            <div class="account-img">
-                                LI
-                            </div>
-                            <p>Lorem Ipsum</p>
-                        </div>
-                        <form class="contacts__form">
-                            <div class="contacts__form-row">
-                                <div class="contacts__form__input-block">
-                                    <p class="contacts__form__lable">Ім’я</p>
-                                    <input type="text" name="user_name">
-                                </div>
-                                <div class="contacts__form__input-block">
-                                    <p class="contacts__form__lable">Прізвище</p>
-                                    <input type="text" name="user_lastname">
-                                </div>
-                            </div>
-                           
-                            <div class="contacts__form-row">
-                                <div class="contacts__form__input-block">
-                                    <p class="contacts__form__lable">E-mail</p>
-                                    <input type="email" name="user_email">
-                                </div>
-                                <div class="contacts__form__input-block">
-                                    <p class="contacts__form__lable">Номер телефону</p>
-                                    <input type="phone" name="user_phone" maxlength="13">
-                                </div>
-                            </div>   
-                            
-                            <div class="contacts__form-row">
-                                <div class="contacts__form__input-block">
-                                    <p class="contacts__form__lable">Дата народження</p>
-                                    <input type="date" name="user_bday" placeholder="">
-                                </div>
-                            </div> 
-                            <button class="contacts__form__btn product__card__info__button">Зберегти дані</button>
-                        </form>
+            <div class="container account">
+                <h1 class="account-title">Мій акаунт</h1>
+                <div class="account-container">
+                    <div class="account-sidebar">
+                        <ul class="account-nav">
+                            <li><a href="#info">
+                                    <span>Мої дані</span>
+                                </a></li>
+                            <li><a href="#orders">
+                                    <span>Історія замовлень</span>
+                                </a></li>
+                            <li><a href="#bonus">
+                                    <span>Мої збережені</span>
+                                    <span class="account-bonus-count">23</span>
+                                </a></li>
+                            <li><a href="#bonus">
+                                    <span>Кешбек</span>
+                                </a></li>
+                            <li><a href="#referral">
+                                    <span>Отримуй бʼютіки</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <span>Мої відгуки</span>
+                                </a></li>
+                            <li class="logout"><a href="#">
+                                <span class="icon-exit"></span>
+                                <span>Вихід з аккаунту</span>
+                                </a></li>
+                        </ul>
                     </div>
-                    <div data-id="#orders" class="account-section">
-                        <div class="orders-content">
-                            <div class="orders-title">
-                                <p>Сума всіх твоїх замовлень</p>
-                                <span>₴3589,00</span>
-                            </div>
-                            <div class="order-info">
-                                <div class="order__table">
-                                    <div class="order__table__head">
-                                        <div class="order__table__row table__head">
-                                            <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
-                                            <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
-                                            <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
-                                            <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="order__table__body">
-                                        <div class="order__table__row">
-                                            <div class="order__col order__number"><span>#69808</span></div>
-                                            <div class="order__col order__name"><span>01.03.2024</span></div>
-                                            <div class="order__col order__price">₴<span>2752,00</span></div>
-                                            <div class="order__col order__quantity"><span class="status-inprocessing">В обробці</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order-composition">
-                                    <div class="order__accordion">
-                                        <div class="accordion__item">
-                                            <div class="accordion__title">
-                                                <span class="accordion__title-text">Склад замовлення</span>
-                                                <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
-                                            </div>
-                                            <div class="accordion__content">
-                                               <div class="order__list">
-                                                    <div class="order__item">
-                                                        <div class="order__item-col order__item-img">
-                                                            <img src="img/popular_5.png" alt="" width="70" height="70">
-                                                            <img src="img/Gift-green.svg" alt="" width="24" height="24" class="product-thumbnail-label">
-            
-                                                        </div>
-                                                        <div class="order__item-content">
-                                                            <div class="order__item-col order__item-title">Очищаючий  200 мл Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi accusantium amet adipisci illum delectus reiciendis numquam aliquid et blanditiis, assumenda dolorem beatae tempore voluptates nihil tenetur inventore odio? Distinctio, omnis.</div>
-                                                            <div class="order__item-col order__item-quantity">x1</div>
-                                                            <div class="order__item-col order__item-price">₴938,00</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="order__item">
-                                                        <div class="order__item-col order__item-img">
-                                                            <img src="img/popular_1.png" alt="" width="70" height="70">
-                                                        </div>
-                                                        <div class="order__item-content">
-                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
-                                                            <div class="order__item-col order__item-quantity">x1</div>
-                                                            <div class="order__item-col order__item-price">₴,00</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="order__summaries">
-                                                    <div class="order__summaries-row ">
-                                                        <p class="order__summaries-title">Сума замовлення:</p>
-                                                        <p class="order__summaries-sum">₴2846,00</p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Знижка:</p>
-                                                        <p>-₴94,00</p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Списано б’ютиків:</p>
-                                                        <p class="cashback-debited">
-                                                            <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                            <span>-25,00</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Всього:</p>
-                                                        <p class="order__summaries-total">₴2727,00</p>
-                                                    </div>
-
-                                                </div>
-                                                <div class="order__repeat-btn">
-                                                    <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="account-content">
+                        <div data-id="#info" class="account-section">
+                            <div class="account-banner">
+                                <div class="account-banner__content">
+                                    <h2>Безкоштовна консультація з підбору в телеграм</h2>
+                                    <p>Не знаєш, з чого почати? Ми допоможемо💬</p>
+                                    <a href="" class="bs-btn bs-btn-yellow">
+                                        <span>
+                                            Перейти у телеграм
+                                            <span class="icon-btn_arrow"></span>
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="order-info">
-                                <div class="order__table">
-                                    <div class="order__table__head">
-                                        <div class="order__table__row table__head">
-                                            <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
-                                            <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
-                                            <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
-                                            <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="order__table__body">
-                                        <div class="order__table__row">
-                                            <div class="order__col order__number"><span>#69808</span></div>
-                                            <div class="order__col order__name"><span>01.03.2024</span></div>
-                                            <div class="order__col order__price">₴<span>2752,00</span></div>
-                                            <div class="order__col order__quantity"><span class="status-delivered">Доставлений</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order-composition">
-                                    <div class="order__accordion">
-                                        <div class="accordion__item">
-                                            <div class="accordion__title">
-                                                <span class="accordion__title-text">Склад замовлення</span>
-                                                <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
-                                            </div>
-                                            <div class="accordion__content">
-                                               <div class="order__list">
-                                                    <div class="order__item">
-                                                        <div class="order__item-col order__item-img">
-                                                            <img src="img/popular_5.png" alt="" width="70" height="70">
-                                                        </div>
-                                                        <div class="order__item-content">
-                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
-                                                            <div class="order__item-col order__item-quantity">x1</div>
-                                                            <div class="order__item-col order__item-price">₴938,00</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="order__item">
-                                                        <div class="order__item-col order__item-img">
-                                                            <img src="img/popular_1.png" alt="" width="70" height="70">
-                                                        </div>
-                                                        <div class="order__item-content">
-                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
-                                                            <div class="order__item-col order__item-quantity">x1</div>
-                                                            <div class="order__item-col order__item-price">₴938,00</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="order__summaries">
-                                                    <div class="order__summaries-row ">
-                                                        <p class="order__summaries-title">Сума замовлення:</p>
-                                                        <p class="order__summaries-sum">₴2846,00</p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Знижка:</p>
-                                                        <p>-₴94,00</p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Списано б’ютиків:</p>
-                                                        <p class="cashback-debited">
-                                                            <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                            <span>-25,00</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Всього:</p>
-                                                        <p class="order__summaries-total">₴2727,00</p>
-                                                    </div>
+                            <div class="account-info-slider__wrapper">
+                                <div class="account-info-slider owl-carousel owl-theme owl-loaded">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage">
 
+                                            <div class="owl-item">
+                                                <div class="item">
+                                                    <div class="account-info-slider__item">
+                                                        <div class="row top">
+                                                            <span class="icon-data_icon"></span>
+                                                            <span>Дата реєстрації</span>
+                                                        </div>
+                                                        <div class="row bottom">
+                                                            <span>12.06.2021</span>
+                                                        </div>
+                                                    </div>                                                       
                                                 </div>
-                                                <div class="order__repeat-btn">
-                                                    <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                            </div>
+
+                                            <div class="owl-item">
+                                                <div class="item">
+                                                    <div class="account-info-slider__item">
+                                                        <div class="row top">
+                                                            <span class="icon-icon_click"></span>
+                                                            <span>Куплено баночок</span>
+                                                        </div>
+                                                        <div class="row bottom">
+                                                            <span>21</span>
+                                                        </div>
+                                                    </div>                                                       
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-item">
+                                                <div class="item">
+                                                    <div class="account-info-slider__item">
+                                                        <div class="row top">
+                                                            <span class="icon-icon_meduza"></span>
+                                                            <span>Отримано бʼютіків</span>
+                                                        </div>
+                                                        <div class="row bottom">
+                                                            <span>2021</span>
+                                                            <div>
+                                                                <img src="./img/loyalty-logo.svg" alt="logo" width="16" height="16">
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                       
+                                                </div>
+                                            </div>
+
+                                            <div class="owl-item">
+                                                <div class="item">
+                                                    <div class="account-info-slider__item">
+                                                        <div class="row top">
+                                                            <span class="icon-gift_new"></span>
+                                                            <span>Отримано подарунків</span>
+                                                        </div>
+                                                        <div class="row bottom">
+                                                            <span>12</span>
+                                                        </div>
+                                                    </div>                                                       
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>                             
                             </div>
 
-                            <div class="order-info">
-                                <div class="order__table">
-                                    <div class="order__table__head">
-                                        <div class="order__table__row table__head">
-                                            <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
-                                            <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
-                                            <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
-                                            <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
-                                        </div>
-                                    </div>
-                                    <div class="order__table__body">
-                                        <div class="order__table__row">
-                                            <div class="order__col order__number"><span>#69808</span></div>
-                                            <div class="order__col order__name"><span>01.03.2024</span></div>
-                                            <div class="order__col order__price">₴<span>2752,00</span></div>
-                                            <div class="order__col order__quantity"><span class="status-delivered">Доставлений</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="order-composition">
-                                    <div class="order__accordion">
-                                        <div class="accordion__item">
-                                            <div class="accordion__title">
-                                                <span class="accordion__title-text">Склад замовлення</span>
-                                                <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
-                                            </div>
-                                            <div class="accordion__content">
-                                               <div class="order__list">
-                                                    <div class="order__item">
-                                                        <div class="order__item-col order__item-img">
-                                                            <img src="img/popular_5.png" alt="" width="70" height="70">
-                                                        </div>
-                                                        <div class="order__item-content">
-                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
-                                                            <div class="order__item-col order__item-quantity">x1</div>
-                                                            <div class="order__item-col order__item-price">₴938,00</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="order__item">
-                                                        <div class="order__item-col order__item-img">
-                                                            <img src="img/popular_1.png" alt="" width="70" height="70">
-                                                        </div>
-                                                        <div class="order__item-content">
-                                                            <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
-                                                            <div class="order__item-col order__item-quantity">x1</div>
-                                                            <div class="order__item-col order__item-price">₴938,00</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="order__summaries">
-                                                    <div class="order__summaries-row ">
-                                                        <p class="order__summaries-title">Сума замовлення:</p>
-                                                        <p class="order__summaries-sum">₴2846,00</p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Знижка:</p>
-                                                        <p>-₴94,00</p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Списано б’ютиків:</p>
-                                                        <p class="cashback-debited">
-                                                            <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                            <span>-25,00</span>
-                                                        </p>
-                                                    </div>
-                                                    <div class="order__summaries-row">
-                                                        <p class="order__summaries-title">Всього:</p>
-                                                        <p class="order__summaries-total">₴2727,00</p>
-                                                    </div>
+                            <form class="contacts__form">
+                                <h2>Основна інформація</h2>
+                                <div class="contacts__form-row">
 
-                                                </div>
-                                                <div class="order__repeat-btn">
-                                                    <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Ім’я*</p>
+                                        <input type="text" name="user_name">
                                     </div>
-                                </div>
-                            </div>
 
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Прізвище*</p>
+                                        <input type="text" name="user_lastname">
+                                    </div>
+
+                                </div>
+                               
+                                <div class="contacts__form-row">
+                                    
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Телефон*</p>
+                                        <input type="phone" name="user_phone" maxlength="13">
+                                    </div>
+
+                                     <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Дата народження</p>
+                                        <input type="date" name="user_bday">
+                                    </div>
+                                </div>   
+                                
+                                <div class="contacts__form-row">
+                                   
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">E-mail*</p>
+                                        <input type="email" name="user_email">
+                                    </div>
+                                </div> 
+                                <button type="button" class="bs-btn bs-btn-gray btn-continue">
+                                    <span>
+                                        <span class="icon-btn_arrow"></span>
+                                        <span>Зберегти дані</span>
+                                    </span>
+                                </button>
+                            </form>
                         </div>
-                    </div>
-                    <div data-id="#bonus" class="account-section">
-                        <div class="account-section-content">
-                            <div class="bonus-info">
-                                <div class="bonus-info-left">
-                                    <div class="bonus-info-content">
-                                        <p>Баланс бʼютіків</p>
-                                        <div class="bonus-info-count">
-                                            <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.0154 6.18048L19.7869 14.8011L23.995 6.38495C25.4601 3.45462 23.3293 0.00683594 20.0531 0.00683594C16.8748 0.00683594 14.7415 3.26871 16.0154 6.18048Z" fill="#4B6D74" fill-opacity="0.35"/>
-                                                <path d="M16.0154 30.8185L19.7869 22.198L23.995 30.6141C25.4601 33.5444 23.3293 36.9922 20.0531 36.9922C16.8748 36.9922 14.7415 33.7303 16.0154 30.8185Z" fill="#4B6D74"/>
-                                                <path d="M29.4414 28.8476L24.1724 21.0517L33.5345 21.9948C36.7943 22.3231 38.5688 25.9671 36.8173 28.7358C35.1182 31.4218 31.2211 31.4808 29.4414 28.8476Z" fill="#4B6D74" fill-opacity="0.8"/>
-                                                <path d="M11.5566 9.28813L16.8256 17.084L7.4635 16.141C4.20379 15.8126 2.42922 12.1686 4.1807 9.39991C5.8798 6.71398 9.7769 6.65491 11.5566 9.28813Z" fill="#4B6D74" fill-opacity="0.3"/>
-                                                <path d="M11.5566 28.8476L16.8256 21.0517L7.4635 21.9948C4.20379 22.3231 2.42922 25.9671 4.1807 28.7358C5.8798 31.4218 9.7769 31.4808 11.5566 28.8476Z" fill="#4B6D74" fill-opacity="0.2"/>
-                                                <path d="M29.4414 9.28813L24.1724 17.084L33.5345 16.141C36.7943 15.8126 38.5688 12.1686 36.8173 9.39991C35.1182 6.71398 31.2211 6.65491 29.4414 9.28813Z" fill="#4B6D74" fill-opacity="0.6"/>
-                                            </svg>
-                                                
-                                            <span>152</span>
-                                        </div>
-                                        <div class="bonus-info-row">
-                                            <div class="bonus-info-column">
-                                                <p>Рівень кешбеку</p>
-                                                <p><b>3%</b></p>
-                                            </div>
-                                            <div class="bonus-info-column">
-                                                <p>Сума замовлень</p>
-                                                <p><b>₴3589</b></p>
+
+                        <div data-id="#orders" class="account-section">
+                            <div class="orders-content">
+                                <div class="orders-title">
+                                    <p>Сума всіх твоїх замовлень</p>
+                                    <span>₴3589,00</span>
+                                </div>
+                                <div class="order-info">
+                                    <div class="order__table">
+                                        <div class="order__table__head">
+                                            <div class="order__table__row table__head">
+                                                <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
+                                                <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
+                                                <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
+                                                <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
                                             </div>
                                         </div>
-                                        <div class="bonus-info-row row-2">
-                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7.50039 2.40039C4.68369 2.40039 2.40039 4.68369 2.40039 7.50039C2.40039 10.3171 4.68369 12.6004 7.50039 12.6004C10.3171 12.6004 12.6004 10.3171 12.6004 7.50039C12.6004 4.68369 10.3171 2.40039 7.50039 2.40039ZM7.50039 2.70039C10.1515 2.70039 12.3004 4.84929 12.3004 7.50039C12.3004 10.1515 10.1515 12.3004 7.50039 12.3004C4.84929 12.3004 2.70039 10.1515 2.70039 7.50039C2.70039 4.84929 4.84929 2.70039 7.50039 2.70039ZM7.50039 5.10039C7.33479 5.10039 7.20039 5.23479 7.20039 5.40039C7.20039 5.56599 7.33479 5.70039 7.50039 5.70039C7.66599 5.70039 7.80039 5.56599 7.80039 5.40039C7.80039 5.23479 7.66599 5.10039 7.50039 5.10039ZM7.50039 6.60039C7.41759 6.60039 7.35039 6.66759 7.35039 6.75039V10.3504C7.35039 10.4332 7.41759 10.5004 7.50039 10.5004C7.58319 10.5004 7.65039 10.4332 7.65039 10.3504V6.75039C7.65039 6.66759 7.58319 6.60039 7.50039 6.60039Z" fill="#213235"/>
-                                            </svg>
-                                            <p><b>20</b> б’ютиків згорають 18.07.2024</p>
+                                        <div class="order__table__body">
+                                            <div class="order__table__row">
+                                                <div class="order__col order__number"><span>#69808</span></div>
+                                                <div class="order__col order__name"><span>01.03.2024</span></div>
+                                                <div class="order__col order__price">₴<span>2752,00</span></div>
+                                                <div class="order__col order__quantity"><span class="status-inprocessing">В обробці</span></div>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="order-composition">
+                                        <div class="order__accordion">
+                                            <div class="accordion__item">
+                                                <div class="accordion__title">
+                                                    <span class="accordion__title-text">Склад замовлення</span>
+                                                    <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
+                                                </div>
+                                                <div class="accordion__content">
+                                                   <div class="order__list">
+                                                        <div class="order__item">
+                                                            <div class="order__item-col order__item-img">
+                                                                <img src="img/popular_5.png" alt="" width="70" height="70">
+                                                                <img src="img/Gift-green.svg" alt="" width="24" height="24" class="product-thumbnail-label">
+                
+                                                            </div>
+                                                            <div class="order__item-content">
+                                                                <div class="order__item-col order__item-title">Очищаючий  200 мл Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi accusantium amet adipisci illum delectus reiciendis numquam aliquid et blanditiis, assumenda dolorem beatae tempore voluptates nihil tenetur inventore odio? Distinctio, omnis.</div>
+                                                                <div class="order__item-col order__item-quantity">x1</div>
+                                                                <div class="order__item-col order__item-price">₴938,00</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order__item">
+                                                            <div class="order__item-col order__item-img">
+                                                                <img src="img/popular_1.png" alt="" width="70" height="70">
+                                                            </div>
+                                                            <div class="order__item-content">
+                                                                <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                                <div class="order__item-col order__item-quantity">x1</div>
+                                                                <div class="order__item-col order__item-price">₴,00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order__summaries">
+                                                        <div class="order__summaries-row ">
+                                                            <p class="order__summaries-title">Сума замовлення:</p>
+                                                            <p class="order__summaries-sum">₴2846,00</p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Знижка:</p>
+                                                            <p>-₴94,00</p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Списано б’ютиків:</p>
+                                                            <p class="cashback-debited">
+                                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                                <span>-25,00</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Всього:</p>
+                                                            <p class="order__summaries-total">₴2727,00</p>
+                                                        </div>
     
+                                                    </div>
+                                                    <div class="order__repeat-btn">
+                                                        <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bonus-info-right">
-                                    <div class="bonus-info-column">
-                                        <p class="bonus-info-right-title">Твій рівень лояльності:</p>
-                                        <p class="loyalty-level">BASIC</p>
+    
+                                <div class="order-info">
+                                    <div class="order__table">
+                                        <div class="order__table__head">
+                                            <div class="order__table__row table__head">
+                                                <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
+                                                <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
+                                                <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
+                                                <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
+                                            </div>
+                                        </div>
+                                        <div class="order__table__body">
+                                            <div class="order__table__row">
+                                                <div class="order__col order__number"><span>#69808</span></div>
+                                                <div class="order__col order__name"><span>01.03.2024</span></div>
+                                                <div class="order__col order__price">₴<span>2752,00</span></div>
+                                                <div class="order__col order__quantity"><span class="status-delivered">Доставлений</span></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="bonus-info-right-text">До більшого рівня кешбеку залишилось замовити на ₴3411</p>
-                                    <p class="bonus-info-right-tr">1 Б’ютік = 1 гривня</p>                                    
+                                    <div class="order-composition">
+                                        <div class="order__accordion">
+                                            <div class="accordion__item">
+                                                <div class="accordion__title">
+                                                    <span class="accordion__title-text">Склад замовлення</span>
+                                                    <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
+                                                </div>
+                                                <div class="accordion__content">
+                                                   <div class="order__list">
+                                                        <div class="order__item">
+                                                            <div class="order__item-col order__item-img">
+                                                                <img src="img/popular_5.png" alt="" width="70" height="70">
+                                                            </div>
+                                                            <div class="order__item-content">
+                                                                <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                                <div class="order__item-col order__item-quantity">x1</div>
+                                                                <div class="order__item-col order__item-price">₴938,00</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order__item">
+                                                            <div class="order__item-col order__item-img">
+                                                                <img src="img/popular_1.png" alt="" width="70" height="70">
+                                                            </div>
+                                                            <div class="order__item-content">
+                                                                <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                                <div class="order__item-col order__item-quantity">x1</div>
+                                                                <div class="order__item-col order__item-price">₴938,00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order__summaries">
+                                                        <div class="order__summaries-row ">
+                                                            <p class="order__summaries-title">Сума замовлення:</p>
+                                                            <p class="order__summaries-sum">₴2846,00</p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Знижка:</p>
+                                                            <p>-₴94,00</p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Списано б’ютиків:</p>
+                                                            <p class="cashback-debited">
+                                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                                <span>-25,00</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Всього:</p>
+                                                            <p class="order__summaries-total">₴2727,00</p>
+                                                        </div>
+    
+                                                    </div>
+                                                    <div class="order__repeat-btn">
+                                                        <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bonus-info-history">
-                                <p>Історія</p>
-                                <ul class="bonus-list">
-                                    <li>
-                                        <div class="bonus-list-content">
-                                            <p class="bonus-list-title">Запрошення друга</p>
-                                            <p class="bonus-list-count">
-                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                <span>+20</span>
-                                            </p>
+    
+                                <div class="order-info">
+                                    <div class="order__table">
+                                        <div class="order__table__head">
+                                            <div class="order__table__row table__head">
+                                                <div class="order__col order__number"><div><span class="icon-order_icon"></span><span>Номер замовлення</span></div></div>
+                                                <div class="order__col order__name"><div><span class="icon-data_icon"></span><span>Дата</span></div></div>
+                                                <div class="order__col order__price"><div><span class="icon-total_icon"></span><span>Всього</span></div></div>
+                                                <div class="order__col order__quantity"><div><span class="icon-total_icon"></span><span>Статус замовлення</span></div></div>
+                                            </div>
                                         </div>
-                                        <p class="bonus-list-plus"></p>
-                                    </li>
-                                    <li>
-                                        <div class="bonus-list-content">
-                                            <p class="bonus-list-title">Нарахування</p>
-                                            <p class="bonus-list-count">
-                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                <span>+152</span>
-                                            </p>
+                                        <div class="order__table__body">
+                                            <div class="order__table__row">
+                                                <div class="order__col order__number"><span>#69808</span></div>
+                                                <div class="order__col order__name"><span>01.03.2024</span></div>
+                                                <div class="order__col order__price">₴<span>2752,00</span></div>
+                                                <div class="order__col order__quantity"><span class="status-delivered">Доставлений</span></div>
+                                            </div>
                                         </div>
-                                        <p class="bonus-list-plus"></p>
-                                    </li>
-                                    <li>
-                                        <div class="bonus-list-content">
-                                            <p class="bonus-list-title">Використані</p>
-                                            <p class="bonus-list-count">
-                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                <span>-25</span>
-                                            </p>
+                                    </div>
+                                    <div class="order-composition">
+                                        <div class="order__accordion">
+                                            <div class="accordion__item">
+                                                <div class="accordion__title">
+                                                    <span class="accordion__title-text">Склад замовлення</span>
+                                                    <div class="accordion__arrow"><span class="icon-arrow_down"></span></div>
+                                                </div>
+                                                <div class="accordion__content">
+                                                   <div class="order__list">
+                                                        <div class="order__item">
+                                                            <div class="order__item-col order__item-img">
+                                                                <img src="img/popular_5.png" alt="" width="70" height="70">
+                                                            </div>
+                                                            <div class="order__item-content">
+                                                                <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                                <div class="order__item-col order__item-quantity">x1</div>
+                                                                <div class="order__item-col order__item-price">₴938,00</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order__item">
+                                                            <div class="order__item-col order__item-img">
+                                                                <img src="img/popular_1.png" alt="" width="70" height="70">
+                                                            </div>
+                                                            <div class="order__item-content">
+                                                                <div class="order__item-col order__item-title">Очищаючий засіб для миття тіла Acnemy ZITBODY, 200 мл</div>
+                                                                <div class="order__item-col order__item-quantity">x1</div>
+                                                                <div class="order__item-col order__item-price">₴938,00</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order__summaries">
+                                                        <div class="order__summaries-row ">
+                                                            <p class="order__summaries-title">Сума замовлення:</p>
+                                                            <p class="order__summaries-sum">₴2846,00</p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Знижка:</p>
+                                                            <p>-₴94,00</p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Списано б’ютиків:</p>
+                                                            <p class="cashback-debited">
+                                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                                <span>-25,00</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="order__summaries-row">
+                                                            <p class="order__summaries-title">Всього:</p>
+                                                            <p class="order__summaries-total">₴2727,00</p>
+                                                        </div>
+    
+                                                    </div>
+                                                    <div class="order__repeat-btn">
+                                                        <div class="product__card__info__button  repeat-order"><span>Повторити замовлення</span><span class="icon-Synchronize"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p class="bonus-list-minus "></p>
-                                    </li>
-                                    <li>
-                                        <div class="bonus-list-content">
-                                            <p class="bonus-list-title">До дня Народження</p>
-                                            <p class="bonus-list-count">
-                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                <span>+20</span>
-                                            </p>
-                                        </div>
-                                        <p class="bonus-list-plus"></p>
-                                    </li>
-                                    <li>
-                                        <div class="bonus-list-content">
-                                            <p class="bonus-list-title">Відгук на сайті</p>
-                                            <p class="bonus-list-count">
-                                                <img src="img/logo_icon.png" alt="" width="20" height="20">
-                                                <span>+20</span>
-                                            </p>
-                                        </div>
-                                        <p class="bonus-list-plus"></p>
-                                    </li>
-                                </ul>
-
+                                    </div>
+                                </div>
+    
                             </div>
                         </div>
-
-                    </div>
-                    <div data-id="#referral" class="account-section">
-                      <div class="account-section-content">
-                          <p>За виконане замовлення з реферального посилання кожен отримує бали на рахунок</p>
-                          <a class="product__card__info__button" href="#">Згенерувати код</a>
-                          <div class="account-code-block">
-                            <div class="account-code-info">
-                                <p>Ваш код:</p>
-                                <p class="code">380960988447</p>
+                        <div data-id="#bonus" class="account-section">
+                            <div class="account-section-content">
+                                <div class="bonus-info">
+                                    <div class="bonus-info-left">
+                                        <div class="bonus-info-content">
+                                            <p>Баланс бʼютіків</p>
+                                            <div class="bonus-info-count">
+                                                <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.0154 6.18048L19.7869 14.8011L23.995 6.38495C25.4601 3.45462 23.3293 0.00683594 20.0531 0.00683594C16.8748 0.00683594 14.7415 3.26871 16.0154 6.18048Z" fill="#4B6D74" fill-opacity="0.35"/>
+                                                    <path d="M16.0154 30.8185L19.7869 22.198L23.995 30.6141C25.4601 33.5444 23.3293 36.9922 20.0531 36.9922C16.8748 36.9922 14.7415 33.7303 16.0154 30.8185Z" fill="#4B6D74"/>
+                                                    <path d="M29.4414 28.8476L24.1724 21.0517L33.5345 21.9948C36.7943 22.3231 38.5688 25.9671 36.8173 28.7358C35.1182 31.4218 31.2211 31.4808 29.4414 28.8476Z" fill="#4B6D74" fill-opacity="0.8"/>
+                                                    <path d="M11.5566 9.28813L16.8256 17.084L7.4635 16.141C4.20379 15.8126 2.42922 12.1686 4.1807 9.39991C5.8798 6.71398 9.7769 6.65491 11.5566 9.28813Z" fill="#4B6D74" fill-opacity="0.3"/>
+                                                    <path d="M11.5566 28.8476L16.8256 21.0517L7.4635 21.9948C4.20379 22.3231 2.42922 25.9671 4.1807 28.7358C5.8798 31.4218 9.7769 31.4808 11.5566 28.8476Z" fill="#4B6D74" fill-opacity="0.2"/>
+                                                    <path d="M29.4414 9.28813L24.1724 17.084L33.5345 16.141C36.7943 15.8126 38.5688 12.1686 36.8173 9.39991C35.1182 6.71398 31.2211 6.65491 29.4414 9.28813Z" fill="#4B6D74" fill-opacity="0.6"/>
+                                                </svg>
+                                                    
+                                                <span>152</span>
+                                            </div>
+                                            <div class="bonus-info-row">
+                                                <div class="bonus-info-column">
+                                                    <p>Рівень кешбеку</p>
+                                                    <p><b>3%</b></p>
+                                                </div>
+                                                <div class="bonus-info-column">
+                                                    <p>Сума замовлень</p>
+                                                    <p><b>₴3589</b></p>
+                                                </div>
+                                            </div>
+                                            <div class="bonus-info-row row-2">
+                                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.50039 2.40039C4.68369 2.40039 2.40039 4.68369 2.40039 7.50039C2.40039 10.3171 4.68369 12.6004 7.50039 12.6004C10.3171 12.6004 12.6004 10.3171 12.6004 7.50039C12.6004 4.68369 10.3171 2.40039 7.50039 2.40039ZM7.50039 2.70039C10.1515 2.70039 12.3004 4.84929 12.3004 7.50039C12.3004 10.1515 10.1515 12.3004 7.50039 12.3004C4.84929 12.3004 2.70039 10.1515 2.70039 7.50039C2.70039 4.84929 4.84929 2.70039 7.50039 2.70039ZM7.50039 5.10039C7.33479 5.10039 7.20039 5.23479 7.20039 5.40039C7.20039 5.56599 7.33479 5.70039 7.50039 5.70039C7.66599 5.70039 7.80039 5.56599 7.80039 5.40039C7.80039 5.23479 7.66599 5.10039 7.50039 5.10039ZM7.50039 6.60039C7.41759 6.60039 7.35039 6.66759 7.35039 6.75039V10.3504C7.35039 10.4332 7.41759 10.5004 7.50039 10.5004C7.58319 10.5004 7.65039 10.4332 7.65039 10.3504V6.75039C7.65039 6.66759 7.58319 6.60039 7.50039 6.60039Z" fill="#213235"/>
+                                                </svg>
+                                                <p><b>20</b> б’ютиків згорають 18.07.2024</p>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="bonus-info-right">
+                                        <div class="bonus-info-column">
+                                            <p class="bonus-info-right-title">Твій рівень лояльності:</p>
+                                            <p class="loyalty-level">BASIC</p>
+                                        </div>
+                                        <p class="bonus-info-right-text">До більшого рівня кешбеку залишилось замовити на ₴3411</p>
+                                        <p class="bonus-info-right-tr">1 Б’ютік = 1 гривня</p>                                    
+                                    </div>
+                                </div>
+                                <div class="bonus-info-history">
+                                    <p>Історія</p>
+                                    <ul class="bonus-list">
+                                        <li>
+                                            <div class="bonus-list-content">
+                                                <p class="bonus-list-title">Запрошення друга</p>
+                                                <p class="bonus-list-count">
+                                                    <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                    <span>+20</span>
+                                                </p>
+                                            </div>
+                                            <p class="bonus-list-plus"></p>
+                                        </li>
+                                        <li>
+                                            <div class="bonus-list-content">
+                                                <p class="bonus-list-title">Нарахування</p>
+                                                <p class="bonus-list-count">
+                                                    <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                    <span>+152</span>
+                                                </p>
+                                            </div>
+                                            <p class="bonus-list-plus"></p>
+                                        </li>
+                                        <li>
+                                            <div class="bonus-list-content">
+                                                <p class="bonus-list-title">Використані</p>
+                                                <p class="bonus-list-count">
+                                                    <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                    <span>-25</span>
+                                                </p>
+                                            </div>
+                                            <p class="bonus-list-minus "></p>
+                                        </li>
+                                        <li>
+                                            <div class="bonus-list-content">
+                                                <p class="bonus-list-title">До дня Народження</p>
+                                                <p class="bonus-list-count">
+                                                    <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                    <span>+20</span>
+                                                </p>
+                                            </div>
+                                            <p class="bonus-list-plus"></p>
+                                        </li>
+                                        <li>
+                                            <div class="bonus-list-content">
+                                                <p class="bonus-list-title">Відгук на сайті</p>
+                                                <p class="bonus-list-count">
+                                                    <img src="img/logo_icon.png" alt="" width="20" height="20">
+                                                    <span>+20</span>
+                                                </p>
+                                            </div>
+                                            <p class="bonus-list-plus"></p>
+                                        </li>
+                                    </ul>
+    
+                                </div>
                             </div>
-                            <a class="product__card__info__button copy-code" href="#"><span>Cкопіювати код</span><span class="icon-Documents"></span></a>
+    
+                        </div>
+                        <div data-id="#referral" class="account-section">
+                          <div class="account-section-content">
+                              <p>За виконане замовлення з реферального посилання кожен отримує бали на рахунок</p>
+                              <a class="product__card__info__button" href="#">Згенерувати код</a>
+                              <div class="account-code-block">
+                                <div class="account-code-info">
+                                    <p>Ваш код:</p>
+                                    <p class="code">380960988447</p>
+                                </div>
+                                <a class="product__card__info__button copy-code" href="#"><span>Cкопіювати код</span><span class="icon-Documents"></span></a>
+                              </div>
                           </div>
-                      </div>
+                        </div>
                     </div>
                 </div>
             </div> 
