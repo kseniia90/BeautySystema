@@ -695,6 +695,11 @@ $(function () {
  
 });
 
+// add to favorite
+$(".icon-favorite-new").on("click", function (e) {
+  $(this).toggleClass("icon-favorite-col-new");
+})
+
 // filter check square
 const elProperties = document.querySelectorAll(".el_properties");
 
