@@ -1,0 +1,16 @@
+
+
+// change icon favorite
+
+$(".icon-favorite-new").on("click", function (e) {
+  $(this).toggleClass("icon-favorite-col-new");
+})
+
+gift icon:
+
+<div class="product__card__img">
+    <span class="product-thumbnail-label icon-gift_new"></span>
+    <img src="./img/popular_5.png" alt="product" width="80" height="80">
+</div>
+
+

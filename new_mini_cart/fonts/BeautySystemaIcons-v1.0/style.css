@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'BeautySystemaIcons';
-  src:  url('fonts/BeautySystemaIcons.eot?yneb31');
-  src:  url('fonts/BeautySystemaIcons.eot?yneb31#iefix') format('embedded-opentype'),
-    url('fonts/BeautySystemaIcons.ttf?yneb31') format('truetype'),
-    url('fonts/BeautySystemaIcons.woff?yneb31') format('woff'),
-    url('fonts/BeautySystemaIcons.svg?yneb31#BeautySystemaIcons') format('svg');
+  src:  url('fonts/BeautySystemaIcons.eot?6usj3f');
+  src:  url('fonts/BeautySystemaIcons.eot?6usj3f#iefix') format('embedded-opentype'),
+    url('fonts/BeautySystemaIcons.ttf?6usj3f') format('truetype'),
+    url('fonts/BeautySystemaIcons.woff?6usj3f') format('woff'),
+    url('fonts/BeautySystemaIcons.svg?6usj3f#BeautySystemaIcons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-repeat_new:before {
+  content: "\e930";
+  color: #4b6d74;
+}
+.icon-add_to_cart_new:before {
+  content: "\e931";
+}
+.icon-compare_new:before {
+  content: "\e932";
+}
 .icon-exit:before {
   content: "\e92a";
 }

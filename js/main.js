@@ -684,6 +684,17 @@ $(function () {
   });
   //END
 
+  //BEGIN bonus-history accordion
+
+  $(".bonus-history__accordion .accordion__title").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    $this.toggleClass("accordion-active");
+    $this.next().slideToggle();
+    $(".accordion__arrow", this).toggleClass("rotate");
+  });
+  //END
+
   // remove label corporate-form
   $(".corporate-form-block input").on("change", function (e) {
     if ($('.corporate-form-block input').val()) {
