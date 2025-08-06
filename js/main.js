@@ -544,23 +544,9 @@ $(function () {
   $(".account-info-slider").owlCarousel({
     loop: false,
     dots: true,
-    items: 4,
+    center: false,
+      autoWidth: true,
     margin: 10,
-    responsive: {
-      0: {
-        items: 1,
-        center: false,
-        autoWidth: false,
-      },
-      768: {
-        center: false,
-        autoWidth: true,
-      },
-      992: {
-        center: false,
-        autoWidth: true,
-      },
-    },
   });
 
   // END
@@ -692,6 +678,17 @@ $(function () {
     $this.toggleClass("accordion-active");
     $this.next().slideToggle();
     $(".accordion__arrow", this).toggleClass("rotate");
+  });
+  //END
+
+    //BEGIN info-accordion
+
+  $(".info-accordion-title").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    $this.toggleClass("accordion-active");
+    $this.next().slideToggle();
+    $(".info-accordion-title__arrow", this).toggleClass("rotate");
   });
   //END
 
@@ -1090,28 +1087,27 @@ function OpenSocial() {
 
 /*Account tab start*/
 
-$(function () {
-  if (location.hash) {
-    $('.account-section[data-id="' + location.hash + '"]').addClass("active");
-    $('.account-nav a[href="' + location.hash + '"')
-      .parent()
-      .addClass("active");
-  } else {
-    $(".account-section").first().addClass("active");
-    $(".account-nav li").first().addClass("active");
-  }
+ $(function () {
+    if (location.hash) {
+      $('.account-section[data-id="' + location.hash + '"]').addClass("active");
+      $('.account-nav a[href="' + location.hash + '"')
+        .parent()
+        .addClass("active");
+    } else {
+      $(".account-section").first().addClass("active");
+      $(".account-nav li").first().addClass("active");
+    }
 
-  $('.account-nav a[href*="#"]').click(function (e) {
-    e.preventDefault();
-    $(".account-section, .account-nav li").removeClass("active");
-    $('.account-section[data-id="' + this.hash + '"]').addClass("active");
-    $('.account-nav a[href="' + this.hash + '"')
-      .parent()
-      .addClass("active");
-    location.hash = this.hash;
+    $('.account-nav a[href*="#"]').click(function (e) {
+      e.preventDefault();
+      $(".account-section, .account-nav li").removeClass("active");
+      $('.account-section[data-id="' + this.hash + '"]').addClass("active");
+      $('.account-nav a[href="' + this.hash + '"')
+        .parent()
+        .addClass("active");
+      location.hash = this.hash;
+    });
   });
-});
-
 /*Account tab end*/
 
 // countDown on banner
