@@ -3372,7 +3372,8 @@ span.custom_title_two {
 	margin-bottom: 0;
 }
 
-.product__card-new .product__card__info__reviews-satr {
+.product__card-new .product__card__info__reviews-satr,
+.product__card__info__reviews.yellow .product__card__info__reviews-satr {
 	width: 12px;
 	height: 12px;
 	background: url(./img/star-yellow.svg);
@@ -3381,7 +3382,8 @@ span.custom_title_two {
 	background-repeat: no-repeat;
 }
 
-.product__card-new .product__card__info__reviews-satr.light-star {
+.product__card-new .product__card__info__reviews-satr.light-star,
+.product__card__info__reviews.yellow .product__card__info__reviews-satr.light-star {
 	background: url(./img/post-star-light.svg);
 	background-size: contain;
 	background-position: center;
@@ -13051,10 +13053,10 @@ button.openSocial-sft:after {
 
 .account-banner {
 	padding: 40px 10%;
-	background: #ccc5c5;
 	margin-bottom: 16px;
-	/* background: url('./img/Consultation\ banner.png') no-repeat center;
-	background-size: contain; */
+	background: url('./img/my_account_bg.jpg') no-repeat center;
+	background-size: contain;
+	background-position: center center;
 }
 
 .account-banner__content {
@@ -13330,6 +13332,7 @@ button.openSocial-sft:after {
 	font-weight: 400;
 	line-height: 29.08px;
 	letter-spacing: 0.025em;
+	padding-bottom: 85px;
 }
 
 .account-code-block {
@@ -13662,37 +13665,163 @@ button.openSocial-sft:after {
 
 .progress_percent_label {
 	color: #555D6D;
-
 }
 
 .bonus__card-block {
-	display: flex;
-	justify-content: flex-start;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	gap: 24px;
 }
 
 .bonus__card {
-	display: grid;
-	grid-row: 112px 1fr;
+	display: flex;
+	flex-direction: column;
 	padding: 24px 20px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
+	border-radius: 16px;
+	border: 2px solid transparent;
+}
+
+.bonus__card.guest {
+	background-color: #FBFBFB;
+}
+
+.bonus__card.resident {
+	border: 2px solid var(--accent-yellow);
+}
+
+.bonus__card.vip {
+	position: relative;
+	border: 2px solid #1B1B1D;
+}
+
+.vip_label {
+	position: absolute;
+	left: 50%;
+	top: -15px;
+	transform: translate(-50%, 0%);
+	padding: 8px 24px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 11px;
+	letter-spacing: 0.39px;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: var(--accent-yellow);
+	border-radius: 4px;
+	background-color: #1B1B1D;
 }
 
 .bonus__card__top {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0;
+	text-transform: uppercase;
 	padding-bottom: 32px;
 	border-bottom: 1px solid #EBEBEB;
 }
 
+.bonus__card-status {
+	height: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0;
+	text-transform: none;
+	color: #6B7280;
+	margin-bottom: 10px;
+}
+
+.bonus__card__bottom {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-top: 32px;
+}
+
+.bonus__card__list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 24px;
+}
+
+.bonus__card__list li {
+	position: relative;
+	list-style: none;
+	padding-left: 23px;
+}
+
+.bonus__card__list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	display: block;
+	width: 15px;
+	height: 15px;
+}
+
+.bonus__card__list li.not-available::before {
+	background: url('data:image/svg+xml,<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_2062_57861)"><path d="M9.81687 6.96043L8.38375 8.39355L9.81687 9.82668C10.0612 10.0711 10.0612 10.4661 9.81687 10.7104C9.695 10.8323 9.535 10.8936 9.375 10.8936C9.215 10.8936 9.055 10.8323 8.93313 10.7104L7.5 9.2773L6.06687 10.7104C5.945 10.8323 5.785 10.8936 5.625 10.8936C5.465 10.8936 5.305 10.8323 5.18313 10.7104C4.93875 10.4661 4.93875 10.0711 5.18313 9.82668L6.61625 8.39355L5.18313 6.96043C4.93875 6.71605 4.93875 6.32105 5.18313 6.07668C5.4275 5.8323 5.8225 5.8323 6.06687 6.07668L7.5 7.5098L8.93313 6.07668C9.1775 5.8323 9.5725 5.8323 9.81687 6.07668C10.0612 6.32105 10.0612 6.71605 9.81687 6.96043ZM15 8.39355C15 12.5292 11.6356 15.8936 7.5 15.8936C3.36437 15.8936 0 12.5292 0 8.39355C0 4.25793 3.36437 0.893555 7.5 0.893555C11.6356 0.893555 15 4.25793 15 8.39355ZM13.75 8.39355C13.75 4.9473 10.9462 2.14355 7.5 2.14355C4.05375 2.14355 1.25 4.9473 1.25 8.39355C1.25 11.8398 4.05375 14.6436 7.5 14.6436C10.9462 14.6436 13.75 11.8398 13.75 8.39355Z" fill="%23FF6262"/></g><defs><clipPath id="clip0_2062_57861"><rect width="15" height="15" fill="white" transform="translate(0 0.893555)"/></clipPath></defs></svg>');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
 
+.bonus__card__list li.available::before {
+	background: url('data:image/svg+xml,<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_2070_57659)"><path d="M11.3838 6.5798C11.6256 6.82605 11.6219 7.22168 11.375 7.46355L8.60875 10.1792C8.11938 10.6592 7.48938 10.8986 6.85875 10.8986C6.235 10.8986 5.61125 10.6636 5.12375 10.1929L3.93687 9.02605C3.69062 8.78418 3.6875 8.38855 3.92938 8.1423C4.17063 7.89543 4.5675 7.8923 4.81313 8.1348L5.99625 9.29793C6.48125 9.76668 7.24687 9.76418 7.73438 9.28668L10.5 6.57168C10.7456 6.32918 11.14 6.33355 11.3838 6.5798ZM15 8.39355C15 12.5292 11.6356 15.8936 7.5 15.8936C3.36437 15.8936 0 12.5292 0 8.39355C0 4.25793 3.36437 0.893555 7.5 0.893555C11.6356 0.893555 15 4.25793 15 8.39355ZM13.75 8.39355C13.75 4.9473 10.9462 2.14355 7.5 2.14355C4.05375 2.14355 1.25 4.9473 1.25 8.39355C1.25 11.8398 4.05375 14.6436 7.5 14.6436C10.9462 14.6436 13.75 11.8398 13.75 8.39355Z" fill="%231B1B1D"/></g><defs><clipPath id="clip0_2070_57659"><rect width="15" height="15" fill="white" transform="translate(0 0.893555)"/></clipPath></defs></svg>');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 
+.bonus__card-item {
+	border: double 1px transparent;
+	border-radius: 8px;
+	background-image: linear-gradient(white, white), linear-gradient(to left, var(--accent-yellow), #668b90);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+}
 
+.vip .bonus__card-item {
+	background: none;
+	border: 1px solid #1B1B1D;
+}
 
+.bonus__card-item:not(:last-child) {
+	margin-bottom: 8px;
+}
 
+.bonus__card-item__content {
+	padding: 16px 10px;
+	display: grid;
+	grid-template-columns: 36px 1fr;
+	align-items: center;
+	gap: 14px;
 
+}
 
+.bonus__card-item__content .icon {
+	width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--accent-yellow);
+}
+
+.vip .bonus__card-item__content .icon {
+	color: var(--accent-yellow);
+    background: #1B1B1D;
+}
 
 .bonus-info-content {
 	display: flex;
@@ -13923,6 +14052,319 @@ button.openSocial-sft:after {
 		line-height: 32px;
 	}
 }
+
+
+
+.account-get-bonus {
+
+}
+
+.account-get-bonus__title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 100%;
+	padding-bottom: 16px;
+	border-bottom: 2px solid #F4F5F7;
+	margin-bottom: 40px;
+}
+
+.account-get-bonus .account-progress-list {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.account-get-bonus .account-progress-list li {
+	flex: 1 0 auto
+}
+
+
+.account-get-bonus__item {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 16px 14px ;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #D0D5DD;
+}
+
+.account-get-bonus__item__title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0;
+}
+
+.label_green {
+	display: inline-block;
+	padding: 10px;
+	font-weight: 500;
+	line-height: 12px;
+	border-radius: 16px;
+	background: var(--accent-yellow);
+}
+
+.account-get-bonus__item__description {	
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 24px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	border-radius: 16px;
+	border-radius: 10px;
+	background: #FBFBFB;
+}
+
+.account-get-bonus__item__description svg {
+	margin-bottom: 3px;
+}
+
+.account-get-bonus__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px;
+}
+
+.account-get-bonus__form input {
+	padding: 12px 14px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	border-radius: 8px;
+	border: 1px solid #D0D5DD;
+}
+
+.account-get-bonus__form button {
+	grid-area: 2/1/3/3;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.bonus__progress-bar-block.horisontal .account-progress-item::before,
+.bonus__progress-bar-block.horisontal .done .account-progress-item::after {
+	content: none !important;
+}
+
+.bonus__progress-bar-block.horisontal .account-progress-item,
+.bonus__progress-bar-block.horisontal .done .account-progress-item {
+	display: flex;
+    height: 24px;
+    width: 24px;
+	background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_2331_30163)"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="white"/><path d="M12 1.64355C18.2132 1.64355 23.25 6.68035 23.25 12.8936C23.25 19.1068 18.2132 24.1436 12 24.1436C5.7868 24.1436 0.75 19.1068 0.75 12.8936C0.75 6.68035 5.7868 1.64355 12 1.64355Z" stroke="%23D0D5DD" stroke-width="1.5"/><circle cx="12" cy="12.8936" r="4" fill="%23D0D5DD"/></g><defs><clipPath id="clip0_2331_30163"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="white"/></clipPath></defs></svg>') no-repeat center center / contain;
+	z-index: 5;
+}
+
+.bonus__progress-bar-block.horisontal .done .account-progress-item {
+	background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="%231B1B1D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.098 8.2842L9.93797 15.1942L8.03797 13.1642C7.68797 12.8342 7.13797 12.8142 6.73797 13.0942C6.34797 13.3842 6.23797 13.8942 6.47797 14.3042L8.72797 17.9642C8.94797 18.3042 9.32797 18.5142 9.75797 18.5142C10.168 18.5142 10.558 18.3042 10.778 17.9642C11.138 17.4942 18.008 9.3042 18.008 9.3042C18.908 8.3842 17.818 7.5742 17.098 8.2742V8.2842Z" fill="white"/></svg>') no-repeat center center / contain;
+}
+
+.black-gray .bonus__range-line {
+    position: absolute;
+    left: 20px;
+    height: 4px;
+    width: calc(100% - 30px);
+}
+
+.black-gray .bonus__range-line.range-line-fill {
+    width: calc(33% - 20px);
+    background-color: #1B1B1D;
+}
+
+.yana-club-block {
+	padding: 40px 0 0 30px;
+	border-radius: 18px;
+	border: 1px solid var(--accent-yellow);
+	background: #FBFBFB;
+}
+
+.yana-club-img {
+	float: right;
+	margin-top: -100px;
+}
+
+.yana-club-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 140%;
+	letter-spacing: 1.25;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.yana-club-list {
+	max-width: 315px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0;
+	margin-bottom: 40px;
+}
+
+.yana-club-list li {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+.yana-club-block .bs-btn {
+	display: inline-flex;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0;
+}
+
+.yana-club-block .bs-btn>span {
+	padding: 12px 15px;
+}
+
+
+
+
+
+
+
+
+
+.account-reviews {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+.account-reviews__item {
+	display: grid;
+	grid-template-columns: 45% 1fr;
+	gap: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.account-reviews__item__product {
+	display: grid;
+	grid-template-columns: 90px 1fr;
+}
+
+.account-reviews__item__product-img {
+	padding: 5px;
+}
+
+.account-reviews__item__product-info {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: 100%;
+    max-width: 325px;
+	min-width: 300px;
+    font-weight: 300;
+    font-size: 14px;
+	line-height: normal;
+    text-transform: uppercase;
+}
+
+.account-reviews__item__product-info .product-brand {
+    margin-bottom: 16px;
+	line-height: 18px;
+	color: #808080;
+}
+
+.account-reviews__item__product-info .product__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.account-reviews__item__product-info .product__description {
+    font-weight: 400;
+	font-size: 12px;
+    line-height: 120%;
+    color: #808080;
+    margin: 8px 0 16px;
+}
+
+.account-reviews__item .product-price {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+}
+
+.account-reviews__item .product-price .old-price {
+	color: #D0D5DD;
+	text-decoration: line-through;
+}
+
+.account-reviews__item__review {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	font-weight: 400;
+    font-size: 16px;
+	line-height: 150%;
+}
+
+.account-reviews__item__review .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+}
+
+.account-reviews__item__review .product__card__info__reviews {
+	margin-bottom: 0;
+}
+
+.account-reviews__item__review .product__card__info__reviews.yellow .product__card__info__reviews-satr {
+	width: 18px;
+	height: 18px;
+}
+
+.product__card__info__reviews-date {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	color:#ABAFB6;
+} 
+
+.product__card__info__reviews-photo {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+@media (max-width: 769px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .order__table {
 	display: grid;
@@ -14258,7 +14700,7 @@ button.openSocial-sft:after {
 	display: none;
 }
 
-.delivery-progress-block {
+.account-progress-block {
 	margin-bottom: 24px;
 }
 
@@ -14284,17 +14726,17 @@ button.openSocial-sft:after {
 	padding: 36px 25px 25px;
 }
 
-.delivery-progress-list {
+.account-progress-list {
 	overflow: hidden;
 }
 
-.delivery-progress-list>li {
+.account-progress-list>li {
 	list-style: none;
 	padding-left: 36px;
 	position: relative;
 }
 
-.delivery-progress-list>li::before {
+.account-progress-list>li::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -14303,16 +14745,16 @@ button.openSocial-sft:after {
 	display: flex;
 	height: 24px;
 	width: 24px;
-	background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_2331_30163)"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="white"/><path d="M12 1.64355C18.2132 1.64355 23.25 6.68035 23.25 12.8936C23.25 19.1068 18.2132 24.1436 12 24.1436C5.7868 24.1436 0.75 19.1068 0.75 12.8936C0.75 6.68035 5.7868 1.64355 12 1.64355Z" stroke="%23D0D5DD" stroke-width="1.5"/><circle cx="12" cy="12.8936" r="4" fill="%23D0D5DD"/></g><defs><clipPath id="clip0_2331_30163"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="white"/></clipPath></defs></svg>') no-repeat center center / cover;
+	background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_2331_30163)"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="white"/><path d="M12 1.64355C18.2132 1.64355 23.25 6.68035 23.25 12.8936C23.25 19.1068 18.2132 24.1436 12 24.1436C5.7868 24.1436 0.75 19.1068 0.75 12.8936C0.75 6.68035 5.7868 1.64355 12 1.64355Z" stroke="%23D0D5DD" stroke-width="1.5"/><circle cx="12" cy="12.8936" r="4" fill="%23D0D5DD"/></g><defs><clipPath id="clip0_2331_30163"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="white"/></clipPath></defs></svg>') no-repeat center center / contain;
 	z-index: 5;
 }
 
-.delivery-progress-list>li.done::before {
+.account-progress-list>li.done::before {
 	content: '';
 	background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.8936C0 6.26614 5.37258 0.893555 12 0.893555C18.6274 0.893555 24 6.26614 24 12.8936C24 19.521 18.6274 24.8936 12 24.8936C5.37258 24.8936 0 19.521 0 12.8936Z" fill="%231B1B1D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.098 8.2842L9.93797 15.1942L8.03797 13.1642C7.68797 12.8342 7.13797 12.8142 6.73797 13.0942C6.34797 13.3842 6.23797 13.8942 6.47797 14.3042L8.72797 17.9642C8.94797 18.3042 9.32797 18.5142 9.75797 18.5142C10.168 18.5142 10.558 18.3042 10.778 17.9642C11.138 17.4942 18.008 9.3042 18.008 9.3042C18.908 8.3842 17.818 7.5742 17.098 8.2742V8.2842Z" fill="white"/></svg>') no-repeat center center / contain;
 }
 
-.delivery-progress-item {
+.account-progress-item {
 	position: relative;
 	z-index: 3;
 	display: grid;
@@ -14322,18 +14764,18 @@ button.openSocial-sft:after {
 	padding: 16px 0;
 }
 
-.delivery-progress-date {
+.account-progress-date {
 	font-size: 12px;
 	color: #ABAFB6;
 }
 
-.delivery-progress-item::before,
-.delivery-progress-item::after {
+.account-progress-item::before,
+.account-progress-item::after {
 	position: absolute;
 	display: flex;
 }
 
-.delivery-progress-item::before {
+.account-progress-item::before {
 	content: "";
 	left: -26px;
 	top: 0;
@@ -14343,12 +14785,12 @@ button.openSocial-sft:after {
 	z-index: -1;
 }
 
-.done .delivery-progress-item::before {
+.done .account-progress-item::before {
 	border-color: #1B1B1D;
 }
 
-.delivery-progress-list>li:first-child .delivery-progress-item::before,
-.delivery-progress-list>li:last-child .delivery-progress-item::after {
+.account-progress-list>li:first-child .account-progress-item::before,
+.account-progress-list>li:last-child .account-progress-item::after {
 	content: none;
 }
 
@@ -14359,11 +14801,11 @@ button.openSocial-sft:after {
 		padding: 15px;
 	}
 
-	.delivery-progress-list>li {
+	.account-progress-list>li {
 		padding-left: 80px;
 	}
 
-	.delivery-progress-item {
+	.account-progress-item {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 5px;
@@ -14374,26 +14816,26 @@ button.openSocial-sft:after {
 		border: none;
 	}
 
-	.delivery-progress-item::before {
+	.account-progress-item::before {
 		content: counter(li);
 		left: -68px;
 		height: 55px;
 		width: 55px;
 	}
 
-	.delivery-progress-item::after {
+	.account-progress-item::after {
 		left: -41px;
 	}
 
-	.delivery-progress-list>li:first-child .delivery-progress-item:after {
+	.account-progress-list>li:first-child .account-progress-item:after {
 		height: calc(100% - 55px);
 	}
 
-	.delivery-progress-list>li:last-child .delivery-progress-item:after {
+	.account-progress-list>li:last-child .account-progress-item:after {
 		height: calc(100% - 55px);
 	}
 
-	.delivery-progress-list>li p:first-of-type {
+	.account-progress-list>li p:first-of-type {
 		max-width: 100%;
 		font-size: 18px;
 		line-height: 21.94px;
