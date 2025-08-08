@@ -1090,32 +1090,24 @@ function OpenSocial() {
  $(function () {
     if (location.hash) {
       $('.account-section[data-id="' + location.hash + '"]').addClass("active");
-      $('.account-nav a[href="' + location.hash + '"').parent().addClass("active");
+      $('.account-nav a[href="' + location.hash + '"')
+        .parent()
+        .addClass("active");
     } else {
-      if($(window).width() > 768){
-        $(".account-section").first().addClass("active");
-        $(".account-nav li").first().addClass("active");
-      }
+      $(".account-section").first().addClass("active");
+      $(".account-nav li").first().addClass("active");
     }
 
     $('.account-nav a[href*="#"]').click(function (e) {
       e.preventDefault();
       $(".account-section, .account-nav li").removeClass("active");
       $('.account-section[data-id="' + this.hash + '"]').addClass("active");
-      $('.account-nav a[href="' + this.hash + '"').parent().addClass("active");
+      $('.account-nav a[href="' + this.hash + '"')
+        .parent()
+        .addClass("active");
       location.hash = this.hash;
-       if($(window).width() < 768){
-        $("body").addClass("_lock");
-      }
-    });
-
-    $('.account-item-title').click(function (e) {
-      e.preventDefault();
-      $(".account-section, .account-nav li").removeClass("active");
-      $("body").removeClass("_lock");
     });
   });
-
 /*Account tab end*/
 
 // countDown on banner
