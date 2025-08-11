@@ -558,6 +558,25 @@ $(function () {
     margin: 20,
   });
 
+   // loyalty_new caorusel
+  $(".loyalty_new-carousel").owlCarousel({
+    dots: false,
+    nav: false,
+    center: false,
+    responsive: {
+      0: {
+        autoWidth: true,
+        margin: 24,
+      },
+      768: {
+        items: 3,
+        autoWidth: false,
+        margin: 40,
+      },
+      
+    },
+  });
+
   // END
 
   //BEGIN footer accordion

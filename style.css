@@ -3785,6 +3785,65 @@ span.custom_title_two {
 	}
 }
 
+
+.sliader_new_nav {
+	padding-bottom: 80px;
+}
+
+.sliader_new_nav .owl-nav {
+	left: 50%;
+	top: calc(100% + 40px) !important;
+	transform: translate(-50%, 0) !important;
+	z-index: 5;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.sliader_new_nav .owl-nav .owl-prev span {
+    display: inline-block;
+    background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 12.8936H4M4 12.8936L10 6.89355M4 12.8936L10 18.8936" stroke="%231B1B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 48px;
+}
+
+.sliader_new_nav .owl-nav .owl-next span {
+    display: inline-block;
+    background: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12.8936H20M20 12.8936L14 6.89355M20 12.8936L14 18.8936" stroke="%231B1B1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center no-repeat;
+    cursor: pointer;
+    border: none;
+    width: 60px;
+    height: 48px;
+}
+
+.sliader_new_nav .owl-dots {
+	position: absolute;
+	top: calc(100% + 20px) !important;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	max-width: 300px;
+	margin-top: 35px !important;
+}
+
+ .sliader_new_nav .owl-theme .owl-dots .owl-dot {
+	margin-top: 5px !important;
+}
+
+ .sliader_new_nav .owl-theme .owl-dots .owl-dot span {
+	background: #ECECEC !important;
+}
+
+ .sliader_new_nav .owl-theme .owl-dots .owl-dot.active {
+	border: none !important;
+}
+
+ .sliader_new_nav .owl-theme .owl-dots .owl-dot.active span {
+	width: 40px;
+	border-radius: 8px;
+}
+
 .preference-carousel .item {
 	width: 270px;
 	height: 100%;
@@ -19295,12 +19354,30 @@ form.error .error-text {
 	padding: 75px 0;
 }
 
+.loyalty_new__banner__content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url('data:image/svg+xml,<svg width="681" height="401" viewBox="0 0 681 401" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="340.5" cy="200.5" rx="340.5" ry="234.5" fill="%23FBFBFB"/></svg>') no-repeat center center / contain;
+	z-index: 1;
+}
+
 .loyalty_new__title {
 	font-family: 'Comfortaa';
 	font-weight: 600;
 	font-size: 36px;
 	line-height: 120%;
 	letter-spacing: 0.3px;
+}
+
+.loyalty_new__banner__content .loyalty_new__title,
+.loyalty_new__banner__content p {
+	position: relative;
+	z-index: 5;
 }
 
 .loyalty_new__banner__content .bs-btn {
@@ -19318,11 +19395,10 @@ form.error .error-text {
 	object-fit: cover;
 }
 
-.loyalty_new__info {
-	margin-bottom: 120px;
-}
-
-.loyalty_new__levels {
+.loyalty_new__info,
+.loyalty_new__levels,
+.loyalty_new__how-it-work,
+.loyalty_new__how-to-get {
 	margin-bottom: 120px;
 }
 
@@ -19333,7 +19409,13 @@ form.error .error-text {
 .loyalty_new__info__content {
 	display: grid;
 	grid-template-columns: 1fr 32%;
+	align-items: center;
 	gap: 50px;
+	
+}
+
+.loyalty_new__info__content p {
+	color: #555D6D;
 }
 
 .loyalty_new__info__content__text {
@@ -19445,11 +19527,8 @@ form.error .error-text {
 	padding: 7px;
 }
 
-.loyalty_new__how-it-work {
-	margin-bottom: 120px;
-}
-
-.loyalty_new__how-it-work .title_30 {
+.loyalty_new__how-it-work .title_30,
+.loyalty_new__how-to-get .title_30 {
 	margin-bottom: 40px;
 }
 
@@ -19525,6 +19604,10 @@ form.error .error-text {
 }
 
 .loyalty_new__info__row .bonus__card-item {
+	border-radius: 16px;
+}
+
+.loyalty_new__info__row .bonus__card-item {
 	margin-bottom: 0;
 }
 
@@ -19547,6 +19630,58 @@ form.error .error-text {
 .loyalty_new__info__row .bonus__card-item.black .icon {
 	background: #1B1B1D;
 	color: rgba(208, 177, 92, 1);
+}
+
+.loyalty_new__how-to-get__item {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 16px;
+	text-align: center;
+}
+
+.loyalty_new__how-to-get__item .item_title {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.loyalty_new__how-to-get__item .item_label {
+	margin-top: auto;
+	padding: 12px 20px;
+	border-radius: 8px;
+	background: #F4F5F7;
+}
+
+.loyalty_new__review,
+.loyalty_new__block {
+	margin-bottom: 80px;
+}
+
+.loyalty_new__review .title_30 {
+	margin-bottom: 24px;
+}
+
+.loyalty_new__review__top p {
+	text-align: center;
+	color: #555D6D;
+	margin-bottom: 40px;
+}
+
+.loyalty_new__block__top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	text-align: center;
+}
+
+.loyalty_new__block__top p {
+	color: #555D6D;
+	margin-bottom: 10px;
 }
 
 
