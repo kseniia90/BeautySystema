@@ -725,10 +725,7 @@ $(function () {
     e.preventDefault();
     var $this = $(this);
     $this.toggleClass("accordion-active");
-    $('#np-form').slideToggle('slow', function() {
-        if ($(this).is(':visible'))
-            $(this).css('display','grid');
-    });
+    $('.account-info-delivery__change').slideToggle();
   });
   //END
 
