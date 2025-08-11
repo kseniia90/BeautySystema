@@ -19354,32 +19354,26 @@ form.error .error-text {
 	font-family: 'Comfortaa';
 }
 
-.loyalty_new__banner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 15px;
+.loyalty_new__banner  {
 	background: #FBFBFB;
+}
+
+.loyalty_new__banner__container  {
+	display: grid;
+	grid-template-columns: 1fr 60%;
 	position: relative;
 }
 
 .loyalty_new__banner__content {
 	position: relative;
+	z-index: 5;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-	padding: 75px 0;
-}
-
-.loyalty_new__banner__content::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	background: url('data:image/svg+xml,<svg width="681" height="401" viewBox="0 0 681 401" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="340.5" cy="200.5" rx="340.5" ry="234.5" fill="%23FBFBFB"/></svg>') no-repeat center center / contain;
-	z-index: 1;
+	padding: 75px 30px;
+	margin-right: -200px;
+	background: #FBFBFB;
+	border-radius: 0 50% 50% 0 / 0 110% 110% 0; 
 }
 
 .loyalty_new__title {
@@ -19390,12 +19384,6 @@ form.error .error-text {
 	letter-spacing: 0.3px;
 }
 
-.loyalty_new__banner__content .loyalty_new__title,
-.loyalty_new__banner__content p {
-	position: relative;
-	z-index: 5;
-}
-
 .loyalty_new__banner__content .bs-btn {
 	align-self: flex-start;
 }
@@ -19403,6 +19391,18 @@ form.error .error-text {
 .loyalty_new__banner__img {
 	height: 100%;
 }
+/* 
+.loyalty_new__banner__img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -20%;
+	display: block;
+	width:auto;
+	height: 100%;
+	background: url('data:image/svg+xml,<svg width="681" height="401" viewBox="0 0 681 401" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="340.5" cy="200.5" rx="340.5" ry="234.5" fill="%23FBFBFB"/></svg>') no-repeat center center / contain;
+	z-index: 1;
+} */
 
 .loyalty_new__banner__img img {
 	width: auto;
@@ -19458,7 +19458,7 @@ form.error .error-text {
 
 .loyalty_new__list li {
 	display: flex;
-	gap: 10px;
+	gap: 14px;
 	padding: 16px;
 	background: #FBFBFB;
 	border-radius: 16px;
@@ -19499,6 +19499,29 @@ form.error .error-text {
 	border-radius:24px;
 }
 
+
+.loyalty_new__info__content__img .mobile-only,
+.loyalty_new__info__content__img.mobile-only {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.loyalty_new__info__content__img .desktop-only,
+	.loyalty_new__info__content__img.desktop-only {
+		display: none;
+	}
+
+	.loyalty_new__info__content__img .mobile-only,
+	.loyalty_new__info__content__img.mobile-only {
+		display: block;
+	}
+}
+
+.loyalty_new .bonus__card-title {
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
 .loyalty_new .bonus__card.resident {
 	border: 2px solid #ecd48a;
 }
@@ -19522,6 +19545,7 @@ form.error .error-text {
 
 .loyalty_new .bonus__card-status {
 	text-transform: uppercase;
+	color: #1B1B1D;
 }
 
 .loyalty_new .bonus__card.vip li.available::before {
@@ -19581,11 +19605,13 @@ form.error .error-text {
 }
 
 .loyalty_new__steps .step__icon {
+	flex: 1 0 48px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	width: 48px;
+	max-width: 48px;
 	height: 48px;
 	background-color: var(--accent-yellow);
 	border-radius: 50%;
@@ -19698,6 +19724,120 @@ form.error .error-text {
 .loyalty_new__block__top p {
 	color: #555D6D;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+	.loyalty_new__banner__container  {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.loyalty_new__banner__content {
+		gap: 16px;
+		padding: 15px 0;
+		margin-right:0;
+		border-radius: 0; 
+	}
+
+	.loyalty_new__title {
+		font-size: 20px;
+		line-height: 130%;
+	}
+
+	.loyalty_new__info,
+	.loyalty_new__levels,
+	.loyalty_new__how-it-work,
+	.loyalty_new__how-to-get {
+		margin-bottom: 80px;
+	}
+
+	.loyalty_new__levels .title_30 {
+		margin-bottom: 24px;
+	}
+
+	.loyalty_new__info__content {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+
+	.loyalty_new__info__content__text {
+		gap: 24px;
+	}
+
+	.loyalty_new__info__content__img,
+	.loyalty_new__info__content__img.mobile-only img {
+		max-height: 260px;
+		object-fit: cover;
+		border-radius:15px;
+	}
+
+	.loyalty_new__levels .title_30 {
+		text-align: start;
+	}
+
+	.loyalty_new__how-it-work .title_30,
+	.loyalty_new__how-to-get .title_30 {
+		margin-bottom: 32px;
+	}
+
+	.loyalty_new__steps {
+		flex-direction: column;
+		padding: 0 0 10px 0;
+	}
+
+	.loyalty_new__step {
+		justify-content: flex-start;
+		flex-direction: row;
+		padding: 16px 0;
+	}
+
+	.loyalty_new__step:not(:last-child):before,
+	.loyalty_new__step:not(:last-child):after {
+		top: 50%;
+		left: 24px;
+		width: 1px;
+		height: 100%;
+		transform: translateY(0);
+	}
+
+	.loyalty_new__steps .step__label {
+		position: static;
+		margin-top: 0;
+		transform: none;
+		text-align: start;
+	}
+
+	.loyalty_new__info__row {
+		grid-template-columns: 1fr;
+	}
+
+	.loyalty_new__how-to-get__item {
+		max-width: 240px;
+	}
+
+	.loyalty_new__how-to-get__item .item_title {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 140%;
+		letter-spacing: 0;
+		text-transform: uppercase;
+	}
+
+	.loyalty_new__review,
+	.loyalty_new__block {
+		margin-bottom: 20px;
+	}
+
+	.loyalty_new__review .title_30 {
+		text-align: start;
+	}
+
+	.loyalty_new__review__top p {
+		text-align: start;
+		margin-bottom: 24px;
+	}
+	
 }
 
 
