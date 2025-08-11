@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'BeautySystemaIcons';
-  src:  url('fonts/BeautySystemaIcons.eot?6usj3f');
-  src:  url('fonts/BeautySystemaIcons.eot?6usj3f#iefix') format('embedded-opentype'),
-    url('fonts/BeautySystemaIcons.ttf?6usj3f') format('truetype'),
-    url('fonts/BeautySystemaIcons.woff?6usj3f') format('woff'),
-    url('fonts/BeautySystemaIcons.svg?6usj3f#BeautySystemaIcons') format('svg');
+  src:  url('fonts/BeautySystemaIcons.eot?cpvqze');
+  src:  url('fonts/BeautySystemaIcons.eot?cpvqze#iefix') format('embedded-opentype'),
+    url('fonts/BeautySystemaIcons.ttf?cpvqze') format('truetype'),
+    url('fonts/BeautySystemaIcons.woff?cpvqze') format('woff'),
+    url('fonts/BeautySystemaIcons.svg?cpvqze#BeautySystemaIcons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-loyalty_icon_crown-black:before {
+  content: "\e933";
+}
+.icon-loyalty_icon_p:before {
+  content: "\e934";
+}
+.icon-loyalty_icon_new_1:before {
+  content: "\e935";
+}
 .icon-repeat_new:before {
   content: "\e930";
   color: #4b6d74;

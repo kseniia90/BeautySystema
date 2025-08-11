@@ -490,10 +490,6 @@
                     </div>
                     <div class="account-content">
                         <div data-id="#info" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Мої дані</span>
-                            </h2>
                             <div class="account-banner">
                                 <div class="account-banner__content">
                                     <h2>Безкоштовна консультація з підбору в телеграм</h2>
@@ -628,37 +624,67 @@
                                 </div>
                             </div>
 
+
+
+                            <!-- <form class="contacts__form">
+                                <h2 class="account-info-title">Основна інформація</h2>
+                                <div class="contacts__form-row">
+
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Ім’я*</p>
+                                        <input type="text" name="user_name">
+                                    </div>
+
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Прізвище*</p>
+                                        <input type="text" name="user_lastname">
+                                    </div>
+
+                                </div>
+
+                                <div class="contacts__form-row">
+
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Телефон*</p>
+                                        <input type="phone" name="user_phone" maxlength="13">
+                                    </div>
+
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">Дата народження</p>
+                                        <input type="date" name="user_bday">
+                                    </div>
+                                </div>
+
+                                <div class="contacts__form-row">
+
+                                    <div class="contacts__form__input-block">
+                                        <p class="contacts__form__lable">E-mail*</p>
+                                        <input type="email" name="user_email">
+                                    </div>
+                                </div>
+
+                            </form> -->
+
                             <div class="account-info-delivery">
-                                <h2 class="account-info-title">Улюблена адреса доставки</h2>
+                                <h2 class="account-info-title">Улюблене відділення</h2>
                                 <div class="account-info-delivery__item">
                                     <div class="account-info-delivery__item__content">
                                         <h3>Тернопіль, Відділення №27</h3>
+                                        <p>46001</p>
                                     </div>
                                     <button class="account-info-delivery__item__btn">Редагувати</button>
-                                </div>                             
-                            </div>
+                                </div>
 
-                            <form id="np-form">
-                                <label>Город:
-                                    <select id="select-city" required="">
-                                        <option value="">Выберите город</option>
-                                    </select>
-                                </label>
-                            
-                                <label>Тип отделения:
-                                    <select id="select-type" required="">
-                                     <option value="">Выберите тип</option>
-                                    </select>
-                                </label>
-                            
-                                <label>Номер отделения / почтомата:
-                                    <select id="select-warehouse" required="">
-                                        <option value="">Сначала выберите тип и город</option>
-                                    </select>
-                                </label>
-                            
-                                <button id="save_np_user" type="submit">Save NP user</button>
-                            </form>
+                                <h2 class="account-info-title">Улюблений поштомат</h2>
+                                <div class="account-info-delivery__item">
+                                    <div class="account-info-delivery__item__content">
+                                        <h3>Тернопіль, Відділення №27</h3>
+                                        <p>46001</p>
+                                    </div>
+                                    <button class="account-info-delivery__item__btn">Редагувати</button>
+                                </div>
+
+                            </div>
 
                             <button type="button" class="bs-btn bs-btn-gray btn-save">
                                 <span>
@@ -669,10 +695,6 @@
                         </div>
 
                         <div data-id="#orders" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Історія замовлень</span>
-                            </h2>
                             <div class="orders-content">
 
                                 <div class="order-info">
@@ -693,15 +715,15 @@
                                                                 <span class="order__total__price">1230₴</span>
                                                             </div>
                                                             <div class="order__col order__mini-list">
-                                                                <div class="order__mini-list__item"><img
+                                                                <a href="" class="order__mini-list__item"><img
                                                                         src="img/popular_5.png" alt="product-img"
-                                                                        width="80" height="80"></div>
-                                                                <div class="order__mini-list__item"><img
+                                                                        width="80" height="80"></a>
+                                                                <a href="" class="order__mini-list__item"><img
                                                                         src="img/popular_5.png" alt="product-img"
-                                                                        width="80" height="80"></div>
-                                                                <div class="order__mini-list__item"><img
+                                                                        width="80" height="80"></a>
+                                                                <a href="" class="order__mini-list__item"><img
                                                                         src="img/popular_5.png" alt="product-img"
-                                                                        width="80" height="80"></div>
+                                                                        width="80" height="80"></a>
                                                             </div>
                                                             <div class="order__col accordion__arrow"><span
                                                                     class="icon-arrow_down"></span></div>
@@ -847,12 +869,15 @@
                                                                 <span class="order__total__price">1230₴</span>
                                                             </div>
                                                             <div class="order__col order__mini-list">
-                                                                <div class="order__mini-list__item"><img
+                                                                <a href="" class="order__mini-list__item"><img
                                                                         src="img/popular_5.png" alt="product-img"
-                                                                        width="80" height="80"></div>
-                                                                <div class="order__mini-list__item"><img
+                                                                        width="80" height="80"></a>
+                                                                <a href="" class="order__mini-list__item"><img
                                                                         src="img/popular_5.png" alt="product-img"
-                                                                        width="80" height="80"></div>
+                                                                        width="80" height="80"></a>
+                                                                <a href="" class="order__mini-list__item"><img
+                                                                        src="img/popular_5.png" alt="product-img"
+                                                                        width="80" height="80"></a>
                                                             </div>
                                                             <div class="order__col accordion__arrow"><span
                                                                     class="icon-arrow_down"></span></div>
@@ -992,10 +1017,6 @@
                         </div>
 
                         <div data-id="#favorites" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Мої збережені</span>
-                            </h2>
                             <div class="favorites-content">
                                 <div class="favorites-item">
                                     <div class="product__card-new">
@@ -1257,10 +1278,6 @@
                         </div>
 
                         <div data-id="#bonus" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Кешбек</span>
-                            </h2>
                             <div class="account-section-content">
 
                                 <div class="bonus-info">
@@ -1541,10 +1558,6 @@
                         </div>
 
                         <div data-id="#get-bonus" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Отримуй бʼютіки</span>
-                            </h2>
                             <div class="account-section-content">
                                 <div class="account-get-bonus">
                                     <h2 class="account-get-bonus__title">Виконуй дії — отримуй бʼютики!</h2>
@@ -1742,10 +1755,6 @@
                         </div>
 
                         <div data-id="#reviews" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Мої відгуки</span>
-                            </h2>
                             <div class="account-section-content">
                                 <div class="account-reviews">
                                     <div class="account-reviews__item">
@@ -1779,7 +1788,9 @@
                                                 </div>
                                                 <p class="product__card__info__reviews-date">14.06.2025</p>
                                             </div>
-                                            <p class="product__card__info__reviews-text">Класна сироватка!</p>
+                                            <p class="product__card__info__reviews-text">Класна сироватка! Дуже ніжна
+                                                текстура, шкіра стала світлішою вже за тиждень. Запах приємний, швидко
+                                                вбирається.</p>
                                             <div class="product__card__info__reviews-photo">
                                                 <img src="img/popular_5.png" alt="phpto" width="140" height="140">
                                             </div>
@@ -1831,10 +1842,6 @@
                         </div>
 
                         <div data-id="#yana-club" class="account-section">
-                            <h2 class="account-item-title">
-                                <span class="icon-arrow_down"></span>
-                                <span>Yana’s Club💛</span>
-                            </h2>
                             <div class="account-section-content">
                                 <div class="yana-club-block">
                                     <img class="yana-club-img" src="img/yana-club_img.png" alt="yana-club">
