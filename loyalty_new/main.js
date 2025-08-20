@@ -672,8 +672,7 @@ $(function () {
 
   //BEGIN order accordion
 
-  
-$(document).on("click", ".order__accordion .accordion__title", function (e) {
+  $(".order__accordion .accordion__title").on("click", function (e) {
     e.preventDefault();
     var $this = $(this);
 
@@ -687,7 +686,6 @@ $(document).on("click", ".order__accordion .accordion__title", function (e) {
     $this.next().slideToggle();
     $(".accordion__arrow", this).toggleClass("active");
   });
-
   //END
 
     //BEGIN mini-cart accordion
@@ -735,31 +733,14 @@ $(document).on("click", ".order__accordion .accordion__title", function (e) {
 
     //BEGIN course-accordion
 
-  $(".course-start .course-accordion .accordion__title").on("click", function (e) {
+  $(".course-accordion .accordion__title").on("click", function (e) {
     e.preventDefault();
     var $this = $(this);
 
     if (!$this.hasClass("accordion-active")) {
-      $(".course-start .course-accordion .accordion__content").slideUp(400);
-      $(".course-start .course-accordion .accordion__title").removeClass("accordion-active");
-      $(".course-start .course-accordion .accordion__arrow").removeClass("active");
-    }
-
-    $this.toggleClass("accordion-active");
-    $this.next().slideToggle();
-    $(".accordion__arrow", this).toggleClass("active");
-  });
-  //END
-
-    //BEGIN course-accordion
-    $(".course-faq .course-accordion .accordion__title").on("click", function (e) {
-    e.preventDefault();
-    var $this = $(this);
-
-    if (!$this.hasClass("accordion-active")) {
-      $(".course-faq .course-accordion .accordion__content").slideUp(400);
-      $(".course-faq .course-accordion .accordion__title").removeClass("accordion-active");
-      $(".course-faq.course-accordion .accordion__arrow").removeClass("active");
+      $(".course-accordion .accordion__content").slideUp(400);
+      $(".course-accordion .accordion__title").removeClass("accordion-active");
+      $(".course-accordion .accordion__arrow").removeClass("active");
     }
 
     $this.toggleClass("accordion-active");
@@ -1182,18 +1163,14 @@ function OpenSocial() {
       $('.account-nav a[href="' + this.hash + '"').parent().addClass("active");
       location.hash = this.hash;
        if($(window).width() < 768){
-        // $("body").addClass("_lock");
-        $(".account-sidebar").slideUp();
-        $(".account-title").slideUp();
+        $("body").addClass("_lock");
       }
     });
 
     $('.account-item-title').click(function (e) {
       e.preventDefault();
       $(".account-section, .account-nav li").removeClass("active");
-      $(".account-sidebar").slideDown();
-      $(".account-title").slideDown();
-      // $("body").removeClass("_lock");
+      $("body").removeClass("_lock");
     });
   });
 

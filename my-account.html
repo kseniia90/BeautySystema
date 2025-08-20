@@ -414,6 +414,10 @@
         <main class="main">
             <div class="container account">
                 <h1 class="account-title">Мій акаунт</h1>
+                <div class="user-status mobile-only">
+                    <span>Резидент</span>
+                    <span class="cashback-label">кешбек 5%</span>
+                </div>
                 <div class="account-container">
                     <div class="account-sidebar">
                         <ul class="account-nav">
@@ -460,6 +464,12 @@
                                 </a>
                                 <span class="icon-arrow_down"></span>
                             </li>
+                            <li class="logout">
+                                <a href="#">
+                                    <span class="icon-exit"></span>
+                                    <span>Вихід з аккаунту</span>
+                                </a>
+                            </li>
                             <li class="account-banner mobile-only">
                                 <div class="account-banner__content resident show">
                                     <h2>Безкоштовна консультація з підбору в телеграм</h2>
@@ -480,16 +490,14 @@
                                     </a>
                                 </div>
                             </li>
-                            <li class="logout">
-                                <a href="#">
-                                    <span class="icon-exit"></span>
-                                    <span>Вихід з аккаунту</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                     <div class="account-content">
                         <div data-id="#info" class="account-section">
+                            <div class="user-status desktop-only">
+                                <span>Резидент</span>
+                                <span class="cashback-label">кешбек 5%</span>
+                            </div>
                             <h2 class="account-item-title">
                                 <span class="icon-arrow_down"></span>
                                 <span>Мої дані</span>
@@ -1353,7 +1361,7 @@
                                                             <span class="bonus-date"></span>
                                                         </div>
                                                         <div class="row right">
-                                                            <span class="bonus-count gray">-12 бʼютіків</span>
+                                                            <span class="bonus-count gray">-1scs2 бʼютіків</span>
                                                         </div>
                                                     </div>
 
@@ -1363,7 +1371,7 @@
                                                             <span class="bonus-date">25.06.2025</span>
                                                         </div>
                                                         <div class="row right">
-                                                            <span class="bonus-count yellow">+34 бʼютіки</span>
+                                                            <span class="bonus-count yellow">+3qwwev4 бʼютіки</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1462,11 +1470,10 @@
                                         <div class="bonus__card__top">
                                             <h3 class="bonus__card-title">Гість</h3>
                                             <p class="bonus__card-status">Незареєстрований користувач</p>
-                                            <p class="bonus__card-percent">0%</p>
+                                            <p class="bonus__card-percent">Кешбек 0%</p>
                                         </div>
                                         <div class="bonus__card__bottom">
                                             <ul class="bonus__card__list">
-                                                <li class="not-available">Термін дії бʼютіків</li>
                                                 <li class="not-available">Безкоштовка доставка</li>
                                                 <li class="not-available">Доступ до приватного клубу</li>
                                                 <li class="not-available">Подарунки до замовлення</li>
@@ -1481,50 +1488,39 @@
                                         <div class="bonus__card__top">
                                             <h3 class="bonus__card-title">Резидентка</h3>
                                             <p class="bonus__card-status">Одразу після реєстрації</p>
-                                            <p class="bonus__card-percent">5%</p>
+                                            <p class="bonus__card-percent">Кешбек 5%</p>
                                         </div>
                                         <div class="bonus__card__bottom">
                                             <ul class="bonus__card__list">
                                                 <li class="available">Термін дії бʼютіків 92 дні</li>
                                                 <li class="available">Безкоштовна доставка від 1500₴</li>
-                                                <li class="available">Доступ до приватного клубу після першої покупки
-                                                </li>
-                                                <li class="not-available">Персональний косметолог</li>
-                                            </ul>
-                                            <div class="bonus__card-item">
-                                                <div class="bonus__card-item__content">
-                                                    <span class="icon icon-gift_new"></span>
-                                                    <p>Подарунок до кожного замовлення</p>
-                                                </div>
-                                            </div>
-                                            <div class="bonus__card-item">
-                                                <div class="bonus__card-item__content">
-                                                    <span class="icon icon-present"></span>
-                                                    <p>Сертифікат на 500₴ до Дня народження</p>
-                                                </div>
-                                            </div>
+                                                <li class="available">Семпл до кожного замовлення</li>
+                                                <li class="available">Сертифікат на 500 грн до дня народження</li>
+                                                <li class="available">Доступ до ексклюзивного Telegram-каналу  "ЖК Yanaʼs club"</li>
+                                            </ul>                                            
                                         </div>
 
                                     </div>
 
                                     <div class="bonus__card vip">
-                                        <div class="vip_label">VIP</div>
+                                        <div class="bonus__card__label vip_label">VIP</div>
                                         <div class="bonus__card__top">
-                                            <h3 class="bonus__card-title">Пентхаус</h3>
-                                            <p class="bonus__card-status">Оборот від 20 000 грн на рік</p>
-                                            <p class="bonus__card-percent">10%</p>
+                                            <h3 class="bonus__card-title">Еліт</h3>
+                                            <p class="bonus__card-status">Замовлення на суму від 20 000 грн/рік</p>
+                                            <p class="bonus__card-percent">Кешбек 10%</p>
                                         </div>
                                         <div class="bonus__card__bottom">
                                             <ul class="bonus__card__list">
                                                 <li class="available">Термін дії бʼютіків 180 днів</li>
-                                                <li class="available">Безкоштовна завжди</li>
-                                                <li class="available">Доступ до приватного клубу</li>
-                                                <li class="available">Персональний косметолог</li>
+                                                <li class="available">Безкоштовна доставка без мінімальної суми</li>
+                                                <li class="available">Доступ до ексклюзивного Telegram-каналу "ЖК Yanaʼs club"</li>
+                                                <li class="available">Подвiйнi бали за активнiсть</li>
+                                                <li class="available">Знижка на онлайн курс “Skin Systema Basic: курс для себе”</li>
                                             </ul>
                                             <div class="bonus__card-item">
                                                 <div class="bonus__card-item__content">
                                                     <span class="icon icon-gift_new"></span>
-                                                    <p>Подарунок до кожного замовлення</p>
+                                                    <p>Семпли до кожного замовлення + таємний подарунок</p>
                                                 </div>
                                             </div>
                                             <div class="bonus__card-item">
@@ -1533,6 +1529,13 @@
                                                     <p>Сертифікат на 1000₴ до Дня народження</p>
                                                 </div>
                                             </div>
+                                            <div class="bonus__card-item">
+                                        <div class="bonus__card-item__content">
+                                            <span class="icon icon-loyalty_icon_crown-black"></span>                         
+                                            <p>Ексклюзивна консультація персонального косметолога</p>
+                                        </div>
+                                    </div>
+
                                         </div>
 
                                     </div>
