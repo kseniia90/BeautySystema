@@ -554,9 +554,23 @@ $(function () {
   $(".course-carousel").owlCarousel({
     dots: false,
     nav: false,
-    loop: false,
+    loop: true,
     items: 1,
-    margin: 20,
+    
+    responsive: {
+      0: {
+        autoWidth: true,
+        center: true,
+        margin: 8,
+      },
+      768: {
+        items: 1,
+        autoWidth: false,
+        center: false,
+        margin: 20,
+      },
+      
+    },
   });
 
    // loyalty_new caorusel
