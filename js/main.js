@@ -267,12 +267,6 @@ $(function () {
         center: true,
         autoWidth: true,
       },
-      // 360: {
-      //   items: 2,
-      //   center: false,
-      //   autoWidth: false,
-      //   margin: 10,
-      // },
       300: {
         center: false,
         autoWidth: true,
@@ -432,11 +426,6 @@ $(function () {
         autoWidth: true,
         margin: 15,
       },
-      // 500: {
-      //   center: false,
-      //   autoWidth: true,
-      //   margin: 10,
-      // },
       1200: {
         items: 3,
         center: false,
@@ -923,15 +912,11 @@ if (document.querySelector(".order_form_popup") !== null) {
       document.querySelector(".order_form_popup").classList.add("active");
     });
   });
-  document
-    .querySelector(".order_form_popup-content")
-    .addEventListener("click", function (e) {
+  document.querySelector(".order_form_popup-content").addEventListener("click", function (e) {
       e.stopPropagation();
     });
 
-  document
-    .querySelector(".close_popup")
-    .addEventListener("click", function (e) {
+  document.querySelector(".close_popup").addEventListener("click", function (e) {
       document.body.style.overflow = "visible";
       document.querySelector(".order_form_popup").classList.remove("active");
     });
@@ -944,17 +929,13 @@ if (document.querySelector(".authorization-popup") !== null) {
     button.addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(".sign-in__content").classList.add("hide");
-      document
-        .querySelector(".remind-password__content")
-        .classList.add("active");
+      document.querySelector(".remind-password__content").classList.add("active");
     });
   });
 }
 
 if (document.querySelector(".authorization-popup .auth-link") !== null) {
-  document
-    .querySelector(".authorization-popup .auth-link")
-    .addEventListener("click", function (e) {
+  document.querySelector(".authorization-popup .auth-link").addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(".authorization-popup").classList.remove("active");
       document.body.style.overflow = "visible";
@@ -962,9 +943,7 @@ if (document.querySelector(".authorization-popup .auth-link") !== null) {
 }
 
 if (document.querySelector(".mini-cart-popup .auth-link") !== null) {
-  document
-    .querySelector(".mini-cart-popup .auth-link")
-    .addEventListener("click", function (e) {
+  document.querySelector(".mini-cart-popup .auth-link").addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(".mini-cart-popup").classList.remove("active");
       document.body.style.overflow = "visible";
@@ -1105,9 +1084,7 @@ $(document).ready(function () {
 // mini-cart start
 
 if (document.querySelector(".mini-cart-popup") !== null) {
-  document
-    .querySelector(".mini-cart-dropdown-link")
-    .addEventListener("click", function (e) {
+  document.querySelector(".mini-cart-dropdown-link").addEventListener("click", function (e) {
       e.preventDefault();
       document.querySelector(".mini-cart-popup").classList.add("active");
       document.body.classList.add("_lock");
@@ -1115,8 +1092,7 @@ if (document.querySelector(".mini-cart-popup") !== null) {
 
   window.addEventListener("click", function (e) {
     if (
-      e.target.closest(".mini-cart-popup__close") ||
-      e.target.closest(".mini-cart-popup .btn-continue")
+      e.target.closest(".mini-cart-popup__close") || e.target.closest(".mini-cart-popup .btn-continue")
     ) {
       e.preventDefault();
       document.querySelector(".mini-cart-popup").classList.remove("active");
@@ -1124,9 +1100,7 @@ if (document.querySelector(".mini-cart-popup") !== null) {
     }
 
     if (
-      document.querySelector(".mini-cart-popup.active") &&
-      !e.target.closest(".mini-cart-popup-content") &&
-      !e.target.closest(".mini-cart-dropdown-link")
+      document.querySelector(".mini-cart-popup.active") &&  !e.target.closest(".mini-cart-popup-content") &&  !e.target.closest(".mini-cart-dropdown-link")
     ) {
       document.querySelector(".mini-cart-popup").classList.remove("active");
       document.body.classList.remove("_lock");
@@ -1134,17 +1108,13 @@ if (document.querySelector(".mini-cart-popup") !== null) {
   });
 
   if (document.querySelector(".add-coupon") !== null) {
-    document
-      .querySelector(".add-coupon")
-      .addEventListener("click", function (e) {
+    document.querySelector(".add-coupon").addEventListener("click", function (e) {
         e.preventDefault();
         document.querySelector(".coupon-add-form").classList.add("active");
         document.querySelector(".add-coupon").classList.add("hide");
       });
 
-    document
-      .querySelector(".coupon-remove")
-      .addEventListener("click", function (e) {
+    document.querySelector(".coupon-remove").addEventListener("click", function (e) {
         e.preventDefault();
         document.querySelector(".coupon-add-form").classList.remove("active");
         document.querySelector(".add-coupon").classList.remove("hide");
@@ -1155,9 +1125,7 @@ if (document.querySelector(".mini-cart-popup") !== null) {
 // mini-cart end
 
 if (document.querySelector(".back_pg-btn") !== null) {
-  document
-    .querySelector(".back_pg-btn")
-    .addEventListener("click", function (e) {
+  document.querySelector(".back_pg-btn").addEventListener("click", function (e) {
       e.preventDefault();
       window.history.back();
     });
@@ -1347,12 +1315,6 @@ if (document.querySelector(".sign-in__choice") !== null) {
     document.querySelector(".sign-in__phone-code").style.display = "none";
   });
 
-  // document.querySelector(".sign-in__choice-repeat").addEventListener("click", function (e) {
-  //   e.preventDefault();
-  //   document.querySelector(".sign-in__choice").classList.remove("open");
-  //   showSmsVerify();
-  // });
-
   document.querySelector(".sign-in__choice-cancel").addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(".sign-in__content>form").style.display = "flex";
@@ -1361,3 +1323,87 @@ if (document.querySelector(".sign-in__choice") !== null) {
   });
 
 }
+
+// wheel popup
+if (document.querySelector(".wheel-popup") !== null) {
+  document.querySelectorAll(".one-click-button").forEach(function (button) {
+    button.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.body.style.overflow = "hidden";
+      document.querySelector(".wheel-popup").classList.add("active");
+    });
+  });
+  document
+    .querySelector(".wheel-popup-content")
+    .addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+
+  document.querySelector(".wheel-popup-close").addEventListener("click", function (e) {
+      document.body.style.overflow = "visible";
+      document.querySelector(".wheel-popup").classList.remove("active");
+    });
+
+  window.addEventListener("click", function (e) {
+    if (
+      document.querySelector(".wheel-popup.active") &&
+      !e.target.closest(".wheel-popup-content")
+    ) {
+      document.querySelector(".wheel-popup").classList.remove("active");
+      document.body.style.overflow = "visible";
+    }
+  });
+
+  const wheel = document.querySelector(".wheel-img");
+  const spinBtn = document.querySelector('.spin-btn');
+  const stopBtn = document.querySelector('.stop-spin-btn');
+
+  let spinning = false;
+  let spinInterval;
+  let currentDeg = 0;
+
+  function randomDeg() {
+    const min = 1024;
+    const max = 9999;
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  spinBtn.addEventListener('click', () => {
+    if (spinning) return;
+    spinning = true;
+
+    spinBtn.style.display = "none";
+    stopBtn.style.display = "inline-block";
+
+    wheel.style.transition = "none"; 
+    spinInterval = setInterval(() => {
+      currentDeg += 25; 
+      wheel.style.transform = `rotate(${currentDeg}deg)`;
+    }, 50);
+  });
+
+  stopBtn.addEventListener('click', () => {
+    if (!spinning) return;
+    clearInterval(spinInterval);
+
+    const deg = randomDeg();
+    wheel.style.transition = "transform 4s ease-out";
+    wheel.style.transform = `rotate(${deg}deg)`;
+
+    spinning = false;
+
+    stopBtn.style.display = "none";
+    spinBtn.style.display = "inline-block";
+  });
+
+  
+  
+}
+
+
+
+
+
+
+
+
