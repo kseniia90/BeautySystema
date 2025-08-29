@@ -1,0 +1,6 @@
+Wheel popup:
+    openWhellPopup()
+
+Wheel present popup:
+    present: openPresentPopup()
+    user alredy received present: openPresentReceivedPopup()
