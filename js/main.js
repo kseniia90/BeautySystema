@@ -1419,9 +1419,8 @@ if (document.querySelector(".present-popup") !== null) {
 
 
 // wheel start
-if(document.querySelector(".deal-wheel") !== null) {
 
-  const prizes = [
+ const prizes = [
     {
       icon: "./img/wheel_sec_icon.svg",
       title: "Prize 1",
@@ -1441,6 +1440,7 @@ if(document.querySelector(".deal-wheel") !== null) {
       icon: "./img/wheel_sec_icon.svg",
       title: "Prize 4",
       color: "#E1F56F",
+      select: true,
     },
     {
       icon: "./img/wheel_sec_icon.svg",
@@ -1464,7 +1464,7 @@ if(document.querySelector(".deal-wheel") !== null) {
   let finalRotation = 0; // <- will store final angle
   let spinning = false;
   
-  const createPrizeNodes = () => {
+  function createPrizeNodes() {
     prizes.forEach(({ icon, title }, i) => {
       const rotation = ((prizeSlice * i) * -1) - prizeOffset;
       spinner.insertAdjacentHTML(
@@ -1476,7 +1476,7 @@ if(document.querySelector(".deal-wheel") !== null) {
     });
   };
   
-  const createConicGradient = () => {
+  function createConicGradient() {
     spinner.setAttribute(
       "style",
       `background: conic-gradient(from -90deg,${prizes.map(({ color }, i) => 
@@ -1485,51 +1485,62 @@ if(document.querySelector(".deal-wheel") !== null) {
     );
   };
     
-  const setupWheel = () => {
+  function setupWheel() {
     createConicGradient();
     createPrizeNodes();
     prizeNodes = wheel.querySelectorAll(".prize");
   };
-  
-  const selectPrize = () => {
-    const normalized = finalRotation % 360;
-    // invert angle because rotation is clockwise
-    let index = Math.floor(((360 - normalized) % 360) / prizeSlice);
-    
-    // highlight prize
-    prizeNodes.forEach(p => p.classList.remove(selectedClass));
-    prizeNodes[index].classList.add(selectedClass);
 
-    const prizeTitle = prizeNodes[index].querySelector("img.icon").getAttribute("title");
-    document.getElementById("cupon").innerHTML = prizeTitle;
-
-    console.log("Selected:", prizeTitle);
-    setTimeout(() => openPresentPopup(), 300);
-  };
-   
-  spinner.addEventListener("transitionend", () => {
-    if (!spinning) selectPrize();
-  });
-
-  const startWheel = () => {
-    document.querySelector(".whell-subpopup").classList.remove("active");
-    document.querySelector(".spin-btn").style.display = "none";
-    document.querySelector(".stop-spin-btn").style.display = "flex";
-
+  function startWheel() {    
     prizeNodes.forEach(prize => prize.classList.remove(selectedClass));
-
     spinner.style.transition = "none"; 
     spinner.style.transform = "rotate(0deg)";
     
     spinner.classList.add("spinning");
     wheel.classList.add(spinClass);
     spinning = true;
+    document.querySelector(".whell-subpopup").classList.remove("active");
+    document.querySelector(".spin-btn").style.display = "none";
+    document.querySelector(".stop-spin-btn").style.display = "flex";
   };
+
+  const spinertia = (min, max) => {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+   const getFixedRotation = () => {
+      // Ищем приз с select: true
+      const selectedPrizeIndex = prizes.findIndex(prize => prize.select === true);
+      
+      if (selectedPrizeIndex !== -1) {
+          // Добавляем несколько оборотов (например, 3) к углу для остановки на нужном призе
+          return 360 * 3 + selectedPrizeIndex * prizeSlice + prizeOffset;
+      } else {
+          // Если нет приза с select: true, генерируем случайное значение с несколькими оборотами
+          return Math.floor(Math.random() * 360 + spinertia(2000, 5000) + 360 * 3);
+      }
+  };
+
+  const selectPrize = () => {
+
+      const selectedPrizeIndex = prizes.findIndex(prize => prize.select === true);
+      const prizeTitle = prizes[selectedPrizeIndex].title;
+      document.getElementById("cupon").innerHTML = prizeTitle;
+      setTimeout(() => openPresentPopup(), 300);   
+  };
+
+
+if(document.querySelector(".deal-wheel") !== null) {   
+  // Сброс анимации и включение кнопки после завершения вращения
+    spinner.addEventListener("transitionend", () => {
+        selectPrize();
+    });
 
   document.querySelector(".stop-spin-btn").addEventListener("click", () => {
     if (!spinning) return;
     spinning = false;
-
     // get current angle from transform
     const st = window.getComputedStyle(spinner, null);
     const tr = st.getPropertyValue("transform");
@@ -1539,16 +1550,14 @@ if(document.querySelector(".deal-wheel") !== null) {
       const values = tr.split("(")[1].split(")")[0].split(",");
       const a = values[0];
       const b = values[1];
-      angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
-      if (angle < 0) angle += 360;
+      angle = 360 * 3 + getFixedRotation();
     }
 
     spinner.classList.remove("spinning");
     spinner.style.transform = `rotate(${angle}deg)`;
 
     setTimeout(() => {
-      const extraSpins = 5 * 360;
-      finalRotation = angle + extraSpins + Math.floor(Math.random() * 360); // <-- store final angle
+      finalRotation = getFixedRotation();
       spinner.style.transition = "transform 4s cubic-bezier(0.25, 1, 0.5, 1)";
       spinner.style.transform = `rotate(${finalRotation}deg)`;
     }, 50);
@@ -1557,7 +1566,7 @@ if(document.querySelector(".deal-wheel") !== null) {
     document.querySelector(".spin-btn").style.display = "flex";
   });
 
-  document.querySelector(".whell-subpopup .send-code").addEventListener("click", () => {
+  document.querySelector(".whell-subpopup .send-code").addEventListener("click", () => {    
     startWheel();
   });
 
@@ -1565,15 +1574,3 @@ if(document.querySelector(".deal-wheel") !== null) {
 }
 
 //wheel end
-
-
-
-
-
-
-
-
-
-
-
-

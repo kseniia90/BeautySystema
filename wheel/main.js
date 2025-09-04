@@ -1419,6 +1419,8 @@ if (document.querySelector(".present-popup") !== null) {
 
 
 // wheel start
+
+
 if(document.querySelector(".deal-wheel") !== null) {
 
   const prizes = [
@@ -1511,16 +1513,11 @@ if(document.querySelector(".deal-wheel") !== null) {
     if (!spinning) selectPrize();
   });
 
-  const startWheel = () => {
-    document.querySelector(".whell-subpopup").classList.remove("active");
-    document.querySelector(".spin-btn").style.display = "none";
-    document.querySelector(".stop-spin-btn").style.display = "flex";
-
+  // const startWheel = () => {
+    function startWheel() {
     prizeNodes.forEach(prize => prize.classList.remove(selectedClass));
-
     spinner.style.transition = "none"; 
-    spinner.style.transform = "rotate(0deg)";
-    
+    spinner.style.transform = "rotate(0deg)";    
     spinner.classList.add("spinning");
     wheel.classList.add(spinClass);
     spinning = true;
@@ -1558,6 +1555,9 @@ if(document.querySelector(".deal-wheel") !== null) {
   });
 
   document.querySelector(".whell-subpopup .send-code").addEventListener("click", () => {
+    document.querySelector(".whell-subpopup").classList.remove("active");
+    document.querySelector(".spin-btn").style.display = "none";
+    document.querySelector(".stop-spin-btn").style.display = "flex";
     startWheel();
   });
 
