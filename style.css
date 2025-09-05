@@ -7247,11 +7247,15 @@ span.custom_title_two {
 	line-height: 130%;
 	letter-spacing: 0;
 	text-transform: uppercase;
-	height: 55px;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	min-height: auto;
+	/* height: 55px;
     min-height: 55px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3; */
 }
 
 .mini-cart__for-you .gift_slider .product__card__info__name .title-one {
@@ -7261,6 +7265,21 @@ span.custom_title_two {
 	font-weight: 300;
 	color: #808080;
 	margin-bottom: 10px;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+	height: 14px;
+    min-height: 14px;	
+	overflow: hidden;
+}
+
+.mini-cart__for-you .gift_slider .product__card__info__name .title-two {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+	height: 34px;
+    min-height: 34px;	
+	overflow: hidden;
 }
 
 .shopping-cart__table__footer {
