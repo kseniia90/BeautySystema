@@ -514,6 +514,23 @@ $(function () {
     $(".gift-accordion .mini-cart-gift").trigger('destroy.owl.carousel')
   }
 
+
+    // mini-cart gift  
+  $(".mini-cart-esputnik-recomendet").owlCarousel({
+     loop: true,
+      autoWidth: true,
+      dots: false,
+      nav: false,
+      responsive: {
+        0:  {
+          margin: 8,
+        },
+        767: {
+          margin: 15,
+        },
+    },
+  });
+
    // compare-carousel 
    $(".compare-carousel").owlCarousel({
     loop: false,

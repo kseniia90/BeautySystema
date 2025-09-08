@@ -7260,7 +7260,7 @@ span.custom_title_two {
 
 .mini-cart__for-you .gift_slider .product__card__info__name .title-one {
 	display: block;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 100%;
 	font-weight: 300;
 	color: #808080;
@@ -7268,8 +7268,8 @@ span.custom_title_two {
 	display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
-	height: 14px;
-    min-height: 14px;	
+	height: 16px;
+    min-height: 16px;	
 	overflow: hidden;
 }
 
@@ -10023,6 +10023,7 @@ ul.woocommerce-error {
 	.mini-cart-popup .shopping-cart__table__body .shopping-cart__col.shopping-cart__total {
 		grid-area: 2/3/3/4;
 		padding: 5px 10px;
+		justify-self: end;
 	}
 
 	.mini-cart-popup .shopping-cart__col.shopping-cart__delete {
@@ -16206,12 +16207,14 @@ span.mini_cart_notification {
     margin-bottom: 10px;
 }
 
-.gift_slider .mini-cart-gift {
+.gift_slider .mini-cart-gift,
+.mini-cart-esputnik-recomendet {
     display: flex !important;
     position: relative !important;
 }
 
-.mini-cart-gift .owl-stage {
+.mini-cart-gift .owl-stage,
+.mini-cart-esputnik-recomendet .owl-stage {
     display: flex;
     justify-content: stretch;
     align-items: stretch;
@@ -16219,14 +16222,16 @@ span.mini_cart_notification {
     min-width: 1px;
 }
 
-.mini-cart-gift .owl-stage-outer {
+.mini-cart-gift .owl-stage-outer,
+.mini-cart-esputnik-recomendet .owl-stage-outer {
     /* margin: -15px -10px ;
     padding: 15px 10px; */
 	min-width: 100%;
 }
 
 
-.mini-cart-gift .owl-nav {
+.mini-cart-gift .owl-nav,
+.mini-cart-esputnik-recomendet .owl-nav {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16235,7 +16240,8 @@ span.mini_cart_notification {
     width: calc(100% + 80px);
 }
 
-.mini-cart-gift .owl-nav .owl-prev span {
+.mini-cart-gift .owl-nav .owl-prev span,
+.mini-cart-esputnik-recomendet .owl-nav .owl-prev span {
     display: inline-block !important;
     background: url(./img/prev_arrow.svg) center no-repeat, #4B6D74 !important;
     background-size: 70% !important;
@@ -16248,7 +16254,8 @@ span.mini_cart_notification {
     transition: all 0.3s ease !important;    
 }
 
-.mini-cart-gift .owl-next span {
+.mini-cart-gift .owl-next span,
+.mini-cart-esputnik-recomendet .owl-next span {
     display: inline-block !important;
     background: url(./img/next_arrow.svg) center no-repeat, #4B6D74 !important;
     background-size: 70% !important;
@@ -16481,6 +16488,10 @@ img.product-thumbnail-label {
 
 	.gift_slider .product_element {
 		padding: 10px 5%;
+	}
+
+	.mini-cart-esputnik-recomendet .product_element {
+		min-width: 350px;
 	}
 }
 
