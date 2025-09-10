@@ -19819,7 +19819,7 @@ form.error .error-text {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 150%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 }
 
 .course-lecturer__list-item .icon {
@@ -19855,7 +19855,7 @@ form.error .error-text {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 140%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	padding: 16px;
 	border-radius: 10px;
 	background: #F5F1FD;
@@ -21111,7 +21111,7 @@ form.error .error-text {
 	font-weight: 700;
 	font-size: 25px;
 	line-height: 140%;
-	letter-spacing: 0%;
+	letter-spacing: 0;
 	text-align: center;
 	text-transform: uppercase;
 }
